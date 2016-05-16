@@ -80,12 +80,12 @@ simConfig['verbose'] = False  # show detailed messages
 simConfig['recordCells'] = [0,1,2]  # which cells to record from
 simConfig['recordTraces'] = {'Vsoma':{'sec':'soma','loc':0.5,'var':'v'}}
 simConfig['recordStim'] = True  # record spikes of cell stims
-simConfig['recordStep'] = 0.1 # Step size in ms to save data (eg. V traces, LFP, etc)
+simConfig['recordStep'] = simConfig['dt'] # Step size in ms to save data (eg. V traces, LFP, etc)
 
 # Saving
 simConfig['filename'] = 'HHSmall'  # Set file output name
-simConfig['saveFileStep'] = 0.025 # step size in ms to save data to disk
-simConfig['saveDat'] = True # save spikes and conn to txt file
+simConfig['saveFileStep'] = simConfig['dt'] # step size in ms to save data to disk
+simConfig['saveDat'] = True # save traces
 
 
 # Analysis and plotting 

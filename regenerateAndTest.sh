@@ -15,11 +15,15 @@ nrnivmodl
 python LEMS_2007One_netpyne.py
 
 
-##  Test NetPyNE example
+##  Test NetPyNE examples
 
 cd HHSmall
 
 python HH_run.py -nogui
+
+cd ../HybridSmall
+
+python Hybrid_run.py -nogui
 
 
 ##  Done
