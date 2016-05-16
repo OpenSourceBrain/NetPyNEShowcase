@@ -37,6 +37,10 @@ cd ../HybridSmall
 python Hybrid_export.py 
 cp *.nml ../../NeuroML2
 
+cd ../M1
+python M1_export.py 
+cp *.nml ../../NeuroML2
+
 cd ../../NeuroML2
 jnml -validate *.nml
 
