@@ -77,7 +77,7 @@ simConfig['verbose'] = False  # show detailed messages
 
 
 # Recording 
-simConfig['recordCells'] = []  # which cells to record from
+simConfig['recordCells'] = [0,1,2]  # which cells to record from
 simConfig['recordTraces'] = {'Vsoma':{'sec':'soma','loc':0.5,'var':'v'}}
 simConfig['recordStim'] = True  # record spikes of cell stims
 simConfig['recordStep'] = 0.1 # Step size in ms to save data (eg. V traces, LFP, etc)
