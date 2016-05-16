@@ -2,3 +2,17 @@
 *.pyc
 /NeuroML2/exIzh.dat
 /NetPyNE/HHSmall/*.dat
+x86_64
+/NeuroML2/LEMS_2007One_netpyne.py
+/NeuroML2/LEMS_2007One_netpyne.py_main.json
+/NeuroML2/LEMS_HH_Simulation_netpyne.py_main.json
+/NeuroML2/RS.cell.json
+/NeuroML2/RS.mod
+/NeuroML2/RS_Iext.input.json
+/NeuroML2/RS_Iext.mod
+/NeuroML2/RS_Iext_inputdefinition.py
+/NeuroML2/RS_celldefinition.py
+/NeuroML2/hh_v.dat
+/NeuroML2/hhcell.cell.json
+/NeuroML2/pulseGen1.input.json
+/NeuroML2/pulseGen2.input.json
