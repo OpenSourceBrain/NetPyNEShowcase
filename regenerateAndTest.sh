@@ -1,3 +1,4 @@
+set -e
 ##  Regenerate NetPyNE from NeuroML 2
 
 cd NeuroML2
@@ -32,6 +33,12 @@ cd ../HHSmall
 python HH_export.py 
 cp *.nml ../../NeuroML2
 
+cd ../HybridSmall
+python Hybrid_export.py 
+cp *.nml ../../NeuroML2
+
+cd ../../NeuroML2
+jnml -validate *.nml
 
 ##  Done
 

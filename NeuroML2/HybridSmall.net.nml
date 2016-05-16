@@ -1,0 +1,29 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="HybridSmall">
+    <notes>NeuroML 2 file exported from NetPyNE</notes>
+    <include href="HH.cell.nml"></include>
+    <include href="Izhi2007b.cell.nml"></include>
+    <network id="HybridSmall">
+        <population id="PYR_HH" component="HH" type="populationList">
+            <instance id="0">
+                <location x="91.711585874816009" y="62.411324223264955" z="18.616023751669676"/>
+            </instance>
+            <instance id="1">
+                <location x="67.115838414070012" y="36.72056502814722" z="88.648257869986452"/>
+            </instance>
+            <instance id="2">
+                <location x="51.804630571516853" y="33.86307903737071" z="76.246429339951561"/>
+            </instance>
+        </population>
+        <population id="PYR_Izhi" component="Izhi2007b" type="populationList">
+            <instance id="3">
+                <location x="75.808601565255302" y="93.814138748371974" z="84.449803659466113"/>
+            </instance>
+            <instance id="4">
+                <location x="12.871938171326081" y="98.428938989675913" z="94.201597751201774"/>
+            </instance>
+            <instance id="5">
+                <location x="54.301956521295146" y="89.330204673193592" z="19.71886683227234"/>
+            </instance>
+        </population>
+    </network>
+</neuroml>

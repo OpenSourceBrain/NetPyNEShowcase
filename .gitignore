@@ -27,6 +27,7 @@ x86_64
 /NetPyNE/HybridSmall/V_cell_8.dat
 /NetPyNE/HybridSmall/V_cell_9.dat
 /NetPyNE/Vsoma_cell_0.dat
-/NeuroML2/HH.cell.nml~
+*~
 /NetPyNE/HHSmall/HHSmall.net.nml
 /NeuroML2/Vsoma_cell_0.dat
+/NetPyNE/HybridSmall/HybridSmall.net.nml
