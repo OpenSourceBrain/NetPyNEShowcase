@@ -81,7 +81,8 @@ simConfig['createPyStruct'] = 1  # create Python structure (simulator-independen
 simConfig['verbose'] = True  # show detailed messages 
 
 # Recording 
-simConfig['recordTraces'] = {'Vsoma':{'sec':'soma','pos':0.5,'var':'v'}}
+simConfig['recordCells'] = [0]  
+simConfig['recordTraces'] = {'Vsoma':{'sec':'soma','loc':0.5,'var':'v'}}
 
 # Display id: d1
 # Line id: RS v; displaying v on cell: 0 in population: RS_pop;
@@ -104,10 +105,7 @@ simConfig['plotWeightChanges'] = False # whether to plot weight changes (shown i
 # Saving
 simConfig['filename'] = 'net1.txt'  # Set file output name
 simConfig['saveFileStep'] = simConfig['dt'] # step size in ms to save data to disk
-simConfig['savePickle'] = False # Whether or not to write spikes etc. to a .mat file
-simConfig['saveJson'] = False # Whether or not to write spikes etc. to a .mat file
-simConfig['saveMat'] = False # Whether or not to write spikes etc. to a .mat file
-simConfig['saveTxt'] = True # save spikes and conn to txt file
+simConfig['saveDat'] = True # save to dat file
 
 
 print("Running a NetPyNE based simulation for %sms (dt: %sms)"%(simConfig['duration'], simConfig['dt']))

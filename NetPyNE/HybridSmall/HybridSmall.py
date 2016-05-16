@@ -22,10 +22,12 @@ simConfig = {}  # dictionary to store sets of simulation configurations
 # NETWORK PARAMETERS
 ###############################################################################
 
+pop_size = 3
+
 # Population parameters
 netParams['popParams'] = []  # create list of populations - each item will contain dict with pop params
-netParams['popParams'].append({'popLabel': 'PYR_HH', 'cellModel': 'HH', 'cellType': 'PYR', 'numCells': 5}) # add dict with params for this pop 
-netParams['popParams'].append({'popLabel': 'PYR_Izhi', 'cellModel': 'Izhi2007b', 'cellType': 'PYR', 'numCells': 5}) # add dict with params for this pop 
+netParams['popParams'].append({'popLabel': 'PYR_HH', 'cellModel': 'HH', 'cellType': 'PYR', 'numCells': pop_size}) # add dict with params for this pop 
+netParams['popParams'].append({'popLabel': 'PYR_Izhi', 'cellModel': 'Izhi2007b', 'cellType': 'PYR', 'numCells': pop_size}) # add dict with params for this pop 
 netParams['popParams'].append({'popLabel': 'background', 'cellModel': 'NetStim', 'rate': 10, 'noise': 0.5, 'source': 'random'})  # background inputs
 
 
@@ -111,7 +113,7 @@ simConfig['timing'] = True  # show timing  and save to file
 simConfig['verbose'] = True # show detailed messages 
 
 
-all_cells=[0,1,2,3,4,5,6,7,8,9]
+all_cells=range(pop_size*2)
 # Recording 
 simConfig['recordCells'] = all_cells  # list of cells to record from 
 simConfig['recordTraces'] = {'V':{'sec':'soma','loc':0.5,'var':'v'}}

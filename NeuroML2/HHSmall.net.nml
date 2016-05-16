@@ -1,0 +1,38 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="HHSmall">
+    <notes>NeuroML 2 file exported from NetPyNE</notes>
+    <include href="HH.cell.nml"></include>
+    <network id="HHSmall">
+        <population id="PYR" component="HH" type="populationList">
+            <instance id="0">
+                <location x="50.984373601787183" y="1.922270170055129" z="41.328886008776031"/>
+            </instance>
+            <instance id="1">
+                <location x="69.753574283981706" y="43.295070709400385" z="78.783312692640877"/>
+            </instance>
+            <instance id="2">
+                <location x="40.354351570415602" y="41.488066966712509" z="28.598435533504496"/>
+            </instance>
+            <instance id="3">
+                <location x="21.019057116493922" y="63.966334431638813" z="34.119418362321397"/>
+            </instance>
+            <instance id="4">
+                <location x="56.393694377635171" y="60.721917805989342" z="26.110290327374585"/>
+            </instance>
+            <instance id="5">
+                <location x="19.025922135293261" y="14.027918240421045" z="37.294226412174901"/>
+            </instance>
+            <instance id="6">
+                <location x="76.034413030900538" y="10.925982122103173" z="49.833194096807695"/>
+            </instance>
+            <instance id="7">
+                <location x="4.161174954116809" y="72.221838003973389" z="64.4060057223152"/>
+            </instance>
+            <instance id="8">
+                <location x="38.267527919479569" y="46.226242934236353" z="3.396863271429706"/>
+            </instance>
+            <instance id="9">
+                <location x="35.278070217216452" y="72.280284214054575" z="16.518035924624343"/>
+            </instance>
+        </population>
+    </network>
+</neuroml>

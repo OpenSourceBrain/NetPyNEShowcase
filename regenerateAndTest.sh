@@ -23,7 +23,14 @@ python HH_run.py -nogui
 
 cd ../HybridSmall
 
+nrnivmodl
 python Hybrid_run.py -nogui
+
+## Export NeuroML 2
+
+cd ../HHSmall
+python HH_export.py 
+cp *.nml ../../NeuroML2
 
 
 ##  Done
