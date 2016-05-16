@@ -1,4 +1,4 @@
 /.travis.yml~
 *.pyc
 /NeuroML2/exIzh.dat
-/NetPyNE/HHTut/*.dat
+/NetPyNE/HHSmall/*.dat
