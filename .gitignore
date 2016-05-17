@@ -32,3 +32,12 @@ x86_64
 /NeuroML2/Vsoma_cell_0.dat
 /NetPyNE/HybridSmall/HybridSmall.net.nml
 /NetPyNE/M1/M1.net.nml
+/NeuroML2/M1.net.svg
+/NetPyNE/HybridTut/HybridTut.net.nml
+/NetPyNE/HybridSmall/HH.cell.nml
+/NetPyNE/HybridSmall/Izhi2007b.cell.nml
+/NetPyNE/HybridSmall/NMDA.synapse.nml
+/NetPyNE/HybridSmall/hhcell.cell.nml
+/NetPyNE/HybridSmall/kChan.channel.nml
+/NetPyNE/HybridSmall/naChan.channel.nml
+/NetPyNE/HybridSmall/passiveChan.channel.nml

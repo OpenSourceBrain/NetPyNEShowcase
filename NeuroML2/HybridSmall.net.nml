@@ -2,6 +2,10 @@
     <notes>NeuroML 2 file exported from NetPyNE</notes>
     <include href="HH.cell.nml"></include>
     <include href="Izhi2007b.cell.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
     <network id="HybridSmall">
         <population id="PYR_HH" component="HH" type="populationList">
             <instance id="0">
@@ -15,15 +19,35 @@
             </instance>
         </population>
         <population id="PYR_Izhi" component="Izhi2007b" type="populationList">
-            <instance id="3">
+            <instance id="0">
                 <location x="75.808601565255302" y="93.814138748371974" z="84.449803659466113"/>
             </instance>
-            <instance id="4">
+            <instance id="1">
                 <location x="12.871938171326081" y="98.428938989675913" z="94.201597751201774"/>
             </instance>
-            <instance id="5">
+            <instance id="2">
                 <location x="54.301956521295146" y="89.330204673193592" z="19.71886683227234"/>
             </instance>
         </population>
+        <projection id="NetConn_PYR_Izhi_PYR_Izhi_NMDA" presynapticPopulation="PYR_Izhi" postsynapticPopulation="PYR_Izhi" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR_Izhi/2/Izhi2007b" postCellId="../PYR_Izhi/0/Izhi2007b" weight="0.004" delay="15.5241598032 ms"/>
+            <connectionWD id="1" preCellId="../PYR_Izhi/2/Izhi2007b" postCellId="../PYR_Izhi/1/Izhi2007b" weight="0.004" delay="12.6460994936 ms"/>
+            <connectionWD id="2" preCellId="../PYR_Izhi/1/Izhi2007b" postCellId="../PYR_Izhi/2/Izhi2007b" weight="0.004" delay="12.6460994936 ms"/>
+        </projection>
+        <projection id="NetConn_PYR_HH_PYR_Izhi_NMDA" presynapticPopulation="PYR_HH" postsynapticPopulation="PYR_Izhi" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR_HH/1/HH" postCellId="../PYR_Izhi/1/Izhi2007b" weight="0.004" delay="14.385389754 ms"/>
+            <connectionWD id="1" preCellId="../PYR_HH/2/HH" postCellId="../PYR_Izhi/1/Izhi2007b" weight="0.004" delay="12.1064331365 ms"/>
+            <connectionWD id="2" preCellId="../PYR_HH/0/HH" postCellId="../PYR_Izhi/2/Izhi2007b" weight="0.004" delay="14.385389754 ms"/>
+            <connectionWD id="3" preCellId="../PYR_HH/1/HH" postCellId="../PYR_Izhi/2/Izhi2007b" weight="0.004" delay="12.1064331365 ms"/>
+            <connectionWD id="4" preCellId="../PYR_HH/2/HH" postCellId="../PYR_Izhi/2/Izhi2007b" weight="0.004" delay="14.2189777702 ms"/>
+        </projection>
+        <projection id="NetConn_PYR_HH_PYR_HH_NMDA" presynapticPopulation="PYR_HH" postsynapticPopulation="PYR_HH" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR_HH/1/HH" postCellId="../PYR_HH/0/HH" weight="0.004" delay="13.9025381799 ms"/>
+            <connectionWD id="1" preCellId="../PYR_HH/0/HH" postCellId="../PYR_HH/1/HH" weight="0.004" delay="13.9025381799 ms"/>
+            <connectionWD id="2" preCellId="../PYR_HH/0/HH" postCellId="../PYR_HH/2/HH" weight="0.004" delay="12.9100663402 ms"/>
+        </projection>
+        <projection id="NetConn_PYR_Izhi_PYR_HH_NMDA" presynapticPopulation="PYR_Izhi" postsynapticPopulation="PYR_HH" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR_Izhi/2/Izhi2007b" postCellId="../PYR_HH/1/HH" weight="0.004" delay="12.1064331365 ms"/>
+        </projection>
     </network>
 </neuroml>

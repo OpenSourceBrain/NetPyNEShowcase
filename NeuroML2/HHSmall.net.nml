@@ -1,6 +1,7 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="HHSmall">
     <notes>NeuroML 2 file exported from NetPyNE</notes>
     <include href="HH.cell.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
     <network id="HHSmall">
         <population id="PYR" component="HH" type="populationList">
             <instance id="0">
@@ -34,5 +35,74 @@
                 <location x="35.278070217216452" y="72.280284214054575" z="16.518035924624343"/>
             </instance>
         </population>
+        <projection id="NetConn_PYR_PYR_NMDA" presynapticPopulation="PYR" postsynapticPopulation="PYR" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR/8/HH" postCellId="../PYR/0/HH" weight="0.005" delay="15.5241598032 ms"/>
+            <connectionWD id="1" preCellId="../PYR/2/HH" postCellId="../PYR/0/HH" weight="0.005" delay="12.9100663402 ms"/>
+            <connectionWD id="2" preCellId="../PYR/3/HH" postCellId="../PYR/0/HH" weight="0.005" delay="11.1134170437 ms"/>
+            <connectionWD id="3" preCellId="../PYR/6/HH" postCellId="../PYR/0/HH" weight="0.005" delay="12.1064331365 ms"/>
+            <connectionWD id="4" preCellId="../PYR/7/HH" postCellId="../PYR/0/HH" weight="0.005" delay="14.2189777702 ms"/>
+            <connectionWD id="5" preCellId="../PYR/0/HH" postCellId="../PYR/1/HH" weight="0.005" delay="13.9025381799 ms"/>
+            <connectionWD id="6" preCellId="../PYR/2/HH" postCellId="../PYR/1/HH" weight="0.005" delay="11.1134170437 ms"/>
+            <connectionWD id="7" preCellId="../PYR/3/HH" postCellId="../PYR/1/HH" weight="0.005" delay="14.4441527498 ms"/>
+            <connectionWD id="8" preCellId="../PYR/4/HH" postCellId="../PYR/1/HH" weight="0.005" delay="14.385389754 ms"/>
+            <connectionWD id="9" preCellId="../PYR/9/HH" postCellId="../PYR/1/HH" weight="0.005" delay="11.9795795787 ms"/>
+            <connectionWD id="10" preCellId="../PYR/0/HH" postCellId="../PYR/2/HH" weight="0.005" delay="12.9100663402 ms"/>
+            <connectionWD id="11" preCellId="../PYR/1/HH" postCellId="../PYR/2/HH" weight="0.005" delay="11.1134170437 ms"/>
+            <connectionWD id="12" preCellId="../PYR/4/HH" postCellId="../PYR/2/HH" weight="0.005" delay="12.1064331365 ms"/>
+            <connectionWD id="13" preCellId="../PYR/5/HH" postCellId="../PYR/2/HH" weight="0.005" delay="14.2189777702 ms"/>
+            <connectionWD id="14" preCellId="../PYR/6/HH" postCellId="../PYR/2/HH" weight="0.005" delay="15.5241598032 ms"/>
+            <connectionWD id="15" preCellId="../PYR/7/HH" postCellId="../PYR/2/HH" weight="0.005" delay="12.6460994936 ms"/>
+            <connectionWD id="16" preCellId="../PYR/2/HH" postCellId="../PYR/3/HH" weight="0.005" delay="14.385389754 ms"/>
+            <connectionWD id="17" preCellId="../PYR/4/HH" postCellId="../PYR/3/HH" weight="0.005" delay="14.2189777702 ms"/>
+            <connectionWD id="18" preCellId="../PYR/5/HH" postCellId="../PYR/3/HH" weight="0.005" delay="15.5241598032 ms"/>
+            <connectionWD id="19" preCellId="../PYR/6/HH" postCellId="../PYR/3/HH" weight="0.005" delay="12.6460994936 ms"/>
+            <connectionWD id="20" preCellId="../PYR/7/HH" postCellId="../PYR/3/HH" weight="0.005" delay="11.9795795787 ms"/>
+            <connectionWD id="21" preCellId="../PYR/8/HH" postCellId="../PYR/3/HH" weight="0.005" delay="13.1252470128 ms"/>
+            <connectionWD id="22" preCellId="../PYR/9/HH" postCellId="../PYR/3/HH" weight="0.005" delay="13.3238066106 ms"/>
+            <connectionWD id="23" preCellId="../PYR/0/HH" postCellId="../PYR/4/HH" weight="0.005" delay="14.4441527498 ms"/>
+            <connectionWD id="24" preCellId="../PYR/1/HH" postCellId="../PYR/4/HH" weight="0.005" delay="14.385389754 ms"/>
+            <connectionWD id="25" preCellId="../PYR/2/HH" postCellId="../PYR/4/HH" weight="0.005" delay="12.1064331365 ms"/>
+            <connectionWD id="26" preCellId="../PYR/3/HH" postCellId="../PYR/4/HH" weight="0.005" delay="14.2189777702 ms"/>
+            <connectionWD id="27" preCellId="../PYR/5/HH" postCellId="../PYR/4/HH" weight="0.005" delay="12.6460994936 ms"/>
+            <connectionWD id="28" preCellId="../PYR/6/HH" postCellId="../PYR/4/HH" weight="0.005" delay="11.9795795787 ms"/>
+            <connectionWD id="29" preCellId="../PYR/7/HH" postCellId="../PYR/4/HH" weight="0.005" delay="13.1252470128 ms"/>
+            <connectionWD id="30" preCellId="../PYR/8/HH" postCellId="../PYR/4/HH" weight="0.005" delay="13.3238066106 ms"/>
+            <connectionWD id="31" preCellId="../PYR/9/HH" postCellId="../PYR/4/HH" weight="0.005" delay="12.4561878388 ms"/>
+            <connectionWD id="32" preCellId="../PYR/0/HH" postCellId="../PYR/5/HH" weight="0.005" delay="14.385389754 ms"/>
+            <connectionWD id="33" preCellId="../PYR/1/HH" postCellId="../PYR/5/HH" weight="0.005" delay="12.1064331365 ms"/>
+            <connectionWD id="34" preCellId="../PYR/2/HH" postCellId="../PYR/5/HH" weight="0.005" delay="14.2189777702 ms"/>
+            <connectionWD id="35" preCellId="../PYR/3/HH" postCellId="../PYR/5/HH" weight="0.005" delay="15.5241598032 ms"/>
+            <connectionWD id="36" preCellId="../PYR/4/HH" postCellId="../PYR/5/HH" weight="0.005" delay="12.6460994936 ms"/>
+            <connectionWD id="37" preCellId="../PYR/6/HH" postCellId="../PYR/5/HH" weight="0.005" delay="13.1252470128 ms"/>
+            <connectionWD id="38" preCellId="../PYR/7/HH" postCellId="../PYR/5/HH" weight="0.005" delay="13.3238066106 ms"/>
+            <connectionWD id="39" preCellId="../PYR/8/HH" postCellId="../PYR/5/HH" weight="0.005" delay="12.4561878388 ms"/>
+            <connectionWD id="40" preCellId="../PYR/9/HH" postCellId="../PYR/5/HH" weight="0.005" delay="13.5612015506 ms"/>
+            <connectionWD id="41" preCellId="../PYR/5/HH" postCellId="../PYR/6/HH" weight="0.005" delay="13.1252470128 ms"/>
+            <connectionWD id="42" preCellId="../PYR/0/HH" postCellId="../PYR/7/HH" weight="0.005" delay="14.2189777702 ms"/>
+            <connectionWD id="43" preCellId="../PYR/1/HH" postCellId="../PYR/7/HH" weight="0.005" delay="15.5241598032 ms"/>
+            <connectionWD id="44" preCellId="../PYR/2/HH" postCellId="../PYR/7/HH" weight="0.005" delay="12.6460994936 ms"/>
+            <connectionWD id="45" preCellId="../PYR/3/HH" postCellId="../PYR/7/HH" weight="0.005" delay="11.9795795787 ms"/>
+            <connectionWD id="46" preCellId="../PYR/4/HH" postCellId="../PYR/7/HH" weight="0.005" delay="13.1252470128 ms"/>
+            <connectionWD id="47" preCellId="../PYR/8/HH" postCellId="../PYR/7/HH" weight="0.005" delay="14.5476409941 ms"/>
+            <connectionWD id="48" preCellId="../PYR/9/HH" postCellId="../PYR/7/HH" weight="0.005" delay="13.1803976153 ms"/>
+            <connectionWD id="49" preCellId="../PYR/0/HH" postCellId="../PYR/8/HH" weight="0.005" delay="15.5241598032 ms"/>
+            <connectionWD id="50" preCellId="../PYR/1/HH" postCellId="../PYR/8/HH" weight="0.005" delay="12.6460994936 ms"/>
+            <connectionWD id="51" preCellId="../PYR/2/HH" postCellId="../PYR/8/HH" weight="0.005" delay="11.9795795787 ms"/>
+            <connectionWD id="52" preCellId="../PYR/3/HH" postCellId="../PYR/8/HH" weight="0.005" delay="13.1252470128 ms"/>
+            <connectionWD id="53" preCellId="../PYR/4/HH" postCellId="../PYR/8/HH" weight="0.005" delay="13.3238066106 ms"/>
+            <connectionWD id="54" preCellId="../PYR/5/HH" postCellId="../PYR/8/HH" weight="0.005" delay="12.4561878388 ms"/>
+            <connectionWD id="55" preCellId="../PYR/6/HH" postCellId="../PYR/8/HH" weight="0.005" delay="13.5612015506 ms"/>
+            <connectionWD id="56" preCellId="../PYR/7/HH" postCellId="../PYR/8/HH" weight="0.005" delay="14.5476409941 ms"/>
+            <connectionWD id="57" preCellId="../PYR/9/HH" postCellId="../PYR/8/HH" weight="0.005" delay="13.4304173715 ms"/>
+            <connectionWD id="58" preCellId="../PYR/0/HH" postCellId="../PYR/9/HH" weight="0.005" delay="12.6460994936 ms"/>
+            <connectionWD id="59" preCellId="../PYR/1/HH" postCellId="../PYR/9/HH" weight="0.005" delay="11.9795795787 ms"/>
+            <connectionWD id="60" preCellId="../PYR/2/HH" postCellId="../PYR/9/HH" weight="0.005" delay="13.1252470128 ms"/>
+            <connectionWD id="61" preCellId="../PYR/3/HH" postCellId="../PYR/9/HH" weight="0.005" delay="13.3238066106 ms"/>
+            <connectionWD id="62" preCellId="../PYR/4/HH" postCellId="../PYR/9/HH" weight="0.005" delay="12.4561878388 ms"/>
+            <connectionWD id="63" preCellId="../PYR/5/HH" postCellId="../PYR/9/HH" weight="0.005" delay="13.5612015506 ms"/>
+            <connectionWD id="64" preCellId="../PYR/6/HH" postCellId="../PYR/9/HH" weight="0.005" delay="14.5476409941 ms"/>
+            <connectionWD id="65" preCellId="../PYR/7/HH" postCellId="../PYR/9/HH" weight="0.005" delay="13.1803976153 ms"/>
+            <connectionWD id="66" preCellId="../PYR/8/HH" postCellId="../PYR/9/HH" weight="0.005" delay="13.4304173715 ms"/>
+        </projection>
     </network>
 </neuroml>

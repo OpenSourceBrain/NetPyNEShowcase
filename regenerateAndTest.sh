@@ -1,5 +1,5 @@
 set -e
-##  Regenerate NetPyNE from NeuroML 2
+################  Regenerate NetPyNE from NeuroML 2
 
 cd NeuroML2
 
@@ -8,7 +8,7 @@ jnml LEMS_2007One.xml -netpyne
 cp *.mod *_netpyne.py *definition.py ../NetPyNE
 
 
-##  Test Izh
+################  Test Izh can run
 
 cd ../NetPyNE
 
@@ -16,7 +16,7 @@ nrnivmodl
 python LEMS_2007One_netpyne.py
 
 
-##  Test NetPyNE examples
+################  Test NetPyNE examples
 
 cd HHSmall
 
@@ -27,7 +27,12 @@ cd ../HybridSmall
 nrnivmodl
 python Hybrid_run.py -nogui
 
-## Export NeuroML 2
+cd ../HybridTut
+
+nrnivmodl
+python HybridTut_run.py -nogui
+
+################ Export NeuroML 2
 
 cd ../HHSmall
 python HH_export.py 
@@ -37,6 +42,10 @@ cd ../HybridSmall
 python Hybrid_export.py 
 cp *.nml ../../NeuroML2
 
+cd ../HybridTut
+python HybridTut_export.py 
+cp *.nml ../../NeuroML2
+
 cd ../M1
 python M1_export.py 
 cp *.nml ../../NeuroML2
@@ -44,7 +53,7 @@ cp *.nml ../../NeuroML2
 cd ../../NeuroML2
 jnml -validate *.nml
 
-##  Done
+################  Done
 
 cd ../..
 

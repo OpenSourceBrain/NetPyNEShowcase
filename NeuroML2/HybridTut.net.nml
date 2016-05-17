@@ -1,0 +1,575 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="HybridTut">
+    <notes>NeuroML 2 file exported from NetPyNE</notes>
+    <include href="HH.cell.nml"></include>
+    <include href="Izhi2007b.cell.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
+    <include href="NMDA.synapse.nml"></include>
+    <network id="HybridTut">
+        <population id="PYR_HH" component="HH" type="populationList">
+            <instance id="0">
+                <location x="37.08105043719663" y="50.724430936622319" z="10.998529106737065"/>
+            </instance>
+            <instance id="1">
+                <location x="46.525981747534793" y="84.629639164793971" z="53.114905274949543"/>
+            </instance>
+            <instance id="2">
+                <location x="55.898567433192603" y="36.587302092329168" z="42.960076580871167"/>
+            </instance>
+            <instance id="3">
+                <location x="9.438831173195283" y="17.467225934886908" z="52.532600498817047"/>
+            </instance>
+            <instance id="4">
+                <location x="73.512337571388983" y="76.00244036700218" z="9.124800897864704"/>
+            </instance>
+            <instance id="5">
+                <location x="47.183802481539352" y="15.071667541005452" z="58.960552926012312"/>
+            </instance>
+            <instance id="6">
+                <location x="21.675098442010231" y="26.06151263301194" z="91.046572111689571"/>
+            </instance>
+            <instance id="7">
+                <location x="7.118558168720945" y="62.62098563114121" z="40.840529232141954"/>
+            </instance>
+            <instance id="8">
+                <location x="78.019131541869569" y="87.807275877356233" z="26.103134972609144"/>
+            </instance>
+            <instance id="9">
+                <location x="33.20573612884634" y="79.742731543299158" z="24.613820989381008"/>
+            </instance>
+            <instance id="10">
+                <location x="90.141309067259328" y="43.111138651232373" z="76.357430188516133"/>
+            </instance>
+            <instance id="11">
+                <location x="18.207979691763796" y="15.325629271817952" z="42.12126885462839"/>
+            </instance>
+            <instance id="12">
+                <location x="74.636485110157679" y="97.221628952468038" z="64.885837114774361"/>
+            </instance>
+            <instance id="13">
+                <location x="44.611374736500167" y="27.796429932029486" z="82.815692144914692"/>
+            </instance>
+            <instance id="14">
+                <location x="54.189178855407683" y="17.127633729211102" z="57.365286187094846"/>
+            </instance>
+            <instance id="15">
+                <location x="44.566736248542242" y="15.721501519978299" z="19.323941161228532"/>
+            </instance>
+            <instance id="16">
+                <location x="20.059389633227674" y="50.658637786469882" z="83.182876782569352"/>
+            </instance>
+            <instance id="17">
+                <location x="23.262075339360365" y="81.44777701272011" z="69.346635301884177"/>
+            </instance>
+            <instance id="18">
+                <location x="27.011688506528664" y="1.923243809927133" z="77.220319278106047"/>
+            </instance>
+            <instance id="19">
+                <location x="27.57926624774586" y="77.396477079427669" z="90.470284293502459"/>
+            </instance>
+            <instance id="20">
+                <location x="31.773774311519364" y="58.204024248558916" z="90.812114109427228"/>
+            </instance>
+            <instance id="21">
+                <location x="52.600189918434062" y="11.209555920020209" z="25.138420710632381"/>
+            </instance>
+            <instance id="22">
+                <location x="57.344678547184245" y="98.428430741414928" z="3.027883914658713"/>
+            </instance>
+            <instance id="23">
+                <location x="35.391947780849478" y="61.48536676561389" z="66.937110381350365"/>
+            </instance>
+            <instance id="24">
+                <location x="86.34068930418654" y="28.368076091595139" z="75.231997239431507"/>
+            </instance>
+            <instance id="25">
+                <location x="52.364707258896424" y="58.220696828093047" z="33.60008605815333"/>
+            </instance>
+            <instance id="26">
+                <location x="55.581644822772347" y="2.328552976424492" z="30.438062074104788"/>
+            </instance>
+            <instance id="27">
+                <location x="4.758392227404595" y="68.299601231958746" z="49.220291066483526"/>
+            </instance>
+            <instance id="28">
+                <location x="52.694279650171559" y="70.085525325820754" z="4.553358078953485"/>
+            </instance>
+            <instance id="29">
+                <location x="4.254877882819031" y="55.682645574743447" z="39.411882384580707"/>
+            </instance>
+            <instance id="30">
+                <location x="67.99081474426454" y="36.670276605004837" z="60.429923282429144"/>
+            </instance>
+            <instance id="31">
+                <location x="25.541026981064164" y="76.226083926199053" z="47.561225655679806"/>
+            </instance>
+            <instance id="32">
+                <location x="48.021582558844386" y="0.643506384087955" z="27.090531200169067"/>
+            </instance>
+            <instance id="33">
+                <location x="31.538978830093345" y="37.931022483094601" z="12.836970013255755"/>
+            </instance>
+            <instance id="34">
+                <location x="90.856003695904491" y="37.338503275517269" z="29.03599597421216"/>
+            </instance>
+            <instance id="35">
+                <location x="8.470349746448047" y="49.958713311148131" z="51.649492738642742"/>
+            </instance>
+            <instance id="36">
+                <location x="39.082107878491179" y="15.997653778966525" z="83.467667961612435"/>
+            </instance>
+            <instance id="37">
+                <location x="47.599551949217513" y="33.428873216905984" z="48.712864197681249"/>
+            </instance>
+            <instance id="38">
+                <location x="12.794059292346748" y="6.493109962672738" z="22.411708929835982"/>
+            </instance>
+            <instance id="39">
+                <location x="5.265385929800537" y="93.458280038354374" z="6.093434656044927"/>
+            </instance>
+            <instance id="40">
+                <location x="80.575539215627515" y="63.063957433536721" z="93.26109004401475"/>
+            </instance>
+            <instance id="41">
+                <location x="54.760140045316021" y="97.74093346659258" z="55.268908126261906"/>
+            </instance>
+            <instance id="42">
+                <location x="1.170837127917557" y="45.661943303316001" z="74.758215284737503"/>
+            </instance>
+            <instance id="43">
+                <location x="23.657124190340639" y="66.109256481533492" z="22.958779049329159"/>
+            </instance>
+            <instance id="44">
+                <location x="79.809655650992198" y="14.092815502178457" z="41.6385038953457"/>
+            </instance>
+            <instance id="45">
+                <location x="88.533666531436879" y="25.046446125825984" z="3.729596410656244"/>
+            </instance>
+            <instance id="46">
+                <location x="32.243868267402846" y="40.036295016212932" z="31.434193050587169"/>
+            </instance>
+            <instance id="47">
+                <location x="56.845532324354551" y="35.822686524585976" z="12.563590246825596"/>
+            </instance>
+            <instance id="48">
+                <location x="70.396199537076114" y="44.73970283810106" z="73.584137147494104"/>
+            </instance>
+            <instance id="49">
+                <location x="11.924782736343287" y="80.93084380621822" z="6.56964132577047"/>
+            </instance>
+        </population>
+        <population id="PYR_Izhi" component="Izhi2007b" type="populationList">
+            <instance id="0">
+                <location x="21.646411005402776" y="22.108919245527758" z="13.464939689444822"/>
+            </instance>
+            <instance id="1">
+                <location x="83.276967270524139" y="97.651165477183682" z="53.593043472467414"/>
+            </instance>
+            <instance id="2">
+                <location x="70.401581559597872" y="40.241597740263622" z="81.382361707799703"/>
+            </instance>
+            <instance id="3">
+                <location x="61.882004792172474" y="28.216234047399357" z="50.552624480676599"/>
+            </instance>
+            <instance id="4">
+                <location x="86.573655837887955" y="90.014186932282854" z="89.272017232978101"/>
+            </instance>
+            <instance id="5">
+                <location x="59.571360879917911" y="20.075565899468849" z="57.841819730473865"/>
+            </instance>
+            <instance id="6">
+                <location x="2.839943085829288" y="89.122203637692337" z="76.632943065412348"/>
+            </instance>
+            <instance id="7">
+                <location x="28.542376715329087" y="73.235554979890509" z="65.73725366347341"/>
+            </instance>
+            <instance id="8">
+                <location x="50.210182163493741" y="30.327574962689464" z="66.394980277971214"/>
+            </instance>
+            <instance id="9">
+                <location x="12.472568654726768" y="88.233624149446513" z="76.550866973577797"/>
+            </instance>
+            <instance id="10">
+                <location x="47.271967211714419" y="36.758876985082431" z="15.440749783552665"/>
+            </instance>
+            <instance id="11">
+                <location x="62.599860613857395" y="61.967984202144287" z="78.498475815231089"/>
+            </instance>
+            <instance id="12">
+                <location x="50.157456814005663" y="25.077158295170776" z="17.590799005903413"/>
+            </instance>
+            <instance id="13">
+                <location x="24.971998575933917" y="97.963976520972906" z="80.060171881214558"/>
+            </instance>
+            <instance id="14">
+                <location x="90.090934569086713" y="90.844561750139334" z="57.587385865689811"/>
+            </instance>
+            <instance id="15">
+                <location x="15.261456531639539" y="67.182231153791321" z="1.396633654492963"/>
+            </instance>
+            <instance id="16">
+                <location x="72.938578685303185" y="88.546000171779212" z="78.381516673903363"/>
+            </instance>
+            <instance id="17">
+                <location x="16.889978527948223" y="47.895875297769244" z="90.156466635856759"/>
+            </instance>
+            <instance id="18">
+                <location x="12.381600150540983" y="86.708220883377479" z="40.997539918946366"/>
+            </instance>
+            <instance id="19">
+                <location x="95.63206156843502" y="37.122762722964708" z="99.443553283108059"/>
+            </instance>
+            <instance id="20">
+                <location x="34.23744831959057" y="33.962584240789795" z="94.061385346696284"/>
+            </instance>
+            <instance id="21">
+                <location x="49.673593764224755" y="53.36577112050275" z="83.636120967605848"/>
+            </instance>
+            <instance id="22">
+                <location x="20.140608385652349" y="74.0034491707206" z="79.808305142935822"/>
+            </instance>
+            <instance id="23">
+                <location x="24.566411415544621" y="70.442394319920496" z="83.732217052728245"/>
+            </instance>
+            <instance id="24">
+                <location x="95.067882983469758" y="58.039803534516935" z="94.593094849472664"/>
+            </instance>
+            <instance id="25">
+                <location x="18.896996996683757" y="21.493036876323892" z="53.827156266849954"/>
+            </instance>
+            <instance id="26">
+                <location x="31.996559645646595" y="28.675334938586715" z="35.191833305089574"/>
+            </instance>
+            <instance id="27">
+                <location x="77.749686980844587" y="76.615788174077139" z="27.795900541408468"/>
+            </instance>
+            <instance id="28">
+                <location x="40.345511564952162" y="44.521979294683753" z="43.895988048645137"/>
+            </instance>
+            <instance id="29">
+                <location x="13.048087718211864" y="47.09345272387155" z="87.785933425513846"/>
+            </instance>
+            <instance id="30">
+                <location x="42.34248802581363" y="91.167649222156214" z="44.916404613319848"/>
+            </instance>
+            <instance id="31">
+                <location x="72.903787179563778" y="70.058621078022313" z="14.277668329161452"/>
+            </instance>
+            <instance id="32">
+                <location x="46.920542619763495" y="25.966606338207441" z="32.20886217501171"/>
+            </instance>
+            <instance id="33">
+                <location x="86.63919281026007" y="20.133465972555353" z="59.152110481492102"/>
+            </instance>
+            <instance id="34">
+                <location x="87.678389528972204" y="22.871765464703763" z="15.016118280295455"/>
+            </instance>
+            <instance id="35">
+                <location x="80.259490620230338" y="50.866255463108423" z="97.479668041067328"/>
+            </instance>
+            <instance id="36">
+                <location x="20.376455007366356" y="36.964983721617486" z="44.875623877927381"/>
+            </instance>
+            <instance id="37">
+                <location x="93.068950357684002" y="95.648425178544187" z="7.421815951200939"/>
+            </instance>
+            <instance id="38">
+                <location x="67.938405817575259" y="31.6651564778623" z="96.512599500906973"/>
+            </instance>
+            <instance id="39">
+                <location x="50.747526668905742" y="48.256953893256537" z="47.608067852803302"/>
+            </instance>
+            <instance id="40">
+                <location x="56.401023553511905" y="83.839889781324445" z="93.971284027784037"/>
+            </instance>
+            <instance id="41">
+                <location x="65.317821507900803" y="65.121757388718891" z="4.246675553666924"/>
+            </instance>
+            <instance id="42">
+                <location x="52.349630626595236" y="76.383278768942986" z="24.736010115379557"/>
+            </instance>
+            <instance id="43">
+                <location x="54.999542307520819" y="99.569304027400577" z="69.314386155776532"/>
+            </instance>
+            <instance id="44">
+                <location x="11.36874939843463" y="8.645424947200752" z="23.907893078918498"/>
+            </instance>
+            <instance id="45">
+                <location x="19.047336904522215" y="61.842666568276492" z="62.200070171334296"/>
+            </instance>
+            <instance id="46">
+                <location x="11.547192984143296" y="17.617195396506848" z="47.432252387969889"/>
+            </instance>
+            <instance id="47">
+                <location x="38.621510516821758" y="86.774635033559505" z="95.798935814796693"/>
+            </instance>
+            <instance id="48">
+                <location x="53.913871064188804" y="68.191598017771895" z="36.692803805901796"/>
+            </instance>
+            <instance id="49">
+                <location x="17.131810649303659" y="13.968583310185101" z="63.727904029939083"/>
+            </instance>
+        </population>
+        <projection id="NetConn_PYR_Izhi_PYR_Izhi_NMDA" presynapticPopulation="PYR_Izhi" postsynapticPopulation="PYR_Izhi" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR_Izhi/30/Izhi2007b" postCellId="../PYR_Izhi/0/Izhi2007b" weight="0.004" delay="14.1046383884 ms"/>
+            <connectionWD id="1" preCellId="../PYR_Izhi/41/Izhi2007b" postCellId="../PYR_Izhi/1/Izhi2007b" weight="0.004" delay="14.6392785102 ms"/>
+            <connectionWD id="2" preCellId="../PYR_Izhi/19/Izhi2007b" postCellId="../PYR_Izhi/1/Izhi2007b" weight="0.004" delay="13.7069638949 ms"/>
+            <connectionWD id="3" preCellId="../PYR_Izhi/17/Izhi2007b" postCellId="../PYR_Izhi/2/Izhi2007b" weight="0.004" delay="13.8375423426 ms"/>
+            <connectionWD id="4" preCellId="../PYR_Izhi/27/Izhi2007b" postCellId="../PYR_Izhi/2/Izhi2007b" weight="0.004" delay="14.2976086397 ms"/>
+            <connectionWD id="5" preCellId="../PYR_Izhi/26/Izhi2007b" postCellId="../PYR_Izhi/3/Izhi2007b" weight="0.004" delay="14.2976086397 ms"/>
+            <connectionWD id="6" preCellId="../PYR_Izhi/32/Izhi2007b" postCellId="../PYR_Izhi/3/Izhi2007b" weight="0.004" delay="14.2521952046 ms"/>
+            <connectionWD id="7" preCellId="../PYR_Izhi/22/Izhi2007b" postCellId="../PYR_Izhi/4/Izhi2007b" weight="0.004" delay="10.4913685781 ms"/>
+            <connectionWD id="8" preCellId="../PYR_Izhi/14/Izhi2007b" postCellId="../PYR_Izhi/5/Izhi2007b" weight="0.004" delay="13.8375423426 ms"/>
+            <connectionWD id="9" preCellId="../PYR_Izhi/21/Izhi2007b" postCellId="../PYR_Izhi/5/Izhi2007b" weight="0.004" delay="10.4913685781 ms"/>
+            <connectionWD id="10" preCellId="../PYR_Izhi/17/Izhi2007b" postCellId="../PYR_Izhi/6/Izhi2007b" weight="0.004" delay="15.073134699 ms"/>
+            <connectionWD id="11" preCellId="../PYR_Izhi/11/Izhi2007b" postCellId="../PYR_Izhi/6/Izhi2007b" weight="0.004" delay="15.307608249 ms"/>
+            <connectionWD id="12" preCellId="../PYR_Izhi/0/Izhi2007b" postCellId="../PYR_Izhi/7/Izhi2007b" weight="0.004" delay="14.377314614 ms"/>
+            <connectionWD id="13" preCellId="../PYR_Izhi/47/Izhi2007b" postCellId="../PYR_Izhi/9/Izhi2007b" weight="0.004" delay="15.7226928912 ms"/>
+            <connectionWD id="14" preCellId="../PYR_Izhi/35/Izhi2007b" postCellId="../PYR_Izhi/11/Izhi2007b" weight="0.004" delay="13.6021180811 ms"/>
+            <connectionWD id="15" preCellId="../PYR_Izhi/26/Izhi2007b" postCellId="../PYR_Izhi/12/Izhi2007b" weight="0.004" delay="9.72638207031 ms"/>
+            <connectionWD id="16" preCellId="../PYR_Izhi/44/Izhi2007b" postCellId="../PYR_Izhi/12/Izhi2007b" weight="0.004" delay="15.7226928912 ms"/>
+            <connectionWD id="17" preCellId="../PYR_Izhi/22/Izhi2007b" postCellId="../PYR_Izhi/13/Izhi2007b" weight="0.004" delay="14.2521952046 ms"/>
+            <connectionWD id="18" preCellId="../PYR_Izhi/14/Izhi2007b" postCellId="../PYR_Izhi/15/Izhi2007b" weight="0.004" delay="14.2976086397 ms"/>
+            <connectionWD id="19" preCellId="../PYR_Izhi/26/Izhi2007b" postCellId="../PYR_Izhi/16/Izhi2007b" weight="0.004" delay="14.6392785102 ms"/>
+            <connectionWD id="20" preCellId="../PYR_Izhi/37/Izhi2007b" postCellId="../PYR_Izhi/17/Izhi2007b" weight="0.004" delay="15.9001701237 ms"/>
+            <connectionWD id="21" preCellId="../PYR_Izhi/33/Izhi2007b" postCellId="../PYR_Izhi/18/Izhi2007b" weight="0.004" delay="12.0376930927 ms"/>
+            <connectionWD id="22" preCellId="../PYR_Izhi/48/Izhi2007b" postCellId="../PYR_Izhi/18/Izhi2007b" weight="0.004" delay="12.2387672204 ms"/>
+            <connectionWD id="23" preCellId="../PYR_Izhi/33/Izhi2007b" postCellId="../PYR_Izhi/21/Izhi2007b" weight="0.004" delay="15.9001701237 ms"/>
+            <connectionWD id="24" preCellId="../PYR_Izhi/2/Izhi2007b" postCellId="../PYR_Izhi/21/Izhi2007b" weight="0.004" delay="15.073134699 ms"/>
+            <connectionWD id="25" preCellId="../PYR_Izhi/26/Izhi2007b" postCellId="../PYR_Izhi/24/Izhi2007b" weight="0.004" delay="12.9828506765 ms"/>
+            <connectionWD id="26" preCellId="../PYR_Izhi/9/Izhi2007b" postCellId="../PYR_Izhi/24/Izhi2007b" weight="0.004" delay="14.5671483598 ms"/>
+            <connectionWD id="27" preCellId="../PYR_Izhi/47/Izhi2007b" postCellId="../PYR_Izhi/25/Izhi2007b" weight="0.004" delay="12.0140729974 ms"/>
+            <connectionWD id="28" preCellId="../PYR_Izhi/42/Izhi2007b" postCellId="../PYR_Izhi/25/Izhi2007b" weight="0.004" delay="15.3545579189 ms"/>
+            <connectionWD id="29" preCellId="../PYR_Izhi/12/Izhi2007b" postCellId="../PYR_Izhi/25/Izhi2007b" weight="0.004" delay="13.06181083 ms"/>
+            <connectionWD id="30" preCellId="../PYR_Izhi/48/Izhi2007b" postCellId="../PYR_Izhi/26/Izhi2007b" weight="0.004" delay="11.3234124211 ms"/>
+            <connectionWD id="31" preCellId="../PYR_Izhi/28/Izhi2007b" postCellId="../PYR_Izhi/26/Izhi2007b" weight="0.004" delay="15.9001701237 ms"/>
+            <connectionWD id="32" preCellId="../PYR_Izhi/9/Izhi2007b" postCellId="../PYR_Izhi/27/Izhi2007b" weight="0.004" delay="12.3383646238 ms"/>
+            <connectionWD id="33" preCellId="../PYR_Izhi/13/Izhi2007b" postCellId="../PYR_Izhi/27/Izhi2007b" weight="0.004" delay="14.5420367614 ms"/>
+            <connectionWD id="34" preCellId="../PYR_Izhi/47/Izhi2007b" postCellId="../PYR_Izhi/28/Izhi2007b" weight="0.004" delay="12.4542877683 ms"/>
+            <connectionWD id="35" preCellId="../PYR_Izhi/26/Izhi2007b" postCellId="../PYR_Izhi/28/Izhi2007b" weight="0.004" delay="15.9001701237 ms"/>
+            <connectionWD id="36" preCellId="../PYR_Izhi/43/Izhi2007b" postCellId="../PYR_Izhi/28/Izhi2007b" weight="0.004" delay="13.02635111 ms"/>
+            <connectionWD id="37" preCellId="../PYR_Izhi/14/Izhi2007b" postCellId="../PYR_Izhi/29/Izhi2007b" weight="0.004" delay="12.3966500159 ms"/>
+            <connectionWD id="38" preCellId="../PYR_Izhi/22/Izhi2007b" postCellId="../PYR_Izhi/29/Izhi2007b" weight="0.004" delay="12.0376930927 ms"/>
+            <connectionWD id="39" preCellId="../PYR_Izhi/9/Izhi2007b" postCellId="../PYR_Izhi/32/Izhi2007b" weight="0.004" delay="13.5774676141 ms"/>
+            <connectionWD id="40" preCellId="../PYR_Izhi/25/Izhi2007b" postCellId="../PYR_Izhi/33/Izhi2007b" weight="0.004" delay="12.4509982836 ms"/>
+            <connectionWD id="41" preCellId="../PYR_Izhi/34/Izhi2007b" postCellId="../PYR_Izhi/35/Izhi2007b" weight="0.004" delay="16.5875546473 ms"/>
+            <connectionWD id="42" preCellId="../PYR_Izhi/13/Izhi2007b" postCellId="../PYR_Izhi/36/Izhi2007b" weight="0.004" delay="14.7994942698 ms"/>
+            <connectionWD id="43" preCellId="../PYR_Izhi/41/Izhi2007b" postCellId="../PYR_Izhi/37/Izhi2007b" weight="0.004" delay="12.8513080054 ms"/>
+            <connectionWD id="44" preCellId="../PYR_Izhi/43/Izhi2007b" postCellId="../PYR_Izhi/38/Izhi2007b" weight="0.004" delay="13.2545814724 ms"/>
+            <connectionWD id="45" preCellId="../PYR_Izhi/47/Izhi2007b" postCellId="../PYR_Izhi/40/Izhi2007b" weight="0.004" delay="15.0248340298 ms"/>
+            <connectionWD id="46" preCellId="../PYR_Izhi/16/Izhi2007b" postCellId="../PYR_Izhi/40/Izhi2007b" weight="0.004" delay="15.7226928912 ms"/>
+            <connectionWD id="47" preCellId="../PYR_Izhi/35/Izhi2007b" postCellId="../PYR_Izhi/40/Izhi2007b" weight="0.004" delay="12.4542877683 ms"/>
+            <connectionWD id="48" preCellId="../PYR_Izhi/42/Izhi2007b" postCellId="../PYR_Izhi/41/Izhi2007b" weight="0.004" delay="11.8057508102 ms"/>
+            <connectionWD id="49" preCellId="../PYR_Izhi/28/Izhi2007b" postCellId="../PYR_Izhi/41/Izhi2007b" weight="0.004" delay="16.5875546473 ms"/>
+            <connectionWD id="50" preCellId="../PYR_Izhi/40/Izhi2007b" postCellId="../PYR_Izhi/42/Izhi2007b" weight="0.004" delay="11.8808952135 ms"/>
+            <connectionWD id="51" preCellId="../PYR_Izhi/8/Izhi2007b" postCellId="../PYR_Izhi/42/Izhi2007b" weight="0.004" delay="12.9828506765 ms"/>
+            <connectionWD id="52" preCellId="../PYR_Izhi/1/Izhi2007b" postCellId="../PYR_Izhi/43/Izhi2007b" weight="0.004" delay="12.3081107485 ms"/>
+            <connectionWD id="53" preCellId="../PYR_Izhi/27/Izhi2007b" postCellId="../PYR_Izhi/43/Izhi2007b" weight="0.004" delay="10.7550866119 ms"/>
+            <connectionWD id="54" preCellId="../PYR_Izhi/13/Izhi2007b" postCellId="../PYR_Izhi/43/Izhi2007b" weight="0.004" delay="15.7226928912 ms"/>
+            <connectionWD id="55" preCellId="../PYR_Izhi/0/Izhi2007b" postCellId="../PYR_Izhi/44/Izhi2007b" weight="0.004" delay="12.3081107485 ms"/>
+            <connectionWD id="56" preCellId="../PYR_Izhi/17/Izhi2007b" postCellId="../PYR_Izhi/47/Izhi2007b" weight="0.004" delay="12.2786589529 ms"/>
+            <connectionWD id="57" preCellId="../PYR_Izhi/30/Izhi2007b" postCellId="../PYR_Izhi/49/Izhi2007b" weight="0.004" delay="14.1583604088 ms"/>
+        </projection>
+        <projection id="NetConn_PYR_HH_PYR_Izhi_NMDA" presynapticPopulation="PYR_HH" postsynapticPopulation="PYR_Izhi" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR_HH/21/HH" postCellId="../PYR_Izhi/0/Izhi2007b" weight="0.004" delay="13.2982725832 ms"/>
+            <connectionWD id="1" preCellId="../PYR_HH/10/HH" postCellId="../PYR_Izhi/1/Izhi2007b" weight="0.004" delay="13.9714469575 ms"/>
+            <connectionWD id="2" preCellId="../PYR_HH/42/HH" postCellId="../PYR_Izhi/2/Izhi2007b" weight="0.004" delay="11.7408127663 ms"/>
+            <connectionWD id="3" preCellId="../PYR_HH/40/HH" postCellId="../PYR_Izhi/3/Izhi2007b" weight="0.004" delay="10.7859291232 ms"/>
+            <connectionWD id="4" preCellId="../PYR_HH/4/HH" postCellId="../PYR_Izhi/3/Izhi2007b" weight="0.004" delay="11.5512140947 ms"/>
+            <connectionWD id="5" preCellId="../PYR_HH/44/HH" postCellId="../PYR_Izhi/5/Izhi2007b" weight="0.004" delay="13.4889093365 ms"/>
+            <connectionWD id="6" preCellId="../PYR_HH/17/HH" postCellId="../PYR_Izhi/6/Izhi2007b" weight="0.004" delay="12.7153048715 ms"/>
+            <connectionWD id="7" preCellId="../PYR_HH/29/HH" postCellId="../PYR_Izhi/6/Izhi2007b" weight="0.004" delay="13.565361043 ms"/>
+            <connectionWD id="8" preCellId="../PYR_HH/49/HH" postCellId="../PYR_Izhi/8/Izhi2007b" weight="0.004" delay="14.377314614 ms"/>
+            <connectionWD id="9" preCellId="../PYR_HH/31/HH" postCellId="../PYR_Izhi/8/Izhi2007b" weight="0.004" delay="13.8412139979 ms"/>
+            <connectionWD id="10" preCellId="../PYR_HH/43/HH" postCellId="../PYR_Izhi/10/Izhi2007b" weight="0.004" delay="14.1670508499 ms"/>
+            <connectionWD id="11" preCellId="../PYR_HH/4/HH" postCellId="../PYR_Izhi/10/Izhi2007b" weight="0.004" delay="14.6453648509 ms"/>
+            <connectionWD id="12" preCellId="../PYR_HH/7/HH" postCellId="../PYR_Izhi/10/Izhi2007b" weight="0.004" delay="12.5837832469 ms"/>
+            <connectionWD id="13" preCellId="../PYR_HH/48/HH" postCellId="../PYR_Izhi/12/Izhi2007b" weight="0.004" delay="14.8880790207 ms"/>
+            <connectionWD id="14" preCellId="../PYR_HH/18/HH" postCellId="../PYR_Izhi/12/Izhi2007b" weight="0.004" delay="14.4338747318 ms"/>
+            <connectionWD id="15" preCellId="../PYR_HH/17/HH" postCellId="../PYR_Izhi/13/Izhi2007b" weight="0.004" delay="14.4338747318 ms"/>
+            <connectionWD id="16" preCellId="../PYR_HH/27/HH" postCellId="../PYR_Izhi/13/Izhi2007b" weight="0.004" delay="15.8844904692 ms"/>
+            <connectionWD id="17" preCellId="../PYR_HH/35/HH" postCellId="../PYR_Izhi/13/Izhi2007b" weight="0.004" delay="14.4923868387 ms"/>
+            <connectionWD id="18" preCellId="../PYR_HH/39/HH" postCellId="../PYR_Izhi/13/Izhi2007b" weight="0.004" delay="14.400484184 ms"/>
+            <connectionWD id="19" preCellId="../PYR_HH/25/HH" postCellId="../PYR_Izhi/15/Izhi2007b" weight="0.004" delay="15.8844904692 ms"/>
+            <connectionWD id="20" preCellId="../PYR_HH/10/HH" postCellId="../PYR_Izhi/15/Izhi2007b" weight="0.004" delay="12.4780727318 ms"/>
+            <connectionWD id="21" preCellId="../PYR_HH/23/HH" postCellId="../PYR_Izhi/15/Izhi2007b" weight="0.004" delay="14.0103487542 ms"/>
+            <connectionWD id="22" preCellId="../PYR_HH/9/HH" postCellId="../PYR_Izhi/17/Izhi2007b" weight="0.004" delay="13.5039662728 ms"/>
+            <connectionWD id="23" preCellId="../PYR_HH/45/HH" postCellId="../PYR_Izhi/17/Izhi2007b" weight="0.004" delay="11.8281870307 ms"/>
+            <connectionWD id="24" preCellId="../PYR_HH/29/HH" postCellId="../PYR_Izhi/17/Izhi2007b" weight="0.004" delay="13.3927433362 ms"/>
+            <connectionWD id="25" preCellId="../PYR_HH/33/HH" postCellId="../PYR_Izhi/17/Izhi2007b" weight="0.004" delay="12.3413390832 ms"/>
+            <connectionWD id="26" preCellId="../PYR_HH/18/HH" postCellId="../PYR_Izhi/18/Izhi2007b" weight="0.004" delay="15.0958598373 ms"/>
+            <connectionWD id="27" preCellId="../PYR_HH/35/HH" postCellId="../PYR_Izhi/19/Izhi2007b" weight="0.004" delay="10.764762785 ms"/>
+            <connectionWD id="28" preCellId="../PYR_HH/36/HH" postCellId="../PYR_Izhi/19/Izhi2007b" weight="0.004" delay="13.4260050993 ms"/>
+            <connectionWD id="29" preCellId="../PYR_HH/31/HH" postCellId="../PYR_Izhi/19/Izhi2007b" weight="0.004" delay="12.3413390832 ms"/>
+            <connectionWD id="30" preCellId="../PYR_HH/43/HH" postCellId="../PYR_Izhi/20/Izhi2007b" weight="0.004" delay="14.2166116926 ms"/>
+            <connectionWD id="31" preCellId="../PYR_HH/26/HH" postCellId="../PYR_Izhi/20/Izhi2007b" weight="0.004" delay="13.3927433362 ms"/>
+            <connectionWD id="32" preCellId="../PYR_HH/34/HH" postCellId="../PYR_Izhi/20/Izhi2007b" weight="0.004" delay="10.764762785 ms"/>
+            <connectionWD id="33" preCellId="../PYR_HH/13/HH" postCellId="../PYR_Izhi/20/Izhi2007b" weight="0.004" delay="13.2090057632 ms"/>
+            <connectionWD id="34" preCellId="../PYR_HH/0/HH" postCellId="../PYR_Izhi/21/Izhi2007b" weight="0.004" delay="13.2982725832 ms"/>
+            <connectionWD id="35" preCellId="../PYR_HH/42/HH" postCellId="../PYR_Izhi/21/Izhi2007b" weight="0.004" delay="14.2166116926 ms"/>
+            <connectionWD id="36" preCellId="../PYR_HH/3/HH" postCellId="../PYR_Izhi/21/Izhi2007b" weight="0.004" delay="12.673977004 ms"/>
+            <connectionWD id="37" preCellId="../PYR_HH/25/HH" postCellId="../PYR_Izhi/24/Izhi2007b" weight="0.004" delay="13.4889093365 ms"/>
+            <connectionWD id="38" preCellId="../PYR_HH/28/HH" postCellId="../PYR_Izhi/24/Izhi2007b" weight="0.004" delay="14.400484184 ms"/>
+            <connectionWD id="39" preCellId="../PYR_HH/23/HH" postCellId="../PYR_Izhi/25/Izhi2007b" weight="0.004" delay="14.4923868387 ms"/>
+            <connectionWD id="40" preCellId="../PYR_HH/38/HH" postCellId="../PYR_Izhi/26/Izhi2007b" weight="0.004" delay="12.9421920169 ms"/>
+            <connectionWD id="41" preCellId="../PYR_HH/47/HH" postCellId="../PYR_Izhi/26/Izhi2007b" weight="0.004" delay="15.073134699 ms"/>
+            <connectionWD id="42" preCellId="../PYR_HH/36/HH" postCellId="../PYR_Izhi/27/Izhi2007b" weight="0.004" delay="14.2166116926 ms"/>
+            <connectionWD id="43" preCellId="../PYR_HH/32/HH" postCellId="../PYR_Izhi/30/Izhi2007b" weight="0.004" delay="11.8281870307 ms"/>
+            <connectionWD id="44" preCellId="../PYR_HH/2/HH" postCellId="../PYR_Izhi/30/Izhi2007b" weight="0.004" delay="14.2452020072 ms"/>
+            <connectionWD id="45" preCellId="../PYR_HH/15/HH" postCellId="../PYR_Izhi/32/Izhi2007b" weight="0.004" delay="12.4788690044 ms"/>
+            <connectionWD id="46" preCellId="../PYR_HH/12/HH" postCellId="../PYR_Izhi/34/Izhi2007b" weight="0.004" delay="13.3927433362 ms"/>
+            <connectionWD id="47" preCellId="../PYR_HH/18/HH" postCellId="../PYR_Izhi/35/Izhi2007b" weight="0.004" delay="14.1670508499 ms"/>
+            <connectionWD id="48" preCellId="../PYR_HH/19/HH" postCellId="../PYR_Izhi/35/Izhi2007b" weight="0.004" delay="10.764762785 ms"/>
+            <connectionWD id="49" preCellId="../PYR_HH/22/HH" postCellId="../PYR_Izhi/35/Izhi2007b" weight="0.004" delay="14.377314614 ms"/>
+            <connectionWD id="50" preCellId="../PYR_HH/8/HH" postCellId="../PYR_Izhi/36/Izhi2007b" weight="0.004" delay="11.7408127663 ms"/>
+            <connectionWD id="51" preCellId="../PYR_HH/4/HH" postCellId="../PYR_Izhi/36/Izhi2007b" weight="0.004" delay="15.8844904692 ms"/>
+            <connectionWD id="52" preCellId="../PYR_HH/29/HH" postCellId="../PYR_Izhi/36/Izhi2007b" weight="0.004" delay="12.1921387212 ms"/>
+            <connectionWD id="53" preCellId="../PYR_HH/46/HH" postCellId="../PYR_Izhi/36/Izhi2007b" weight="0.004" delay="13.0633823244 ms"/>
+            <connectionWD id="54" preCellId="../PYR_HH/34/HH" postCellId="../PYR_Izhi/37/Izhi2007b" weight="0.004" delay="13.1130804074 ms"/>
+            <connectionWD id="55" preCellId="../PYR_HH/38/HH" postCellId="../PYR_Izhi/37/Izhi2007b" weight="0.004" delay="10.7540442563 ms"/>
+            <connectionWD id="56" preCellId="../PYR_HH/6/HH" postCellId="../PYR_Izhi/37/Izhi2007b" weight="0.004" delay="10.7859291232 ms"/>
+            <connectionWD id="57" preCellId="../PYR_HH/40/HH" postCellId="../PYR_Izhi/38/Izhi2007b" weight="0.004" delay="8.95293683864 ms"/>
+            <connectionWD id="58" preCellId="../PYR_HH/20/HH" postCellId="../PYR_Izhi/38/Izhi2007b" weight="0.004" delay="11.2535474141 ms"/>
+            <connectionWD id="59" preCellId="../PYR_HH/20/HH" postCellId="../PYR_Izhi/39/Izhi2007b" weight="0.004" delay="14.3819009936 ms"/>
+            <connectionWD id="60" preCellId="../PYR_HH/15/HH" postCellId="../PYR_Izhi/40/Izhi2007b" weight="0.004" delay="13.4260050993 ms"/>
+            <connectionWD id="61" preCellId="../PYR_HH/43/HH" postCellId="../PYR_Izhi/41/Izhi2007b" weight="0.004" delay="11.6593967294 ms"/>
+            <connectionWD id="62" preCellId="../PYR_HH/24/HH" postCellId="../PYR_Izhi/42/Izhi2007b" weight="0.004" delay="11.0279889135 ms"/>
+            <connectionWD id="63" preCellId="../PYR_HH/18/HH" postCellId="../PYR_Izhi/42/Izhi2007b" weight="0.004" delay="14.8880790207 ms"/>
+            <connectionWD id="64" preCellId="../PYR_HH/32/HH" postCellId="../PYR_Izhi/43/Izhi2007b" weight="0.004" delay="10.7540442563 ms"/>
+            <connectionWD id="65" preCellId="../PYR_HH/31/HH" postCellId="../PYR_Izhi/45/Izhi2007b" weight="0.004" delay="10.4913685781 ms"/>
+            <connectionWD id="66" preCellId="../PYR_HH/43/HH" postCellId="../PYR_Izhi/46/Izhi2007b" weight="0.004" delay="13.665908595 ms"/>
+            <connectionWD id="67" preCellId="../PYR_HH/22/HH" postCellId="../PYR_Izhi/46/Izhi2007b" weight="0.004" delay="14.0578610396 ms"/>
+            <connectionWD id="68" preCellId="../PYR_HH/42/HH" postCellId="../PYR_Izhi/47/Izhi2007b" weight="0.004" delay="13.665908595 ms"/>
+            <connectionWD id="69" preCellId="../PYR_HH/15/HH" postCellId="../PYR_Izhi/47/Izhi2007b" weight="0.004" delay="11.8281870307 ms"/>
+            <connectionWD id="70" preCellId="../PYR_HH/3/HH" postCellId="../PYR_Izhi/48/Izhi2007b" weight="0.004" delay="12.5196624993 ms"/>
+            <connectionWD id="71" preCellId="../PYR_HH/14/HH" postCellId="../PYR_Izhi/49/Izhi2007b" weight="0.004" delay="14.2166116926 ms"/>
+        </projection>
+        <projection id="NetConn_PYR_HH_PYR_HH_NMDA" presynapticPopulation="PYR_HH" postsynapticPopulation="PYR_HH" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR_HH/26/HH" postCellId="../PYR_HH/0/HH" weight="0.004" delay="12.6539406162 ms"/>
+            <connectionWD id="1" preCellId="../PYR_HH/5/HH" postCellId="../PYR_HH/1/HH" weight="0.004" delay="12.1064331365 ms"/>
+            <connectionWD id="2" preCellId="../PYR_HH/13/HH" postCellId="../PYR_HH/1/HH" weight="0.004" delay="13.5612015506 ms"/>
+            <connectionWD id="3" preCellId="../PYR_HH/45/HH" postCellId="../PYR_HH/2/HH" weight="0.004" delay="12.5551085949 ms"/>
+            <connectionWD id="4" preCellId="../PYR_HH/42/HH" postCellId="../PYR_HH/4/HH" weight="0.004" delay="14.156569307 ms"/>
+            <connectionWD id="5" preCellId="../PYR_HH/44/HH" postCellId="../PYR_HH/4/HH" weight="0.004" delay="12.2685652055 ms"/>
+            <connectionWD id="6" preCellId="../PYR_HH/9/HH" postCellId="../PYR_HH/5/HH" weight="0.004" delay="13.5612015506 ms"/>
+            <connectionWD id="7" preCellId="../PYR_HH/39/HH" postCellId="../PYR_HH/5/HH" weight="0.004" delay="14.1878531503 ms"/>
+            <connectionWD id="8" preCellId="../PYR_HH/44/HH" postCellId="../PYR_HH/7/HH" weight="0.004" delay="14.9103135346 ms"/>
+            <connectionWD id="9" preCellId="../PYR_HH/0/HH" postCellId="../PYR_HH/8/HH" weight="0.004" delay="15.5241598032 ms"/>
+            <connectionWD id="10" preCellId="../PYR_HH/32/HH" postCellId="../PYR_HH/8/HH" weight="0.004" delay="14.0109517671 ms"/>
+            <connectionWD id="11" preCellId="../PYR_HH/3/HH" postCellId="../PYR_HH/9/HH" weight="0.004" delay="13.3238066106 ms"/>
+            <connectionWD id="12" preCellId="../PYR_HH/32/HH" postCellId="../PYR_HH/10/HH" weight="0.004" delay="11.4972363071 ms"/>
+            <connectionWD id="13" preCellId="../PYR_HH/46/HH" postCellId="../PYR_HH/10/HH" weight="0.004" delay="12.6546536009 ms"/>
+            <connectionWD id="14" preCellId="../PYR_HH/0/HH" postCellId="../PYR_HH/12/HH" weight="0.004" delay="13.3238066106 ms"/>
+            <connectionWD id="15" preCellId="../PYR_HH/11/HH" postCellId="../PYR_HH/12/HH" weight="0.004" delay="11.8552211208 ms"/>
+            <connectionWD id="16" preCellId="../PYR_HH/15/HH" postCellId="../PYR_HH/12/HH" weight="0.004" delay="14.9433159873 ms"/>
+            <connectionWD id="17" preCellId="../PYR_HH/32/HH" postCellId="../PYR_HH/13/HH" weight="0.004" delay="14.9465490088 ms"/>
+            <connectionWD id="18" preCellId="../PYR_HH/46/HH" postCellId="../PYR_HH/13/HH" weight="0.004" delay="15.5495584557 ms"/>
+            <connectionWD id="19" preCellId="../PYR_HH/2/HH" postCellId="../PYR_HH/14/HH" weight="0.004" delay="13.1803976153 ms"/>
+            <connectionWD id="20" preCellId="../PYR_HH/36/HH" postCellId="../PYR_HH/16/HH" weight="0.004" delay="12.4902001001 ms"/>
+            <connectionWD id="21" preCellId="../PYR_HH/39/HH" postCellId="../PYR_HH/16/HH" weight="0.004" delay="11.2896284873 ms"/>
+            <connectionWD id="22" preCellId="../PYR_HH/19/HH" postCellId="../PYR_HH/17/HH" weight="0.004" delay="15.321672358 ms"/>
+            <connectionWD id="23" preCellId="../PYR_HH/11/HH" postCellId="../PYR_HH/17/HH" weight="0.004" delay="12.0060017319 ms"/>
+            <connectionWD id="24" preCellId="../PYR_HH/25/HH" postCellId="../PYR_HH/18/HH" weight="0.004" delay="12.9839846372 ms"/>
+            <connectionWD id="25" preCellId="../PYR_HH/6/HH" postCellId="../PYR_HH/18/HH" weight="0.004" delay="10.134118507 ms"/>
+            <connectionWD id="26" preCellId="../PYR_HH/31/HH" postCellId="../PYR_HH/18/HH" weight="0.004" delay="13.5785708325 ms"/>
+            <connectionWD id="27" preCellId="../PYR_HH/41/HH" postCellId="../PYR_HH/23/HH" weight="0.004" delay="14.6453648509 ms"/>
+            <connectionWD id="28" preCellId="../PYR_HH/46/HH" postCellId="../PYR_HH/23/HH" weight="0.004" delay="12.6570502353 ms"/>
+            <connectionWD id="29" preCellId="../PYR_HH/45/HH" postCellId="../PYR_HH/24/HH" weight="0.004" delay="12.6570502353 ms"/>
+            <connectionWD id="30" preCellId="../PYR_HH/35/HH" postCellId="../PYR_HH/26/HH" weight="0.004" delay="13.9714469575 ms"/>
+            <connectionWD id="31" preCellId="../PYR_HH/37/HH" postCellId="../PYR_HH/26/HH" weight="0.004" delay="12.9876198843 ms"/>
+            <connectionWD id="32" preCellId="../PYR_HH/31/HH" postCellId="../PYR_HH/26/HH" weight="0.004" delay="11.5512140947 ms"/>
+            <connectionWD id="33" preCellId="../PYR_HH/2/HH" postCellId="../PYR_HH/27/HH" weight="0.004" delay="12.8660647595 ms"/>
+            <connectionWD id="34" preCellId="../PYR_HH/48/HH" postCellId="../PYR_HH/28/HH" weight="0.004" delay="13.5039662728 ms"/>
+            <connectionWD id="35" preCellId="../PYR_HH/27/HH" postCellId="../PYR_HH/29/HH" weight="0.004" delay="12.6546536009 ms"/>
+            <connectionWD id="36" preCellId="../PYR_HH/49/HH" postCellId="../PYR_HH/30/HH" weight="0.004" delay="11.8157488219 ms"/>
+            <connectionWD id="37" preCellId="../PYR_HH/4/HH" postCellId="../PYR_HH/30/HH" weight="0.004" delay="13.1233680187 ms"/>
+            <connectionWD id="38" preCellId="../PYR_HH/9/HH" postCellId="../PYR_HH/31/HH" weight="0.004" delay="14.0109517671 ms"/>
+            <connectionWD id="39" preCellId="../PYR_HH/47/HH" postCellId="../PYR_HH/31/HH" weight="0.004" delay="15.3672609172 ms"/>
+            <connectionWD id="40" preCellId="../PYR_HH/18/HH" postCellId="../PYR_HH/32/HH" weight="0.004" delay="13.5065539763 ms"/>
+            <connectionWD id="41" preCellId="../PYR_HH/22/HH" postCellId="../PYR_HH/32/HH" weight="0.004" delay="12.9480295385 ms"/>
+            <connectionWD id="42" preCellId="../PYR_HH/43/HH" postCellId="../PYR_HH/33/HH" weight="0.004" delay="13.5039662728 ms"/>
+            <connectionWD id="43" preCellId="../PYR_HH/45/HH" postCellId="../PYR_HH/33/HH" weight="0.004" delay="15.3672609172 ms"/>
+            <connectionWD id="44" preCellId="../PYR_HH/43/HH" postCellId="../PYR_HH/35/HH" weight="0.004" delay="15.3672609172 ms"/>
+            <connectionWD id="45" preCellId="../PYR_HH/17/HH" postCellId="../PYR_HH/36/HH" weight="0.004" delay="11.2678517572 ms"/>
+            <connectionWD id="46" preCellId="../PYR_HH/42/HH" postCellId="../PYR_HH/36/HH" weight="0.004" delay="15.3672609172 ms"/>
+            <connectionWD id="47" preCellId="../PYR_HH/41/HH" postCellId="../PYR_HH/37/HH" weight="0.004" delay="15.3672609172 ms"/>
+            <connectionWD id="48" preCellId="../PYR_HH/2/HH" postCellId="../PYR_HH/37/HH" weight="0.004" delay="13.725039632 ms"/>
+            <connectionWD id="49" preCellId="../PYR_HH/44/HH" postCellId="../PYR_HH/39/HH" weight="0.004" delay="13.2090057632 ms"/>
+            <connectionWD id="50" preCellId="../PYR_HH/32/HH" postCellId="../PYR_HH/40/HH" weight="0.004" delay="13.9348776712 ms"/>
+            <connectionWD id="51" preCellId="../PYR_HH/10/HH" postCellId="../PYR_HH/42/HH" weight="0.004" delay="12.4902001001 ms"/>
+            <connectionWD id="52" preCellId="../PYR_HH/26/HH" postCellId="../PYR_HH/43/HH" weight="0.004" delay="12.6570502353 ms"/>
+            <connectionWD id="53" preCellId="../PYR_HH/0/HH" postCellId="../PYR_HH/44/HH" weight="0.004" delay="14.1878531503 ms"/>
+            <connectionWD id="54" preCellId="../PYR_HH/22/HH" postCellId="../PYR_HH/44/HH" weight="0.004" delay="13.3409024016 ms"/>
+            <connectionWD id="55" preCellId="../PYR_HH/10/HH" postCellId="../PYR_HH/46/HH" weight="0.004" delay="12.6546536009 ms"/>
+            <connectionWD id="56" preCellId="../PYR_HH/20/HH" postCellId="../PYR_HH/46/HH" weight="0.004" delay="13.3409024016 ms"/>
+            <connectionWD id="57" preCellId="../PYR_HH/14/HH" postCellId="../PYR_HH/47/HH" weight="0.004" delay="13.9714469575 ms"/>
+            <connectionWD id="58" preCellId="../PYR_HH/6/HH" postCellId="../PYR_HH/47/HH" weight="0.004" delay="11.2678517572 ms"/>
+            <connectionWD id="59" preCellId="../PYR_HH/44/HH" postCellId="../PYR_HH/48/HH" weight="0.004" delay="12.2806583043 ms"/>
+            <connectionWD id="60" preCellId="../PYR_HH/13/HH" postCellId="../PYR_HH/48/HH" weight="0.004" delay="13.9714469575 ms"/>
+            <connectionWD id="61" preCellId="../PYR_HH/31/HH" postCellId="../PYR_HH/48/HH" weight="0.004" delay="11.8157488219 ms"/>
+            <connectionWD id="62" preCellId="../PYR_HH/16/HH" postCellId="../PYR_HH/49/HH" weight="0.004" delay="14.7875690938 ms"/>
+        </projection>
+        <projection id="NetConn_PYR_Izhi_PYR_HH_NMDA" presynapticPopulation="PYR_Izhi" postsynapticPopulation="PYR_HH" synapse="NMDA">
+            <connectionWD id="0" preCellId="../PYR_Izhi/17/Izhi2007b" postCellId="../PYR_HH/3/HH" weight="0.004" delay="12.0209139225 ms"/>
+            <connectionWD id="1" preCellId="../PYR_Izhi/1/Izhi2007b" postCellId="../PYR_HH/3/HH" weight="0.004" delay="12.9480295385 ms"/>
+            <connectionWD id="2" preCellId="../PYR_Izhi/40/Izhi2007b" postCellId="../PYR_HH/4/HH" weight="0.004" delay="11.7408127663 ms"/>
+            <connectionWD id="3" preCellId="../PYR_Izhi/9/Izhi2007b" postCellId="../PYR_HH/5/HH" weight="0.004" delay="14.6453648509 ms"/>
+            <connectionWD id="4" preCellId="../PYR_Izhi/20/Izhi2007b" postCellId="../PYR_HH/5/HH" weight="0.004" delay="12.4780727318 ms"/>
+            <connectionWD id="5" preCellId="../PYR_Izhi/36/Izhi2007b" postCellId="../PYR_HH/7/HH" weight="0.004" delay="10.7859291232 ms"/>
+            <connectionWD id="6" preCellId="../PYR_Izhi/24/Izhi2007b" postCellId="../PYR_HH/8/HH" weight="0.004" delay="14.2452020072 ms"/>
+            <connectionWD id="7" preCellId="../PYR_Izhi/49/Izhi2007b" postCellId="../PYR_HH/8/HH" weight="0.004" delay="14.377314614 ms"/>
+            <connectionWD id="8" preCellId="../PYR_Izhi/1/Izhi2007b" postCellId="../PYR_HH/9/HH" weight="0.004" delay="12.7854564362 ms"/>
+            <connectionWD id="9" preCellId="../PYR_Izhi/35/Izhi2007b" postCellId="../PYR_HH/9/HH" weight="0.004" delay="11.7408127663 ms"/>
+            <connectionWD id="10" preCellId="../PYR_Izhi/21/Izhi2007b" postCellId="../PYR_HH/9/HH" weight="0.004" delay="14.4338747318 ms"/>
+            <connectionWD id="11" preCellId="../PYR_Izhi/23/Izhi2007b" postCellId="../PYR_HH/11/HH" weight="0.004" delay="13.9960559219 ms"/>
+            <connectionWD id="12" preCellId="../PYR_Izhi/10/Izhi2007b" postCellId="../PYR_HH/11/HH" weight="0.004" delay="13.2982725832 ms"/>
+            <connectionWD id="13" preCellId="../PYR_Izhi/36/Izhi2007b" postCellId="../PYR_HH/11/HH" weight="0.004" delay="12.4788690044 ms"/>
+            <connectionWD id="14" preCellId="../PYR_Izhi/49/Izhi2007b" postCellId="../PYR_HH/15/HH" weight="0.004" delay="12.9421920169 ms"/>
+            <connectionWD id="15" preCellId="../PYR_Izhi/45/Izhi2007b" postCellId="../PYR_HH/15/HH" weight="0.004" delay="14.8880790207 ms"/>
+            <connectionWD id="16" preCellId="../PYR_Izhi/29/Izhi2007b" postCellId="../PYR_HH/15/HH" weight="0.004" delay="11.7408127663 ms"/>
+            <connectionWD id="17" preCellId="../PYR_Izhi/10/Izhi2007b" postCellId="../PYR_HH/16/HH" weight="0.004" delay="13.5039662728 ms"/>
+            <connectionWD id="18" preCellId="../PYR_Izhi/24/Izhi2007b" postCellId="../PYR_HH/16/HH" weight="0.004" delay="15.8844904692 ms"/>
+            <connectionWD id="19" preCellId="../PYR_Izhi/2/Izhi2007b" postCellId="../PYR_HH/18/HH" weight="0.004" delay="12.0209139225 ms"/>
+            <connectionWD id="20" preCellId="../PYR_Izhi/11/Izhi2007b" postCellId="../PYR_HH/18/HH" weight="0.004" delay="11.8157488219 ms"/>
+            <connectionWD id="21" preCellId="../PYR_Izhi/23/Izhi2007b" postCellId="../PYR_HH/19/HH" weight="0.004" delay="12.2806583043 ms"/>
+            <connectionWD id="22" preCellId="../PYR_Izhi/21/Izhi2007b" postCellId="../PYR_HH/19/HH" weight="0.004" delay="15.8844904692 ms"/>
+            <connectionWD id="23" preCellId="../PYR_Izhi/46/Izhi2007b" postCellId="../PYR_HH/20/HH" weight="0.004" delay="11.0279889135 ms"/>
+            <connectionWD id="24" preCellId="../PYR_Izhi/15/Izhi2007b" postCellId="../PYR_HH/20/HH" weight="0.004" delay="13.565361043 ms"/>
+            <connectionWD id="25" preCellId="../PYR_Izhi/1/Izhi2007b" postCellId="../PYR_HH/20/HH" weight="0.004" delay="13.2982725832 ms"/>
+            <connectionWD id="26" preCellId="../PYR_Izhi/37/Izhi2007b" postCellId="../PYR_HH/20/HH" weight="0.004" delay="14.377314614 ms"/>
+            <connectionWD id="27" preCellId="../PYR_Izhi/11/Izhi2007b" postCellId="../PYR_HH/22/HH" weight="0.004" delay="13.2090057632 ms"/>
+            <connectionWD id="28" preCellId="../PYR_Izhi/36/Izhi2007b" postCellId="../PYR_HH/23/HH" weight="0.004" delay="14.3819009936 ms"/>
+            <connectionWD id="29" preCellId="../PYR_Izhi/42/Izhi2007b" postCellId="../PYR_HH/24/HH" weight="0.004" delay="11.0279889135 ms"/>
+            <connectionWD id="30" preCellId="../PYR_Izhi/38/Izhi2007b" postCellId="../PYR_HH/25/HH" weight="0.004" delay="14.2166116926 ms"/>
+            <connectionWD id="31" preCellId="../PYR_Izhi/28/Izhi2007b" postCellId="../PYR_HH/25/HH" weight="0.004" delay="14.1670508499 ms"/>
+            <connectionWD id="32" preCellId="../PYR_Izhi/24/Izhi2007b" postCellId="../PYR_HH/26/HH" weight="0.004" delay="12.3413390832 ms"/>
+            <connectionWD id="33" preCellId="../PYR_Izhi/36/Izhi2007b" postCellId="../PYR_HH/26/HH" weight="0.004" delay="11.8281870307 ms"/>
+            <connectionWD id="34" preCellId="../PYR_Izhi/5/Izhi2007b" postCellId="../PYR_HH/27/HH" weight="0.004" delay="14.2452020072 ms"/>
+            <connectionWD id="35" preCellId="../PYR_Izhi/46/Izhi2007b" postCellId="../PYR_HH/29/HH" weight="0.004" delay="10.7540442563 ms"/>
+            <connectionWD id="36" preCellId="../PYR_Izhi/20/Izhi2007b" postCellId="../PYR_HH/29/HH" weight="0.004" delay="13.4889093365 ms"/>
+            <connectionWD id="37" preCellId="../PYR_Izhi/49/Izhi2007b" postCellId="../PYR_HH/31/HH" weight="0.004" delay="14.1046383884 ms"/>
+            <connectionWD id="38" preCellId="../PYR_Izhi/19/Izhi2007b" postCellId="../PYR_HH/32/HH" weight="0.004" delay="12.5196624993 ms"/>
+            <connectionWD id="39" preCellId="../PYR_Izhi/27/Izhi2007b" postCellId="../PYR_HH/33/HH" weight="0.004" delay="14.8880790207 ms"/>
+            <connectionWD id="40" preCellId="../PYR_Izhi/23/Izhi2007b" postCellId="../PYR_HH/34/HH" weight="0.004" delay="14.377314614 ms"/>
+            <connectionWD id="41" preCellId="../PYR_Izhi/22/Izhi2007b" postCellId="../PYR_HH/35/HH" weight="0.004" delay="14.377314614 ms"/>
+            <connectionWD id="42" preCellId="../PYR_Izhi/39/Izhi2007b" postCellId="../PYR_HH/35/HH" weight="0.004" delay="16.8352627741 ms"/>
+            <connectionWD id="43" preCellId="../PYR_Izhi/38/Izhi2007b" postCellId="../PYR_HH/36/HH" weight="0.004" delay="16.8352627741 ms"/>
+            <connectionWD id="44" preCellId="../PYR_Izhi/36/Izhi2007b" postCellId="../PYR_HH/36/HH" weight="0.004" delay="12.3653511739 ms"/>
+            <connectionWD id="45" preCellId="../PYR_Izhi/23/Izhi2007b" postCellId="../PYR_HH/37/HH" weight="0.004" delay="14.8880790207 ms"/>
+            <connectionWD id="46" preCellId="../PYR_Izhi/30/Izhi2007b" postCellId="../PYR_HH/39/HH" weight="0.004" delay="13.8375423426 ms"/>
+            <connectionWD id="47" preCellId="../PYR_Izhi/47/Izhi2007b" postCellId="../PYR_HH/40/HH" weight="0.004" delay="13.06181083 ms"/>
+            <connectionWD id="48" preCellId="../PYR_Izhi/0/Izhi2007b" postCellId="../PYR_HH/40/HH" weight="0.004" delay="15.8844904692 ms"/>
+            <connectionWD id="49" preCellId="../PYR_Izhi/36/Izhi2007b" postCellId="../PYR_HH/40/HH" weight="0.004" delay="10.4913685781 ms"/>
+            <connectionWD id="50" preCellId="../PYR_Izhi/5/Izhi2007b" postCellId="../PYR_HH/41/HH" weight="0.004" delay="13.3927433362 ms"/>
+            <connectionWD id="51" preCellId="../PYR_Izhi/7/Izhi2007b" postCellId="../PYR_HH/42/HH" weight="0.004" delay="13.4889093365 ms"/>
+            <connectionWD id="52" preCellId="../PYR_Izhi/9/Izhi2007b" postCellId="../PYR_HH/42/HH" weight="0.004" delay="12.5196624993 ms"/>
+            <connectionWD id="53" preCellId="../PYR_Izhi/2/Izhi2007b" postCellId="../PYR_HH/42/HH" weight="0.004" delay="11.7408127663 ms"/>
+            <connectionWD id="54" preCellId="../PYR_Izhi/5/Izhi2007b" postCellId="../PYR_HH/42/HH" weight="0.004" delay="12.4788690044 ms"/>
+            <connectionWD id="55" preCellId="../PYR_Izhi/49/Izhi2007b" postCellId="../PYR_HH/46/HH" weight="0.004" delay="13.3970528405 ms"/>
+            <connectionWD id="56" preCellId="../PYR_Izhi/24/Izhi2007b" postCellId="../PYR_HH/47/HH" weight="0.004" delay="13.1130804074 ms"/>
+            <connectionWD id="57" preCellId="../PYR_Izhi/9/Izhi2007b" postCellId="../PYR_HH/47/HH" weight="0.004" delay="11.3350354605 ms"/>
+            <connectionWD id="58" preCellId="../PYR_Izhi/29/Izhi2007b" postCellId="../PYR_HH/48/HH" weight="0.004" delay="11.1111302322 ms"/>
+        </projection>
+    </network>
+</neuroml>
