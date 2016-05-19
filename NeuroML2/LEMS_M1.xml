@@ -1,0 +1,395 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.1.12 (libNeuroML v0.2.12)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="Sim_M1"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="M1.net.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="Izhi2007b.cell.nml"/>
+    <Include file="HH.cell.nml"/>
+    <Include file="passiveChan.channel.nml"/>
+    <Include file="naChan.channel.nml"/>
+    <Include file="kChan.channel.nml"/>
+   
+    <Simulation id="Sim_M1" length="1000.0ms" step="0.025ms" target="M1" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="DispPop__IT_L23" title="Membrane potentials of cells in IT_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L23[0]: v" quantity="IT_L23/0/Izhi2007b/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
+            <Line id="IT_L23[1]: v" quantity="IT_L23/1/Izhi2007b/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
+            <Line id="IT_L23[2]: v" quantity="IT_L23/2/Izhi2007b/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
+            <Line id="IT_L23[3]: v" quantity="IT_L23/3/Izhi2007b/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
+            <Line id="IT_L23[4]: v" quantity="IT_L23/4/Izhi2007b/v" scale="1mV" color="#f073ee" timeScale="1ms"/>
+            <Line id="IT_L23[5]: v" quantity="IT_L23/5/Izhi2007b/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_L4" title="Membrane potentials of cells in IT_L4" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L4[0]: v" quantity="IT_L4/0/Izhi2007b/v" scale="1mV" color="#abeb95" timeScale="1ms"/>
+            <Line id="IT_L4[1]: v" quantity="IT_L4/1/Izhi2007b/v" scale="1mV" color="#157cf9" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_L5A" title="Membrane potentials of cells in IT_L5A" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L5A[0]: v" quantity="IT_L5A/0/Izhi2007b/v" scale="1mV" color="#c43818" timeScale="1ms"/>
+            <Line id="IT_L5A[1]: v" quantity="IT_L5A/1/Izhi2007b/v" scale="1mV" color="#3c9f90" timeScale="1ms"/>
+            <Line id="IT_L5A[2]: v" quantity="IT_L5A/2/Izhi2007b/v" scale="1mV" color="#07e36d" timeScale="1ms"/>
+            <Line id="IT_L5A[3]: v" quantity="IT_L5A/3/Izhi2007b/v" scale="1mV" color="#c9ed02" timeScale="1ms"/>
+            <Line id="IT_L5A[4]: v" quantity="IT_L5A/4/Izhi2007b/v" scale="1mV" color="#589949" timeScale="1ms"/>
+            <Line id="IT_L5A[5]: v" quantity="IT_L5A/5/Izhi2007b/v" scale="1mV" color="#9f8f5f" timeScale="1ms"/>
+            <Line id="IT_L5A[6]: v" quantity="IT_L5A/6/Izhi2007b/v" scale="1mV" color="#9da618" timeScale="1ms"/>
+            <Line id="IT_L5A[7]: v" quantity="IT_L5A/7/Izhi2007b/v" scale="1mV" color="#2607ad" timeScale="1ms"/>
+            <Line id="IT_L5A[8]: v" quantity="IT_L5A/8/Izhi2007b/v" scale="1mV" color="#2edf07" timeScale="1ms"/>
+            <Line id="IT_L5A[9]: v" quantity="IT_L5A/9/Izhi2007b/v" scale="1mV" color="#1d4a2b" timeScale="1ms"/>
+            <Line id="IT_L5A[10]: v" quantity="IT_L5A/10/Izhi2007b/v" scale="1mV" color="#03be0e" timeScale="1ms"/>
+            <Line id="IT_L5A[11]: v" quantity="IT_L5A/11/Izhi2007b/v" scale="1mV" color="#7c9bbf" timeScale="1ms"/>
+            <Line id="IT_L5A[12]: v" quantity="IT_L5A/12/Izhi2007b/v" scale="1mV" color="#f703c9" timeScale="1ms"/>
+            <Line id="IT_L5A[13]: v" quantity="IT_L5A/13/Izhi2007b/v" scale="1mV" color="#108727" timeScale="1ms"/>
+            <Line id="IT_L5A[14]: v" quantity="IT_L5A/14/Izhi2007b/v" scale="1mV" color="#8a84c1" timeScale="1ms"/>
+            <Line id="IT_L5A[15]: v" quantity="IT_L5A/15/Izhi2007b/v" scale="1mV" color="#774520" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_L5B" title="Membrane potentials of cells in IT_L5B" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L5B[0]: v" quantity="IT_L5B/0/Izhi2007b/v" scale="1mV" color="#99f982" timeScale="1ms"/>
+            <Line id="IT_L5B[1]: v" quantity="IT_L5B/1/Izhi2007b/v" scale="1mV" color="#16c40a" timeScale="1ms"/>
+            <Line id="IT_L5B[2]: v" quantity="IT_L5B/2/Izhi2007b/v" scale="1mV" color="#943985" timeScale="1ms"/>
+            <Line id="IT_L5B[3]: v" quantity="IT_L5B/3/Izhi2007b/v" scale="1mV" color="#45038e" timeScale="1ms"/>
+            <Line id="IT_L5B[4]: v" quantity="IT_L5B/4/Izhi2007b/v" scale="1mV" color="#8e725d" timeScale="1ms"/>
+            <Line id="IT_L5B[5]: v" quantity="IT_L5B/5/Izhi2007b/v" scale="1mV" color="#a506bf" timeScale="1ms"/>
+            <Line id="IT_L5B[6]: v" quantity="IT_L5B/6/Izhi2007b/v" scale="1mV" color="#7b2533" timeScale="1ms"/>
+            <Line id="IT_L5B[7]: v" quantity="IT_L5B/7/Izhi2007b/v" scale="1mV" color="#5af0f3" timeScale="1ms"/>
+            <Line id="IT_L5B[8]: v" quantity="IT_L5B/8/Izhi2007b/v" scale="1mV" color="#3fc86e" timeScale="1ms"/>
+            <Line id="IT_L5B[9]: v" quantity="IT_L5B/9/Izhi2007b/v" scale="1mV" color="#eefadf" timeScale="1ms"/>
+            <Line id="IT_L5B[10]: v" quantity="IT_L5B/10/Izhi2007b/v" scale="1mV" color="#74113c" timeScale="1ms"/>
+            <Line id="IT_L5B[11]: v" quantity="IT_L5B/11/Izhi2007b/v" scale="1mV" color="#87b8a5" timeScale="1ms"/>
+            <Line id="IT_L5B[12]: v" quantity="IT_L5B/12/Izhi2007b/v" scale="1mV" color="#04f0d0" timeScale="1ms"/>
+            <Line id="IT_L5B[13]: v" quantity="IT_L5B/13/Izhi2007b/v" scale="1mV" color="#8212f7" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__PT_L5B" title="Membrane potentials of cells in PT_L5B" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PT_L5B[0]: v" quantity="PT_L5B/0/Izhi2007b/v" scale="1mV" color="#017ad0" timeScale="1ms"/>
+            <Line id="PT_L5B[1]: v" quantity="PT_L5B/1/Izhi2007b/v" scale="1mV" color="#24ce01" timeScale="1ms"/>
+            <Line id="PT_L5B[2]: v" quantity="PT_L5B/2/Izhi2007b/v" scale="1mV" color="#790b2f" timeScale="1ms"/>
+            <Line id="PT_L5B[3]: v" quantity="PT_L5B/3/Izhi2007b/v" scale="1mV" color="#6099d7" timeScale="1ms"/>
+            <Line id="PT_L5B[4]: v" quantity="PT_L5B/4/Izhi2007b/v" scale="1mV" color="#0dde6d" timeScale="1ms"/>
+            <Line id="PT_L5B[5]: v" quantity="PT_L5B/5/Izhi2007b/v" scale="1mV" color="#966844" timeScale="1ms"/>
+            <Line id="PT_L5B[6]: v" quantity="PT_L5B/6/Izhi2007b/v" scale="1mV" color="#29fc1d" timeScale="1ms"/>
+            <Line id="PT_L5B[7]: v" quantity="PT_L5B/7/Izhi2007b/v" scale="1mV" color="#8ead31" timeScale="1ms"/>
+            <Line id="PT_L5B[8]: v" quantity="PT_L5B/8/Izhi2007b/v" scale="1mV" color="#24ed49" timeScale="1ms"/>
+            <Line id="PT_L5B[9]: v" quantity="PT_L5B/9/Izhi2007b/v" scale="1mV" color="#eff35b" timeScale="1ms"/>
+            <Line id="PT_L5B[10]: v" quantity="PT_L5B/10/Izhi2007b/v" scale="1mV" color="#c55ef1" timeScale="1ms"/>
+            <Line id="PT_L5B[11]: v" quantity="PT_L5B/11/Izhi2007b/v" scale="1mV" color="#f4f991" timeScale="1ms"/>
+            <Line id="PT_L5B[12]: v" quantity="PT_L5B/12/Izhi2007b/v" scale="1mV" color="#242780" timeScale="1ms"/>
+            <Line id="PT_L5B[13]: v" quantity="PT_L5B/13/Izhi2007b/v" scale="1mV" color="#4e2e37" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_L6" title="Membrane potentials of cells in IT_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L6[0]: v" quantity="IT_L6/0/Izhi2007b/v" scale="1mV" color="#0a228b" timeScale="1ms"/>
+            <Line id="IT_L6[1]: v" quantity="IT_L6/1/Izhi2007b/v" scale="1mV" color="#46db4b" timeScale="1ms"/>
+            <Line id="IT_L6[2]: v" quantity="IT_L6/2/Izhi2007b/v" scale="1mV" color="#ce779a" timeScale="1ms"/>
+            <Line id="IT_L6[3]: v" quantity="IT_L6/3/Izhi2007b/v" scale="1mV" color="#2d665a" timeScale="1ms"/>
+            <Line id="IT_L6[4]: v" quantity="IT_L6/4/Izhi2007b/v" scale="1mV" color="#2791ee" timeScale="1ms"/>
+            <Line id="IT_L6[5]: v" quantity="IT_L6/5/Izhi2007b/v" scale="1mV" color="#f46871" timeScale="1ms"/>
+            <Line id="IT_L6[6]: v" quantity="IT_L6/6/Izhi2007b/v" scale="1mV" color="#2790ae" timeScale="1ms"/>
+            <Line id="IT_L6[7]: v" quantity="IT_L6/7/Izhi2007b/v" scale="1mV" color="#d579c4" timeScale="1ms"/>
+            <Line id="IT_L6[8]: v" quantity="IT_L6/8/Izhi2007b/v" scale="1mV" color="#0a8317" timeScale="1ms"/>
+            <Line id="IT_L6[9]: v" quantity="IT_L6/9/Izhi2007b/v" scale="1mV" color="#62dcec" timeScale="1ms"/>
+            <Line id="IT_L6[10]: v" quantity="IT_L6/10/Izhi2007b/v" scale="1mV" color="#597ee1" timeScale="1ms"/>
+            <Line id="IT_L6[11]: v" quantity="IT_L6/11/Izhi2007b/v" scale="1mV" color="#577a29" timeScale="1ms"/>
+            <Line id="IT_L6[12]: v" quantity="IT_L6/12/Izhi2007b/v" scale="1mV" color="#d103b9" timeScale="1ms"/>
+            <Line id="IT_L6[13]: v" quantity="IT_L6/13/Izhi2007b/v" scale="1mV" color="#79d6de" timeScale="1ms"/>
+            <Line id="IT_L6[14]: v" quantity="IT_L6/14/Izhi2007b/v" scale="1mV" color="#c86b7f" timeScale="1ms"/>
+            <Line id="IT_L6[15]: v" quantity="IT_L6/15/Izhi2007b/v" scale="1mV" color="#7888fa" timeScale="1ms"/>
+            <Line id="IT_L6[16]: v" quantity="IT_L6/16/Izhi2007b/v" scale="1mV" color="#d13d74" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__CT_L6" title="Membrane potentials of cells in CT_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="CT_L6[0]: v" quantity="CT_L6/0/Izhi2007b/v" scale="1mV" color="#e1ae6a" timeScale="1ms"/>
+            <Line id="CT_L6[1]: v" quantity="CT_L6/1/Izhi2007b/v" scale="1mV" color="#708963" timeScale="1ms"/>
+            <Line id="CT_L6[2]: v" quantity="CT_L6/2/Izhi2007b/v" scale="1mV" color="#c7f3c8" timeScale="1ms"/>
+            <Line id="CT_L6[3]: v" quantity="CT_L6/3/Izhi2007b/v" scale="1mV" color="#d092e0" timeScale="1ms"/>
+            <Line id="CT_L6[4]: v" quantity="CT_L6/4/Izhi2007b/v" scale="1mV" color="#4bb19d" timeScale="1ms"/>
+            <Line id="CT_L6[5]: v" quantity="CT_L6/5/Izhi2007b/v" scale="1mV" color="#1fb661" timeScale="1ms"/>
+            <Line id="CT_L6[6]: v" quantity="CT_L6/6/Izhi2007b/v" scale="1mV" color="#2f84ea" timeScale="1ms"/>
+            <Line id="CT_L6[7]: v" quantity="CT_L6/7/Izhi2007b/v" scale="1mV" color="#6fa19d" timeScale="1ms"/>
+            <Line id="CT_L6[8]: v" quantity="CT_L6/8/Izhi2007b/v" scale="1mV" color="#1e956a" timeScale="1ms"/>
+            <Line id="CT_L6[9]: v" quantity="CT_L6/9/Izhi2007b/v" scale="1mV" color="#87a0ea" timeScale="1ms"/>
+            <Line id="CT_L6[10]: v" quantity="CT_L6/10/Izhi2007b/v" scale="1mV" color="#d454f1" timeScale="1ms"/>
+            <Line id="CT_L6[11]: v" quantity="CT_L6/11/Izhi2007b/v" scale="1mV" color="#7c3624" timeScale="1ms"/>
+            <Line id="CT_L6[12]: v" quantity="CT_L6/12/Izhi2007b/v" scale="1mV" color="#d15703" timeScale="1ms"/>
+            <Line id="CT_L6[13]: v" quantity="CT_L6/13/Izhi2007b/v" scale="1mV" color="#a80948" timeScale="1ms"/>
+            <Line id="CT_L6[14]: v" quantity="CT_L6/14/Izhi2007b/v" scale="1mV" color="#a41b65" timeScale="1ms"/>
+            <Line id="CT_L6[15]: v" quantity="CT_L6/15/Izhi2007b/v" scale="1mV" color="#5868c9" timeScale="1ms"/>
+            <Line id="CT_L6[16]: v" quantity="CT_L6/16/Izhi2007b/v" scale="1mV" color="#b3e174" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__PV_L23" title="Membrane potentials of cells in PV_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PV_L23[0]: v" quantity="PV_L23/0/Izhi2007b/v" scale="1mV" color="#cf5844" timeScale="1ms"/>
+            <Line id="PV_L23[1]: v" quantity="PV_L23/1/Izhi2007b/v" scale="1mV" color="#283c44" timeScale="1ms"/>
+            <Line id="PV_L23[2]: v" quantity="PV_L23/2/Izhi2007b/v" scale="1mV" color="#e87212" timeScale="1ms"/>
+            <Line id="PV_L23[3]: v" quantity="PV_L23/3/Izhi2007b/v" scale="1mV" color="#44f2d5" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__SOM_L23" title="Membrane potentials of cells in SOM_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        </Display>
+        
+        <Display id="DispPop__PV_L5" title="Membrane potentials of cells in PV_L5" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PV_L5[0]: v" quantity="PV_L5/0/Izhi2007b/v" scale="1mV" color="#27a405" timeScale="1ms"/>
+            <Line id="PV_L5[1]: v" quantity="PV_L5/1/Izhi2007b/v" scale="1mV" color="#d729a4" timeScale="1ms"/>
+            <Line id="PV_L5[2]: v" quantity="PV_L5/2/Izhi2007b/v" scale="1mV" color="#b85a4e" timeScale="1ms"/>
+            <Line id="PV_L5[3]: v" quantity="PV_L5/3/Izhi2007b/v" scale="1mV" color="#cb26e7" timeScale="1ms"/>
+            <Line id="PV_L5[4]: v" quantity="PV_L5/4/Izhi2007b/v" scale="1mV" color="#725902" timeScale="1ms"/>
+            <Line id="PV_L5[5]: v" quantity="PV_L5/5/Izhi2007b/v" scale="1mV" color="#121e3c" timeScale="1ms"/>
+            <Line id="PV_L5[6]: v" quantity="PV_L5/6/Izhi2007b/v" scale="1mV" color="#652ea6" timeScale="1ms"/>
+            <Line id="PV_L5[7]: v" quantity="PV_L5/7/Izhi2007b/v" scale="1mV" color="#0c3861" timeScale="1ms"/>
+            <Line id="PV_L5[8]: v" quantity="PV_L5/8/Izhi2007b/v" scale="1mV" color="#49400b" timeScale="1ms"/>
+            <Line id="PV_L5[9]: v" quantity="PV_L5/9/Izhi2007b/v" scale="1mV" color="#09ba03" timeScale="1ms"/>
+            <Line id="PV_L5[10]: v" quantity="PV_L5/10/Izhi2007b/v" scale="1mV" color="#81b810" timeScale="1ms"/>
+            <Line id="PV_L5[11]: v" quantity="PV_L5/11/Izhi2007b/v" scale="1mV" color="#167165" timeScale="1ms"/>
+            <Line id="PV_L5[12]: v" quantity="PV_L5/12/Izhi2007b/v" scale="1mV" color="#eecda9" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__SOM_L5" title="Membrane potentials of cells in SOM_L5" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="SOM_L5[0]: v" quantity="SOM_L5/0/Izhi2007b/v" scale="1mV" color="#b30b0b" timeScale="1ms"/>
+            <Line id="SOM_L5[1]: v" quantity="SOM_L5/1/Izhi2007b/v" scale="1mV" color="#5125ff" timeScale="1ms"/>
+            <Line id="SOM_L5[2]: v" quantity="SOM_L5/2/Izhi2007b/v" scale="1mV" color="#f1eedd" timeScale="1ms"/>
+            <Line id="SOM_L5[3]: v" quantity="SOM_L5/3/Izhi2007b/v" scale="1mV" color="#10f44a" timeScale="1ms"/>
+            <Line id="SOM_L5[4]: v" quantity="SOM_L5/4/Izhi2007b/v" scale="1mV" color="#41e6dc" timeScale="1ms"/>
+            <Line id="SOM_L5[5]: v" quantity="SOM_L5/5/Izhi2007b/v" scale="1mV" color="#12b01a" timeScale="1ms"/>
+            <Line id="SOM_L5[6]: v" quantity="SOM_L5/6/Izhi2007b/v" scale="1mV" color="#6d2246" timeScale="1ms"/>
+            <Line id="SOM_L5[7]: v" quantity="SOM_L5/7/Izhi2007b/v" scale="1mV" color="#33af81" timeScale="1ms"/>
+            <Line id="SOM_L5[8]: v" quantity="SOM_L5/8/Izhi2007b/v" scale="1mV" color="#658aa2" timeScale="1ms"/>
+            <Line id="SOM_L5[9]: v" quantity="SOM_L5/9/Izhi2007b/v" scale="1mV" color="#b471b2" timeScale="1ms"/>
+            <Line id="SOM_L5[10]: v" quantity="SOM_L5/10/Izhi2007b/v" scale="1mV" color="#e32996" timeScale="1ms"/>
+            <Line id="SOM_L5[11]: v" quantity="SOM_L5/11/Izhi2007b/v" scale="1mV" color="#8021ef" timeScale="1ms"/>
+            <Line id="SOM_L5[12]: v" quantity="SOM_L5/12/Izhi2007b/v" scale="1mV" color="#d18b48" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__PV_L6" title="Membrane potentials of cells in PV_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PV_L6[0]: v" quantity="PV_L6/0/Izhi2007b/v" scale="1mV" color="#5c7b2c" timeScale="1ms"/>
+            <Line id="PV_L6[1]: v" quantity="PV_L6/1/Izhi2007b/v" scale="1mV" color="#dbd2db" timeScale="1ms"/>
+            <Line id="PV_L6[2]: v" quantity="PV_L6/2/Izhi2007b/v" scale="1mV" color="#83d947" timeScale="1ms"/>
+            <Line id="PV_L6[3]: v" quantity="PV_L6/3/Izhi2007b/v" scale="1mV" color="#b3d180" timeScale="1ms"/>
+            <Line id="PV_L6[4]: v" quantity="PV_L6/4/Izhi2007b/v" scale="1mV" color="#2cb87a" timeScale="1ms"/>
+            <Line id="PV_L6[5]: v" quantity="PV_L6/5/Izhi2007b/v" scale="1mV" color="#95a290" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__SOM_L6" title="Membrane potentials of cells in SOM_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="SOM_L6[0]: v" quantity="SOM_L6/0/Izhi2007b/v" scale="1mV" color="#4d4142" timeScale="1ms"/>
+            <Line id="SOM_L6[1]: v" quantity="SOM_L6/1/Izhi2007b/v" scale="1mV" color="#d01707" timeScale="1ms"/>
+            <Line id="SOM_L6[2]: v" quantity="SOM_L6/2/Izhi2007b/v" scale="1mV" color="#88ca8e" timeScale="1ms"/>
+            <Line id="SOM_L6[3]: v" quantity="SOM_L6/3/Izhi2007b/v" scale="1mV" color="#7fe4f4" timeScale="1ms"/>
+            <Line id="SOM_L6[4]: v" quantity="SOM_L6/4/Izhi2007b/v" scale="1mV" color="#c5f8a3" timeScale="1ms"/>
+            <Line id="SOM_L6[5]: v" quantity="SOM_L6/5/Izhi2007b/v" scale="1mV" color="#8c8d46" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_cells" title="Membrane potentials of cells in IT_cells" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_cells[0]: v" quantity="IT_cells/0/Izhi2007b/v" scale="1mV" color="#55712a" timeScale="1ms"/>
+            <Line id="IT_cells[1]: v" quantity="IT_cells/1/Izhi2007b/v" scale="1mV" color="#2184d0" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__PT_cells" title="Membrane potentials of cells in PT_cells" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PT_cells[0]: v" quantity="PT_cells/0/HH/v" scale="1mV" color="#9fdf9f" timeScale="1ms"/>
+            <Line id="PT_cells[1]: v" quantity="PT_cells/1/HH/v" scale="1mV" color="#ece37d" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="Volts_file__IT_L23" fileName="Sim_M1.IT_L23.v.dat">
+            <OutputColumn id="v_IT_L23_0_Izhi2007b_v" quantity="IT_L23/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L23_1_Izhi2007b_v" quantity="IT_L23/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L23_2_Izhi2007b_v" quantity="IT_L23/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L23_3_Izhi2007b_v" quantity="IT_L23/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L23_4_Izhi2007b_v" quantity="IT_L23/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L23_5_Izhi2007b_v" quantity="IT_L23/5/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_L4" fileName="Sim_M1.IT_L4.v.dat">
+            <OutputColumn id="v_IT_L4_0_Izhi2007b_v" quantity="IT_L4/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L4_1_Izhi2007b_v" quantity="IT_L4/1/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_L5A" fileName="Sim_M1.IT_L5A.v.dat">
+            <OutputColumn id="v_IT_L5A_0_Izhi2007b_v" quantity="IT_L5A/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_1_Izhi2007b_v" quantity="IT_L5A/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_2_Izhi2007b_v" quantity="IT_L5A/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_3_Izhi2007b_v" quantity="IT_L5A/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_4_Izhi2007b_v" quantity="IT_L5A/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_5_Izhi2007b_v" quantity="IT_L5A/5/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_6_Izhi2007b_v" quantity="IT_L5A/6/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_7_Izhi2007b_v" quantity="IT_L5A/7/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_8_Izhi2007b_v" quantity="IT_L5A/8/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_9_Izhi2007b_v" quantity="IT_L5A/9/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_10_Izhi2007b_v" quantity="IT_L5A/10/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_11_Izhi2007b_v" quantity="IT_L5A/11/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_12_Izhi2007b_v" quantity="IT_L5A/12/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_13_Izhi2007b_v" quantity="IT_L5A/13/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_14_Izhi2007b_v" quantity="IT_L5A/14/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5A_15_Izhi2007b_v" quantity="IT_L5A/15/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_L5B" fileName="Sim_M1.IT_L5B.v.dat">
+            <OutputColumn id="v_IT_L5B_0_Izhi2007b_v" quantity="IT_L5B/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_1_Izhi2007b_v" quantity="IT_L5B/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_2_Izhi2007b_v" quantity="IT_L5B/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_3_Izhi2007b_v" quantity="IT_L5B/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_4_Izhi2007b_v" quantity="IT_L5B/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_5_Izhi2007b_v" quantity="IT_L5B/5/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_6_Izhi2007b_v" quantity="IT_L5B/6/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_7_Izhi2007b_v" quantity="IT_L5B/7/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_8_Izhi2007b_v" quantity="IT_L5B/8/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_9_Izhi2007b_v" quantity="IT_L5B/9/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_10_Izhi2007b_v" quantity="IT_L5B/10/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_11_Izhi2007b_v" quantity="IT_L5B/11/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_12_Izhi2007b_v" quantity="IT_L5B/12/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L5B_13_Izhi2007b_v" quantity="IT_L5B/13/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PT_L5B" fileName="Sim_M1.PT_L5B.v.dat">
+            <OutputColumn id="v_PT_L5B_0_Izhi2007b_v" quantity="PT_L5B/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_1_Izhi2007b_v" quantity="PT_L5B/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_2_Izhi2007b_v" quantity="PT_L5B/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_3_Izhi2007b_v" quantity="PT_L5B/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_4_Izhi2007b_v" quantity="PT_L5B/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_5_Izhi2007b_v" quantity="PT_L5B/5/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_6_Izhi2007b_v" quantity="PT_L5B/6/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_7_Izhi2007b_v" quantity="PT_L5B/7/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_8_Izhi2007b_v" quantity="PT_L5B/8/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_9_Izhi2007b_v" quantity="PT_L5B/9/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_10_Izhi2007b_v" quantity="PT_L5B/10/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_11_Izhi2007b_v" quantity="PT_L5B/11/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_12_Izhi2007b_v" quantity="PT_L5B/12/Izhi2007b/v"/> 
+            <OutputColumn id="v_PT_L5B_13_Izhi2007b_v" quantity="PT_L5B/13/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_L6" fileName="Sim_M1.IT_L6.v.dat">
+            <OutputColumn id="v_IT_L6_0_Izhi2007b_v" quantity="IT_L6/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_1_Izhi2007b_v" quantity="IT_L6/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_2_Izhi2007b_v" quantity="IT_L6/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_3_Izhi2007b_v" quantity="IT_L6/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_4_Izhi2007b_v" quantity="IT_L6/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_5_Izhi2007b_v" quantity="IT_L6/5/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_6_Izhi2007b_v" quantity="IT_L6/6/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_7_Izhi2007b_v" quantity="IT_L6/7/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_8_Izhi2007b_v" quantity="IT_L6/8/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_9_Izhi2007b_v" quantity="IT_L6/9/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_10_Izhi2007b_v" quantity="IT_L6/10/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_11_Izhi2007b_v" quantity="IT_L6/11/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_12_Izhi2007b_v" quantity="IT_L6/12/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_13_Izhi2007b_v" quantity="IT_L6/13/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_14_Izhi2007b_v" quantity="IT_L6/14/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_15_Izhi2007b_v" quantity="IT_L6/15/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_L6_16_Izhi2007b_v" quantity="IT_L6/16/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__CT_L6" fileName="Sim_M1.CT_L6.v.dat">
+            <OutputColumn id="v_CT_L6_0_Izhi2007b_v" quantity="CT_L6/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_1_Izhi2007b_v" quantity="CT_L6/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_2_Izhi2007b_v" quantity="CT_L6/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_3_Izhi2007b_v" quantity="CT_L6/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_4_Izhi2007b_v" quantity="CT_L6/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_5_Izhi2007b_v" quantity="CT_L6/5/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_6_Izhi2007b_v" quantity="CT_L6/6/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_7_Izhi2007b_v" quantity="CT_L6/7/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_8_Izhi2007b_v" quantity="CT_L6/8/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_9_Izhi2007b_v" quantity="CT_L6/9/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_10_Izhi2007b_v" quantity="CT_L6/10/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_11_Izhi2007b_v" quantity="CT_L6/11/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_12_Izhi2007b_v" quantity="CT_L6/12/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_13_Izhi2007b_v" quantity="CT_L6/13/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_14_Izhi2007b_v" quantity="CT_L6/14/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_15_Izhi2007b_v" quantity="CT_L6/15/Izhi2007b/v"/> 
+            <OutputColumn id="v_CT_L6_16_Izhi2007b_v" quantity="CT_L6/16/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PV_L23" fileName="Sim_M1.PV_L23.v.dat">
+            <OutputColumn id="v_PV_L23_0_Izhi2007b_v" quantity="PV_L23/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L23_1_Izhi2007b_v" quantity="PV_L23/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L23_2_Izhi2007b_v" quantity="PV_L23/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L23_3_Izhi2007b_v" quantity="PV_L23/3/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__SOM_L23" fileName="Sim_M1.SOM_L23.v.dat">
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PV_L5" fileName="Sim_M1.PV_L5.v.dat">
+            <OutputColumn id="v_PV_L5_0_Izhi2007b_v" quantity="PV_L5/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_1_Izhi2007b_v" quantity="PV_L5/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_2_Izhi2007b_v" quantity="PV_L5/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_3_Izhi2007b_v" quantity="PV_L5/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_4_Izhi2007b_v" quantity="PV_L5/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_5_Izhi2007b_v" quantity="PV_L5/5/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_6_Izhi2007b_v" quantity="PV_L5/6/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_7_Izhi2007b_v" quantity="PV_L5/7/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_8_Izhi2007b_v" quantity="PV_L5/8/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_9_Izhi2007b_v" quantity="PV_L5/9/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_10_Izhi2007b_v" quantity="PV_L5/10/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_11_Izhi2007b_v" quantity="PV_L5/11/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L5_12_Izhi2007b_v" quantity="PV_L5/12/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__SOM_L5" fileName="Sim_M1.SOM_L5.v.dat">
+            <OutputColumn id="v_SOM_L5_0_Izhi2007b_v" quantity="SOM_L5/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_1_Izhi2007b_v" quantity="SOM_L5/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_2_Izhi2007b_v" quantity="SOM_L5/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_3_Izhi2007b_v" quantity="SOM_L5/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_4_Izhi2007b_v" quantity="SOM_L5/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_5_Izhi2007b_v" quantity="SOM_L5/5/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_6_Izhi2007b_v" quantity="SOM_L5/6/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_7_Izhi2007b_v" quantity="SOM_L5/7/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_8_Izhi2007b_v" quantity="SOM_L5/8/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_9_Izhi2007b_v" quantity="SOM_L5/9/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_10_Izhi2007b_v" quantity="SOM_L5/10/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_11_Izhi2007b_v" quantity="SOM_L5/11/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L5_12_Izhi2007b_v" quantity="SOM_L5/12/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PV_L6" fileName="Sim_M1.PV_L6.v.dat">
+            <OutputColumn id="v_PV_L6_0_Izhi2007b_v" quantity="PV_L6/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L6_1_Izhi2007b_v" quantity="PV_L6/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L6_2_Izhi2007b_v" quantity="PV_L6/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L6_3_Izhi2007b_v" quantity="PV_L6/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L6_4_Izhi2007b_v" quantity="PV_L6/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_PV_L6_5_Izhi2007b_v" quantity="PV_L6/5/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__SOM_L6" fileName="Sim_M1.SOM_L6.v.dat">
+            <OutputColumn id="v_SOM_L6_0_Izhi2007b_v" quantity="SOM_L6/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L6_1_Izhi2007b_v" quantity="SOM_L6/1/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L6_2_Izhi2007b_v" quantity="SOM_L6/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L6_3_Izhi2007b_v" quantity="SOM_L6/3/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L6_4_Izhi2007b_v" quantity="SOM_L6/4/Izhi2007b/v"/> 
+            <OutputColumn id="v_SOM_L6_5_Izhi2007b_v" quantity="SOM_L6/5/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_cells" fileName="Sim_M1.IT_cells.v.dat">
+            <OutputColumn id="v_IT_cells_0_Izhi2007b_v" quantity="IT_cells/0/Izhi2007b/v"/> 
+            <OutputColumn id="v_IT_cells_1_Izhi2007b_v" quantity="IT_cells/1/Izhi2007b/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PT_cells" fileName="Sim_M1.PT_cells.v.dat">
+            <OutputColumn id="v_PT_cells_0_HH_v" quantity="PT_cells/0/HH/v"/> 
+            <OutputColumn id="v_PT_cells_1_HH_v" quantity="PT_cells/1/HH/v"/> 
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>

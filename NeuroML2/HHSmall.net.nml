@@ -1,8 +1,8 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="HHSmall">
     <notes>NeuroML 2 file exported from NetPyNE</notes>
     <include href="HH.cell.nml"></include>
-    <expTwoSynapse id="NMDA" gbase="1uS" erev="0mV" tauDecay="1.0ms" tauRise="0.1ms"/>
-    <spikeGenerator id="NetStim_background_PYR_10_0_NMDA" period="0.1s"/>
+    <expTwoSynapse id="NMDA" gbase="1uS" erev="0mV" tauDecay="3ms" tauRise="0.2ms"/>
+    <spikeGenerator id="NetStim_background_PYR_20_0_NMDA" period="0.05s"/>
     <network id="HHSmall">
         <population id="PYR" component="HH" type="populationList">
             <instance id="0">
@@ -15,19 +15,19 @@
                 <location x="51.804630571516853" y="33.86307903737071" z="76.246429339951561"/>
             </instance>
         </population>
-        <population id="Pop_NetStim_background_PYR_10_0_NMDA" component="NetStim_background_PYR_10_0_NMDA" size="3"/>
+        <population id="Pop_NetStim_background_PYR_20_0_NMDA" component="NetStim_background_PYR_20_0_NMDA" size="3"/>
         <projection id="NetConn_PYR_PYR_NMDA" presynapticPopulation="PYR" postsynapticPopulation="PYR" synapse="NMDA">
-            <connectionWD id="0" preCellId="../PYR/1/HH" postCellId="../PYR/0/HH" weight="0.002" delay="25.0181298563 ms"/>
-            <connectionWD id="1" preCellId="../PYR/2/HH" postCellId="../PYR/0/HH" weight="0.002" delay="17.9290452868 ms"/>
-            <connectionWD id="2" preCellId="../PYR/0/HH" postCellId="../PYR/1/HH" weight="0.002" delay="25.0181298563 ms"/>
-            <connectionWD id="3" preCellId="../PYR/2/HH" postCellId="../PYR/1/HH" weight="0.002" delay="5.09583602669 ms"/>
-            <connectionWD id="4" preCellId="../PYR/0/HH" postCellId="../PYR/2/HH" weight="0.002" delay="17.9290452868 ms"/>
-            <connectionWD id="5" preCellId="../PYR/1/HH" postCellId="../PYR/2/HH" weight="0.002" delay="5.09583602669 ms"/>
+            <connectionWD id="0" preCellId="../PYR/1/HH" postCellId="../PYR/0/HH" weight="0.002" delay="12.5090649282 ms"/>
+            <connectionWD id="1" preCellId="../PYR/2/HH" postCellId="../PYR/0/HH" weight="0.002" delay="8.9645226434 ms"/>
+            <connectionWD id="2" preCellId="../PYR/0/HH" postCellId="../PYR/1/HH" weight="0.002" delay="12.5090649282 ms"/>
+            <connectionWD id="3" preCellId="../PYR/2/HH" postCellId="../PYR/1/HH" weight="0.002" delay="2.54791801334 ms"/>
+            <connectionWD id="4" preCellId="../PYR/0/HH" postCellId="../PYR/2/HH" weight="0.002" delay="8.9645226434 ms"/>
+            <connectionWD id="5" preCellId="../PYR/1/HH" postCellId="../PYR/2/HH" weight="0.002" delay="2.54791801334 ms"/>
         </projection>
-        <projection id="NetConn_NetStim_background_PYR_10_0_NMDA__PYR" presynapticPopulation="Pop_NetStim_background_PYR_10_0_NMDA" postsynapticPopulation="PYR" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_PYR_10_0_NMDA[0]" postCellId="../PYR/0/HH" weight="0.02" delay="0 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_10_0_NMDA[0]" postCellId="../PYR/1/HH" weight="0.02" delay="0 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_PYR_10_0_NMDA[0]" postCellId="../PYR/2/HH" weight="0.02" delay="0 ms"/>
+        <projection id="NetConn_NetStim_background_PYR_20_0_NMDA__PYR" presynapticPopulation="Pop_NetStim_background_PYR_20_0_NMDA" postsynapticPopulation="PYR" synapse="NMDA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_PYR_20_0_NMDA[0]" postCellId="../PYR/0/HH" weight="0.02" delay="0 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_20_0_NMDA[0]" postCellId="../PYR/1/HH" weight="0.02" delay="0 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_PYR_20_0_NMDA[0]" postCellId="../PYR/2/HH" weight="0.02" delay="0 ms"/>
         </projection>
     </network>
 </neuroml>

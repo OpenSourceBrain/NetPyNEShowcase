@@ -11,3 +11,7 @@ simConfig['plot2Dnet'] = simConfig['plot2Dnet'] if showgui else False
 from netpyne import init  # import netpyne init module
 
 init.createAndSimulate(netParams = HHSmall.netParams, simConfig = simConfig)  # create and simulate network
+
+from neuron import h
+
+h('forall psection()')

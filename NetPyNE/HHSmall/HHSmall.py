@@ -33,8 +33,7 @@ netParams['popParams'].append({'popLabel': 'PYR',
 
 netParams['popParams'].append({'popLabel': 'background', 
                                'cellModel': 'NetStim', 
-                               'rate': 10, 
-                               'noise': 0.5, 
+                               'rate': 20, 
                                'source': 'random',
                                'noise': 0})  # background inputs
 
@@ -52,7 +51,7 @@ netParams['cellParams'].append(cellRule)  # add dict to list of cell properties
 
 # Synaptic mechanism parameters
 netParams['synMechParams'] = []
-netParams['synMechParams'].append({'label': 'NMDA', 'mod': 'Exp2Syn', 'tau1': 0.1, 'tau2': 1.0, 'e': 0})
+netParams['synMechParams'].append({'label': 'NMDA', 'mod': 'Exp2Syn', 'tau1': 0.2, 'tau2': 3, 'e': 0})
  
 
 # Connectivity parameters
@@ -61,7 +60,7 @@ netParams['connParams'] = []
 netParams['connParams'].append(
     {'preTags': {'popLabel': 'PYR'}, 'postTags': {'popLabel': 'PYR'},
     'weight': 0.002,                    # weight of each connection
-    'delay': 'gauss(20,10)',   
+    'delay': 'gauss(10,5)',   
     'threshold': 10,                    # threshold
     'convergence': 'uniform(1,15)'})    # convergence (num presyn targeting postsyn) is uniformly distributed between 1 and 15
 

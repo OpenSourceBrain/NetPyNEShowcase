@@ -19,10 +19,13 @@ x86_64
 /NetPyNE/HybridSmall/*.mod
 /NetPyNE/Vsoma_cell_0.dat
 *~
-/NeuroML2/Vsoma_cell_0.dat
 /NetPyNE/HybridSmall/HybridSmall.net.nml
 /NetPyNE/M1/M1.net.nml
-/NeuroML2/M1.net.svg
+
+/NeuroML2/*.svg
+/NeuroML2/*.dat
+/NeuroML2/*.hoc
+/NeuroML2/*.mod
 
 
 /NetPyNE/HybridSmall/*.mod

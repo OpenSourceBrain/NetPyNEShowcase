@@ -1,0 +1,39 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.1.12 (libNeuroML v0.2.12)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="Sim_HHSmall"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="HHSmall.net.nml"/>
+    <Include file="HH.cell.nml"/>
+    <Include file="passiveChan.channel.nml"/>
+    <Include file="naChan.channel.nml"/>
+    <Include file="kChan.channel.nml"/>
+   
+    <Simulation id="Sim_HHSmall" length="300ms" step="0.025ms" target="HHSmall" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="DispPop__PYR" title="Membrane potentials of cells in PYR" timeScale="1ms" xmin="-30.0" xmax="330.0" ymin="-90" ymax="50">
+            <Line id="PYR[0]: v" quantity="PYR/0/HH/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
+            <Line id="PYR[1]: v" quantity="PYR/1/HH/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
+            <Line id="PYR[2]: v" quantity="PYR/2/HH/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="Volts_file__PYR" fileName="Sim_HHSmall.PYR.v.dat">
+            <OutputColumn id="v_PYR_0_HH_v" quantity="PYR/0/HH/v"/> 
+            <OutputColumn id="v_PYR_1_HH_v" quantity="PYR/1/HH/v"/> 
+            <OutputColumn id="v_PYR_2_HH_v" quantity="PYR/2/HH/v"/> 
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>

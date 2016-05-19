@@ -15,8 +15,8 @@
 
         <morphology id="morph1">
             <segment id="0" name="soma">
-                <proximal x="0" y="0" z="0" diameter="17.841242"/> <!--Gives a convenient surface area of 1000.0 um^2-->
-                <distal x="0" y="0" z="0" diameter="17.841242"/>
+                <proximal x="0" y="0" z="0" diameter="18.8"/> 
+                <distal x="0" y="18.8" z="0" diameter="18.8"/>
             </segment>
 
             <segmentGroup id="soma_group">
@@ -29,7 +29,7 @@
 
             <membraneProperties>
                         
-                <channelDensity id="leak" ionChannel="passiveChan" condDensity="0.3 mS_per_cm2" erev="-54.387mV" ion="non_specific"/>
+                <channelDensity id="leak" ionChannel="passiveChan" condDensity="3 mS_per_cm2" erev="-70mV" ion="non_specific"/>
                 <channelDensity id="naChans" ionChannel="naChan" condDensity="120.0 mS_per_cm2" erev="50.0 mV" ion="na"/>
                 <channelDensity id="kChans" ionChannel="kChan" condDensity="36 mS_per_cm2" erev="-77mV" ion="k"/>
 
@@ -40,7 +40,7 @@
             </membraneProperties>
 
             <intracellularProperties>
-                <resistivity value="0.03 kohm_cm"/>   <!-- Note: not used in single compartment simulations -->
+                <resistivity value="0.123 kohm_cm"/>   <!-- Note: not used in single compartment simulations -->
             </intracellularProperties>
 
         </biophysicalProperties>

@@ -7,6 +7,12 @@ jnml LEMS_2007One.xml -netpyne
 
 cp *.mod *_netpyne.py *definition.py ../NetPyNE
 
+################  Copy over nml to netpyne dirs (for testing)
+
+cp *.cell.nml *.channel.nml ../NetPyNE/HHSmall
+cp *.cell.nml *.channel.nml ../NetPyNE/HybridSmall
+cp *.cell.nml *.channel.nml ../NetPyNE/HybridTut
+cp *.cell.nml *.channel.nml ../NetPyNE/M1
 
 ################  Test Izh can run
 
@@ -14,6 +20,7 @@ cd ../NetPyNE
 
 nrnivmodl
 python LEMS_2007One_netpyne.py
+
 
 
 ################  Test NetPyNE examples
@@ -37,19 +44,23 @@ python HybridTut_run.py -nogui
 cd ../HHSmall
 python HH_export.py 
 cp *.nml ../../NeuroML2
+cp LEMS*.xml ../../NeuroML2
 
 cd ../HybridSmall
 python Hybrid_export.py 
 cp *.nml ../../NeuroML2
+cp LEMS*.xml ../../NeuroML2
 
 cd ../HybridTut
 python HybridTut_export.py 
 cp *.nml ../../NeuroML2
+cp LEMS*.xml ../../NeuroML2
 
 cd ../M1
 nrnivmodl
 python M1_export.py 
 cp *.nml ../../NeuroML2
+cp LEMS*.xml ../../NeuroML2
 
 cd ../../NeuroML2
 jnml -validate *.nml
