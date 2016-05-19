@@ -4,9 +4,9 @@ import HHSmall  # import parameters file
 
 showgui = not '-nogui' in sys.argv
 simConfig = HHSmall.simConfig
-simConfig['plotRaster'] = showgui
-simConfig['plotCells'] = [0] if showgui else []
-simConfig['plot2Dnet'] = showgui
+simConfig['plotRaster'] = simConfig['plotRaster'] if showgui else False
+simConfig['plotCells'] = simConfig['plotCells'] if showgui else []
+simConfig['plot2Dnet'] = simConfig['plot2Dnet'] if showgui else False
 
 from netpyne import init  # import netpyne init module
 

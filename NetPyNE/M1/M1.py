@@ -27,7 +27,7 @@ simConfig = {}  # dictionary to store sets of simulation configurations
 netParams['scale'] = 1 # Scale factor for number of cells
 netParams['sizeX'] = 1000 # x-dimension (horizontal length) size in um
 netParams['sizeY'] = 1500 # y-dimension (vertical height or cortical depth) size in um
-netParams['sizeZ'] = 1000 # z-dimension (horizontal depth) size in um
+netParams['sizeZ'] = 100 # z-dimension (horizontal depth) size in um
 
 
 ## General connectivity parameters
@@ -306,7 +306,7 @@ simConfig = {}  # dictionary to store simConfig
 
 # Simulation parameters
 simConfig['duration'] = 1*1e3 # Duration of the simulation, in ms
-simConfig['dt'] = 0.5 # Internal integration timestep to use
+simConfig['dt'] = 0.025 # Internal integration timestep to use
 simConfig['randseed'] = 1 # Random seed to use
 simConfig['createNEURONObj'] = 1  # create HOC objects when instantiating network
 simConfig['createPyStruct'] = 1  # create Python structure (simulator-independent) when instantiating network

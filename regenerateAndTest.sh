@@ -47,6 +47,7 @@ python HybridTut_export.py
 cp *.nml ../../NeuroML2
 
 cd ../M1
+nrnivmodl
 python M1_export.py 
 cp *.nml ../../NeuroML2
 

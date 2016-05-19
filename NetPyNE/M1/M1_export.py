@@ -4,4 +4,5 @@ from netpyne import init  # import netpyne init module
 init.createAndExport(netParams = M1.netParams, 
                        simConfig = M1.simConfig,
                        reference = 'M1',
-                       connections=False)  # create and export network to NeuroML 2
+                       connections=False,
+                       stimulations=False)  # create and export network to NeuroML 2
