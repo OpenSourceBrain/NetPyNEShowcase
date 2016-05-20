@@ -1,3 +1,5 @@
+/NetPyNE/M1/M1.net.pov
+/NetPyNE/M1/M1.net_movie.ini
 /NeuroML2/LEMS_HybridTut_nrn.py
 /NeuroML2/LEMS_HybridSmall_nrn.py
 /NeuroML2/LEMS_HHSmall_nrn.py
@@ -58,3 +60,5 @@ x86_64
 /NetPyNE/M1/*.hoc
 /NetPyNE/M1/LEMS*.xml
 /NetPyNE/M1/*.dat
+/NetPyNE/M1/*.png
+/NetPyNE/M1/*.svg
