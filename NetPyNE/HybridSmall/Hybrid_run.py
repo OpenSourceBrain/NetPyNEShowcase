@@ -11,3 +11,7 @@ simConfig['plotCells'] = simConfig['plotCells'] if showgui else []
 from netpyne import init  # import netpyne init module
 
 init.createAndSimulate(netParams = HybridSmall.netParams, simConfig = simConfig)  # create and simulate network
+
+from neuron import h
+
+h('forall psection()')
