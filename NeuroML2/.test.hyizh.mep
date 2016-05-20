@@ -1,0 +1,6 @@
+system: Test 
+
+experiments:
+    v:
+        expected:
+            spike times: [272.6, 578.14, 880.63]
