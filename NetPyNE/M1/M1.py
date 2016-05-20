@@ -26,8 +26,8 @@ simConfig = {}  # dictionary to store sets of simulation configurations
 simConfig = {}  # dictionary to store simConfig
 
 # Simulation parameters
-simConfig['duration'] = 1.0*1e3 # Duration of the simulation, in ms
-simConfig['dt'] = 0.1 # Internal integration timestep to use
+simConfig['duration'] = 300 # Duration of the simulation, in ms
+simConfig['dt'] = 0.025 # Internal integration timestep to use
 simConfig['randseed'] = 1 # Random seed to use
 simConfig['createNEURONObj'] = 1  # create HOC objects when instantiating network
 simConfig['createPyStruct'] = 1  # create Python structure (simulator-independent) when instantiating network
@@ -74,7 +74,7 @@ simConfig['plotConn'] = False # whether to plot conn matrix (not yet implemented
 netParams['scale'] = 1 # Scale factor for number of cells
 netParams['sizeX'] = 100 # x-dimension (horizontal length) size in um
 netParams['sizeY'] = 1350 # y-dimension (vertical height or cortical depth) size in um
-netParams['sizeZ'] = 100 # z-dimension (horizontal depth) size in um
+netParams['sizeZ'] = 10 # z-dimension (horizontal depth) size in um
 
 ## General connectivity parameters
 netParams['scaleConnWeight'] = 0.1 # Connection weight scale factor
@@ -98,8 +98,8 @@ netParams['popParams'].append({'popLabel': 'PV_L5',  'cellModel': 'Izhi2007b', '
 netParams['popParams'].append({'popLabel': 'SOM_L5', 'cellModel': 'Izhi2007b', 'cellType': 'SOM', 'projTarget': '', 'ynormRange': [0.31, 0.77], 'density': 10e3}) #  L5 SOM (LTS)
 netParams['popParams'].append({'popLabel': 'PV_L6',  'cellModel': 'Izhi2007b', 'cellType': 'PV',  'projTarget': '', 'ynormRange': [0.77, 1.0], 'density': 10e3}) #  L6 PV (FS)
 netParams['popParams'].append({'popLabel': 'SOM_L6', 'cellModel': 'Izhi2007b', 'cellType': 'SOM', 'projTarget': '', 'ynormRange': [0.77, 1.0], 'density': 10e3}) #  L6 SOM (LTS)
-netParams['popParams'].append({'popLabel': 'background_E', 'cellModel': 'NetStim', 'rate': 20, 'noise': 0.5, 'source': 'random'})  # background inputs to Exc
-netParams['popParams'].append({'popLabel': 'background_I', 'cellModel': 'NetStim', 'rate': 20, 'noise': 0.5, 'source': 'random'})  # background inputs to Inh
+netParams['popParams'].append({'popLabel': 'background_E', 'cellModel': 'NetStim', 'rate': 20, 'noise': 1, 'source': 'random'})  # background inputs to Exc
+netParams['popParams'].append({'popLabel': 'background_I', 'cellModel': 'NetStim', 'rate': 20, 'noise': 1, 'source': 'random'})  # background inputs to Inh
 
 
 ## Izhi cell params (used in cell properties)
