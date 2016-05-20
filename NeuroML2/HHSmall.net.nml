@@ -26,8 +26,8 @@
         </projection>
         <projection id="NetConn_NetStim_background_PYR_20_0_NMDA__PYR" presynapticPopulation="Pop_NetStim_background_PYR_20_0_NMDA" postsynapticPopulation="PYR" synapse="NMDA">
             <connectionWD id="0" preCellId="../Pop_NetStim_background_PYR_20_0_NMDA[0]" postCellId="../PYR/0/HH" weight="0.02" delay="0 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_20_0_NMDA[0]" postCellId="../PYR/1/HH" weight="0.02" delay="0 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_PYR_20_0_NMDA[0]" postCellId="../PYR/2/HH" weight="0.02" delay="0 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_20_0_NMDA[1]" postCellId="../PYR/1/HH" weight="0.02" delay="0 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_PYR_20_0_NMDA[2]" postCellId="../PYR/2/HH" weight="0.02" delay="0 ms"/>
         </projection>
     </network>
 </neuroml>

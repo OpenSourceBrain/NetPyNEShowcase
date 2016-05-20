@@ -28,7 +28,8 @@ pop_size = 3
 netParams['popParams'] = []  # create list of populations - each item will contain dict with pop params
 netParams['popParams'].append({'popLabel': 'PYR_HH', 'cellModel': 'HH', 'cellType': 'PYR', 'numCells': pop_size}) # add dict with params for this pop 
 netParams['popParams'].append({'popLabel': 'PYR_Izhi', 'cellModel': 'Izhi2007b', 'cellType': 'PYR', 'numCells': pop_size}) # add dict with params for this pop 
-netParams['popParams'].append({'popLabel': 'background', 'cellModel': 'NetStim', 'rate': 20, 'noise': 0, 'source': 'random'})  # background inputs
+netParams['popParams'].append({'popLabel': 'background1', 'cellModel': 'NetStim', 'rate': 20, 'noise': 0, 'source': 'random'})  # background inputs
+netParams['popParams'].append({'popLabel': 'background2', 'cellModel': 'NetStim', 'rate': 20, 'noise': 1, 'source': 'random'})  # background inputs
 
 
 # Cell parameters list
@@ -58,7 +59,7 @@ netParams['cellParams'].append(cellRule)  # add dict to list of cell properties
 
 # Synaptic mechanism parameters
 netParams['synMechParams'] = []
-netParams['synMechParams'].append({'label': 'syn1', 'mod': 'ExpSyn', 'tau': 100, 'e': 0})
+netParams['synMechParams'].append({'label': 'syn1', 'mod': 'ExpSyn', 'tau': 30, 'e': 0})
 netParams['synMechParams'].append({'label': 'syn2', 'mod': 'ExpSyn', 'tau': 4, 'e': 0})
  
 
@@ -75,7 +76,7 @@ netParams['connParams'].append(
 
 
 netParams['connParams'].append(
-    {'preTags': {'popLabel': 'background'}, 'postTags': {'cellType': 'PYR','cellModel': 'Izhi2007b'}, # background -> PYR (Izhi2007b)
+    {'preTags': {'popLabel': 'background1'}, 'postTags': {'cellType': 'PYR','cellModel': 'Izhi2007b'}, # background -> PYR (Izhi2007b)
     'connFunc': 'fullConn',
     'weight': 0.01, 
     'delay': 0,
@@ -83,7 +84,7 @@ netParams['connParams'].append(
 
 
 netParams['connParams'].append(
-    {'preTags': {'popLabel': 'background'}, 'postTags': {'cellType': 'PYR', 'cellModel': 'HH'}, # background -> PYR (HH)
+    {'preTags': {'popLabel': 'background2'}, 'postTags': {'cellType': 'PYR', 'cellModel': 'HH'}, # background -> PYR (HH)
     'connFunc': 'fullConn',
     'weight': 0.005, 
     'synMech': 'syn1',
