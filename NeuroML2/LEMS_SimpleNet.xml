@@ -1,0 +1,63 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.1.12 (libNeuroML v0.2.15)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="Sim_SimpleNet"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="SimpleNet/RS.cell.nml"/>
+    <Include file="SimpleNet.net.nml"/>
+   
+    <Simulation id="Sim_SimpleNet" length="5000ms" step="0.01ms" target="SimpleNet" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="DispPop__RS_pop" title="Membrane potentials of cells in RS_pop" timeScale="1ms" xmin="-500.0" xmax="5500.0" ymin="-90" ymax="50">
+            <Line id="RS_pop[0]: v" quantity="RS_pop/0/RS/v" scale="1mV" color="#6aa799" timeScale="1ms"/>
+            <Line id="RS_pop[1]: v" quantity="RS_pop/1/RS/v" scale="1mV" color="#029a72" timeScale="1ms"/>
+            <Line id="RS_pop[2]: v" quantity="RS_pop/2/RS/v" scale="1mV" color="#d340bb" timeScale="1ms"/>
+            <Line id="RS_pop[3]: v" quantity="RS_pop/3/RS/v" scale="1mV" color="#4c73a9" timeScale="1ms"/>
+            <Line id="RS_pop[4]: v" quantity="RS_pop/4/RS/v" scale="1mV" color="#5e503a" timeScale="1ms"/>
+            <Line id="RS_pop[5]: v" quantity="RS_pop/5/RS/v" scale="1mV" color="#3193ca" timeScale="1ms"/>
+            <Line id="RS_pop[6]: v" quantity="RS_pop/6/RS/v" scale="1mV" color="#90e5e9" timeScale="1ms"/>
+            <Line id="RS_pop[7]: v" quantity="RS_pop/7/RS/v" scale="1mV" color="#29645f" timeScale="1ms"/>
+            <Line id="RS_pop[8]: v" quantity="RS_pop/8/RS/v" scale="1mV" color="#1fcff4" timeScale="1ms"/>
+            <Line id="RS_pop[9]: v" quantity="RS_pop/9/RS/v" scale="1mV" color="#6ed4e9" timeScale="1ms"/>
+            <Line id="RS_pop[10]: v" quantity="RS_pop/10/RS/v" scale="1mV" color="#8fe460" timeScale="1ms"/>
+
+        </Display>
+        
+        <OutputFile id="Volts_file__RS_pop" fileName="Sim_SimpleNet.RS_pop.v.dat">
+            <OutputColumn id="v_RS_pop_0_RS_v" quantity="RS_pop/0/RS/v"/> 
+            <OutputColumn id="v_RS_pop_1_RS_v" quantity="RS_pop/1/RS/v"/> 
+            <OutputColumn id="v_RS_pop_2_RS_v" quantity="RS_pop/2/RS/v"/> 
+            <OutputColumn id="v_RS_pop_3_RS_v" quantity="RS_pop/3/RS/v"/> 
+            <OutputColumn id="v_RS_pop_4_RS_v" quantity="RS_pop/4/RS/v"/> 
+            <OutputColumn id="v_RS_pop_5_RS_v" quantity="RS_pop/5/RS/v"/> 
+            <OutputColumn id="v_RS_pop_6_RS_v" quantity="RS_pop/6/RS/v"/> 
+            <OutputColumn id="v_RS_pop_7_RS_v" quantity="RS_pop/7/RS/v"/> 
+            <OutputColumn id="v_RS_pop_8_RS_v" quantity="RS_pop/8/RS/v"/> 
+            <OutputColumn id="v_RS_pop_9_RS_v" quantity="RS_pop/9/RS/v"/> 
+            <OutputColumn id="v_RS_pop_10_RS_v" quantity="RS_pop/10/RS/v"/> 
+            <OutputColumn id="v_RS_pop_11_RS_v" quantity="RS_pop/11/RS/v"/> 
+            <OutputColumn id="v_RS_pop_12_RS_v" quantity="RS_pop/12/RS/v"/> 
+            <OutputColumn id="v_RS_pop_13_RS_v" quantity="RS_pop/13/RS/v"/> 
+            <OutputColumn id="v_RS_pop_14_RS_v" quantity="RS_pop/14/RS/v"/> 
+            <OutputColumn id="v_RS_pop_15_RS_v" quantity="RS_pop/15/RS/v"/> 
+            <OutputColumn id="v_RS_pop_16_RS_v" quantity="RS_pop/16/RS/v"/> 
+            <OutputColumn id="v_RS_pop_17_RS_v" quantity="RS_pop/17/RS/v"/> 
+            <OutputColumn id="v_RS_pop_18_RS_v" quantity="RS_pop/18/RS/v"/> 
+            <OutputColumn id="v_RS_pop_19_RS_v" quantity="RS_pop/19/RS/v"/> 
+            <OutputColumn id="v_RS_pop_20_RS_v" quantity="RS_pop/20/RS/v"/> 
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>
