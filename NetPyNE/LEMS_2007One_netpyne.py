@@ -17,6 +17,7 @@ Components:
 # Main NetPyNE script for: net1
 
 # See https://github.com/Neurosim-lab/netpyne
+
 from netpyne import init  # import netpyne init module
 
 
@@ -84,10 +85,11 @@ simConfig['verbose'] = True  # show detailed messages
 simConfig['recordCells'] = [0]  
 simConfig['recordTraces'] = {'Vsoma':{'sec':'soma','loc':0.5,'var':'v'}}
 
+simConfig['plotCells'] = []
 # Display id: d1
 # Line id: RS v; displaying v on cell: 0 in population: RS_pop;
 if 'v'=='v':
-    simConfig['plotTracesGids'] = [gids['RS_pop'][0]] # plot recorded traces for this list of cells
+    simConfig['plotCells'].append(gids['RS_pop'][0]) # plot recorded traces for this list of cells
 
 simConfig['recordStim'] = True  # record spikes of cell stims
 simConfig['recordStep'] = simConfig['dt'] # Step size in ms to save data (eg. V traces, LFP, etc)
