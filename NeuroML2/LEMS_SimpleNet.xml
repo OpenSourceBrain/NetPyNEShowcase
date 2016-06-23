@@ -17,7 +17,7 @@
     <Include file="RS.cell.nml"/>
     <Include file="SimpleNet.net.nml"/>
    
-    <Simulation id="Sim_SimpleNet" length="5000ms" step="0.01ms" target="SimpleNet" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_SimpleNet" length="500ms" step="0.01ms" target="SimpleNet" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__RS_pop" title="Membrane potentials of cells in RS_pop" timeScale="1ms" xmin="-500.0" xmax="5500.0" ymin="-90" ymax="50">
             <Line id="RS_pop[0]: v" quantity="RS_pop/0/RS/v" scale="1mV" color="#6aa799" timeScale="1ms"/>

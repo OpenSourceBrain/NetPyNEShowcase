@@ -4,12 +4,32 @@ target: LEMS_HHSmall.xml
 engine: jNeuroML
 mep: .test.hh.mep
 experiments:
-  v:
+  v0:
     observables:
       spike times:
         file: 
           path: Sim_HHSmall.PYR.v.dat
           columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.0005
+  v1:
+    observables:
+      spike times:
+        file: 
+          path: Sim_HHSmall.PYR.v.dat
+          columns: [0,2]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.0005
+  v2:
+    observables:
+      spike times:
+        file: 
+          path: Sim_HHSmall.PYR.v.dat
+          columns: [0,3]
           scaling: [1000, 1000]
         spike detection: 
           method: threshold

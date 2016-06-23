@@ -35,7 +35,7 @@ netParams['popParams'].append({'popLabel': 'background',
                                'cellModel': 'NetStim', 
                                'rate': 20, 
                                'noise': 0, 
-                               'start': 1, 
+                               'start': 50, 
                                'source': 'random'})  # background inputs
 
 # Cell parameters
