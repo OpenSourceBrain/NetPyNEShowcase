@@ -1,7 +1,7 @@
 import M1  # import parameters file
-from netpyne import init  # import netpyne init module
+from netpyne import sim  # import netpyne sim module
 
-init.createAndExport(netParams = M1.netParams, 
+sim.createAndExportNeuroML2(netParams = M1.netParams, 
                        simConfig = M1.simConfig,
                        reference = 'M1',
                        connections=False,

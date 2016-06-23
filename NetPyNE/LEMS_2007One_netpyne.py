@@ -18,7 +18,7 @@ Components:
 
 # See https://github.com/Neurosim-lab/netpyne
 
-from netpyne import init  # import netpyne init module
+from netpyne import sim  # import netpyne sim module
 
 
 ###############################################################################
@@ -37,7 +37,7 @@ gids = {} # Require these in this file for plotting etc.
 # cell params for cell RS in population RS_pop
 cellRule = {'label': 'RS_pop', 'conditions': {'cellType': 'RS'}, 'sections': {}}
 RS_pop_soma = {'geom': {}, 'topol': {}, 'mechs': {}, 'pointps':{}, 'syns': {}}  #  soma
-RS_pop_soma['pointps']['RS'] = { '_type':'RS', 'v0':-60.0,  'k':7.0E-4,  'vr':-60.0,  'vt':-40.0,  'vpeak':35.0,  'a':0.030000001,  'b':-0.0019999999,  'c':-50.0,  'd':0.1,  'C':1.00000005E-4,  } 
+RS_pop_soma['pointps']['RS'] = { 'mod':'RS', 'v0':-60.0,  'k':7.0E-4,  'vr':-60.0,  'vt':-40.0,  'vpeak':35.0,  'a':0.030000001,  'b':-0.0019999999,  'c':-50.0,  'd':0.1,  'C':1.00000005E-4,  } 
 
 # Todo: work this out here from area etc.
 cm = (318309 * RS_pop_soma['pointps']['RS']['C'] if RS_pop_soma['pointps']['RS'].has_key('C') else 318.31927 )
@@ -65,7 +65,7 @@ next_gid += size_RS_pop
 # Inputs...
 # Input: RS_Iext0 which is RS_Iext on cell 0 in RS_pop
 
-RS_pop_soma['pointps']['RS_pop'] = { '_type':'RS_Iext' } 
+RS_pop_soma['pointps']['RS_pop'] = { 'mod':'RS_Iext' } 
 
 
 
@@ -111,7 +111,7 @@ simConfig['saveDat'] = True # save to dat file
 
 
 print("Running a NetPyNE based simulation for %sms (dt: %sms)"%(simConfig['duration'], simConfig['dt']))
-init.createAndSimulate(                   
+sim.createAndSimulate(                   
     simConfig = simConfig, 
     netParams = netParams)
 

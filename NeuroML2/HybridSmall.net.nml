@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="HybridSmall">
-    <notes>NeuroML 2 file exported from NetPyNE</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.4.8</notes>
     <include href="HH.cell.nml"></include>
     <include href="Izhi2007b.cell.nml"></include>
     <expOneSynapse id="syn1" gbase="1uS" erev="0mV" tauDecay="30ms"/>
@@ -7,7 +7,7 @@
     <spikeGenerator id="NetStim_background1_PYR_Izhi_20_0_syn2" period="0.05s"/>
     <spikeGeneratorPoisson id="NetStim_background2_PYR_HH_20_1_syn1" averageRate="20 Hz"/>
     <network id="HybridSmall">
-        <population id="PYR_HH" component="HH" type="populationList">
+        <population id="PYR_HH" component="HH" size="3" type="populationList">
             <instance id="0">
                 <location x="91.711585874816009" y="62.411324223264955" z="18.616023751669676"/>
             </instance>
@@ -18,7 +18,7 @@
                 <location x="51.804630571516853" y="33.86307903737071" z="76.246429339951561"/>
             </instance>
         </population>
-        <population id="PYR_Izhi" component="Izhi2007b" type="populationList">
+        <population id="PYR_Izhi" component="Izhi2007b" size="3" type="populationList">
             <instance id="0">
                 <location x="75.808601565255302" y="93.814138748371974" z="84.449803659466113"/>
             </instance>

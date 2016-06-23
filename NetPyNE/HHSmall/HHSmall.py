@@ -34,8 +34,9 @@ netParams['popParams'].append({'popLabel': 'PYR',
 netParams['popParams'].append({'popLabel': 'background', 
                                'cellModel': 'NetStim', 
                                'rate': 20, 
-                               'source': 'random',
-                               'noise': 0})  # background inputs
+                               'noise': 0, 
+                               'start': 1, 
+                               'source': 'random'})  # background inputs
 
 # Cell parameters
 netParams['cellParams'] = []
@@ -51,7 +52,7 @@ netParams['cellParams'].append(cellRule)  # add dict to list of cell properties
 
 # Synaptic mechanism parameters
 netParams['synMechParams'] = []
-netParams['synMechParams'].append({'label': 'NMDA', 'mod': 'Exp2Syn', 'tau1': 0.2, 'tau2': 3, 'e': 0})
+netParams['synMechParams'].append({'label': 'AMPA', 'mod': 'Exp2Syn', 'tau1': 0.1, 'tau2': 1.0, 'e': 0})
  
 
 # Connectivity parameters
@@ -59,16 +60,16 @@ netParams['connParams'] = []
 
 netParams['connParams'].append(
     {'preTags': {'popLabel': 'PYR'}, 'postTags': {'popLabel': 'PYR'},
-    'weight': 0.002,                    # weight of each connection
-    'delay': 'gauss(10,5)',   
+    'weight': 0.005,                    # weight of each connection
+    'delay': '0.2+gauss(13.0,1.4)',     # delay min=0.2, mean=13.0, var = 1.4
     'threshold': 10,                    # threshold
     'convergence': 'uniform(1,15)'})    # convergence (num presyn targeting postsyn) is uniformly distributed between 1 and 15
 
 netParams['connParams'].append(
     {'preTags': {'popLabel': 'background'}, 'postTags': {'cellType': 'PYR'}, # background -> PYR
-    'weight': 0.02,              
-    'synMech': 'NMDA',                     # target NMDA synapse
-    'delay': 0})           # uniformly distributed delays between 1-5ms
+    'weight': 0.1,                    # fixed weight of 0.08
+    'synMech': 'AMPA',                     # target NMDA synapse
+    'delay': 'uniform(1,5)'})           # uniformly distributed delays between 1-5ms
 
 
 ###############################################################################

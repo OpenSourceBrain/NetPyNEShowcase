@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="M1">
-    <notes>NeuroML 2 file exported from NetPyNE</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.4.8</notes>
     <include href="Izhi2007b.cell.nml"></include>
     <include href="Izhi2007b.cell.nml"></include>
     <include href="Izhi2007b.cell.nml"></include>
@@ -31,7 +31,7 @@
     <spikeGeneratorPoisson id="NetStim_background_E_IT_L5A_20_1_NMDA" averageRate="20 Hz"/>
     <spikeGeneratorPoisson id="NetStim_background_I_PV_L5_20_1_NMDA" averageRate="20 Hz"/>
     <network id="M1">
-        <population id="IT_L23" component="Izhi2007b" type="populationList">
+        <population id="IT_L23" component="Izhi2007b" size="20" type="populationList">
             <instance id="0">
                 <location x="39.416065709118584" y="207.149427575435681" z="6.507577134354995"/>
             </instance>
@@ -93,7 +93,7 @@
                 <location x="55.80526904305809" y="374.749914569632665" z="7.80439571680642"/>
             </instance>
         </population>
-        <population id="IT_L4" component="Izhi2007b" type="populationList">
+        <population id="IT_L4" component="Izhi2007b" size="10" type="populationList">
             <instance id="0">
                 <location x="50.984373601787183" y="421.09506472957446" z="4.132888600877603"/>
             </instance>
@@ -125,7 +125,7 @@
                 <location x="35.278070217216452" y="516.078383688973645" z="1.651803592462434"/>
             </instance>
         </population>
-        <population id="IT_L5A" component="Izhi2007b" type="populationList">
+        <population id="IT_L5A" component="Izhi2007b" size="11" type="populationList">
             <instance id="0">
                 <location x="9.221748790030516" y="659.784179522022214" z="1.919888997929358"/>
             </instance>
@@ -160,7 +160,7 @@
                 <location x="13.158276297834737" y="644.086518762120704" z="4.556412840490535"/>
             </instance>
         </population>
-        <population id="IT_L5B" component="Izhi2007b" type="populationList">
+        <population id="IT_L5B" component="Izhi2007b" size="13" type="populationList">
             <instance id="0">
                 <location x="28.200601803623325" y="801.456328125827099" z="7.537023000027721"/>
             </instance>
@@ -201,7 +201,7 @@
                 <location x="99.400650211367221" y="796.106181632888479" z="9.229180926037992"/>
             </instance>
         </population>
-        <population id="PT_L5B" component="Izhi2007b" type="populationList">
+        <population id="PT_L5B" component="Izhi2007b" size="13" type="populationList">
             <instance id="0">
                 <location x="28.200601803623325" y="801.456328125827099" z="7.537023000027721"/>
             </instance>
@@ -242,7 +242,7 @@
                 <location x="99.400650211367221" y="796.106181632888479" z="9.229180926037992"/>
             </instance>
         </population>
-        <population id="IT_L6" component="Izhi2007b" type="populationList">
+        <population id="IT_L6" component="Izhi2007b" size="12" type="populationList">
             <instance id="0">
                 <location x="27.792687326834464" y="1187.609631264625705" z="3.452388087502297"/>
             </instance>
@@ -280,7 +280,7 @@
                 <location x="56.971083613560978" y="1303.335238777170844" z="8.015465994829707"/>
             </instance>
         </population>
-        <population id="CT_L6" component="Izhi2007b" type="populationList">
+        <population id="CT_L6" component="Izhi2007b" size="12" type="populationList">
             <instance id="0">
                 <location x="27.792687326834464" y="1187.609631264625705" z="3.452388087502297"/>
             </instance>
@@ -318,7 +318,7 @@
                 <location x="56.971083613560978" y="1303.335238777170844" z="8.015465994829707"/>
             </instance>
         </population>
-        <population id="PV_L23" component="Izhi2007b" type="populationList">
+        <population id="PV_L23" component="Izhi2007b" size="2" type="populationList">
             <instance id="0">
                 <location x="93.870444460582661" y="315.858921881640413" z="4.442593851802188"/>
             </instance>
@@ -326,7 +326,7 @@
                 <location x="97.282513718989662" y="184.651630048513539" z="1.291077779756855"/>
             </instance>
         </population>
-        <population id="SOM_L23" component="Izhi2007b" type="populationList">
+        <population id="SOM_L23" component="Izhi2007b" size="2" type="populationList">
             <instance id="0">
                 <location x="93.870444460582661" y="315.858921881640413" z="4.442593851802188"/>
             </instance>
@@ -334,7 +334,7 @@
                 <location x="97.282513718989662" y="184.651630048513539" z="1.291077779756855"/>
             </instance>
         </population>
-        <population id="PV_L5" component="Izhi2007b" type="populationList">
+        <population id="PV_L5" component="Izhi2007b" size="6" type="populationList">
             <instance id="0">
                 <location x="75.808601565255302" y="1001.085801627389969" z="8.444980365946611"/>
             </instance>
@@ -354,7 +354,7 @@
                 <location x="46.771894484534002" y="487.581340266149766" z="4.693699661142819"/>
             </instance>
         </population>
-        <population id="SOM_L5" component="Izhi2007b" type="populationList">
+        <population id="SOM_L5" component="Izhi2007b" size="6" type="populationList">
             <instance id="0">
                 <location x="75.808601565255302" y="1001.085801627389969" z="8.444980365946611"/>
             </instance>
@@ -374,7 +374,7 @@
                 <location x="46.771894484534002" y="487.581340266149766" z="4.693699661142819"/>
             </instance>
         </population>
-        <population id="PV_L6" component="Izhi2007b" type="populationList">
+        <population id="PV_L6" component="Izhi2007b" size="3" type="populationList">
             <instance id="0">
                 <location x="91.711585874816009" y="1233.287161713237765" z="1.861602375166967"/>
             </instance>
@@ -385,7 +385,7 @@
                 <location x="51.804630571516853" y="1144.644860411036007" z="7.624642933995156"/>
             </instance>
         </population>
-        <population id="SOM_L6" component="Izhi2007b" type="populationList">
+        <population id="SOM_L6" component="Izhi2007b" size="3" type="populationList">
             <instance id="0">
                 <location x="91.711585874816009" y="1233.287161713237765" z="1.861602375166967"/>
             </instance>
@@ -405,7 +405,7 @@
         <population id="Pop_NetStim_background_I_PV_L23_20_1_NMDA" component="NetStim_background_I_PV_L23_20_1_NMDA" size="2"/>
         <population id="Pop_NetStim_background_I_SOM_L6_20_1_NMDA" component="NetStim_background_I_SOM_L6_20_1_NMDA" size="3"/>
         <population id="Pop_NetStim_background_E_CT_L6_20_1_NMDA" component="NetStim_background_E_CT_L6_20_1_NMDA" size="12"/>
-        <population id="Pop_NetStim_background_E_IT_L23_20_1_NMDA" component="NetStim_background_E_IT_L23_20_1_NMDA" size="20"/>
+        <population id="Pop_NetStim_background_E_IT_L23_20_1_NMDA" component="NetStim_background_E_IT_L23_20_1_NMDA" size="19"/>
         <population id="Pop_NetStim_background_I_SOM_L5_20_1_NMDA" component="NetStim_background_I_SOM_L5_20_1_NMDA" size="6"/>
         <population id="Pop_NetStim_background_E_IT_L5A_20_1_NMDA" component="NetStim_background_E_IT_L5A_20_1_NMDA" size="11"/>
         <population id="Pop_NetStim_background_I_PV_L5_20_1_NMDA" component="NetStim_background_I_PV_L5_20_1_NMDA" size="6"/>
@@ -511,13 +511,12 @@
             <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[10]" postCellId="../IT_L23/10/Izhi2007b" weight="0.1" delay="1.91641482044 ms"/>
             <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[11]" postCellId="../IT_L23/11/Izhi2007b" weight="0.1" delay="6.38351348763 ms"/>
             <connectionWD id="12" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[12]" postCellId="../IT_L23/12/Izhi2007b" weight="0.1" delay="8.37787384853 ms"/>
-            <connectionWD id="13" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[13]" postCellId="../IT_L23/13/Izhi2007b" weight="0.1" delay="7.63319023045 ms"/>
-            <connectionWD id="14" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[14]" postCellId="../IT_L23/14/Izhi2007b" weight="0.1" delay="7.46803931744 ms"/>
-            <connectionWD id="15" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[15]" postCellId="../IT_L23/15/Izhi2007b" weight="0.1" delay="10.6044759615 ms"/>
-            <connectionWD id="16" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[16]" postCellId="../IT_L23/16/Izhi2007b" weight="0.1" delay="-3.10502491887 ms"/>
-            <connectionWD id="17" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[17]" postCellId="../IT_L23/17/Izhi2007b" weight="0.1" delay="4.93972878499 ms"/>
-            <connectionWD id="18" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[18]" postCellId="../IT_L23/18/Izhi2007b" weight="0.1" delay="4.3139420367 ms"/>
-            <connectionWD id="19" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[19]" postCellId="../IT_L23/19/Izhi2007b" weight="0.1" delay="2.58903286861 ms"/>
+            <connectionWD id="13" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[13]" postCellId="../IT_L23/14/Izhi2007b" weight="0.1" delay="7.46803931744 ms"/>
+            <connectionWD id="14" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[14]" postCellId="../IT_L23/15/Izhi2007b" weight="0.1" delay="10.6044759615 ms"/>
+            <connectionWD id="15" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[15]" postCellId="../IT_L23/16/Izhi2007b" weight="0.1" delay="-3.10502491887 ms"/>
+            <connectionWD id="16" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[16]" postCellId="../IT_L23/17/Izhi2007b" weight="0.1" delay="4.93972878499 ms"/>
+            <connectionWD id="17" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[17]" postCellId="../IT_L23/18/Izhi2007b" weight="0.1" delay="4.3139420367 ms"/>
+            <connectionWD id="18" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[18]" postCellId="../IT_L23/19/Izhi2007b" weight="0.1" delay="2.58903286861 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_I_SOM_L5_20_1_NMDA__SOM_L5" presynapticPopulation="Pop_NetStim_background_I_SOM_L5_20_1_NMDA" postsynapticPopulation="SOM_L5" synapse="NMDA">
             <connectionWD id="0" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[0]" postCellId="../SOM_L5/0/Izhi2007b" weight="0.03" delay="2.84029725973 ms"/>

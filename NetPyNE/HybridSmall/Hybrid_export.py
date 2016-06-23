@@ -1,6 +1,6 @@
 import HybridSmall  # import parameters file
-from netpyne import init  # import netpyne init module
+from netpyne import sim  # import netpyne sim module
 
-init.createAndExport(netParams = HybridSmall.netParams, 
+sim.createAndExportNeuroML2(netParams = HybridSmall.netParams, 
                        simConfig = HybridSmall.simConfig,
                        reference = 'HybridSmall')  # create and export network to NeuroML 2
