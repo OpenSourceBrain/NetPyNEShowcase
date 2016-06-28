@@ -29,9 +29,9 @@
     <Include file="Izhi2007b.cell.nml"/>
     <Include file="Izhi2007b.cell.nml"/>
    
-    <Simulation id="Sim_M1" length="1000.0ms" step="0.01ms" target="M1" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_M1" length="100ms" step="0.01ms" target="M1" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
-        <Display id="DispPop__IT_L23" title="Membrane potentials of cells in IT_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__IT_L23" title="Membrane potentials of cells in IT_L23" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="IT_L23[0]: v" quantity="IT_L23/0/Izhi2007b/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
             <Line id="IT_L23[1]: v" quantity="IT_L23/1/Izhi2007b/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
             <Line id="IT_L23[2]: v" quantity="IT_L23/2/Izhi2007b/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
@@ -85,7 +85,7 @@
             <Line id="IT_L23[50]: v" quantity="IT_L23/50/Izhi2007b/v" scale="1mV" color="#242780" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__IT_L4" title="Membrane potentials of cells in IT_L4" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__IT_L4" title="Membrane potentials of cells in IT_L4" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="IT_L4[0]: v" quantity="IT_L4/0/Izhi2007b/v" scale="1mV" color="#4e2e37" timeScale="1ms"/>
             <Line id="IT_L4[1]: v" quantity="IT_L4/1/Izhi2007b/v" scale="1mV" color="#0a228b" timeScale="1ms"/>
             <Line id="IT_L4[2]: v" quantity="IT_L4/2/Izhi2007b/v" scale="1mV" color="#46db4b" timeScale="1ms"/>
@@ -114,7 +114,7 @@
             <Line id="IT_L4[25]: v" quantity="IT_L4/25/Izhi2007b/v" scale="1mV" color="#6fa19d" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__IT_L5A" title="Membrane potentials of cells in IT_L5A" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__IT_L5A" title="Membrane potentials of cells in IT_L5A" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="IT_L5A[0]: v" quantity="IT_L5A/0/Izhi2007b/v" scale="1mV" color="#1e956a" timeScale="1ms"/>
             <Line id="IT_L5A[1]: v" quantity="IT_L5A/1/Izhi2007b/v" scale="1mV" color="#87a0ea" timeScale="1ms"/>
             <Line id="IT_L5A[2]: v" quantity="IT_L5A/2/Izhi2007b/v" scale="1mV" color="#d454f1" timeScale="1ms"/>
@@ -146,7 +146,7 @@
             <Line id="IT_L5A[28]: v" quantity="IT_L5A/28/Izhi2007b/v" scale="1mV" color="#f1eedd" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__IT_L5B" title="Membrane potentials of cells in IT_L5B" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__IT_L5B" title="Membrane potentials of cells in IT_L5B" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="IT_L5B[0]: v" quantity="IT_L5B/0/Izhi2007b/v" scale="1mV" color="#10f44a" timeScale="1ms"/>
             <Line id="IT_L5B[1]: v" quantity="IT_L5B/1/Izhi2007b/v" scale="1mV" color="#41e6dc" timeScale="1ms"/>
             <Line id="IT_L5B[2]: v" quantity="IT_L5B/2/Izhi2007b/v" scale="1mV" color="#12b01a" timeScale="1ms"/>
@@ -182,7 +182,7 @@
             <Line id="IT_L5B[32]: v" quantity="IT_L5B/32/Izhi2007b/v" scale="1mV" color="#c2064f" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__PT_L5B" title="Membrane potentials of cells in PT_L5B" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__PT_L5B" title="Membrane potentials of cells in PT_L5B" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="PT_L5B[0]: v" quantity="PT_L5B/0/Izhi2007b/v" scale="1mV" color="#25f547" timeScale="1ms"/>
             <Line id="PT_L5B[1]: v" quantity="PT_L5B/1/Izhi2007b/v" scale="1mV" color="#378f85" timeScale="1ms"/>
             <Line id="PT_L5B[2]: v" quantity="PT_L5B/2/Izhi2007b/v" scale="1mV" color="#6eca2b" timeScale="1ms"/>
@@ -218,7 +218,7 @@
             <Line id="PT_L5B[32]: v" quantity="PT_L5B/32/Izhi2007b/v" scale="1mV" color="#651e1c" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__IT_L6" title="Membrane potentials of cells in IT_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__IT_L6" title="Membrane potentials of cells in IT_L6" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="IT_L6[0]: v" quantity="IT_L6/0/Izhi2007b/v" scale="1mV" color="#6dcd11" timeScale="1ms"/>
             <Line id="IT_L6[1]: v" quantity="IT_L6/1/Izhi2007b/v" scale="1mV" color="#aecbbc" timeScale="1ms"/>
             <Line id="IT_L6[2]: v" quantity="IT_L6/2/Izhi2007b/v" scale="1mV" color="#7ac645" timeScale="1ms"/>
@@ -252,7 +252,7 @@
             <Line id="IT_L6[30]: v" quantity="IT_L6/30/Izhi2007b/v" scale="1mV" color="#f22b18" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__CT_L6" title="Membrane potentials of cells in CT_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__CT_L6" title="Membrane potentials of cells in CT_L6" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="CT_L6[0]: v" quantity="CT_L6/0/Izhi2007b/v" scale="1mV" color="#4b3540" timeScale="1ms"/>
             <Line id="CT_L6[1]: v" quantity="CT_L6/1/Izhi2007b/v" scale="1mV" color="#31cf19" timeScale="1ms"/>
             <Line id="CT_L6[2]: v" quantity="CT_L6/2/Izhi2007b/v" scale="1mV" color="#d074f0" timeScale="1ms"/>
@@ -286,7 +286,7 @@
             <Line id="CT_L6[30]: v" quantity="CT_L6/30/Izhi2007b/v" scale="1mV" color="#3837a5" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__PV_L23" title="Membrane potentials of cells in PV_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__PV_L23" title="Membrane potentials of cells in PV_L23" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="PV_L23[0]: v" quantity="PV_L23/0/Izhi2007b/v" scale="1mV" color="#811ecd" timeScale="1ms"/>
             <Line id="PV_L23[1]: v" quantity="PV_L23/1/Izhi2007b/v" scale="1mV" color="#a7344d" timeScale="1ms"/>
             <Line id="PV_L23[2]: v" quantity="PV_L23/2/Izhi2007b/v" scale="1mV" color="#cf9af7" timeScale="1ms"/>
@@ -296,7 +296,7 @@
             <Line id="PV_L23[6]: v" quantity="PV_L23/6/Izhi2007b/v" scale="1mV" color="#299bd8" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__SOM_L23" title="Membrane potentials of cells in SOM_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__SOM_L23" title="Membrane potentials of cells in SOM_L23" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="SOM_L23[0]: v" quantity="SOM_L23/0/Izhi2007b/v" scale="1mV" color="#7fd9ba" timeScale="1ms"/>
             <Line id="SOM_L23[1]: v" quantity="SOM_L23/1/Izhi2007b/v" scale="1mV" color="#f0a6fd" timeScale="1ms"/>
             <Line id="SOM_L23[2]: v" quantity="SOM_L23/2/Izhi2007b/v" scale="1mV" color="#f33f2c" timeScale="1ms"/>
@@ -306,7 +306,7 @@
             <Line id="SOM_L23[6]: v" quantity="SOM_L23/6/Izhi2007b/v" scale="1mV" color="#254194" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__PV_L5" title="Membrane potentials of cells in PV_L5" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__PV_L5" title="Membrane potentials of cells in PV_L5" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="PV_L5[0]: v" quantity="PV_L5/0/Izhi2007b/v" scale="1mV" color="#f2f112" timeScale="1ms"/>
             <Line id="PV_L5[1]: v" quantity="PV_L5/1/Izhi2007b/v" scale="1mV" color="#3e47f9" timeScale="1ms"/>
             <Line id="PV_L5[2]: v" quantity="PV_L5/2/Izhi2007b/v" scale="1mV" color="#2a0c4b" timeScale="1ms"/>
@@ -324,7 +324,7 @@
             <Line id="PV_L5[14]: v" quantity="PV_L5/14/Izhi2007b/v" scale="1mV" color="#ee0256" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__SOM_L5" title="Membrane potentials of cells in SOM_L5" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__SOM_L5" title="Membrane potentials of cells in SOM_L5" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="SOM_L5[0]: v" quantity="SOM_L5/0/Izhi2007b/v" scale="1mV" color="#c34d5a" timeScale="1ms"/>
             <Line id="SOM_L5[1]: v" quantity="SOM_L5/1/Izhi2007b/v" scale="1mV" color="#ad05c8" timeScale="1ms"/>
             <Line id="SOM_L5[2]: v" quantity="SOM_L5/2/Izhi2007b/v" scale="1mV" color="#e2e548" timeScale="1ms"/>
@@ -342,7 +342,7 @@
             <Line id="SOM_L5[14]: v" quantity="SOM_L5/14/Izhi2007b/v" scale="1mV" color="#14868a" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__PV_L6" title="Membrane potentials of cells in PV_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__PV_L6" title="Membrane potentials of cells in PV_L6" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="PV_L6[0]: v" quantity="PV_L6/0/Izhi2007b/v" scale="1mV" color="#4b0ccc" timeScale="1ms"/>
             <Line id="PV_L6[1]: v" quantity="PV_L6/1/Izhi2007b/v" scale="1mV" color="#ede60c" timeScale="1ms"/>
             <Line id="PV_L6[2]: v" quantity="PV_L6/2/Izhi2007b/v" scale="1mV" color="#25dc61" timeScale="1ms"/>
@@ -352,7 +352,7 @@
             <Line id="PV_L6[6]: v" quantity="PV_L6/6/Izhi2007b/v" scale="1mV" color="#cb6264" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__SOM_L6" title="Membrane potentials of cells in SOM_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+        <Display id="DispPop__SOM_L6" title="Membrane potentials of cells in SOM_L6" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="SOM_L6[0]: v" quantity="SOM_L6/0/Izhi2007b/v" scale="1mV" color="#dd3fe3" timeScale="1ms"/>
             <Line id="SOM_L6[1]: v" quantity="SOM_L6/1/Izhi2007b/v" scale="1mV" color="#5b4ab5" timeScale="1ms"/>
             <Line id="SOM_L6[2]: v" quantity="SOM_L6/2/Izhi2007b/v" scale="1mV" color="#5f14d3" timeScale="1ms"/>
