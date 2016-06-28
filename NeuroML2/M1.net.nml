@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="M1">
-    <notes>NeuroML 2 file exported from NetPyNE v0.4.8</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.4.9</notes>
     <include href="Izhi2007b.cell.nml"></include>
     <include href="Izhi2007b.cell.nml"></include>
     <include href="Izhi2007b.cell.nml"></include>
@@ -95,305 +95,305 @@
         </population>
         <population id="IT_L4" component="Izhi2007b" size="10" type="populationList">
             <instance id="0">
-                <location x="50.984373601787183" y="421.09506472957446" z="4.132888600877603"/>
+                <location x="91.142053360991184" y="457.150006423164484" z="7.956224897377418"/>
             </instance>
             <instance id="1">
-                <location x="69.753574283981706" y="476.948345457690493" z="7.878331269264089"/>
+                <location x="96.652418722953087" y="486.517586497468585" z="7.35845078618523"/>
             </instance>
             <instance id="2">
-                <location x="40.354351570415602" y="474.508890405061834" z="2.85984355335045"/>
+                <location x="0.866633372123427" y="517.602843121280557" z="2.621365793988662"/>
             </instance>
             <instance id="3">
-                <location x="21.019057116493922" y="504.854551482712395" z="3.41194183623214"/>
+                <location x="4.967146677665712" y="534.585425373342787" z="0.056662380721101"/>
             </instance>
             <instance id="4">
-                <location x="56.393694377635171" y="500.474589038085639" z="2.611029032737458"/>
+                <location x="35.966826519393933" y="421.111207827397322" z="6.181084422691592"/>
             </instance>
             <instance id="5">
-                <location x="19.025922135293261" y="437.437689624568407" z="3.72942264121749"/>
+                <location x="30.361475333060074" y="439.875968101709248" z="1.890214767594418"/>
             </instance>
             <instance id="6">
-                <location x="76.034413030900538" y="433.250075864839289" z="4.98331940968077"/>
+                <location x="35.73549832490469" y="519.652692070646367" z="5.434215641683572"/>
             </instance>
             <instance id="7">
-                <location x="4.161174954116809" y="515.999481305364043" z="6.44060057223152"/>
+                <location x="74.567411989565827" y="542.407988260115872" z="8.600720473785133"/>
             </instance>
             <instance id="8">
-                <location x="38.267527919479569" y="480.905427961219061" z="0.339686327142971"/>
+                <location x="64.430046121562498" y="545.418873880059095" z="5.869378039572895"/>
             </instance>
             <instance id="9">
-                <location x="35.278070217216452" y="516.078383688973645" z="1.651803592462434"/>
+                <location x="14.802902247700821" y="524.637423474418142" z="8.190353141169188"/>
             </instance>
         </population>
         <population id="IT_L5A" component="Izhi2007b" size="11" type="populationList">
             <instance id="0">
-                <location x="9.221748790030516" y="659.784179522022214" z="1.919888997929358"/>
+                <location x="45.401068652115725" y="560.681397142448077" z="0.172540824162584"/>
             </instance>
             <instance id="1">
-                <location x="80.796708487497227" y="581.071579239752737" z="3.759862583025634"/>
+                <location x="68.886323694212706" y="558.10819764918017" z="8.476205320668116"/>
             </instance>
             <instance id="2">
-                <location x="4.228445033128148" y="623.974304899908702" z="0.318689613029689"/>
+                <location x="50.737597752021166" y="605.509090386226944" z="0.953058276258429"/>
             </instance>
             <instance id="3">
-                <location x="65.806800779056346" y="655.486303974670705" z="5.775010521403996"/>
+                <location x="44.312456519695274" y="584.155453618169417" z="8.111213386403694"/>
             </instance>
             <instance id="4">
-                <location x="78.671605271945225" y="679.047253702956709" z="4.333866795138611"/>
+                <location x="67.054328505415455" y="649.902424716947621" z="9.523797311294556"/>
             </instance>
             <instance id="5">
-                <location x="72.006710586534709" y="564.379143182899156" z="5.57696420573048"/>
+                <location x="78.548905542574161" y="589.828267812614513" z="2.596319440919799"/>
             </instance>
             <instance id="6">
-                <location x="11.148881697028102" y="670.361547472508278" z="1.156800836310857"/>
+                <location x="19.694300202356974" y="673.475648945476451" z="9.243717183332386"/>
             </instance>
             <instance id="7">
-                <location x="83.047008275380534" y="693.817205866950303" z="3.753111039893859"/>
+                <location x="51.057678550777567" y="651.456451260305471" z="7.128168834566777"/>
             </instance>
             <instance id="8">
-                <location x="82.953589580149099" y="579.163881491846041" z="4.149335068798203"/>
+                <location x="8.438532641685093" y="590.468627238027011" z="6.303999412786859"/>
             </instance>
             <instance id="9">
-                <location x="14.619123891062669" y="621.265895043397791" z="8.021831638933875"/>
+                <location x="80.558332745953336" y="582.471406051191252" z="1.692959474633716"/>
             </instance>
             <instance id="10">
-                <location x="13.158276297834737" y="644.086518762120704" z="4.556412840490535"/>
+                <location x="91.869847697259402" y="684.962006277074579" z="2.5520604668112"/>
             </instance>
         </population>
         <population id="IT_L5B" component="Izhi2007b" size="13" type="populationList">
             <instance id="0">
-                <location x="28.200601803623325" y="801.456328125827099" z="7.537023000027721"/>
+                <location x="34.255804037241575" y="957.499082278552805" z="5.245797710860747"/>
             </instance>
             <instance id="1">
-                <location x="34.824359097868665" y="925.705857593283213" z="0.888283887320873"/>
+                <location x="29.281256068055896" y="794.241526942892051" z="7.659274770717773"/>
             </instance>
             <instance id="2">
-                <location x="29.094654786193342" y="749.435822568642152" z="0.790871540936031"/>
+                <location x="71.315702125729388" y="935.731981616884354" z="1.817558043446278"/>
             </instance>
             <instance id="3">
-                <location x="52.910971206918347" y="972.728953533117078" z="3.818159721081723"/>
+                <location x="72.771798470712099" y="1012.514675210074643" z="4.449003683451328"/>
             </instance>
             <instance id="4">
-                <location x="16.483998842156954" y="909.831190376963036" z="2.269816431382289"/>
+                <location x="2.535799248849246" y="986.350887112905525" z="9.547360389685954"/>
             </instance>
             <instance id="5">
-                <location x="15.073322979463487" y="976.445944099373492" z="4.705596842733748"/>
+                <location x="53.78357632438955" y="879.664264067075806" z="8.332869688058306"/>
             </instance>
             <instance id="6">
-                <location x="41.657438685313494" y="800.265512212063527" z="8.382769314489344"/>
+                <location x="18.884465986092735" y="911.146322766819708" z="6.234739956369294"/>
             </instance>
             <instance id="7">
-                <location x="99.555684117589024" y="986.773621954976647" z="9.809220090420151"/>
+                <location x="4.039303820409623" y="865.485951078479047" z="5.076187069126204"/>
             </instance>
             <instance id="8">
-                <location x="60.533866590674648" y="975.139151979024859" z="3.461102657866243"/>
+                <location x="50.928169883958198" y="950.36049619182279" z="2.612809735836361"/>
             </instance>
             <instance id="9">
-                <location x="4.774596413659815" y="1023.135482361954587" z="8.018822364413104"/>
+                <location x="28.514805522024332" y="794.698113465093343" z="0.46401612022292"/>
             </instance>
             <instance id="10">
-                <location x="96.166041112844596" y="903.071738598410207" z="6.701326706554339"/>
+                <location x="58.285195056039562" y="772.845446498068213" z="9.684217237606735"/>
             </instance>
             <instance id="11">
-                <location x="67.692556932043885" y="1023.902697728953513" z="4.202730395438207"/>
+                <location x="50.64437603977963" y="970.796742135791305" z="1.632346660211216"/>
             </instance>
             <instance id="12">
-                <location x="99.400650211367221" y="796.106181632888479" z="9.229180926037992"/>
+                <location x="59.466547962232077" y="882.594234662175609" z="7.744441425856643"/>
             </instance>
         </population>
         <population id="PT_L5B" component="Izhi2007b" size="13" type="populationList">
             <instance id="0">
-                <location x="28.200601803623325" y="801.456328125827099" z="7.537023000027721"/>
+                <location x="83.114622963567967" y="826.400124415361006" z="5.11243913190606"/>
             </instance>
             <instance id="1">
-                <location x="34.824359097868665" y="925.705857593283213" z="0.888283887320873"/>
+                <location x="65.182664399501306" y="818.717900713587824" z="7.683796128755786"/>
             </instance>
             <instance id="2">
-                <location x="29.094654786193342" y="749.435822568642152" z="0.790871540936031"/>
+                <location x="51.537641158747284" y="955.707018253871183" z="0.043788176122712"/>
             </instance>
             <instance id="3">
-                <location x="52.910971206918347" y="972.728953533117078" z="3.818159721081723"/>
+                <location x="17.871546370135782" y="808.178110811317083" z="8.583812804104285"/>
             </instance>
             <instance id="4">
-                <location x="16.483998842156954" y="909.831190376963036" z="2.269816431382289"/>
+                <location x="42.395592562464955" y="765.509578874469639" z="3.917849806589228"/>
             </instance>
             <instance id="5">
-                <location x="15.073322979463487" y="976.445944099373492" z="4.705596842733748"/>
+                <location x="97.077999798060887" y="1032.858431637747572" z="3.051650245646738"/>
             </instance>
             <instance id="6">
-                <location x="41.657438685313494" y="800.265512212063527" z="8.382769314489344"/>
+                <location x="48.984636440197349" y="820.156956951775214" z="1.206675338559954"/>
             </instance>
             <instance id="7">
-                <location x="99.555684117589024" y="986.773621954976647" z="9.809220090420151"/>
+                <location x="88.710108504114231" y="837.873428788225056" z="9.572118440897311"/>
             </instance>
             <instance id="8">
-                <location x="60.533866590674648" y="975.139151979024859" z="3.461102657866243"/>
+                <location x="26.005789980163907" y="965.802590281381413" z="1.640998674818887"/>
             </instance>
             <instance id="9">
-                <location x="4.774596413659815" y="1023.135482361954587" z="8.018822364413104"/>
+                <location x="50.969544911898254" y="804.007083357289957" z="9.841481292360644"/>
             </instance>
             <instance id="10">
-                <location x="96.166041112844596" y="903.071738598410207" z="6.701326706554339"/>
+                <location x="76.906747968262096" y="740.602920643500283" z="9.824194831423103"/>
             </instance>
             <instance id="11">
-                <location x="67.692556932043885" y="1023.902697728953513" z="4.202730395438207"/>
+                <location x="48.472450687614042" y="992.292380611107887" z="3.998993148893555"/>
             </instance>
             <instance id="12">
-                <location x="99.400650211367221" y="796.106181632888479" z="9.229180926037992"/>
+                <location x="99.895552408252641" y="1014.948667251090228" z="7.381924034923958"/>
             </instance>
         </population>
         <population id="IT_L6" component="Izhi2007b" size="12" type="populationList">
             <instance id="0">
-                <location x="27.792687326834464" y="1187.609631264625705" z="3.452388087502297"/>
+                <location x="72.759365879634771" y="1069.650625599579143" z="7.998088985469217"/>
             </instance>
             <instance id="1">
-                <location x="23.963281602470666" y="1135.723672754426843" z="1.183131195439157"/>
+                <location x="40.844060572984517" y="1093.947890103760074" z="8.006315614171331"/>
             </instance>
             <instance id="2">
-                <location x="16.720606689109797" y="1330.7456036441165" z="2.298728820342996"/>
+                <location x="31.207708642621856" y="1337.259168923028255" z="1.200001485458212"/>
             </instance>
             <instance id="3">
-                <location x="75.372917464152493" y="1085.925572184259408" z="5.894617764460674"/>
+                <location x="73.47621890673706" y="1319.395034164526578" z="2.310180229225094"/>
             </instance>
             <instance id="4">
-                <location x="26.401558026176343" y="1253.213743925057088" z="4.458620738541551"/>
+                <location x="87.740541160766668" y="1315.918059781363581" z="8.703957295037796"/>
             </instance>
             <instance id="5">
-                <location x="96.214261221032373" y="1098.445133679906121" z="1.231436983960749"/>
+                <location x="77.102034103308753" y="1111.738143530192929" z="0.427420627400744"/>
             </instance>
             <instance id="6">
-                <location x="66.511311234645561" y="1150.705619298821148" z="0.504295513195938"/>
+                <location x="12.661231811097728" y="1300.17510958201774" z="2.972512196659627"/>
             </instance>
             <instance id="7">
-                <location x="26.426876014064959" y="1254.28339267350475" z="8.843977464421052"/>
+                <location x="75.689544429781691" y="1210.36335509694004" z="0.872544605318348"/>
             </instance>
             <instance id="8">
-                <location x="70.87571481357493" y="1179.808226341304817" z="1.231269774883107"/>
+                <location x="76.998269866408918" y="1074.45682229840645" z="6.023877262126036"/>
             </instance>
             <instance id="9">
-                <location x="31.931907813203463" y="1273.938243059133129" z="5.434866828461283"/>
+                <location x="4.15713959910835" y="1101.899224764524433" z="9.341409698763254"/>
             </instance>
             <instance id="10">
-                <location x="38.800154610028137" y="1197.330991918588097" z="8.197474897827293"/>
+                <location x="75.3362719793396" y="1057.179462187060608" z="6.790781684749162"/>
             </instance>
             <instance id="11">
-                <location x="56.971083613560978" y="1303.335238777170844" z="8.015465994829707"/>
+                <location x="30.831982188498507" y="1249.886686766344837" z="2.291967409853183"/>
             </instance>
         </population>
         <population id="CT_L6" component="Izhi2007b" size="12" type="populationList">
             <instance id="0">
-                <location x="27.792687326834464" y="1187.609631264625705" z="3.452388087502297"/>
+                <location x="51.912314958166107" y="1081.151205950724716" z="6.591718523886549"/>
             </instance>
             <instance id="1">
-                <location x="23.963281602470666" y="1135.723672754426843" z="1.183131195439157"/>
+                <location x="22.922370976776151" y="1318.559023304821721" z="0.89979724556669"/>
             </instance>
             <instance id="2">
-                <location x="16.720606689109797" y="1330.7456036441165" z="2.298728820342996"/>
+                <location x="65.67358446694432" y="1079.787607450152109" z="9.862280297507082"/>
             </instance>
             <instance id="3">
-                <location x="75.372917464152493" y="1085.925572184259408" z="5.894617764460674"/>
+                <location x="70.224191436163764" y="1112.604555278511498" z="0.282696639876028"/>
             </instance>
             <instance id="4">
-                <location x="26.401558026176343" y="1253.213743925057088" z="4.458620738541551"/>
+                <location x="91.404336511429278" y="1168.455103499469487" z="1.724990445317185"/>
             </instance>
             <instance id="5">
-                <location x="96.214261221032373" y="1098.445133679906121" z="1.231436983960749"/>
+                <location x="61.677536795138145" y="1121.945777221714479" z="5.670274635391638"/>
             </instance>
             <instance id="6">
-                <location x="66.511311234645561" y="1150.705619298821148" z="0.504295513195938"/>
+                <location x="86.219826780732262" y="1060.138118688346367" z="9.072502036015177"/>
             </instance>
             <instance id="7">
-                <location x="26.426876014064959" y="1254.28339267350475" z="8.843977464421052"/>
+                <location x="99.261517332986557" y="1275.052149273029045" z="0.639355526641807"/>
             </instance>
             <instance id="8">
-                <location x="70.87571481357493" y="1179.808226341304817" z="1.231269774883107"/>
+                <location x="40.560663943278641" y="1222.33422294887896" z="9.664153720114278"/>
             </instance>
             <instance id="9">
-                <location x="31.931907813203463" y="1273.938243059133129" z="5.434866828461283"/>
+                <location x="22.110491636686412" y="1169.323208010068129" z="4.637987011701314"/>
             </instance>
             <instance id="10">
-                <location x="38.800154610028137" y="1197.330991918588097" z="8.197474897827293"/>
+                <location x="83.256259486533438" y="1228.129220372653663" z="1.330781599958156"/>
             </instance>
             <instance id="11">
-                <location x="56.971083613560978" y="1303.335238777170844" z="8.015465994829707"/>
+                <location x="31.680776969405699" y="1100.430539644274631" z="3.905057184603358"/>
             </instance>
         </population>
         <population id="PV_L23" component="Izhi2007b" size="2" type="populationList">
             <instance id="0">
-                <location x="93.870444460582661" y="315.858921881640413" z="4.442593851802188"/>
+                <location x="15.226845598311378" y="145.594374823628272" z="2.725884940301801"/>
             </instance>
             <instance id="1">
-                <location x="97.282513718989662" y="184.651630048513539" z="1.291077779756855"/>
+                <location x="5.482137267350251" y="402.965869376793762" z="5.745350008547287"/>
             </instance>
         </population>
         <population id="SOM_L23" component="Izhi2007b" size="2" type="populationList">
             <instance id="0">
-                <location x="93.870444460582661" y="315.858921881640413" z="4.442593851802188"/>
+                <location x="30.32001639744918" y="268.623425559434168" z="9.682312349204333"/>
             </instance>
             <instance id="1">
-                <location x="97.282513718989662" y="184.651630048513539" z="1.291077779756855"/>
+                <location x="18.595900131645848" y="142.701549130089404" z="7.413209083097474"/>
             </instance>
         </population>
         <population id="PV_L5" component="Izhi2007b" size="6" type="populationList">
             <instance id="0">
-                <location x="75.808601565255302" y="1001.085801627389969" z="8.444980365946611"/>
+                <location x="17.915991919968054" y="875.326009043919726" z="8.749470946337963"/>
             </instance>
             <instance id="1">
-                <location x="12.871938171326081" y="1029.743711125887558" z="9.420159775120178"/>
+                <location x="30.364570422090843" y="551.22372160775933" z="7.879621283754629"/>
             </instance>
             <instance id="2">
-                <location x="54.301956521295146" y="973.240571020532229" z="1.971886683227234"/>
+                <location x="28.936776939306419" y="693.186422826201692" z="5.908109948478048"/>
             </instance>
             <instance id="3">
-                <location x="51.809764367150514" y="862.033701835511124" z="7.175590437637791"/>
+                <location x="85.254663324316965" y="817.22623685154349" z="0.546578691993171"/>
             </instance>
             <instance id="4">
-                <location x="23.504116882470626" y="1024.365601801964658" z="2.191573002014151"/>
+                <location x="11.790127002668438" y="657.745820627943203" z="9.154634614582594"/>
             </instance>
             <instance id="5">
-                <location x="46.771894484534002" y="487.581340266149766" z="4.693699661142819"/>
+                <location x="32.19272879971804" y="685.844484018583216" z="9.282225320121157"/>
             </instance>
         </population>
         <population id="SOM_L5" component="Izhi2007b" size="6" type="populationList">
             <instance id="0">
-                <location x="75.808601565255302" y="1001.085801627389969" z="8.444980365946611"/>
+                <location x="28.294179579852642" y="911.795509688173752" z="6.085819436847197"/>
             </instance>
             <instance id="1">
-                <location x="12.871938171326081" y="1029.743711125887558" z="9.420159775120178"/>
+                <location x="72.831055039610987" y="875.504427739232369" z="6.428299323643241"/>
             </instance>
             <instance id="2">
-                <location x="54.301956521295146" y="973.240571020532229" z="1.971886683227234"/>
+                <location x="42.241585150814032" y="523.844378521373528" z="6.177395133974884"/>
             </instance>
             <instance id="3">
-                <location x="51.809764367150514" y="862.033701835511124" z="7.175590437637791"/>
+                <location x="5.885890568401198" y="992.116103291023705" z="3.175823400991655"/>
             </instance>
             <instance id="4">
-                <location x="23.504116882470626" y="1024.365601801964658" z="2.191573002014151"/>
+                <location x="53.849663629215925" y="498.553540147801527" z="3.579401697454532"/>
             </instance>
             <instance id="5">
-                <location x="46.771894484534002" y="487.581340266149766" z="4.693699661142819"/>
+                <location x="85.936566128927055" y="970.780642381963162" z="5.671802536059987"/>
             </instance>
         </population>
         <population id="PV_L6" component="Izhi2007b" size="3" type="populationList">
             <instance id="0">
-                <location x="91.711585874816009" y="1233.287161713237765" z="1.861602375166967"/>
+                <location x="69.551548197972565" y="1141.37187519022541" z="8.084339762977862"/>
             </instance>
             <instance id="1">
-                <location x="67.115838414070012" y="1153.517354412397026" z="8.864825786998646"/>
+                <location x="45.323875045965281" y="1280.884629112867287" z="6.639297669231173"/>
             </instance>
             <instance id="2">
-                <location x="51.804630571516853" y="1144.644860411036007" z="7.624642933995156"/>
+                <location x="48.459922133131862" y="1070.509257733272079" z="9.238727163304159"/>
             </instance>
         </population>
         <population id="SOM_L6" component="Izhi2007b" size="3" type="populationList">
             <instance id="0">
-                <location x="91.711585874816009" y="1233.287161713237765" z="1.861602375166967"/>
+                <location x="36.342442464709059" y="1158.652514202677139" z="7.388591631220969"/>
             </instance>
             <instance id="1">
-                <location x="67.115838414070012" y="1153.517354412397026" z="8.864825786998646"/>
+                <location x="24.816330549412456" y="1243.752305955633574" z="0.978293322738725"/>
             </instance>
             <instance id="2">
-                <location x="51.804630571516853" y="1144.644860411036007" z="7.624642933995156"/>
+                <location x="43.581967885112007" y="1053.38817341344793" z="7.659665458787954"/>
             </instance>
         </population>
         <population id="Pop_NetStim_background_E_IT_L6_20_1_NMDA" component="NetStim_background_E_IT_L6_20_1_NMDA" size="12"/>
@@ -405,147 +405,148 @@
         <population id="Pop_NetStim_background_I_PV_L23_20_1_NMDA" component="NetStim_background_I_PV_L23_20_1_NMDA" size="2"/>
         <population id="Pop_NetStim_background_I_SOM_L6_20_1_NMDA" component="NetStim_background_I_SOM_L6_20_1_NMDA" size="3"/>
         <population id="Pop_NetStim_background_E_CT_L6_20_1_NMDA" component="NetStim_background_E_CT_L6_20_1_NMDA" size="12"/>
-        <population id="Pop_NetStim_background_E_IT_L23_20_1_NMDA" component="NetStim_background_E_IT_L23_20_1_NMDA" size="19"/>
+        <population id="Pop_NetStim_background_E_IT_L23_20_1_NMDA" component="NetStim_background_E_IT_L23_20_1_NMDA" size="20"/>
         <population id="Pop_NetStim_background_I_SOM_L5_20_1_NMDA" component="NetStim_background_I_SOM_L5_20_1_NMDA" size="6"/>
         <population id="Pop_NetStim_background_E_IT_L5A_20_1_NMDA" component="NetStim_background_E_IT_L5A_20_1_NMDA" size="11"/>
         <population id="Pop_NetStim_background_I_PV_L5_20_1_NMDA" component="NetStim_background_I_PV_L5_20_1_NMDA" size="6"/>
         <projection id="NetConn_NetStim_background_E_IT_L6_20_1_NMDA__IT_L6" presynapticPopulation="Pop_NetStim_background_E_IT_L6_20_1_NMDA" postsynapticPopulation="IT_L6" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[0]" postCellId="../IT_L6/0/Izhi2007b" weight="0.1" delay="9.27512971867 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[1]" postCellId="../IT_L6/1/Izhi2007b" weight="0.1" delay="2.41043680368 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[2]" postCellId="../IT_L6/2/Izhi2007b" weight="0.1" delay="1.05580206724 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[3]" postCellId="../IT_L6/3/Izhi2007b" weight="0.1" delay="4.67818155062 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[4]" postCellId="../IT_L6/4/Izhi2007b" weight="0.1" delay="6.43005625026 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[5]" postCellId="../IT_L6/5/Izhi2007b" weight="0.1" delay="1.9500539376 ms"/>
-            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[6]" postCellId="../IT_L6/6/Izhi2007b" weight="0.1" delay="4.78926099399 ms"/>
-            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[7]" postCellId="../IT_L6/7/Izhi2007b" weight="0.1" delay="5.9298818135 ms"/>
-            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[8]" postCellId="../IT_L6/8/Izhi2007b" weight="0.1" delay="0.802140276807 ms"/>
-            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[9]" postCellId="../IT_L6/9/Izhi2007b" weight="0.1" delay="-1.40097754502 ms"/>
-            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[10]" postCellId="../IT_L6/10/Izhi2007b" weight="0.1" delay="11.2430975947 ms"/>
-            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[11]" postCellId="../IT_L6/11/Izhi2007b" weight="0.1" delay="0.277223399197 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[0]" postCellId="../IT_L6/0/Izhi2007b" weight="0.1" delay="5.82815807566 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[1]" postCellId="../IT_L6/1/Izhi2007b" weight="0.1" delay="4.88981194484 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[2]" postCellId="../IT_L6/2/Izhi2007b" weight="0.1" delay="6.99710863516 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[3]" postCellId="../IT_L6/3/Izhi2007b" weight="0.1" delay="9.58723704428 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[4]" postCellId="../IT_L6/4/Izhi2007b" weight="0.1" delay="9.00282881281 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[5]" postCellId="../IT_L6/5/Izhi2007b" weight="0.1" delay="8.46233875106 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[6]" postCellId="../IT_L6/6/Izhi2007b" weight="0.1" delay="0.39212736525 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[7]" postCellId="../IT_L6/7/Izhi2007b" weight="0.1" delay="4.25887391285 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[8]" postCellId="../IT_L6/8/Izhi2007b" weight="0.1" delay="4.70268693847 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[9]" postCellId="../IT_L6/9/Izhi2007b" weight="0.1" delay="0.451239158426 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[10]" postCellId="../IT_L6/10/Izhi2007b" weight="0.1" delay="4.24618175828 ms"/>
+            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L6_20_1_NMDA[11]" postCellId="../IT_L6/11/Izhi2007b" weight="0.1" delay="8.82404269314 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_I_PV_L6_20_1_NMDA__PV_L6" presynapticPopulation="Pop_NetStim_background_I_PV_L6_20_1_NMDA" postsynapticPopulation="PV_L6" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_PV_L6_20_1_NMDA[0]" postCellId="../PV_L6/0/Izhi2007b" weight="0.1" delay="1.13508929095 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_PV_L6_20_1_NMDA[1]" postCellId="../PV_L6/1/Izhi2007b" weight="0.1" delay="9.40899242792 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_I_PV_L6_20_1_NMDA[2]" postCellId="../PV_L6/2/Izhi2007b" weight="0.1" delay="6.21789145125 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_PV_L6_20_1_NMDA[0]" postCellId="../PV_L6/0/Izhi2007b" weight="0.1" delay="3.5732266491 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_PV_L6_20_1_NMDA[1]" postCellId="../PV_L6/1/Izhi2007b" weight="0.1" delay="5.43194437632 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_I_PV_L6_20_1_NMDA[2]" postCellId="../PV_L6/2/Izhi2007b" weight="0.1" delay="8.33049216772 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_E_IT_L5B_20_1_NMDA__IT_L5B" presynapticPopulation="Pop_NetStim_background_E_IT_L5B_20_1_NMDA" postsynapticPopulation="IT_L5B" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[0]" postCellId="../IT_L5B/0/Izhi2007b" weight="0.1" delay="7.38774182591 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[1]" postCellId="../IT_L5B/1/Izhi2007b" weight="0.1" delay="5.39241840842 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[2]" postCellId="../IT_L5B/2/Izhi2007b" weight="0.1" delay="7.95842292369 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[3]" postCellId="../IT_L5B/3/Izhi2007b" weight="0.1" delay="4.05841963322 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[4]" postCellId="../IT_L5B/4/Izhi2007b" weight="0.1" delay="8.30253946781 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[5]" postCellId="../IT_L5B/5/Izhi2007b" weight="0.1" delay="3.5840263483 ms"/>
-            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[6]" postCellId="../IT_L5B/6/Izhi2007b" weight="0.1" delay="6.26092204259 ms"/>
-            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[7]" postCellId="../IT_L5B/7/Izhi2007b" weight="0.1" delay="6.04013173449 ms"/>
-            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[8]" postCellId="../IT_L5B/8/Izhi2007b" weight="0.1" delay="6.06885514536 ms"/>
-            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[9]" postCellId="../IT_L5B/9/Izhi2007b" weight="0.1" delay="6.4689373161 ms"/>
-            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[10]" postCellId="../IT_L5B/10/Izhi2007b" weight="0.1" delay="-0.165462937794 ms"/>
-            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[11]" postCellId="../IT_L5B/11/Izhi2007b" weight="0.1" delay="6.23565452305 ms"/>
-            <connectionWD id="12" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[12]" postCellId="../IT_L5B/12/Izhi2007b" weight="0.1" delay="5.03602406173 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[0]" postCellId="../IT_L5B/0/Izhi2007b" weight="0.1" delay="2.51396758354 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[1]" postCellId="../IT_L5B/1/Izhi2007b" weight="0.1" delay="8.14479805411 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[2]" postCellId="../IT_L5B/2/Izhi2007b" weight="0.1" delay="7.18514393722 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[3]" postCellId="../IT_L5B/3/Izhi2007b" weight="0.1" delay="5.88125783341 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[4]" postCellId="../IT_L5B/4/Izhi2007b" weight="0.1" delay="3.78428797599 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[5]" postCellId="../IT_L5B/5/Izhi2007b" weight="0.1" delay="9.83794536181 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[6]" postCellId="../IT_L5B/6/Izhi2007b" weight="0.1" delay="2.48384598971 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[7]" postCellId="../IT_L5B/7/Izhi2007b" weight="0.1" delay="8.05668079914 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[8]" postCellId="../IT_L5B/8/Izhi2007b" weight="0.1" delay="2.57884425248 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[9]" postCellId="../IT_L5B/9/Izhi2007b" weight="0.1" delay="9.44814237633 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[10]" postCellId="../IT_L5B/10/Izhi2007b" weight="0.1" delay="4.73777373968 ms"/>
+            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[11]" postCellId="../IT_L5B/11/Izhi2007b" weight="0.1" delay="6.42940996321 ms"/>
+            <connectionWD id="12" preCellId="../Pop_NetStim_background_E_IT_L5B_20_1_NMDA[12]" postCellId="../IT_L5B/12/Izhi2007b" weight="0.1" delay="4.54566926175 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_I_SOM_L23_20_1_NMDA__SOM_L23" presynapticPopulation="Pop_NetStim_background_I_SOM_L23_20_1_NMDA" postsynapticPopulation="SOM_L23" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_SOM_L23_20_1_NMDA[0]" postCellId="../SOM_L23/0/Izhi2007b" weight="0.03" delay="8.15620560158 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_SOM_L23_20_1_NMDA[1]" postCellId="../SOM_L23/1/Izhi2007b" weight="0.03" delay="10.3947409642 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_SOM_L23_20_1_NMDA[0]" postCellId="../SOM_L23/0/Izhi2007b" weight="0.03" delay="5.16625618777 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_SOM_L23_20_1_NMDA[1]" postCellId="../SOM_L23/1/Izhi2007b" weight="0.03" delay="-2.90673490481 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_E_PT_L5B_20_1_NMDA__PT_L5B" presynapticPopulation="Pop_NetStim_background_E_PT_L5B_20_1_NMDA" postsynapticPopulation="PT_L5B" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[0]" postCellId="../PT_L5B/0/Izhi2007b" weight="0.1" delay="6.49360007866 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[1]" postCellId="../PT_L5B/1/Izhi2007b" weight="0.1" delay="1.27422268705 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[2]" postCellId="../PT_L5B/2/Izhi2007b" weight="0.1" delay="-0.123134247736 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[3]" postCellId="../PT_L5B/3/Izhi2007b" weight="0.1" delay="2.25644766132 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[4]" postCellId="../PT_L5B/4/Izhi2007b" weight="0.1" delay="3.03444861628 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[5]" postCellId="../PT_L5B/5/Izhi2007b" weight="0.1" delay="9.04052583879 ms"/>
-            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[6]" postCellId="../PT_L5B/6/Izhi2007b" weight="0.1" delay="7.40611880548 ms"/>
-            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[7]" postCellId="../PT_L5B/7/Izhi2007b" weight="0.1" delay="4.51892441794 ms"/>
-            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[8]" postCellId="../PT_L5B/8/Izhi2007b" weight="0.1" delay="3.59781221976 ms"/>
-            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[9]" postCellId="../PT_L5B/9/Izhi2007b" weight="0.1" delay="2.84314750792 ms"/>
-            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[10]" postCellId="../PT_L5B/10/Izhi2007b" weight="0.1" delay="2.41562552796 ms"/>
-            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[11]" postCellId="../PT_L5B/11/Izhi2007b" weight="0.1" delay="1.89654611761 ms"/>
-            <connectionWD id="12" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[12]" postCellId="../PT_L5B/12/Izhi2007b" weight="0.1" delay="3.76258493769 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[0]" postCellId="../PT_L5B/0/Izhi2007b" weight="0.1" delay="3.96892275973 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[1]" postCellId="../PT_L5B/1/Izhi2007b" weight="0.1" delay="8.02048889008 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[2]" postCellId="../PT_L5B/2/Izhi2007b" weight="0.1" delay="1.68160407294 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[3]" postCellId="../PT_L5B/3/Izhi2007b" weight="0.1" delay="9.66795873174 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[4]" postCellId="../PT_L5B/4/Izhi2007b" weight="0.1" delay="7.46486231174 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[5]" postCellId="../PT_L5B/5/Izhi2007b" weight="0.1" delay="6.9193269495 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[6]" postCellId="../PT_L5B/6/Izhi2007b" weight="0.1" delay="5.20010374267 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[7]" postCellId="../PT_L5B/7/Izhi2007b" weight="0.1" delay="1.88043047015 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[8]" postCellId="../PT_L5B/8/Izhi2007b" weight="0.1" delay="4.36316943666 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[9]" postCellId="../PT_L5B/9/Izhi2007b" weight="0.1" delay="1.1063273622 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[10]" postCellId="../PT_L5B/10/Izhi2007b" weight="0.1" delay="8.66495757416 ms"/>
+            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[11]" postCellId="../PT_L5B/11/Izhi2007b" weight="0.1" delay="7.85051548727 ms"/>
+            <connectionWD id="12" preCellId="../Pop_NetStim_background_E_PT_L5B_20_1_NMDA[12]" postCellId="../PT_L5B/12/Izhi2007b" weight="0.1" delay="6.87220603737 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_E_IT_L4_20_1_NMDA__IT_L4" presynapticPopulation="Pop_NetStim_background_E_IT_L4_20_1_NMDA" postsynapticPopulation="IT_L4" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[0]" postCellId="../IT_L4/0/Izhi2007b" weight="0.1" delay="2.22518069243 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[1]" postCellId="../IT_L4/1/Izhi2007b" weight="0.1" delay="5.09255587901 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[2]" postCellId="../IT_L4/2/Izhi2007b" weight="0.1" delay="7.74105820576 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[3]" postCellId="../IT_L4/3/Izhi2007b" weight="0.1" delay="0.761918698519 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[4]" postCellId="../IT_L4/4/Izhi2007b" weight="0.1" delay="4.71073154917 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[5]" postCellId="../IT_L4/5/Izhi2007b" weight="0.1" delay="9.33834048154 ms"/>
-            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[6]" postCellId="../IT_L4/6/Izhi2007b" weight="0.1" delay="5.64892521244 ms"/>
-            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[7]" postCellId="../IT_L4/7/Izhi2007b" weight="0.1" delay="2.81028498637 ms"/>
-            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[8]" postCellId="../IT_L4/8/Izhi2007b" weight="0.1" delay="1.93593940371 ms"/>
-            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[9]" postCellId="../IT_L4/9/Izhi2007b" weight="0.1" delay="2.37477205447 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[0]" postCellId="../IT_L4/0/Izhi2007b" weight="0.1" delay="0.682020503318 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[1]" postCellId="../IT_L4/1/Izhi2007b" weight="0.1" delay="4.5085468628 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[2]" postCellId="../IT_L4/2/Izhi2007b" weight="0.1" delay="2.98723251448 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[3]" postCellId="../IT_L4/3/Izhi2007b" weight="0.1" delay="4.25669761575 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[4]" postCellId="../IT_L4/4/Izhi2007b" weight="0.1" delay="4.1738278002 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[5]" postCellId="../IT_L4/5/Izhi2007b" weight="0.1" delay="6.46598455702 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[6]" postCellId="../IT_L4/6/Izhi2007b" weight="0.1" delay="3.76758698639 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[7]" postCellId="../IT_L4/7/Izhi2007b" weight="0.1" delay="0.356810268228 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[8]" postCellId="../IT_L4/8/Izhi2007b" weight="0.1" delay="2.93756120541 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L4_20_1_NMDA[9]" postCellId="../IT_L4/9/Izhi2007b" weight="0.1" delay="7.25646963051 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_I_PV_L23_20_1_NMDA__PV_L23" presynapticPopulation="Pop_NetStim_background_I_PV_L23_20_1_NMDA" postsynapticPopulation="PV_L23" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_PV_L23_20_1_NMDA[0]" postCellId="../PV_L23/0/Izhi2007b" weight="0.1" delay="2.46936545901 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_PV_L23_20_1_NMDA[1]" postCellId="../PV_L23/1/Izhi2007b" weight="0.1" delay="1.94780133126 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_PV_L23_20_1_NMDA[0]" postCellId="../PV_L23/0/Izhi2007b" weight="0.1" delay="4.24267816675 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_PV_L23_20_1_NMDA[1]" postCellId="../PV_L23/1/Izhi2007b" weight="0.1" delay="7.19905765767 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_I_SOM_L6_20_1_NMDA__SOM_L6" presynapticPopulation="Pop_NetStim_background_I_SOM_L6_20_1_NMDA" postsynapticPopulation="SOM_L6" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_SOM_L6_20_1_NMDA[0]" postCellId="../SOM_L6/0/Izhi2007b" weight="0.03" delay="0.0663921986151 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_SOM_L6_20_1_NMDA[1]" postCellId="../SOM_L6/1/Izhi2007b" weight="0.03" delay="4.89688106531 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_I_SOM_L6_20_1_NMDA[2]" postCellId="../SOM_L6/2/Izhi2007b" weight="0.03" delay="6.76140931076 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_SOM_L6_20_1_NMDA[0]" postCellId="../SOM_L6/0/Izhi2007b" weight="0.03" delay="8.72495214983 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_SOM_L6_20_1_NMDA[1]" postCellId="../SOM_L6/1/Izhi2007b" weight="0.03" delay="5.83964847464 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_I_SOM_L6_20_1_NMDA[2]" postCellId="../SOM_L6/2/Izhi2007b" weight="0.03" delay="7.65444281001 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_E_CT_L6_20_1_NMDA__CT_L6" presynapticPopulation="Pop_NetStim_background_E_CT_L6_20_1_NMDA" postsynapticPopulation="CT_L6" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[0]" postCellId="../CT_L6/0/Izhi2007b" weight="0.1" delay="1.33977436834 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[1]" postCellId="../CT_L6/1/Izhi2007b" weight="0.1" delay="1.16753981271 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[2]" postCellId="../CT_L6/2/Izhi2007b" weight="0.1" delay="3.25042080219 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[3]" postCellId="../CT_L6/3/Izhi2007b" weight="0.1" delay="-4.99552428362 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[4]" postCellId="../CT_L6/4/Izhi2007b" weight="0.1" delay="3.71773636558 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[5]" postCellId="../CT_L6/5/Izhi2007b" weight="0.1" delay="5.26724946365 ms"/>
-            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[6]" postCellId="../CT_L6/6/Izhi2007b" weight="0.1" delay="3.62425374506 ms"/>
-            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[7]" postCellId="../CT_L6/7/Izhi2007b" weight="0.1" delay="7.28326031336 ms"/>
-            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[8]" postCellId="../CT_L6/8/Izhi2007b" weight="0.1" delay="-0.0993912337627 ms"/>
-            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[9]" postCellId="../CT_L6/9/Izhi2007b" weight="0.1" delay="6.95836029362 ms"/>
-            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[10]" postCellId="../CT_L6/10/Izhi2007b" weight="0.1" delay="0.681016123577 ms"/>
-            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[11]" postCellId="../CT_L6/11/Izhi2007b" weight="0.1" delay="4.59269842642 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[0]" postCellId="../CT_L6/0/Izhi2007b" weight="0.1" delay="8.06211324647 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[1]" postCellId="../CT_L6/1/Izhi2007b" weight="0.1" delay="6.46884028765 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[2]" postCellId="../CT_L6/2/Izhi2007b" weight="0.1" delay="7.28572952817 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[3]" postCellId="../CT_L6/3/Izhi2007b" weight="0.1" delay="3.00505370392 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[4]" postCellId="../CT_L6/4/Izhi2007b" weight="0.1" delay="3.03258981728 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[5]" postCellId="../CT_L6/5/Izhi2007b" weight="0.1" delay="9.25906108489 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[6]" postCellId="../CT_L6/6/Izhi2007b" weight="0.1" delay="5.89953314546 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[7]" postCellId="../CT_L6/7/Izhi2007b" weight="0.1" delay="7.12864731445 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[8]" postCellId="../CT_L6/8/Izhi2007b" weight="0.1" delay="3.45497946501 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[9]" postCellId="../CT_L6/9/Izhi2007b" weight="0.1" delay="3.27462831052 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[10]" postCellId="../CT_L6/10/Izhi2007b" weight="0.1" delay="6.74189921078 ms"/>
+            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_CT_L6_20_1_NMDA[11]" postCellId="../CT_L6/11/Izhi2007b" weight="0.1" delay="1.75656230362 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_E_IT_L23_20_1_NMDA__IT_L23" presynapticPopulation="Pop_NetStim_background_E_IT_L23_20_1_NMDA" postsynapticPopulation="IT_L23" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[0]" postCellId="../IT_L23/0/Izhi2007b" weight="0.1" delay="3.40611679744 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[1]" postCellId="../IT_L23/1/Izhi2007b" weight="0.1" delay="5.32155049593 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[2]" postCellId="../IT_L23/2/Izhi2007b" weight="0.1" delay="3.1613739038 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[3]" postCellId="../IT_L23/3/Izhi2007b" weight="0.1" delay="8.42021086535 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[4]" postCellId="../IT_L23/4/Izhi2007b" weight="0.1" delay="4.87046349269 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[5]" postCellId="../IT_L23/5/Izhi2007b" weight="0.1" delay="2.63593702685 ms"/>
-            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[6]" postCellId="../IT_L23/6/Izhi2007b" weight="0.1" delay="2.63784282227 ms"/>
-            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[7]" postCellId="../IT_L23/7/Izhi2007b" weight="0.1" delay="4.30523923161 ms"/>
-            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[8]" postCellId="../IT_L23/8/Izhi2007b" weight="0.1" delay="8.51473925662 ms"/>
-            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[9]" postCellId="../IT_L23/9/Izhi2007b" weight="0.1" delay="6.42976950229 ms"/>
-            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[10]" postCellId="../IT_L23/10/Izhi2007b" weight="0.1" delay="1.91641482044 ms"/>
-            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[11]" postCellId="../IT_L23/11/Izhi2007b" weight="0.1" delay="6.38351348763 ms"/>
-            <connectionWD id="12" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[12]" postCellId="../IT_L23/12/Izhi2007b" weight="0.1" delay="8.37787384853 ms"/>
-            <connectionWD id="13" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[13]" postCellId="../IT_L23/14/Izhi2007b" weight="0.1" delay="7.46803931744 ms"/>
-            <connectionWD id="14" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[14]" postCellId="../IT_L23/15/Izhi2007b" weight="0.1" delay="10.6044759615 ms"/>
-            <connectionWD id="15" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[15]" postCellId="../IT_L23/16/Izhi2007b" weight="0.1" delay="-3.10502491887 ms"/>
-            <connectionWD id="16" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[16]" postCellId="../IT_L23/17/Izhi2007b" weight="0.1" delay="4.93972878499 ms"/>
-            <connectionWD id="17" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[17]" postCellId="../IT_L23/18/Izhi2007b" weight="0.1" delay="4.3139420367 ms"/>
-            <connectionWD id="18" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[18]" postCellId="../IT_L23/19/Izhi2007b" weight="0.1" delay="2.58903286861 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[0]" postCellId="../IT_L23/0/Izhi2007b" weight="0.1" delay="7.36605260425 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[1]" postCellId="../IT_L23/1/Izhi2007b" weight="0.1" delay="7.61731377992 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[2]" postCellId="../IT_L23/2/Izhi2007b" weight="0.1" delay="-2.06326951506 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[3]" postCellId="../IT_L23/3/Izhi2007b" weight="0.1" delay="2.76549978687 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[4]" postCellId="../IT_L23/4/Izhi2007b" weight="0.1" delay="4.75479088909 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[5]" postCellId="../IT_L23/5/Izhi2007b" weight="0.1" delay="4.90764520307 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[6]" postCellId="../IT_L23/6/Izhi2007b" weight="0.1" delay="7.3125939893 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[7]" postCellId="../IT_L23/7/Izhi2007b" weight="0.1" delay="-0.404003618252 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[8]" postCellId="../IT_L23/8/Izhi2007b" weight="0.1" delay="7.28876225545 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[9]" postCellId="../IT_L23/9/Izhi2007b" weight="0.1" delay="3.46177574175 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[10]" postCellId="../IT_L23/10/Izhi2007b" weight="0.1" delay="1.28391123541 ms"/>
+            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[11]" postCellId="../IT_L23/11/Izhi2007b" weight="0.1" delay="6.61310746993 ms"/>
+            <connectionWD id="12" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[12]" postCellId="../IT_L23/12/Izhi2007b" weight="0.1" delay="-1.052158365 ms"/>
+            <connectionWD id="13" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[13]" postCellId="../IT_L23/13/Izhi2007b" weight="0.1" delay="4.89896806478 ms"/>
+            <connectionWD id="14" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[14]" postCellId="../IT_L23/14/Izhi2007b" weight="0.1" delay="4.59355302975 ms"/>
+            <connectionWD id="15" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[15]" postCellId="../IT_L23/15/Izhi2007b" weight="0.1" delay="-0.719089520639 ms"/>
+            <connectionWD id="16" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[16]" postCellId="../IT_L23/16/Izhi2007b" weight="0.1" delay="6.70048881115 ms"/>
+            <connectionWD id="17" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[17]" postCellId="../IT_L23/17/Izhi2007b" weight="0.1" delay="7.67563472055 ms"/>
+            <connectionWD id="18" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[18]" postCellId="../IT_L23/18/Izhi2007b" weight="0.1" delay="5.60429932442 ms"/>
+            <connectionWD id="19" preCellId="../Pop_NetStim_background_E_IT_L23_20_1_NMDA[19]" postCellId="../IT_L23/19/Izhi2007b" weight="0.1" delay="5.9655484694 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_I_SOM_L5_20_1_NMDA__SOM_L5" presynapticPopulation="Pop_NetStim_background_I_SOM_L5_20_1_NMDA" postsynapticPopulation="SOM_L5" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[0]" postCellId="../SOM_L5/0/Izhi2007b" weight="0.03" delay="2.84029725973 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[1]" postCellId="../SOM_L5/1/Izhi2007b" weight="0.03" delay="3.8994842763 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[2]" postCellId="../SOM_L5/2/Izhi2007b" weight="0.03" delay="7.65922026083 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[3]" postCellId="../SOM_L5/3/Izhi2007b" weight="0.03" delay="-0.7725106535 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[4]" postCellId="../SOM_L5/4/Izhi2007b" weight="0.03" delay="6.37017758883 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[5]" postCellId="../SOM_L5/5/Izhi2007b" weight="0.03" delay="5.47337809845 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[0]" postCellId="../SOM_L5/0/Izhi2007b" weight="0.03" delay="7.53788303026 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[1]" postCellId="../SOM_L5/1/Izhi2007b" weight="0.03" delay="3.43465133028 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[2]" postCellId="../SOM_L5/2/Izhi2007b" weight="0.03" delay="4.38484033223 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[3]" postCellId="../SOM_L5/3/Izhi2007b" weight="0.03" delay="5.96279931191 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[4]" postCellId="../SOM_L5/4/Izhi2007b" weight="0.03" delay="4.97071858624 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_I_SOM_L5_20_1_NMDA[5]" postCellId="../SOM_L5/5/Izhi2007b" weight="0.03" delay="5.67015086147 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_E_IT_L5A_20_1_NMDA__IT_L5A" presynapticPopulation="Pop_NetStim_background_E_IT_L5A_20_1_NMDA" postsynapticPopulation="IT_L5A" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[0]" postCellId="../IT_L5A/0/Izhi2007b" weight="0.1" delay="0.722501474039 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[1]" postCellId="../IT_L5A/1/Izhi2007b" weight="0.1" delay="7.97255721338 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[2]" postCellId="../IT_L5A/2/Izhi2007b" weight="0.1" delay="1.88591254723 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[3]" postCellId="../IT_L5A/3/Izhi2007b" weight="0.1" delay="-1.08210673034 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[4]" postCellId="../IT_L5A/4/Izhi2007b" weight="0.1" delay="3.6816277166 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[5]" postCellId="../IT_L5A/5/Izhi2007b" weight="0.1" delay="2.94410278792 ms"/>
-            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[6]" postCellId="../IT_L5A/6/Izhi2007b" weight="0.1" delay="1.40896345807 ms"/>
-            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[7]" postCellId="../IT_L5A/7/Izhi2007b" weight="0.1" delay="8.9481432764 ms"/>
-            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[8]" postCellId="../IT_L5A/8/Izhi2007b" weight="0.1" delay="1.62227473388 ms"/>
-            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[9]" postCellId="../IT_L5A/9/Izhi2007b" weight="0.1" delay="4.91653099135 ms"/>
-            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[10]" postCellId="../IT_L5A/10/Izhi2007b" weight="0.1" delay="-3.02211903373 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[0]" postCellId="../IT_L5A/0/Izhi2007b" weight="0.1" delay="4.2128997611 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[1]" postCellId="../IT_L5A/1/Izhi2007b" weight="0.1" delay="8.18839469767 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[2]" postCellId="../IT_L5A/2/Izhi2007b" weight="0.1" delay="5.05596388867 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[3]" postCellId="../IT_L5A/3/Izhi2007b" weight="0.1" delay="3.34199142078 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[4]" postCellId="../IT_L5A/4/Izhi2007b" weight="0.1" delay="0.184446875998 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[5]" postCellId="../IT_L5A/5/Izhi2007b" weight="0.1" delay="2.40578701609 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[6]" postCellId="../IT_L5A/6/Izhi2007b" weight="0.1" delay="6.17856124499 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[7]" postCellId="../IT_L5A/7/Izhi2007b" weight="0.1" delay="4.95938666809 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[8]" postCellId="../IT_L5A/8/Izhi2007b" weight="0.1" delay="2.21082842238 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[9]" postCellId="../IT_L5A/9/Izhi2007b" weight="0.1" delay="5.50761422923 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L5A_20_1_NMDA[10]" postCellId="../IT_L5A/10/Izhi2007b" weight="0.1" delay="8.88454146446 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_I_PV_L5_20_1_NMDA__PV_L5" presynapticPopulation="Pop_NetStim_background_I_PV_L5_20_1_NMDA" postsynapticPopulation="PV_L5" synapse="NMDA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[0]" postCellId="../PV_L5/0/Izhi2007b" weight="0.1" delay="-1.0846090617 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[1]" postCellId="../PV_L5/1/Izhi2007b" weight="0.1" delay="8.61731218728 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[2]" postCellId="../PV_L5/2/Izhi2007b" weight="0.1" delay="8.0443169801 ms"/>
-            <connectionWD id="3" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[3]" postCellId="../PV_L5/3/Izhi2007b" weight="0.1" delay="11.8056191272 ms"/>
-            <connectionWD id="4" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[4]" postCellId="../PV_L5/4/Izhi2007b" weight="0.1" delay="-0.710696868656 ms"/>
-            <connectionWD id="5" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[5]" postCellId="../PV_L5/5/Izhi2007b" weight="0.1" delay="7.92840162176 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[0]" postCellId="../PV_L5/0/Izhi2007b" weight="0.1" delay="0.390122293149 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[1]" postCellId="../PV_L5/1/Izhi2007b" weight="0.1" delay="7.23971858695 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[2]" postCellId="../PV_L5/2/Izhi2007b" weight="0.1" delay="8.36293138946 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[3]" postCellId="../PV_L5/3/Izhi2007b" weight="0.1" delay="4.4188397783 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[4]" postCellId="../PV_L5/4/Izhi2007b" weight="0.1" delay="2.93126018622 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_I_PV_L5_20_1_NMDA[5]" postCellId="../PV_L5/5/Izhi2007b" weight="0.1" delay="4.70160755791 ms"/>
         </projection>
     </network>
 </neuroml>

@@ -13,7 +13,7 @@ experiments:
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
-        tolerance: 0.0005
+        tolerance: 0.000926  #  Note relatively big tolerance, due to large dt for jnml...
   v1:
     observables:
       spike times:
@@ -23,7 +23,7 @@ experiments:
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
-        tolerance: 0.0005
+        tolerance: 0.000936
   v2:
     observables:
       spike times:
@@ -33,4 +33,4 @@ experiments:
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
-        tolerance: 0.001
+        tolerance: 0.000396

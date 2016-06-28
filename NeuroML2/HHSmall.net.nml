@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="HHSmall">
-    <notes>NeuroML 2 file exported from NetPyNE v0.4.8</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.4.9</notes>
     <include href="HH.cell.nml"></include>
     <expTwoSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="1.0ms" tauRise="0.1ms"/>
     <spikeGenerator id="NetStim_background_PYR_20_0_AMPA" period="0.05s"/>
@@ -15,7 +15,7 @@
                 <location x="51.804630571516853" y="33.86307903737071" z="76.246429339951561"/>
             </instance>
         </population>
-        <population id="Pop_NetStim_background_PYR_20_0_AMPA" component="NetStim_background_PYR_20_0_AMPA" size="2"/>
+        <population id="Pop_NetStim_background_PYR_20_0_AMPA" component="NetStim_background_PYR_20_0_AMPA" size="3"/>
         <projection id="NetConn_PYR_PYR_AMPA" presynapticPopulation="PYR" postsynapticPopulation="PYR" synapse="AMPA">
             <connectionWD id="0" preCellId="../PYR/1/HH" postCellId="../PYR/0/HH" weight="0.005" delay="13.9025381799 ms"/>
             <connectionWD id="1" preCellId="../PYR/2/HH" postCellId="../PYR/0/HH" weight="0.005" delay="12.9100663402 ms"/>
@@ -25,8 +25,9 @@
             <connectionWD id="5" preCellId="../PYR/1/HH" postCellId="../PYR/2/HH" weight="0.005" delay="11.1134170437 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_PYR_20_0_AMPA__PYR" presynapticPopulation="Pop_NetStim_background_PYR_20_0_AMPA" postsynapticPopulation="PYR" synapse="AMPA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[0]" postCellId="../PYR/0/HH" weight="0.1" delay="1.22325122436 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[1]" postCellId="../PYR/2/HH" weight="0.1" delay="2.48653809644 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[0]" postCellId="../PYR/0/HH" weight="0.1" delay="3.55765385643 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[1]" postCellId="../PYR/1/HH" weight="0.1" delay="3.03126478855 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[2]" postCellId="../PYR/2/HH" weight="0.1" delay="2.42562143109 ms"/>
         </projection>
     </network>
 </neuroml>
