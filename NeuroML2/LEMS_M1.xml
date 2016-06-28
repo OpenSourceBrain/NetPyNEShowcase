@@ -29,7 +29,7 @@
     <Include file="Izhi2007b.cell.nml"/>
     <Include file="Izhi2007b.cell.nml"/>
    
-    <Simulation id="Sim_M1" length="1000.0ms" step="0.1ms" target="M1" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_M1" length="1000.0ms" step="0.01ms" target="M1" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__IT_L23" title="Membrane potentials of cells in IT_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
             <Line id="IT_L23[0]: v" quantity="IT_L23/0/Izhi2007b/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
