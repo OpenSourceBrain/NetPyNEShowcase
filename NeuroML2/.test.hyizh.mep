@@ -3,4 +3,4 @@ system: Test
 experiments:
     v:
         expected:
-            spike times: [272.6, 578.14, 880.63]
+            spike times: [271.975, 577.0, 879.2]

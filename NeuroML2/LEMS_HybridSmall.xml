@@ -15,36 +15,31 @@
     <Include file="Simulation.xml"/>
     
     <Include file="HybridSmall.net.nml"/>
-    <Include file="HH.cell.nml"/>
-    <Include file="passiveChan.channel.nml"/>
-    <Include file="naChan.channel.nml"/>
-    <Include file="kChan.channel.nml"/>
-    <Include file="Izhi2007b.cell.nml"/>
    
-    <Simulation id="Sim_HybridSmall" length="1000.0ms" step="0.01ms" target="HybridSmall" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_HybridSmall" length="1000.0ms" step="0.025ms" target="HybridSmall" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__PYR_HH" title="Membrane potentials of cells in PYR_HH" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
-            <Line id="PYR_HH[0]: v" quantity="PYR_HH/0/HH/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
-            <Line id="PYR_HH[1]: v" quantity="PYR_HH/1/HH/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
-            <Line id="PYR_HH[2]: v" quantity="PYR_HH/2/HH/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
+            <Line id="PYR_HH[0]: v" quantity="PYR_HH/0/CELL_HH_PYR/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
+            <Line id="PYR_HH[1]: v" quantity="PYR_HH/1/CELL_HH_PYR/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
+            <Line id="PYR_HH[2]: v" quantity="PYR_HH/2/CELL_HH_PYR/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
         </Display>
         
         <Display id="DispPop__PYR_Izhi" title="Membrane potentials of cells in PYR_Izhi" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
-            <Line id="PYR_Izhi[0]: v" quantity="PYR_Izhi/0/Izhi2007b/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
-            <Line id="PYR_Izhi[1]: v" quantity="PYR_Izhi/1/Izhi2007b/v" scale="1mV" color="#f073ee" timeScale="1ms"/>
-            <Line id="PYR_Izhi[2]: v" quantity="PYR_Izhi/2/Izhi2007b/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
+            <Line id="PYR_Izhi[0]: v" quantity="PYR_Izhi/0/CELL_Izhi2007b_PYR/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
+            <Line id="PYR_Izhi[1]: v" quantity="PYR_Izhi/1/CELL_Izhi2007b_PYR/v" scale="1mV" color="#f073ee" timeScale="1ms"/>
+            <Line id="PYR_Izhi[2]: v" quantity="PYR_Izhi/2/CELL_Izhi2007b_PYR/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Volts_file__PYR_HH" fileName="Sim_HybridSmall.PYR_HH.v.dat">
-            <OutputColumn id="v_PYR_HH_0_HH_v" quantity="PYR_HH/0/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_1_HH_v" quantity="PYR_HH/1/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_2_HH_v" quantity="PYR_HH/2/HH/v"/> 
+            <OutputColumn id="v_PYR_HH_0_CELL_HH_PYR_v" quantity="PYR_HH/0/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_1_CELL_HH_PYR_v" quantity="PYR_HH/1/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_2_CELL_HH_PYR_v" quantity="PYR_HH/2/CELL_HH_PYR/v"/> 
         </OutputFile>
         
         <OutputFile id="Volts_file__PYR_Izhi" fileName="Sim_HybridSmall.PYR_Izhi.v.dat">
-            <OutputColumn id="v_PYR_Izhi_0_Izhi2007b_v" quantity="PYR_Izhi/0/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_1_Izhi2007b_v" quantity="PYR_Izhi/1/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_2_Izhi2007b_v" quantity="PYR_Izhi/2/Izhi2007b/v"/> 
+            <OutputColumn id="v_PYR_Izhi_0_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/0/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_1_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/1/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_2_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/2/CELL_Izhi2007b_PYR/v"/> 
         </OutputFile>
         
     </Simulation>

@@ -1,10 +1,56 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="HHSmall">
     <notes>NeuroML 2 file exported from NetPyNE v0.5.4</notes>
-    <include href="HH.cell.nml"></include>
+    <ionChannelHH id="leak_hh" type="ionChannelPassive" conductance="10pS">
+        <notes>Single ion channel in NeuroML2 format: passive channel providing a leak conductance </notes>
+    </ionChannelHH>
+    <ionChannelHH id="na_hh" species="na" conductance="10pS">
+        <notes>Single ion channel in NeuroML2 format: standard Sodium channel from the Hodgkin Huxley model</notes>
+        <gateHHrates id="m" instances="3">
+            <forwardRate type="HHExpLinearRate" rate="1per_ms" midpoint="-40mV" scale="10mV"/>
+            <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-65mV" scale="-18mV"/>
+        </gateHHrates>
+        <gateHHrates id="h" instances="1">
+            <forwardRate type="HHExpRate" rate="0.07per_ms" midpoint="-65mV" scale="-20mV"/>
+            <reverseRate type="HHSigmoidRate" rate="1per_ms" midpoint="-35mV" scale="10mV"/>
+        </gateHHrates>
+    </ionChannelHH>
+    <ionChannelHH id="k_hh" species="k" conductance="10pS">
+        <notes>Single ion channel in NeuroML2 format: standard Potassium channel from the Hodgkin Huxley model</notes>
+        <gateHHrates id="n" instances="4">
+            <forwardRate type="HHExpLinearRate" rate="0.1per_ms" midpoint="-55mV" scale="10mV"/>
+            <reverseRate type="HHExpRate" rate="0.125per_ms" midpoint="-65mV" scale="-80mV"/>
+        </gateHHrates>
+    </ionChannelHH>
     <expTwoSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="1.0ms" tauRise="0.1ms"/>
+    <cell id="CELL_HH_PYR">
+        <notes>Cell exported from NetPyNE:
+{secs: {soma: {mechs: {hh: {gnabar: 0.12, gl: 0.003, gkbar: 0.036, el: -70}}, geom: {diam: 18.8, L: 18.8, Ra: 123.0}, vinit: 71}}, conds: {cellModel: 'HH', cellType: 'PYR'}}</notes>
+        <morphology id="morph_CELL_HH_PYR">
+            <segment id="0" name="soma">
+                <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="18.8"/>
+                <distal x="0.000000e+00" y="1.880000e+01" z="0.000000e+00" diameter="18.8"/>
+            </segment>
+            <segmentGroup id="soma_group">
+                <member segment="0"/>
+            </segmentGroup>
+        </morphology>
+        <biophysicalProperties id="biophys_CELL_HH_PYR">
+            <membraneProperties>
+                <channelDensity id="leak_soma_group" ionChannel="leak_hh" condDensity="0.003 S_per_cm2" erev="-70 mV" ion="non_specific"/>
+                <channelDensity id="k_soma_group" ionChannel="k_hh" condDensity="0.036 S_per_cm2" erev="-77 mV" ion="k"/>
+                <channelDensity id="na_soma_group" ionChannel="na_hh" condDensity="0.12 S_per_cm2" erev="50 mV" ion="na"/>
+                <spikeThresh value="0 mV"/>
+                <specificCapacitance value="1 uF_per_cm2" segmentGroup="soma_group"/>
+                <initMembPotential value="-65 mV"/>
+            </membraneProperties>
+            <intracellularProperties>
+                <resistivity value="123.0 ohm_cm" segmentGroup="soma_group"/>
+            </intracellularProperties>
+        </biophysicalProperties>
+    </cell>
     <spikeGenerator id="NetStim_background_PYR_20_0_AMPA" period="0.05s"/>
     <network id="HHSmall">
-        <population id="PYR" component="HH" size="3" type="populationList">
+        <population id="PYR" component="CELL_HH_PYR" size="3" type="populationList">
             <instance id="0">
                 <location x="91.711585874816009" y="62.411324223264955" z="18.616023751669676"/>
             </instance>
@@ -17,17 +63,17 @@
         </population>
         <population id="Pop_NetStim_background_PYR_20_0_AMPA" component="NetStim_background_PYR_20_0_AMPA" size="3"/>
         <projection id="NetConn_PYR_PYR_AMPA" presynapticPopulation="PYR" postsynapticPopulation="PYR" synapse="AMPA">
-            <connectionWD id="0" preCellId="../PYR/1/HH" postCellId="../PYR/0/HH" weight="0.005" delay="13.9025381799 ms"/>
-            <connectionWD id="1" preCellId="../PYR/2/HH" postCellId="../PYR/0/HH" weight="0.005" delay="12.9100663402 ms"/>
-            <connectionWD id="2" preCellId="../PYR/0/HH" postCellId="../PYR/1/HH" weight="0.005" delay="13.9025381799 ms"/>
-            <connectionWD id="3" preCellId="../PYR/2/HH" postCellId="../PYR/1/HH" weight="0.005" delay="11.1134170437 ms"/>
-            <connectionWD id="4" preCellId="../PYR/0/HH" postCellId="../PYR/2/HH" weight="0.005" delay="12.9100663402 ms"/>
-            <connectionWD id="5" preCellId="../PYR/1/HH" postCellId="../PYR/2/HH" weight="0.005" delay="11.1134170437 ms"/>
+            <connectionWD id="0" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.005" delay="13.9025381799 ms"/>
+            <connectionWD id="1" preCellId="../PYR/2/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.005" delay="12.9100663402 ms"/>
+            <connectionWD id="2" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/1/CELL_HH_PYR" weight="0.005" delay="13.9025381799 ms"/>
+            <connectionWD id="3" preCellId="../PYR/2/CELL_HH_PYR" postCellId="../PYR/1/CELL_HH_PYR" weight="0.005" delay="11.1134170437 ms"/>
+            <connectionWD id="4" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.005" delay="12.9100663402 ms"/>
+            <connectionWD id="5" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.005" delay="11.1134170437 ms"/>
         </projection>
         <projection id="NetConn_NetStim_background_PYR_20_0_AMPA__PYR" presynapticPopulation="Pop_NetStim_background_PYR_20_0_AMPA" postsynapticPopulation="PYR" synapse="AMPA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[0]" postCellId="../PYR/0/HH" weight="0.1" delay="3.55765385643 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[1]" postCellId="../PYR/1/HH" weight="0.1" delay="3.03126478855 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[2]" postCellId="../PYR/2/HH" weight="0.1" delay="2.42562143109 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[0]" postCellId="../PYR/0/CELL_HH_PYR" weight="0.1" delay="3.55765385643 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[1]" postCellId="../PYR/1/CELL_HH_PYR" weight="0.1" delay="3.03126478855 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[2]" postCellId="../PYR/2/CELL_HH_PYR" weight="0.1" delay="2.42562143109 ms"/>
         </projection>
     </network>
 </neuroml>

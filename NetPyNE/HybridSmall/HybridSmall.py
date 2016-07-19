@@ -92,7 +92,7 @@ netParams.addConnParams('bg->PYR_HH',
 
 # Simulation parameters
 simConfig.duration = 1*1e3 # Duration of the simulation, in ms
-simConfig.dt = 0.01 # Internal integration timestep to use
+simConfig.dt = 0.025 # Internal integration timestep to use
 simConfig.seeds = {'conn': 1, 'stim': 1, 'loc': 1} # Seeds for randomizers (connectivity, input stimulation and cell locations)
 simConfig.createNEURONObj = True  # create HOC objects when instantiating network
 simConfig.createPyStruct = True  # create Python structure (simulator-independent) when instantiating network
@@ -101,7 +101,7 @@ simConfig.verbose = False # show detailed messages
 
 
 # Recording 
-simConfig.recordCells = []  # list of cells to record from 
+simConfig.recordCells = ['all']  # list of cells to record from 
 simConfig.recordTraces = {'V':{'sec':'soma','loc':0.5,'var':'v'}, 
     'u':{'sec':'soma', 'pointp':'Izhi', 'var':'u'}, 
     'I':{'sec':'soma', 'pointp':'Izhi', 'var':'i'}, 

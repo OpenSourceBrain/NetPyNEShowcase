@@ -15,224 +15,219 @@
     <Include file="Simulation.xml"/>
     
     <Include file="HybridTut.net.nml"/>
-    <Include file="HH.cell.nml"/>
-    <Include file="passiveChan.channel.nml"/>
-    <Include file="naChan.channel.nml"/>
-    <Include file="kChan.channel.nml"/>
-    <Include file="Izhi2007b.cell.nml"/>
    
     <Simulation id="Sim_HybridTut" length="1000.0ms" step="0.01ms" target="HybridTut" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__PYR_HH" title="Membrane potentials of cells in PYR_HH" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
-            <Line id="PYR_HH[0]: v" quantity="PYR_HH/0/HH/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
-            <Line id="PYR_HH[1]: v" quantity="PYR_HH/1/HH/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
-            <Line id="PYR_HH[2]: v" quantity="PYR_HH/2/HH/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
-            <Line id="PYR_HH[3]: v" quantity="PYR_HH/3/HH/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
-            <Line id="PYR_HH[4]: v" quantity="PYR_HH/4/HH/v" scale="1mV" color="#f073ee" timeScale="1ms"/>
-            <Line id="PYR_HH[5]: v" quantity="PYR_HH/5/HH/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
-            <Line id="PYR_HH[6]: v" quantity="PYR_HH/6/HH/v" scale="1mV" color="#abeb95" timeScale="1ms"/>
-            <Line id="PYR_HH[7]: v" quantity="PYR_HH/7/HH/v" scale="1mV" color="#157cf9" timeScale="1ms"/>
-            <Line id="PYR_HH[8]: v" quantity="PYR_HH/8/HH/v" scale="1mV" color="#c43818" timeScale="1ms"/>
-            <Line id="PYR_HH[9]: v" quantity="PYR_HH/9/HH/v" scale="1mV" color="#3c9f90" timeScale="1ms"/>
-            <Line id="PYR_HH[10]: v" quantity="PYR_HH/10/HH/v" scale="1mV" color="#07e36d" timeScale="1ms"/>
-            <Line id="PYR_HH[11]: v" quantity="PYR_HH/11/HH/v" scale="1mV" color="#c9ed02" timeScale="1ms"/>
-            <Line id="PYR_HH[12]: v" quantity="PYR_HH/12/HH/v" scale="1mV" color="#589949" timeScale="1ms"/>
-            <Line id="PYR_HH[13]: v" quantity="PYR_HH/13/HH/v" scale="1mV" color="#9f8f5f" timeScale="1ms"/>
-            <Line id="PYR_HH[14]: v" quantity="PYR_HH/14/HH/v" scale="1mV" color="#9da618" timeScale="1ms"/>
-            <Line id="PYR_HH[15]: v" quantity="PYR_HH/15/HH/v" scale="1mV" color="#2607ad" timeScale="1ms"/>
-            <Line id="PYR_HH[16]: v" quantity="PYR_HH/16/HH/v" scale="1mV" color="#2edf07" timeScale="1ms"/>
-            <Line id="PYR_HH[17]: v" quantity="PYR_HH/17/HH/v" scale="1mV" color="#1d4a2b" timeScale="1ms"/>
-            <Line id="PYR_HH[18]: v" quantity="PYR_HH/18/HH/v" scale="1mV" color="#03be0e" timeScale="1ms"/>
-            <Line id="PYR_HH[19]: v" quantity="PYR_HH/19/HH/v" scale="1mV" color="#7c9bbf" timeScale="1ms"/>
-            <Line id="PYR_HH[20]: v" quantity="PYR_HH/20/HH/v" scale="1mV" color="#f703c9" timeScale="1ms"/>
-            <Line id="PYR_HH[21]: v" quantity="PYR_HH/21/HH/v" scale="1mV" color="#108727" timeScale="1ms"/>
-            <Line id="PYR_HH[22]: v" quantity="PYR_HH/22/HH/v" scale="1mV" color="#8a84c1" timeScale="1ms"/>
-            <Line id="PYR_HH[23]: v" quantity="PYR_HH/23/HH/v" scale="1mV" color="#774520" timeScale="1ms"/>
-            <Line id="PYR_HH[24]: v" quantity="PYR_HH/24/HH/v" scale="1mV" color="#99f982" timeScale="1ms"/>
-            <Line id="PYR_HH[25]: v" quantity="PYR_HH/25/HH/v" scale="1mV" color="#16c40a" timeScale="1ms"/>
-            <Line id="PYR_HH[26]: v" quantity="PYR_HH/26/HH/v" scale="1mV" color="#943985" timeScale="1ms"/>
-            <Line id="PYR_HH[27]: v" quantity="PYR_HH/27/HH/v" scale="1mV" color="#45038e" timeScale="1ms"/>
-            <Line id="PYR_HH[28]: v" quantity="PYR_HH/28/HH/v" scale="1mV" color="#8e725d" timeScale="1ms"/>
-            <Line id="PYR_HH[29]: v" quantity="PYR_HH/29/HH/v" scale="1mV" color="#a506bf" timeScale="1ms"/>
-            <Line id="PYR_HH[30]: v" quantity="PYR_HH/30/HH/v" scale="1mV" color="#7b2533" timeScale="1ms"/>
-            <Line id="PYR_HH[31]: v" quantity="PYR_HH/31/HH/v" scale="1mV" color="#5af0f3" timeScale="1ms"/>
-            <Line id="PYR_HH[32]: v" quantity="PYR_HH/32/HH/v" scale="1mV" color="#3fc86e" timeScale="1ms"/>
-            <Line id="PYR_HH[33]: v" quantity="PYR_HH/33/HH/v" scale="1mV" color="#eefadf" timeScale="1ms"/>
-            <Line id="PYR_HH[34]: v" quantity="PYR_HH/34/HH/v" scale="1mV" color="#74113c" timeScale="1ms"/>
-            <Line id="PYR_HH[35]: v" quantity="PYR_HH/35/HH/v" scale="1mV" color="#87b8a5" timeScale="1ms"/>
-            <Line id="PYR_HH[36]: v" quantity="PYR_HH/36/HH/v" scale="1mV" color="#04f0d0" timeScale="1ms"/>
-            <Line id="PYR_HH[37]: v" quantity="PYR_HH/37/HH/v" scale="1mV" color="#8212f7" timeScale="1ms"/>
-            <Line id="PYR_HH[38]: v" quantity="PYR_HH/38/HH/v" scale="1mV" color="#017ad0" timeScale="1ms"/>
-            <Line id="PYR_HH[39]: v" quantity="PYR_HH/39/HH/v" scale="1mV" color="#24ce01" timeScale="1ms"/>
-            <Line id="PYR_HH[40]: v" quantity="PYR_HH/40/HH/v" scale="1mV" color="#790b2f" timeScale="1ms"/>
-            <Line id="PYR_HH[41]: v" quantity="PYR_HH/41/HH/v" scale="1mV" color="#6099d7" timeScale="1ms"/>
-            <Line id="PYR_HH[42]: v" quantity="PYR_HH/42/HH/v" scale="1mV" color="#0dde6d" timeScale="1ms"/>
-            <Line id="PYR_HH[43]: v" quantity="PYR_HH/43/HH/v" scale="1mV" color="#966844" timeScale="1ms"/>
-            <Line id="PYR_HH[44]: v" quantity="PYR_HH/44/HH/v" scale="1mV" color="#29fc1d" timeScale="1ms"/>
-            <Line id="PYR_HH[45]: v" quantity="PYR_HH/45/HH/v" scale="1mV" color="#8ead31" timeScale="1ms"/>
-            <Line id="PYR_HH[46]: v" quantity="PYR_HH/46/HH/v" scale="1mV" color="#24ed49" timeScale="1ms"/>
-            <Line id="PYR_HH[47]: v" quantity="PYR_HH/47/HH/v" scale="1mV" color="#eff35b" timeScale="1ms"/>
-            <Line id="PYR_HH[48]: v" quantity="PYR_HH/48/HH/v" scale="1mV" color="#c55ef1" timeScale="1ms"/>
-            <Line id="PYR_HH[49]: v" quantity="PYR_HH/49/HH/v" scale="1mV" color="#f4f991" timeScale="1ms"/>
+            <Line id="PYR_HH[0]: v" quantity="PYR_HH/0/CELL_HH_PYR/v" scale="1mV" color="#f7697f" timeScale="1ms"/>
+            <Line id="PYR_HH[1]: v" quantity="PYR_HH/1/CELL_HH_PYR/v" scale="1mV" color="#70d3da" timeScale="1ms"/>
+            <Line id="PYR_HH[2]: v" quantity="PYR_HH/2/CELL_HH_PYR/v" scale="1mV" color="#01eaf6" timeScale="1ms"/>
+            <Line id="PYR_HH[3]: v" quantity="PYR_HH/3/CELL_HH_PYR/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
+            <Line id="PYR_HH[4]: v" quantity="PYR_HH/4/CELL_HH_PYR/v" scale="1mV" color="#f073ee" timeScale="1ms"/>
+            <Line id="PYR_HH[5]: v" quantity="PYR_HH/5/CELL_HH_PYR/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
+            <Line id="PYR_HH[6]: v" quantity="PYR_HH/6/CELL_HH_PYR/v" scale="1mV" color="#abeb95" timeScale="1ms"/>
+            <Line id="PYR_HH[7]: v" quantity="PYR_HH/7/CELL_HH_PYR/v" scale="1mV" color="#157cf9" timeScale="1ms"/>
+            <Line id="PYR_HH[8]: v" quantity="PYR_HH/8/CELL_HH_PYR/v" scale="1mV" color="#c43818" timeScale="1ms"/>
+            <Line id="PYR_HH[9]: v" quantity="PYR_HH/9/CELL_HH_PYR/v" scale="1mV" color="#3c9f90" timeScale="1ms"/>
+            <Line id="PYR_HH[10]: v" quantity="PYR_HH/10/CELL_HH_PYR/v" scale="1mV" color="#07e36d" timeScale="1ms"/>
+            <Line id="PYR_HH[11]: v" quantity="PYR_HH/11/CELL_HH_PYR/v" scale="1mV" color="#c9ed02" timeScale="1ms"/>
+            <Line id="PYR_HH[12]: v" quantity="PYR_HH/12/CELL_HH_PYR/v" scale="1mV" color="#589949" timeScale="1ms"/>
+            <Line id="PYR_HH[13]: v" quantity="PYR_HH/13/CELL_HH_PYR/v" scale="1mV" color="#9f8f5f" timeScale="1ms"/>
+            <Line id="PYR_HH[14]: v" quantity="PYR_HH/14/CELL_HH_PYR/v" scale="1mV" color="#9da618" timeScale="1ms"/>
+            <Line id="PYR_HH[15]: v" quantity="PYR_HH/15/CELL_HH_PYR/v" scale="1mV" color="#2607ad" timeScale="1ms"/>
+            <Line id="PYR_HH[16]: v" quantity="PYR_HH/16/CELL_HH_PYR/v" scale="1mV" color="#2edf07" timeScale="1ms"/>
+            <Line id="PYR_HH[17]: v" quantity="PYR_HH/17/CELL_HH_PYR/v" scale="1mV" color="#1d4a2b" timeScale="1ms"/>
+            <Line id="PYR_HH[18]: v" quantity="PYR_HH/18/CELL_HH_PYR/v" scale="1mV" color="#03be0e" timeScale="1ms"/>
+            <Line id="PYR_HH[19]: v" quantity="PYR_HH/19/CELL_HH_PYR/v" scale="1mV" color="#7c9bbf" timeScale="1ms"/>
+            <Line id="PYR_HH[20]: v" quantity="PYR_HH/20/CELL_HH_PYR/v" scale="1mV" color="#f703c9" timeScale="1ms"/>
+            <Line id="PYR_HH[21]: v" quantity="PYR_HH/21/CELL_HH_PYR/v" scale="1mV" color="#108727" timeScale="1ms"/>
+            <Line id="PYR_HH[22]: v" quantity="PYR_HH/22/CELL_HH_PYR/v" scale="1mV" color="#8a84c1" timeScale="1ms"/>
+            <Line id="PYR_HH[23]: v" quantity="PYR_HH/23/CELL_HH_PYR/v" scale="1mV" color="#774520" timeScale="1ms"/>
+            <Line id="PYR_HH[24]: v" quantity="PYR_HH/24/CELL_HH_PYR/v" scale="1mV" color="#99f982" timeScale="1ms"/>
+            <Line id="PYR_HH[25]: v" quantity="PYR_HH/25/CELL_HH_PYR/v" scale="1mV" color="#16c40a" timeScale="1ms"/>
+            <Line id="PYR_HH[26]: v" quantity="PYR_HH/26/CELL_HH_PYR/v" scale="1mV" color="#943985" timeScale="1ms"/>
+            <Line id="PYR_HH[27]: v" quantity="PYR_HH/27/CELL_HH_PYR/v" scale="1mV" color="#45038e" timeScale="1ms"/>
+            <Line id="PYR_HH[28]: v" quantity="PYR_HH/28/CELL_HH_PYR/v" scale="1mV" color="#8e725d" timeScale="1ms"/>
+            <Line id="PYR_HH[29]: v" quantity="PYR_HH/29/CELL_HH_PYR/v" scale="1mV" color="#a506bf" timeScale="1ms"/>
+            <Line id="PYR_HH[30]: v" quantity="PYR_HH/30/CELL_HH_PYR/v" scale="1mV" color="#7b2533" timeScale="1ms"/>
+            <Line id="PYR_HH[31]: v" quantity="PYR_HH/31/CELL_HH_PYR/v" scale="1mV" color="#5af0f3" timeScale="1ms"/>
+            <Line id="PYR_HH[32]: v" quantity="PYR_HH/32/CELL_HH_PYR/v" scale="1mV" color="#3fc86e" timeScale="1ms"/>
+            <Line id="PYR_HH[33]: v" quantity="PYR_HH/33/CELL_HH_PYR/v" scale="1mV" color="#eefadf" timeScale="1ms"/>
+            <Line id="PYR_HH[34]: v" quantity="PYR_HH/34/CELL_HH_PYR/v" scale="1mV" color="#74113c" timeScale="1ms"/>
+            <Line id="PYR_HH[35]: v" quantity="PYR_HH/35/CELL_HH_PYR/v" scale="1mV" color="#87b8a5" timeScale="1ms"/>
+            <Line id="PYR_HH[36]: v" quantity="PYR_HH/36/CELL_HH_PYR/v" scale="1mV" color="#04f0d0" timeScale="1ms"/>
+            <Line id="PYR_HH[37]: v" quantity="PYR_HH/37/CELL_HH_PYR/v" scale="1mV" color="#8212f7" timeScale="1ms"/>
+            <Line id="PYR_HH[38]: v" quantity="PYR_HH/38/CELL_HH_PYR/v" scale="1mV" color="#017ad0" timeScale="1ms"/>
+            <Line id="PYR_HH[39]: v" quantity="PYR_HH/39/CELL_HH_PYR/v" scale="1mV" color="#24ce01" timeScale="1ms"/>
+            <Line id="PYR_HH[40]: v" quantity="PYR_HH/40/CELL_HH_PYR/v" scale="1mV" color="#790b2f" timeScale="1ms"/>
+            <Line id="PYR_HH[41]: v" quantity="PYR_HH/41/CELL_HH_PYR/v" scale="1mV" color="#6099d7" timeScale="1ms"/>
+            <Line id="PYR_HH[42]: v" quantity="PYR_HH/42/CELL_HH_PYR/v" scale="1mV" color="#0dde6d" timeScale="1ms"/>
+            <Line id="PYR_HH[43]: v" quantity="PYR_HH/43/CELL_HH_PYR/v" scale="1mV" color="#966844" timeScale="1ms"/>
+            <Line id="PYR_HH[44]: v" quantity="PYR_HH/44/CELL_HH_PYR/v" scale="1mV" color="#29fc1d" timeScale="1ms"/>
+            <Line id="PYR_HH[45]: v" quantity="PYR_HH/45/CELL_HH_PYR/v" scale="1mV" color="#8ead31" timeScale="1ms"/>
+            <Line id="PYR_HH[46]: v" quantity="PYR_HH/46/CELL_HH_PYR/v" scale="1mV" color="#24ed49" timeScale="1ms"/>
+            <Line id="PYR_HH[47]: v" quantity="PYR_HH/47/CELL_HH_PYR/v" scale="1mV" color="#eff35b" timeScale="1ms"/>
+            <Line id="PYR_HH[48]: v" quantity="PYR_HH/48/CELL_HH_PYR/v" scale="1mV" color="#c55ef1" timeScale="1ms"/>
+            <Line id="PYR_HH[49]: v" quantity="PYR_HH/49/CELL_HH_PYR/v" scale="1mV" color="#f4f991" timeScale="1ms"/>
         </Display>
         
         <Display id="DispPop__PYR_Izhi" title="Membrane potentials of cells in PYR_Izhi" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
-            <Line id="PYR_Izhi[0]: v" quantity="PYR_Izhi/0/Izhi2007b/v" scale="1mV" color="#242780" timeScale="1ms"/>
-            <Line id="PYR_Izhi[1]: v" quantity="PYR_Izhi/1/Izhi2007b/v" scale="1mV" color="#4e2e37" timeScale="1ms"/>
-            <Line id="PYR_Izhi[2]: v" quantity="PYR_Izhi/2/Izhi2007b/v" scale="1mV" color="#0a228b" timeScale="1ms"/>
-            <Line id="PYR_Izhi[3]: v" quantity="PYR_Izhi/3/Izhi2007b/v" scale="1mV" color="#46db4b" timeScale="1ms"/>
-            <Line id="PYR_Izhi[4]: v" quantity="PYR_Izhi/4/Izhi2007b/v" scale="1mV" color="#ce779a" timeScale="1ms"/>
-            <Line id="PYR_Izhi[5]: v" quantity="PYR_Izhi/5/Izhi2007b/v" scale="1mV" color="#2d665a" timeScale="1ms"/>
-            <Line id="PYR_Izhi[6]: v" quantity="PYR_Izhi/6/Izhi2007b/v" scale="1mV" color="#2791ee" timeScale="1ms"/>
-            <Line id="PYR_Izhi[7]: v" quantity="PYR_Izhi/7/Izhi2007b/v" scale="1mV" color="#f46871" timeScale="1ms"/>
-            <Line id="PYR_Izhi[8]: v" quantity="PYR_Izhi/8/Izhi2007b/v" scale="1mV" color="#2790ae" timeScale="1ms"/>
-            <Line id="PYR_Izhi[9]: v" quantity="PYR_Izhi/9/Izhi2007b/v" scale="1mV" color="#d579c4" timeScale="1ms"/>
-            <Line id="PYR_Izhi[10]: v" quantity="PYR_Izhi/10/Izhi2007b/v" scale="1mV" color="#0a8317" timeScale="1ms"/>
-            <Line id="PYR_Izhi[11]: v" quantity="PYR_Izhi/11/Izhi2007b/v" scale="1mV" color="#62dcec" timeScale="1ms"/>
-            <Line id="PYR_Izhi[12]: v" quantity="PYR_Izhi/12/Izhi2007b/v" scale="1mV" color="#597ee1" timeScale="1ms"/>
-            <Line id="PYR_Izhi[13]: v" quantity="PYR_Izhi/13/Izhi2007b/v" scale="1mV" color="#577a29" timeScale="1ms"/>
-            <Line id="PYR_Izhi[14]: v" quantity="PYR_Izhi/14/Izhi2007b/v" scale="1mV" color="#d103b9" timeScale="1ms"/>
-            <Line id="PYR_Izhi[15]: v" quantity="PYR_Izhi/15/Izhi2007b/v" scale="1mV" color="#79d6de" timeScale="1ms"/>
-            <Line id="PYR_Izhi[16]: v" quantity="PYR_Izhi/16/Izhi2007b/v" scale="1mV" color="#c86b7f" timeScale="1ms"/>
-            <Line id="PYR_Izhi[17]: v" quantity="PYR_Izhi/17/Izhi2007b/v" scale="1mV" color="#7888fa" timeScale="1ms"/>
-            <Line id="PYR_Izhi[18]: v" quantity="PYR_Izhi/18/Izhi2007b/v" scale="1mV" color="#d13d74" timeScale="1ms"/>
-            <Line id="PYR_Izhi[19]: v" quantity="PYR_Izhi/19/Izhi2007b/v" scale="1mV" color="#e1ae6a" timeScale="1ms"/>
-            <Line id="PYR_Izhi[20]: v" quantity="PYR_Izhi/20/Izhi2007b/v" scale="1mV" color="#708963" timeScale="1ms"/>
-            <Line id="PYR_Izhi[21]: v" quantity="PYR_Izhi/21/Izhi2007b/v" scale="1mV" color="#c7f3c8" timeScale="1ms"/>
-            <Line id="PYR_Izhi[22]: v" quantity="PYR_Izhi/22/Izhi2007b/v" scale="1mV" color="#d092e0" timeScale="1ms"/>
-            <Line id="PYR_Izhi[23]: v" quantity="PYR_Izhi/23/Izhi2007b/v" scale="1mV" color="#4bb19d" timeScale="1ms"/>
-            <Line id="PYR_Izhi[24]: v" quantity="PYR_Izhi/24/Izhi2007b/v" scale="1mV" color="#1fb661" timeScale="1ms"/>
-            <Line id="PYR_Izhi[25]: v" quantity="PYR_Izhi/25/Izhi2007b/v" scale="1mV" color="#2f84ea" timeScale="1ms"/>
-            <Line id="PYR_Izhi[26]: v" quantity="PYR_Izhi/26/Izhi2007b/v" scale="1mV" color="#6fa19d" timeScale="1ms"/>
-            <Line id="PYR_Izhi[27]: v" quantity="PYR_Izhi/27/Izhi2007b/v" scale="1mV" color="#1e956a" timeScale="1ms"/>
-            <Line id="PYR_Izhi[28]: v" quantity="PYR_Izhi/28/Izhi2007b/v" scale="1mV" color="#87a0ea" timeScale="1ms"/>
-            <Line id="PYR_Izhi[29]: v" quantity="PYR_Izhi/29/Izhi2007b/v" scale="1mV" color="#d454f1" timeScale="1ms"/>
-            <Line id="PYR_Izhi[30]: v" quantity="PYR_Izhi/30/Izhi2007b/v" scale="1mV" color="#7c3624" timeScale="1ms"/>
-            <Line id="PYR_Izhi[31]: v" quantity="PYR_Izhi/31/Izhi2007b/v" scale="1mV" color="#d15703" timeScale="1ms"/>
-            <Line id="PYR_Izhi[32]: v" quantity="PYR_Izhi/32/Izhi2007b/v" scale="1mV" color="#a80948" timeScale="1ms"/>
-            <Line id="PYR_Izhi[33]: v" quantity="PYR_Izhi/33/Izhi2007b/v" scale="1mV" color="#a41b65" timeScale="1ms"/>
-            <Line id="PYR_Izhi[34]: v" quantity="PYR_Izhi/34/Izhi2007b/v" scale="1mV" color="#5868c9" timeScale="1ms"/>
-            <Line id="PYR_Izhi[35]: v" quantity="PYR_Izhi/35/Izhi2007b/v" scale="1mV" color="#b3e174" timeScale="1ms"/>
-            <Line id="PYR_Izhi[36]: v" quantity="PYR_Izhi/36/Izhi2007b/v" scale="1mV" color="#cf5844" timeScale="1ms"/>
-            <Line id="PYR_Izhi[37]: v" quantity="PYR_Izhi/37/Izhi2007b/v" scale="1mV" color="#283c44" timeScale="1ms"/>
-            <Line id="PYR_Izhi[38]: v" quantity="PYR_Izhi/38/Izhi2007b/v" scale="1mV" color="#e87212" timeScale="1ms"/>
-            <Line id="PYR_Izhi[39]: v" quantity="PYR_Izhi/39/Izhi2007b/v" scale="1mV" color="#44f2d5" timeScale="1ms"/>
-            <Line id="PYR_Izhi[40]: v" quantity="PYR_Izhi/40/Izhi2007b/v" scale="1mV" color="#27a405" timeScale="1ms"/>
-            <Line id="PYR_Izhi[41]: v" quantity="PYR_Izhi/41/Izhi2007b/v" scale="1mV" color="#d729a4" timeScale="1ms"/>
-            <Line id="PYR_Izhi[42]: v" quantity="PYR_Izhi/42/Izhi2007b/v" scale="1mV" color="#b85a4e" timeScale="1ms"/>
-            <Line id="PYR_Izhi[43]: v" quantity="PYR_Izhi/43/Izhi2007b/v" scale="1mV" color="#cb26e7" timeScale="1ms"/>
-            <Line id="PYR_Izhi[44]: v" quantity="PYR_Izhi/44/Izhi2007b/v" scale="1mV" color="#725902" timeScale="1ms"/>
-            <Line id="PYR_Izhi[45]: v" quantity="PYR_Izhi/45/Izhi2007b/v" scale="1mV" color="#121e3c" timeScale="1ms"/>
-            <Line id="PYR_Izhi[46]: v" quantity="PYR_Izhi/46/Izhi2007b/v" scale="1mV" color="#652ea6" timeScale="1ms"/>
-            <Line id="PYR_Izhi[47]: v" quantity="PYR_Izhi/47/Izhi2007b/v" scale="1mV" color="#0c3861" timeScale="1ms"/>
-            <Line id="PYR_Izhi[48]: v" quantity="PYR_Izhi/48/Izhi2007b/v" scale="1mV" color="#49400b" timeScale="1ms"/>
-            <Line id="PYR_Izhi[49]: v" quantity="PYR_Izhi/49/Izhi2007b/v" scale="1mV" color="#09ba03" timeScale="1ms"/>
+            <Line id="PYR_Izhi[0]: v" quantity="PYR_Izhi/0/CELL_Izhi2007b_PYR/v" scale="1mV" color="#242780" timeScale="1ms"/>
+            <Line id="PYR_Izhi[1]: v" quantity="PYR_Izhi/1/CELL_Izhi2007b_PYR/v" scale="1mV" color="#4e2e37" timeScale="1ms"/>
+            <Line id="PYR_Izhi[2]: v" quantity="PYR_Izhi/2/CELL_Izhi2007b_PYR/v" scale="1mV" color="#0a228b" timeScale="1ms"/>
+            <Line id="PYR_Izhi[3]: v" quantity="PYR_Izhi/3/CELL_Izhi2007b_PYR/v" scale="1mV" color="#46db4b" timeScale="1ms"/>
+            <Line id="PYR_Izhi[4]: v" quantity="PYR_Izhi/4/CELL_Izhi2007b_PYR/v" scale="1mV" color="#ce779a" timeScale="1ms"/>
+            <Line id="PYR_Izhi[5]: v" quantity="PYR_Izhi/5/CELL_Izhi2007b_PYR/v" scale="1mV" color="#2d665a" timeScale="1ms"/>
+            <Line id="PYR_Izhi[6]: v" quantity="PYR_Izhi/6/CELL_Izhi2007b_PYR/v" scale="1mV" color="#2791ee" timeScale="1ms"/>
+            <Line id="PYR_Izhi[7]: v" quantity="PYR_Izhi/7/CELL_Izhi2007b_PYR/v" scale="1mV" color="#f46871" timeScale="1ms"/>
+            <Line id="PYR_Izhi[8]: v" quantity="PYR_Izhi/8/CELL_Izhi2007b_PYR/v" scale="1mV" color="#2790ae" timeScale="1ms"/>
+            <Line id="PYR_Izhi[9]: v" quantity="PYR_Izhi/9/CELL_Izhi2007b_PYR/v" scale="1mV" color="#d579c4" timeScale="1ms"/>
+            <Line id="PYR_Izhi[10]: v" quantity="PYR_Izhi/10/CELL_Izhi2007b_PYR/v" scale="1mV" color="#0a8317" timeScale="1ms"/>
+            <Line id="PYR_Izhi[11]: v" quantity="PYR_Izhi/11/CELL_Izhi2007b_PYR/v" scale="1mV" color="#62dcec" timeScale="1ms"/>
+            <Line id="PYR_Izhi[12]: v" quantity="PYR_Izhi/12/CELL_Izhi2007b_PYR/v" scale="1mV" color="#597ee1" timeScale="1ms"/>
+            <Line id="PYR_Izhi[13]: v" quantity="PYR_Izhi/13/CELL_Izhi2007b_PYR/v" scale="1mV" color="#577a29" timeScale="1ms"/>
+            <Line id="PYR_Izhi[14]: v" quantity="PYR_Izhi/14/CELL_Izhi2007b_PYR/v" scale="1mV" color="#d103b9" timeScale="1ms"/>
+            <Line id="PYR_Izhi[15]: v" quantity="PYR_Izhi/15/CELL_Izhi2007b_PYR/v" scale="1mV" color="#79d6de" timeScale="1ms"/>
+            <Line id="PYR_Izhi[16]: v" quantity="PYR_Izhi/16/CELL_Izhi2007b_PYR/v" scale="1mV" color="#c86b7f" timeScale="1ms"/>
+            <Line id="PYR_Izhi[17]: v" quantity="PYR_Izhi/17/CELL_Izhi2007b_PYR/v" scale="1mV" color="#7888fa" timeScale="1ms"/>
+            <Line id="PYR_Izhi[18]: v" quantity="PYR_Izhi/18/CELL_Izhi2007b_PYR/v" scale="1mV" color="#d13d74" timeScale="1ms"/>
+            <Line id="PYR_Izhi[19]: v" quantity="PYR_Izhi/19/CELL_Izhi2007b_PYR/v" scale="1mV" color="#e1ae6a" timeScale="1ms"/>
+            <Line id="PYR_Izhi[20]: v" quantity="PYR_Izhi/20/CELL_Izhi2007b_PYR/v" scale="1mV" color="#708963" timeScale="1ms"/>
+            <Line id="PYR_Izhi[21]: v" quantity="PYR_Izhi/21/CELL_Izhi2007b_PYR/v" scale="1mV" color="#c7f3c8" timeScale="1ms"/>
+            <Line id="PYR_Izhi[22]: v" quantity="PYR_Izhi/22/CELL_Izhi2007b_PYR/v" scale="1mV" color="#d092e0" timeScale="1ms"/>
+            <Line id="PYR_Izhi[23]: v" quantity="PYR_Izhi/23/CELL_Izhi2007b_PYR/v" scale="1mV" color="#4bb19d" timeScale="1ms"/>
+            <Line id="PYR_Izhi[24]: v" quantity="PYR_Izhi/24/CELL_Izhi2007b_PYR/v" scale="1mV" color="#1fb661" timeScale="1ms"/>
+            <Line id="PYR_Izhi[25]: v" quantity="PYR_Izhi/25/CELL_Izhi2007b_PYR/v" scale="1mV" color="#2f84ea" timeScale="1ms"/>
+            <Line id="PYR_Izhi[26]: v" quantity="PYR_Izhi/26/CELL_Izhi2007b_PYR/v" scale="1mV" color="#6fa19d" timeScale="1ms"/>
+            <Line id="PYR_Izhi[27]: v" quantity="PYR_Izhi/27/CELL_Izhi2007b_PYR/v" scale="1mV" color="#1e956a" timeScale="1ms"/>
+            <Line id="PYR_Izhi[28]: v" quantity="PYR_Izhi/28/CELL_Izhi2007b_PYR/v" scale="1mV" color="#87a0ea" timeScale="1ms"/>
+            <Line id="PYR_Izhi[29]: v" quantity="PYR_Izhi/29/CELL_Izhi2007b_PYR/v" scale="1mV" color="#d454f1" timeScale="1ms"/>
+            <Line id="PYR_Izhi[30]: v" quantity="PYR_Izhi/30/CELL_Izhi2007b_PYR/v" scale="1mV" color="#7c3624" timeScale="1ms"/>
+            <Line id="PYR_Izhi[31]: v" quantity="PYR_Izhi/31/CELL_Izhi2007b_PYR/v" scale="1mV" color="#d15703" timeScale="1ms"/>
+            <Line id="PYR_Izhi[32]: v" quantity="PYR_Izhi/32/CELL_Izhi2007b_PYR/v" scale="1mV" color="#a80948" timeScale="1ms"/>
+            <Line id="PYR_Izhi[33]: v" quantity="PYR_Izhi/33/CELL_Izhi2007b_PYR/v" scale="1mV" color="#a41b65" timeScale="1ms"/>
+            <Line id="PYR_Izhi[34]: v" quantity="PYR_Izhi/34/CELL_Izhi2007b_PYR/v" scale="1mV" color="#5868c9" timeScale="1ms"/>
+            <Line id="PYR_Izhi[35]: v" quantity="PYR_Izhi/35/CELL_Izhi2007b_PYR/v" scale="1mV" color="#b3e174" timeScale="1ms"/>
+            <Line id="PYR_Izhi[36]: v" quantity="PYR_Izhi/36/CELL_Izhi2007b_PYR/v" scale="1mV" color="#cf5844" timeScale="1ms"/>
+            <Line id="PYR_Izhi[37]: v" quantity="PYR_Izhi/37/CELL_Izhi2007b_PYR/v" scale="1mV" color="#283c44" timeScale="1ms"/>
+            <Line id="PYR_Izhi[38]: v" quantity="PYR_Izhi/38/CELL_Izhi2007b_PYR/v" scale="1mV" color="#e87212" timeScale="1ms"/>
+            <Line id="PYR_Izhi[39]: v" quantity="PYR_Izhi/39/CELL_Izhi2007b_PYR/v" scale="1mV" color="#44f2d5" timeScale="1ms"/>
+            <Line id="PYR_Izhi[40]: v" quantity="PYR_Izhi/40/CELL_Izhi2007b_PYR/v" scale="1mV" color="#27a405" timeScale="1ms"/>
+            <Line id="PYR_Izhi[41]: v" quantity="PYR_Izhi/41/CELL_Izhi2007b_PYR/v" scale="1mV" color="#d729a4" timeScale="1ms"/>
+            <Line id="PYR_Izhi[42]: v" quantity="PYR_Izhi/42/CELL_Izhi2007b_PYR/v" scale="1mV" color="#b85a4e" timeScale="1ms"/>
+            <Line id="PYR_Izhi[43]: v" quantity="PYR_Izhi/43/CELL_Izhi2007b_PYR/v" scale="1mV" color="#cb26e7" timeScale="1ms"/>
+            <Line id="PYR_Izhi[44]: v" quantity="PYR_Izhi/44/CELL_Izhi2007b_PYR/v" scale="1mV" color="#725902" timeScale="1ms"/>
+            <Line id="PYR_Izhi[45]: v" quantity="PYR_Izhi/45/CELL_Izhi2007b_PYR/v" scale="1mV" color="#121e3c" timeScale="1ms"/>
+            <Line id="PYR_Izhi[46]: v" quantity="PYR_Izhi/46/CELL_Izhi2007b_PYR/v" scale="1mV" color="#652ea6" timeScale="1ms"/>
+            <Line id="PYR_Izhi[47]: v" quantity="PYR_Izhi/47/CELL_Izhi2007b_PYR/v" scale="1mV" color="#0c3861" timeScale="1ms"/>
+            <Line id="PYR_Izhi[48]: v" quantity="PYR_Izhi/48/CELL_Izhi2007b_PYR/v" scale="1mV" color="#49400b" timeScale="1ms"/>
+            <Line id="PYR_Izhi[49]: v" quantity="PYR_Izhi/49/CELL_Izhi2007b_PYR/v" scale="1mV" color="#09ba03" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Volts_file__PYR_HH" fileName="Sim_HybridTut.PYR_HH.v.dat">
-            <OutputColumn id="v_PYR_HH_0_HH_v" quantity="PYR_HH/0/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_1_HH_v" quantity="PYR_HH/1/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_2_HH_v" quantity="PYR_HH/2/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_3_HH_v" quantity="PYR_HH/3/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_4_HH_v" quantity="PYR_HH/4/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_5_HH_v" quantity="PYR_HH/5/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_6_HH_v" quantity="PYR_HH/6/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_7_HH_v" quantity="PYR_HH/7/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_8_HH_v" quantity="PYR_HH/8/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_9_HH_v" quantity="PYR_HH/9/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_10_HH_v" quantity="PYR_HH/10/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_11_HH_v" quantity="PYR_HH/11/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_12_HH_v" quantity="PYR_HH/12/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_13_HH_v" quantity="PYR_HH/13/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_14_HH_v" quantity="PYR_HH/14/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_15_HH_v" quantity="PYR_HH/15/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_16_HH_v" quantity="PYR_HH/16/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_17_HH_v" quantity="PYR_HH/17/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_18_HH_v" quantity="PYR_HH/18/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_19_HH_v" quantity="PYR_HH/19/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_20_HH_v" quantity="PYR_HH/20/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_21_HH_v" quantity="PYR_HH/21/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_22_HH_v" quantity="PYR_HH/22/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_23_HH_v" quantity="PYR_HH/23/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_24_HH_v" quantity="PYR_HH/24/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_25_HH_v" quantity="PYR_HH/25/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_26_HH_v" quantity="PYR_HH/26/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_27_HH_v" quantity="PYR_HH/27/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_28_HH_v" quantity="PYR_HH/28/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_29_HH_v" quantity="PYR_HH/29/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_30_HH_v" quantity="PYR_HH/30/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_31_HH_v" quantity="PYR_HH/31/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_32_HH_v" quantity="PYR_HH/32/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_33_HH_v" quantity="PYR_HH/33/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_34_HH_v" quantity="PYR_HH/34/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_35_HH_v" quantity="PYR_HH/35/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_36_HH_v" quantity="PYR_HH/36/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_37_HH_v" quantity="PYR_HH/37/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_38_HH_v" quantity="PYR_HH/38/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_39_HH_v" quantity="PYR_HH/39/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_40_HH_v" quantity="PYR_HH/40/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_41_HH_v" quantity="PYR_HH/41/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_42_HH_v" quantity="PYR_HH/42/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_43_HH_v" quantity="PYR_HH/43/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_44_HH_v" quantity="PYR_HH/44/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_45_HH_v" quantity="PYR_HH/45/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_46_HH_v" quantity="PYR_HH/46/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_47_HH_v" quantity="PYR_HH/47/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_48_HH_v" quantity="PYR_HH/48/HH/v"/> 
-            <OutputColumn id="v_PYR_HH_49_HH_v" quantity="PYR_HH/49/HH/v"/> 
+            <OutputColumn id="v_PYR_HH_0_CELL_HH_PYR_v" quantity="PYR_HH/0/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_1_CELL_HH_PYR_v" quantity="PYR_HH/1/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_2_CELL_HH_PYR_v" quantity="PYR_HH/2/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_3_CELL_HH_PYR_v" quantity="PYR_HH/3/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_4_CELL_HH_PYR_v" quantity="PYR_HH/4/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_5_CELL_HH_PYR_v" quantity="PYR_HH/5/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_6_CELL_HH_PYR_v" quantity="PYR_HH/6/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_7_CELL_HH_PYR_v" quantity="PYR_HH/7/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_8_CELL_HH_PYR_v" quantity="PYR_HH/8/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_9_CELL_HH_PYR_v" quantity="PYR_HH/9/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_10_CELL_HH_PYR_v" quantity="PYR_HH/10/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_11_CELL_HH_PYR_v" quantity="PYR_HH/11/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_12_CELL_HH_PYR_v" quantity="PYR_HH/12/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_13_CELL_HH_PYR_v" quantity="PYR_HH/13/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_14_CELL_HH_PYR_v" quantity="PYR_HH/14/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_15_CELL_HH_PYR_v" quantity="PYR_HH/15/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_16_CELL_HH_PYR_v" quantity="PYR_HH/16/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_17_CELL_HH_PYR_v" quantity="PYR_HH/17/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_18_CELL_HH_PYR_v" quantity="PYR_HH/18/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_19_CELL_HH_PYR_v" quantity="PYR_HH/19/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_20_CELL_HH_PYR_v" quantity="PYR_HH/20/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_21_CELL_HH_PYR_v" quantity="PYR_HH/21/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_22_CELL_HH_PYR_v" quantity="PYR_HH/22/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_23_CELL_HH_PYR_v" quantity="PYR_HH/23/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_24_CELL_HH_PYR_v" quantity="PYR_HH/24/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_25_CELL_HH_PYR_v" quantity="PYR_HH/25/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_26_CELL_HH_PYR_v" quantity="PYR_HH/26/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_27_CELL_HH_PYR_v" quantity="PYR_HH/27/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_28_CELL_HH_PYR_v" quantity="PYR_HH/28/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_29_CELL_HH_PYR_v" quantity="PYR_HH/29/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_30_CELL_HH_PYR_v" quantity="PYR_HH/30/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_31_CELL_HH_PYR_v" quantity="PYR_HH/31/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_32_CELL_HH_PYR_v" quantity="PYR_HH/32/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_33_CELL_HH_PYR_v" quantity="PYR_HH/33/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_34_CELL_HH_PYR_v" quantity="PYR_HH/34/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_35_CELL_HH_PYR_v" quantity="PYR_HH/35/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_36_CELL_HH_PYR_v" quantity="PYR_HH/36/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_37_CELL_HH_PYR_v" quantity="PYR_HH/37/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_38_CELL_HH_PYR_v" quantity="PYR_HH/38/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_39_CELL_HH_PYR_v" quantity="PYR_HH/39/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_40_CELL_HH_PYR_v" quantity="PYR_HH/40/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_41_CELL_HH_PYR_v" quantity="PYR_HH/41/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_42_CELL_HH_PYR_v" quantity="PYR_HH/42/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_43_CELL_HH_PYR_v" quantity="PYR_HH/43/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_44_CELL_HH_PYR_v" quantity="PYR_HH/44/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_45_CELL_HH_PYR_v" quantity="PYR_HH/45/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_46_CELL_HH_PYR_v" quantity="PYR_HH/46/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_47_CELL_HH_PYR_v" quantity="PYR_HH/47/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_48_CELL_HH_PYR_v" quantity="PYR_HH/48/CELL_HH_PYR/v"/> 
+            <OutputColumn id="v_PYR_HH_49_CELL_HH_PYR_v" quantity="PYR_HH/49/CELL_HH_PYR/v"/> 
         </OutputFile>
         
         <OutputFile id="Volts_file__PYR_Izhi" fileName="Sim_HybridTut.PYR_Izhi.v.dat">
-            <OutputColumn id="v_PYR_Izhi_0_Izhi2007b_v" quantity="PYR_Izhi/0/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_1_Izhi2007b_v" quantity="PYR_Izhi/1/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_2_Izhi2007b_v" quantity="PYR_Izhi/2/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_3_Izhi2007b_v" quantity="PYR_Izhi/3/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_4_Izhi2007b_v" quantity="PYR_Izhi/4/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_5_Izhi2007b_v" quantity="PYR_Izhi/5/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_6_Izhi2007b_v" quantity="PYR_Izhi/6/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_7_Izhi2007b_v" quantity="PYR_Izhi/7/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_8_Izhi2007b_v" quantity="PYR_Izhi/8/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_9_Izhi2007b_v" quantity="PYR_Izhi/9/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_10_Izhi2007b_v" quantity="PYR_Izhi/10/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_11_Izhi2007b_v" quantity="PYR_Izhi/11/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_12_Izhi2007b_v" quantity="PYR_Izhi/12/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_13_Izhi2007b_v" quantity="PYR_Izhi/13/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_14_Izhi2007b_v" quantity="PYR_Izhi/14/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_15_Izhi2007b_v" quantity="PYR_Izhi/15/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_16_Izhi2007b_v" quantity="PYR_Izhi/16/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_17_Izhi2007b_v" quantity="PYR_Izhi/17/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_18_Izhi2007b_v" quantity="PYR_Izhi/18/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_19_Izhi2007b_v" quantity="PYR_Izhi/19/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_20_Izhi2007b_v" quantity="PYR_Izhi/20/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_21_Izhi2007b_v" quantity="PYR_Izhi/21/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_22_Izhi2007b_v" quantity="PYR_Izhi/22/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_23_Izhi2007b_v" quantity="PYR_Izhi/23/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_24_Izhi2007b_v" quantity="PYR_Izhi/24/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_25_Izhi2007b_v" quantity="PYR_Izhi/25/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_26_Izhi2007b_v" quantity="PYR_Izhi/26/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_27_Izhi2007b_v" quantity="PYR_Izhi/27/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_28_Izhi2007b_v" quantity="PYR_Izhi/28/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_29_Izhi2007b_v" quantity="PYR_Izhi/29/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_30_Izhi2007b_v" quantity="PYR_Izhi/30/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_31_Izhi2007b_v" quantity="PYR_Izhi/31/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_32_Izhi2007b_v" quantity="PYR_Izhi/32/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_33_Izhi2007b_v" quantity="PYR_Izhi/33/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_34_Izhi2007b_v" quantity="PYR_Izhi/34/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_35_Izhi2007b_v" quantity="PYR_Izhi/35/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_36_Izhi2007b_v" quantity="PYR_Izhi/36/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_37_Izhi2007b_v" quantity="PYR_Izhi/37/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_38_Izhi2007b_v" quantity="PYR_Izhi/38/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_39_Izhi2007b_v" quantity="PYR_Izhi/39/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_40_Izhi2007b_v" quantity="PYR_Izhi/40/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_41_Izhi2007b_v" quantity="PYR_Izhi/41/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_42_Izhi2007b_v" quantity="PYR_Izhi/42/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_43_Izhi2007b_v" quantity="PYR_Izhi/43/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_44_Izhi2007b_v" quantity="PYR_Izhi/44/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_45_Izhi2007b_v" quantity="PYR_Izhi/45/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_46_Izhi2007b_v" quantity="PYR_Izhi/46/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_47_Izhi2007b_v" quantity="PYR_Izhi/47/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_48_Izhi2007b_v" quantity="PYR_Izhi/48/Izhi2007b/v"/> 
-            <OutputColumn id="v_PYR_Izhi_49_Izhi2007b_v" quantity="PYR_Izhi/49/Izhi2007b/v"/> 
+            <OutputColumn id="v_PYR_Izhi_0_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/0/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_1_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/1/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_2_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/2/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_3_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/3/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_4_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/4/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_5_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/5/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_6_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/6/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_7_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/7/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_8_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/8/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_9_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/9/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_10_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/10/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_11_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/11/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_12_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/12/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_13_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/13/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_14_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/14/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_15_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/15/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_16_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/16/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_17_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/17/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_18_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/18/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_19_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/19/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_20_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/20/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_21_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/21/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_22_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/22/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_23_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/23/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_24_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/24/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_25_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/25/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_26_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/26/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_27_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/27/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_28_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/28/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_29_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/29/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_30_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/30/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_31_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/31/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_32_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/32/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_33_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/33/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_34_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/34/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_35_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/35/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_36_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/36/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_37_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/37/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_38_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/38/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_39_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/39/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_40_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/40/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_41_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/41/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_42_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/42/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_43_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/43/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_44_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/44/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_45_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/45/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_46_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/46/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_47_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/47/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_48_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/48/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_49_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/49/CELL_Izhi2007b_PYR/v"/> 
         </OutputFile>
         
     </Simulation>

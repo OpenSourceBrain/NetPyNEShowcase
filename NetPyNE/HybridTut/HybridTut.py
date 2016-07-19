@@ -33,7 +33,7 @@ netParams.addPopParams('background', {'cellModel': 'NetStim', 'rate': 10, 'noise
 ## PYR cell properties (HH)
 cellRule = {'conds': {'cellType': 'PYR', 'cellModel': 'HH'},  'secs': {}}
 cellRule['secs']['soma'] = {'geom': {}, 'topol': {}, 'mechs': {}}  # soma properties
-cellRule['secs']['soma']['geom'] = {'diam': 6.3, 'L': 5, 'Ra': 123.0, 'pt3d':[]}
+cellRule['secs']['soma']['geom'] = {'Ra': 123.0, 'pt3d':[]}
 cellRule['secs']['soma']['geom']['pt3d'].append((0, 0, 0, 20))
 cellRule['secs']['soma']['geom']['pt3d'].append((0, 0, 20, 20))
 cellRule['secs']['soma']['mechs']['hh'] = {'gnabar': 0.12, 'gkbar': 0.036, 'gl': 0.003, 'el': -70} 
