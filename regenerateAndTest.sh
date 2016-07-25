@@ -5,7 +5,7 @@ cd NeuroML2
 
 jnml LEMS_2007One.xml -netpyne
 
-cp RS*.mod *_netpyne.py *definition.py ../NetPyNE
+cp RS*.mod *_netpyne.py *definition.py NET_2007One.net.nml ../NetPyNE
 
 ################  Copy over nml to netpyne dirs (for testing)
 
@@ -63,7 +63,7 @@ cp *.nml ../../NeuroML2
 cp LEMS*.xml ../../NeuroML2
 
 cd ../../NeuroML2
-jnml -validate *.nml
+jnml -validate *cell.nml *channel.nml *synapse.nml HHCellNetwork.net.nml  HHSmall.net.nml  HybridSmall.net.nml  HybridTut.net.nml  M1.net.nml SimpleNet.net.nml
 
 ################  Done
 

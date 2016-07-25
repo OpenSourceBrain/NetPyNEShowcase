@@ -26,48 +26,12 @@ from netpyne import sim    # import netpyne sim module
 # NETWORK PARAMETERS
 ###############################################################################
 
-netParams = specs.NetParams()   # object of class NetParams to store the network parameters
-
-# Cell properties list
-
-next_gid = 0
-gids = {} # Require these in this file for plotting etc.
-
-     
-# cell params for cell RS in population RS_pop
-cellRule = {'conds': {'cellType': 'RS'}, 'secs': {}}
-RS_pop_soma = {'geom': {}, 'topol': {}, 'mechs': {}, 'pointps':{}, 'syns': {}}  #  soma
-RS_pop_soma['pointps']['RS'] = { 'mod':'RS', 'v0':-60.0,  'k':7.0E-4,  'vr':-60.0,  'vt':-40.0,  'vpeak':35.0,  'a':0.030000001,  'b':-0.0019999999,  'c':-50.0,  'd':0.1,  'C':1.00000005E-4,  } 
-
-# Todo: work this out here from area etc.
-cm = (318309 * RS_pop_soma['pointps']['RS']['C'] if RS_pop_soma['pointps']['RS'].has_key('C') else 318.31927 )
-
-RS_pop_soma['geom'] = {'diam': 10, 'L': 10, 'Ra': 1, 'cm': cm}
-
-cellRule['secs'] = {'soma': RS_pop_soma}  # add sections to dict
-netParams.addCellParams('RS_pop', cellRule)  # add to list of cell properties
-
-      
-# Population parameters
+nml2_file_name = 'NET_2007One.net.nml'
 
 
-# Population: RS_pop, size: 1, component: RS
-
-size_RS_pop = 1
-netParams.addPopParams('RS_pop',{'cellModel': 'RS_pop', 'cellType': 'RS', 'numCells': size_RS_pop}) # add dict with params for this pop 
-gids['RS_pop'] = [i+next_gid for i in range(size_RS_pop)]
-next_gid += size_RS_pop
-
-
-
-# Inputs...
-# Input: RS_Iext0 which is RS_Iext on cell 0 in RS_pop
-
-RS_pop_soma['pointps']['RS_pop'] = { 'mod':'RS_Iext' } 
-
-
-
+###############################################################################
 # SIMULATION PARAMETERS
+###############################################################################
 
 simConfig = specs.SimConfig()   # object of class SimConfig to store the simulation configuration
 
@@ -80,14 +44,11 @@ simConfig.createPyStruct = 1  # create Python structure (simulator-independent) 
 simConfig.verbose = True  # show detailed messages 
 
 # Recording 
-simConfig.recordCells = [0]  
+simConfig.recordCells = ['all']  
 simConfig.recordTraces = {'Vsoma':{'sec':'soma','loc':0.5,'var':'v'}}
 
-simConfig.plotCells = []
-# Display id: d1
-# Line id: RS v; displaying v on cell: 0 in population: RS_pop;
-if 'v'=='v':
-    simConfig.plotCells.append(gids['RS_pop'][0]) # plot recorded traces for this list of cells
+simConfig.plotCells = ['all']
+
 
 simConfig.recordStim = True  # record spikes of cell stims
 simConfig.recordStep = simConfig.dt # Step size in ms to save data (eg. V traces, LFP, etc)
@@ -108,9 +69,12 @@ simConfig.saveFileStep = simConfig.dt # step size in ms to save data to disk
 simConfig.saveDat = True # save to dat file
 
 
+###############################################################################
+# IMPORT & RUN
+###############################################################################
+
 print("Running a NetPyNE based simulation for %sms (dt: %sms)"%(simConfig.duration, simConfig.dt))
-sim.createSimulateAnalyze(                   
-    simConfig = simConfig, 
-    netParams = netParams)
+
+sim.importNeuroML2SimulateAnalyze(nml2_file_name,simConfig)
 
 print("Finished simulation")
