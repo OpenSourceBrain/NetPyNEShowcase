@@ -1,0 +1,16 @@
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
+ 
+target: LEMS_HH_Simulation.xml 
+engine: jNeuroML_NetPyNE
+mep: .test.hhsim.mep
+experiments:
+  v0:
+    observables:
+      spike times:
+        file: 
+          path: Vsoma_cell_0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.00

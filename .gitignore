@@ -71,3 +71,16 @@ x86_64
 
 NetPyNE/M1/movie
 /NeuroML2/NET_2007One.net.nml
+/NetPyNE/LEMS_HH_Simulation_netpyne.py
+/NetPyNE/LEMS_SimpleNet_netpyne.py
+/NetPyNE/poissonFiringSyn_inputdefinition.py
+/NetPyNE/pulseGen1_inputdefinition.py
+/NetPyNE/pulseGen2_inputdefinition.py
+/NeuroML2/LEMS_HH_Simulation_netpyne.py
+/NeuroML2/LEMS_HH_Simulation_nrn.py
+/NeuroML2/LEMS_SimpleNet_netpyne.py
+/NeuroML2/LEMS_SimpleNet_netpyne.py_main.json
+/NeuroML2/poissonFiringSyn.input.json
+/NeuroML2/poissonFiringSyn_inputdefinition.py
+/NeuroML2/pulseGen1_inputdefinition.py
+/NeuroML2/pulseGen2_inputdefinition.py
