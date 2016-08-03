@@ -48,7 +48,7 @@ simConfig.recordCells = ['all']
 simConfig.recordTraces = {}
 
 # For saving to file: exIzh.dat (ref: of0)
-# Column: v: Pop: RS_pop; cell: 0; segment id: $oc.segment_id; segment name: soma; value: v
+# Column: v: Pop: RS_pop; cell: 0; segment id: $oc.segment_id; segment name: soma; value: v (v)
 simConfig.recordTraces['of0_RS_pop_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'v'}
 
 
@@ -103,7 +103,7 @@ col_of0_v = sim.allSimData['of0_RS_pop_0_soma_v']['cell_%s'%gids['RS_pop'][0]]
 
 dat_file_of0 = open('exIzh.dat', 'w')
 for i in range(len(col_of0_t)):
-    dat_file_of0.write( '%s\t'%(col_of0_t[i]/1000) +  '%s\t'%(col_of0_v[i]/1000) +  '\n')
+    dat_file_of0.write( '%s\t'%(col_of0_t[i]/1000) +  '%s\t'%(col_of0_v[i]/1000.0) +  '\n')
 dat_file_of0.close()
 
 

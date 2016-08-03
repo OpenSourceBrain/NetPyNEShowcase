@@ -5,7 +5,7 @@ cd NeuroML2
 
 jnml LEMS_2007One.xml -netpyne
 
-cp RS*.mod *_netpyne.py *definition.py NET_2007One.net.nml ../NetPyNE
+cp RS*.mod *_netpyne.py NET_2007One.net.nml ../NetPyNE
 
 ################  Copy over nml to netpyne dirs (for testing)
 
