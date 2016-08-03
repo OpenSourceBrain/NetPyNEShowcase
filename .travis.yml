@@ -6,6 +6,7 @@ addons:
   apt:
     packages:
     - python-matplotlib 
+    - python-tk
     #- python-numpy 
     #- python-scipy 
     #- python-sympy
