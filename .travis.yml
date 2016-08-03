@@ -2,8 +2,19 @@
 
 sudo: false  
 
+addons:
+  apt:
+    packages:
+    - python-matplotlib 
+    #- python-numpy 
+    #- python-scipy 
+    #- python-sympy
+
 language: python
 python: 2.7
+
+virtualenv:
+    system_site_packages: true
 
 env:
     - OMV_ENGINE=jNeuroML
@@ -21,7 +32,7 @@ script:
     - pwd
     - ls -al NeuroML2
     - cd NeuroML2
-    - python LEMS_2007One_netpyne.py
+    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_2007One_netpyne.py ; fi
     
     
     
