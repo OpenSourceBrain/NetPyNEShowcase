@@ -45,7 +45,12 @@ simConfig.verbose = True  # show detailed messages
 
 # Recording 
 simConfig.recordCells = ['all']  
-simConfig.recordTraces = {'Vsoma':{'sec':'soma','loc':0.5,'var':'v'}}
+simConfig.recordTraces = {}
+
+# For saving to file: exIzh.dat (ref: of0)
+# Column: v: Pop: RS_pop; cell: 0; segment id: $oc.segment_id; segment name: soma; value: v
+simConfig.recordTraces['of0_RS_pop_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'v'}
+
 
 simConfig.plotCells = ['all']
 
@@ -66,7 +71,7 @@ simConfig.plotWeightChanges = False # whether to plot weight changes (shown in c
 # Saving
 simConfig.filename = 'net1.txt'  # Set file output name
 simConfig.saveFileStep = simConfig.dt # step size in ms to save data to disk
-simConfig.saveDat = True # save to dat file
+# simConfig.saveDat = True # save to dat file
 
 
 ###############################################################################
@@ -75,6 +80,31 @@ simConfig.saveDat = True # save to dat file
 
 print("Running a NetPyNE based simulation for %sms (dt: %sms)"%(simConfig.duration, simConfig.dt))
 
-sim.importNeuroML2SimulateAnalyze(nml2_file_name,simConfig)
+gids = sim.importNeuroML2SimulateAnalyze(nml2_file_name,simConfig)
 
 print("Finished simulation")
+
+
+###############################################################################
+#   Saving data (this ensures the data gets saved in the format/files 
+#   as specified in the LEMS <Simulation> element)
+###############################################################################
+
+
+print("Saving to file: exIzh.dat (ref: of0)")
+
+ 
+# Column: t
+col_of0_t = [i*simConfig.dt for i in range(int(simConfig.duration/simConfig.dt))]
+
+# Column: v: Pop: RS_pop; cell: 0; segment id: $oc.segment_id; segment name: soma; value: v
+col_of0_v = sim.allSimData['of0_RS_pop_0_soma_v']['cell_%s'%gids['RS_pop'][0]]
+
+
+dat_file_of0 = open('exIzh.dat', 'w')
+for i in range(len(col_of0_t)):
+    dat_file_of0.write( '%s\t'%(col_of0_t[i]/1000) +  '%s\t'%(col_of0_v[i]/1000) +  '\n')
+dat_file_of0.close()
+
+
+print("Saved all data.")

@@ -17,8 +17,11 @@ install:
     
 script:
     - omv all -V
+    - omv list-engines
     - pwd
     - ls -al NeuroML2
+    - cd NeuroML2
+    - python LEMS_2007One_netpyne.py
     
     
     

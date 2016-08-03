@@ -16,7 +16,7 @@
     
     <Include file="HybridSmall.net.nml"/>
    
-    <Simulation id="Sim_HybridSmall" length="1000.0ms" step="0.025ms" target="HybridSmall" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_HybridSmall" length="1000.0ms" step="0.005ms" target="HybridSmall" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__PYR_HH" title="Membrane potentials of cells in PYR_HH" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
             <Line id="PYR_HH[0]: v" quantity="PYR_HH/0/CELL_HH_PYR/v" scale="1mV" color="#f7697f" timeScale="1ms"/>

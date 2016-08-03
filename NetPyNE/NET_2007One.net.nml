@@ -8,8 +8,8 @@
 <pulseGenerator id="RS_Iext" delay="0ms" duration="520ms" amplitude="100 pA"/>
 
 <network id="net1">
-    <explicitInput input="RS_Iext" target="RS_pop[0]" destination="synapses"/>
     <population id="RS_pop" component="RS" size="1"/>
+    <explicitInput input="RS_Iext" target="RS_pop[0]" destination="synapses"/>
 </network>
 
 </neuroml>
