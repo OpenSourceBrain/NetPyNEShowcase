@@ -8,7 +8,7 @@ addons:
     - python-matplotlib 
     - python-tk
     #- python-numpy 
-    #- python-scipy 
+    - python-scipy 
     #- python-sympy
 
 language: python
