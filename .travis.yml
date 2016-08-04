@@ -9,6 +9,7 @@ addons:
     - python-tk
     #- python-numpy 
     - python-scipy 
+    - python-lxml
     #- python-sympy
 
 language: python
@@ -26,6 +27,7 @@ env:
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+    - pip install pyneuroml
     
 script:
     - omv all -V
