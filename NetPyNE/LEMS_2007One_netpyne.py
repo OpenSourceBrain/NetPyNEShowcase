@@ -21,13 +21,14 @@ Components:
 from netpyne import specs  # import netpyne specs module
 from netpyne import sim    # import netpyne sim module
 
+from neuron import h
+
 
 ###############################################################################
 # NETWORK PARAMETERS
 ###############################################################################
 
 nml2_file_name = 'NET_2007One.net.nml'
-
 
 ###############################################################################
 # SIMULATION PARAMETERS
@@ -78,7 +79,7 @@ simConfig.saveFileStep = simConfig.dt # step size in ms to save data to disk
 # IMPORT & RUN
 ###############################################################################
 
-print("Running a NetPyNE based simulation for %sms (dt: %sms)"%(simConfig.duration, simConfig.dt))
+print("Running a NetPyNE based simulation for %sms (dt: %sms) at %s degC"%(simConfig.duration, simConfig.dt, h.celsius))
 
 gids = sim.importNeuroML2SimulateAnalyze(nml2_file_name,simConfig)
 
