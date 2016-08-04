@@ -27,6 +27,7 @@ env:
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+    - pip install git+https://github.com/NeuralEnsemble/libNeuroML.git@development
     - pip install pyneuroml
     
 script:
