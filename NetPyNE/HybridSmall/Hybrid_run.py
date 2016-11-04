@@ -1,17 +1,10 @@
 import sys
 
+if '-nogui' in sys.argv:
+    import netpyne
+    netpyne.__gui__ = False
+    
 import HybridSmall  # import parameters file
+from netpyne import sim  # import netpyne init module
 
-showgui = not '-nogui' in sys.argv
-simConfig = HybridSmall.simConfig
-simConfig.addAnalysis('plotRaster', showgui)
-simConfig.addAnalysis('plotTraces', {'include': [2]} if showgui else {})
-simConfig.addAnalysis('plot2Dnet', showgui)
-
-from netpyne import sim  # import netpyne sim module
-
-sim.createSimulateAnalyze(netParams = HybridSmall.netParams, simConfig = simConfig)  # create and simulate network
-
-from neuron import h
-
-h('forall psection()')
+sim.createSimulateAnalyze(netParams = HybridSmall.netParams, simConfig = HybridSmall.simConfig)  # create and simulate network
