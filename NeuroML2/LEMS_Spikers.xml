@@ -1,0 +1,36 @@
+<Lems>
+    
+    <!-- Specify which component to run -->
+    <Target component="Sim_Spikers"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="PyNN.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="Spikers.net.nml"/>
+   
+    <Simulation id="Sim_Spikers" length="1000ms" step="0.025ms" target="Spikers" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+        
+ 
+        <Display id="E_net_v" title="E_net v" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-12" ymax="22">
+            <Line id="E_net v: cell 0" quantity="E_net/0/IF_curr_alpha_E_net/v" scale="1mV" color="#dd0a37" timeScale="1ms"/>
+            <!--<Line id="E_net v: cell 43" quantity="E_net/1/IF_curr_alpha_E_net/v" scale="1mV" color="#6b1bbd" timeScale="1ms"/>-->
+        </Display>
+        
+        <OutputFile id="OF_E_net_v" fileName="E_net_v.dat">
+            <OutputColumn id="E_net_0_IF_curr_alpha_E_net_v" quantity="E_net/0/IF_curr_alpha_E_net/v"/> 
+            <!--<OutputColumn id="E_net_1_IF_curr_alpha_E_net_v" quantity="E_net/1/IF_curr_alpha_E_net/v"/> -->
+        </OutputFile>
+        
+        <!--
+        <OutputFile id="Volts_file__RS_pop" fileName="Sim_Spikers.RS_pop.v.dat">
+            <OutputColumn id="v_RS_pop_0_RS_v" quantity="RS_pop/0/RS/v"/> 
+            <OutputColumn id="v_RS_pop_1_RS_v" quantity="RS_pop/1/RS/v"/> 
+            <OutputColumn id="v_RS_pop_2_RS_v" quantity="RS_pop/2/RS/v"/> 
+        </OutputFile>-->
+        
+    </Simulation>
+
+</Lems>
