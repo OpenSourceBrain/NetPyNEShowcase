@@ -82,3 +82,7 @@ NetPyNE/M1/movie
 /NeuroML2/poissonFiringSyn_inputdefinition.py
 /NeuroML2/pulseGen1_inputdefinition.py
 /NeuroML2/pulseGen2_inputdefinition.py
+/NEURON/GapsExample/SampleCellGroup_0.dat
+/NEURON/GapsExample/SampleCellGroup_1.dat
+/NEURON/GapsExample/simulator.props
+/NEURON/GapsExample/time.dat
