@@ -24,7 +24,7 @@
     <expTwoSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="1.0ms" tauRise="0.1ms"/>
     <cell id="CELL_HH_PYR">
         <notes>Cell exported from NetPyNE:
-{secs: {soma: {mechs: {hh: {gnabar: 0.12, gl: 0.003, gkbar: 0.036, el: -70}}, geom: {diam: 18.8, L: 18.8, Ra: 123.0}, vinit: 71}}, conds: {cellModel: 'HH', cellType: 'PYR'}}</notes>
+{'secs': {soma: {mechs: {hh: {gnabar: 0.12, gl: 0.003, gkbar: 0.036, el: -70}}, geom: {diam: 18.8, L: 18.8, Ra: 123.0}, vinit: 71}}, 'conds': {cellModel: 'HH', cellType: 'PYR'}}</notes>
         <morphology id="morph_CELL_HH_PYR">
             <segment id="0" name="soma">
                 <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="18.8"/>
