@@ -86,3 +86,7 @@ NetPyNE/M1/movie
 /NEURON/GapsExample/SampleCellGroup_1.dat
 /NEURON/GapsExample/simulator.props
 /NEURON/GapsExample/time.dat
+/NetPyNE/LEMS_NML2_Ex19a_GapJunctionInstances_netpyne.py
+/NeuroML2/NET_NML2_Ex19a_GapJunctionInstances.net.nml
+/NetPyNE/GapJunctions/ex19_v.dat
+/NeuroML2/NET_GJ.net.nml
