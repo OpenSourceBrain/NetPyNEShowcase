@@ -91,3 +91,8 @@ NetPyNE/M1/movie
 /NetPyNE/GapJunctions/ex19_v.dat
 /NeuroML2/NET_GJ.net.nml
 /NetPyNE/LEMS_GJ_netpyne.py
+/NeuroML2/scaling/*.hoc
+/NeuroML2/scaling/*.mod
+/NeuroML2/scaling/*.dat
+/NeuroML2/scaling/*nrn.py
+/NeuroML2/scaling/*netpyne.py
