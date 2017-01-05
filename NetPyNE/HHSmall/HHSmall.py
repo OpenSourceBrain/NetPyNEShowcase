@@ -7,6 +7,7 @@ simConfig is a dict containing a set of simulation configurations using a standa
 
 Contributors: salvadordura@gmail.com
 """
+
 from netpyne import specs
 
 netParams = specs.NetParams()   # object of class NetParams to store the network parameters
@@ -26,8 +27,7 @@ simConfig = specs.SimConfig()   # object of class SimConfig to store the simulat
 pop_size = 3
 
 # Population parameters
-netParams.addPopParams('PYR', {'cellModel': 'HH', 'cellType': 'PYR', 'numCells': pop_size}) # add dict with params for this pop 
-netParams.addPopParams('background', {'cellModel': 'NetStim', 'rate': 20, 'noise': 0, 'start': 50})  # background inputs
+netParams.popParams['PYR'] = {'cellModel': 'HH', 'cellType': 'PYR', 'numCells': pop_size} # add dict with params for this pop 
 
 # Cell parameters
 
@@ -36,28 +36,26 @@ cellRule = {'conds': {'cellModel': 'HH', 'cellType': 'PYR'},  'secs': {}} 	# cel
 cellRule['secs']['soma'] = {'geom': {}, 'mechs': {}}  														# soma params dict
 cellRule['secs']['soma']['geom'] = {'diam': 18.8, 'L': 18.8, 'Ra': 123.0}  									# soma geometry
 cellRule['secs']['soma']['mechs']['hh'] = {'gnabar': 0.12, 'gkbar': 0.036, 'gl': 0.003, 'el': -70}  		# soma hh mechanism
-cellRule['secs']['soma']['vinit'] = 71
-netParams.addCellParams('PYR', cellRule)  												# add dict to list of cell params
+cellRule['secs']['soma']['vinit'] = -71
+netParams.cellParams['PYR'] = cellRule  												# add dict to list of cell params
 
 
 # Synaptic mechanism parameters
-netParams.addSynMechParams('AMPA', {'mod': 'Exp2Syn', 'tau1': 0.1, 'tau2': 1.0, 'e': 0})
+netParams.synMechParams['AMPA'] = {'mod': 'Exp2Syn', 'tau1': 0.1, 'tau2': 1.0, 'e': 0}
 
- 
+
+# Stimulation parameters
+netParams.stimSourceParams['bkg'] = {'type': 'NetStim', 'rate': 10, 'noise': 1, 'start': 1}
+netParams.stimTargetParams['bkg->PYR1'] = {'source': 'bkg', 'conds': {'popLabel': 'PYR'}, 'weight': 0.1, 'delay': 'uniform(1,5)'}
+
+
 # Connectivity parameters
-netParams.addConnParams('PYR->PYR',
-    {'preConds': {'popLabel': 'PYR'}, 'postConds': {'popLabel': 'PYR'},
-    'weight': 0.005,                    # weight of each connection
+netParams.connParams['PYR->PYR'] = {
+    'preConds': {'popLabel': 'PYR'}, 'postConds': {'popLabel': 'PYR'},
+    'weight': 0.002,                    # weight of each connection
     'delay': '0.2+gauss(13.0,1.4)',     # delay min=0.2, mean=13.0, var = 1.4
     'threshold': 10,                    # threshold
-    'convergence': 'uniform(1,15)'})    # convergence (num presyn targeting postsyn) is uniformly distributed between 1 and 15
-
-
-netParams.addConnParams('bg->PYR',
-    {'preConds': {'popLabel': 'background'}, 'postConds': {'cellType': 'PYR'}, # background -> PYR
-    'weight': 0.1,                    # fixed weight of 0.08
-    'synMech': 'AMPA',                     # target NMDA synapse
-    'delay': 'uniform(1,5)'})           # uniformly distributed delays between 1-5ms
+    'convergence': 'uniform(1,15)'}    # convergence (num presyn targeting postsyn) is uniformly distributed between 1 and 15
 
 
 ###############################################################################
@@ -84,11 +82,10 @@ simConfig.saveFileStep = simConfig.dt # step size in ms to save data to disk
 simConfig.savePickle = False # Whether or not to write spikes etc. to a .mat file
 simConfig.saveDat = True # save traces
 
-
 # Analysis and plotting 
-simConfig.addAnalysis('plotRaster', True) # Plot raster
-simConfig.addAnalysis('plotTraces', {'include': [2]}) # Plot raster
-simConfig.addAnalysis('plot2Dnet', True) # Plot 2D net cells and connections
+simConfig.analysis['plotRaster'] = True  # Plot raster
+simConfig.analysis['plotTraces'] = {'include': [2]}  # Plot raster
+simConfig.analysis['plot2Dnet'] = True  # Plot 2D net cells and connections
 
 
 
