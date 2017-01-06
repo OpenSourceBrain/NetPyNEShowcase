@@ -24,7 +24,7 @@
     <expTwoSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="1.0ms" tauRise="0.1ms"/>
     <cell id="CELL_HH_PYR">
         <notes>Cell exported from NetPyNE:
-{'secs': {soma: {mechs: {hh: {gnabar: 0.12, gl: 0.003, gkbar: 0.036, el: -70}}, geom: {diam: 18.8, L: 18.8, Ra: 123.0}, vinit: 71}}, 'conds': {cellModel: 'HH', cellType: 'PYR'}}</notes>
+{'secs': {'soma': {'mechs': {'hh': {'gnabar': 0.12, 'gl': 0.003, 'gkbar': 0.036, 'el': -70}}, 'geom': {'diam': 18.8, 'L': 18.8, 'Ra': 123.0}, 'vinit': -71}}, 'conds': {'cellModel': 'HH', 'cellType': 'PYR'}}</notes>
         <morphology id="morph_CELL_HH_PYR">
             <segment id="0" name="soma">
                 <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="18.8"/>
@@ -48,7 +48,7 @@
             </intracellularProperties>
         </biophysicalProperties>
     </cell>
-    <spikeGenerator id="NetStim_background_PYR_20_0_AMPA" period="0.05s"/>
+    <spikeGenerator id="NetStim_bkg_PYR_20_0_AMPA" period="0.05s"/>
     <network id="HHSmall">
         <population id="PYR" component="CELL_HH_PYR" size="3" type="populationList">
             <instance id="0">
@@ -61,19 +61,19 @@
                 <location x="51.804630571516853" y="33.86307903737071" z="76.246429339951561"/>
             </instance>
         </population>
-        <population id="Pop_NetStim_background_PYR_20_0_AMPA" component="NetStim_background_PYR_20_0_AMPA" size="3"/>
+        <population id="Pop_NetStim_bkg_PYR_20_0_AMPA" component="NetStim_bkg_PYR_20_0_AMPA" size="3"/>
         <projection id="NetConn_PYR_PYR_AMPA" presynapticPopulation="PYR" postsynapticPopulation="PYR" synapse="AMPA">
-            <connectionWD id="0" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.005" delay="13.9025381799 ms"/>
-            <connectionWD id="1" preCellId="../PYR/2/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.005" delay="12.9100663402 ms"/>
-            <connectionWD id="2" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/1/CELL_HH_PYR" weight="0.005" delay="13.9025381799 ms"/>
-            <connectionWD id="3" preCellId="../PYR/2/CELL_HH_PYR" postCellId="../PYR/1/CELL_HH_PYR" weight="0.005" delay="11.1134170437 ms"/>
-            <connectionWD id="4" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.005" delay="12.9100663402 ms"/>
-            <connectionWD id="5" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.005" delay="11.1134170437 ms"/>
+            <connectionWD id="0" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.002" delay="13.9025381799 ms"/>
+            <connectionWD id="1" preCellId="../PYR/2/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.002" delay="12.9100663402 ms"/>
+            <connectionWD id="2" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/1/CELL_HH_PYR" weight="0.002" delay="13.9025381799 ms"/>
+            <connectionWD id="3" preCellId="../PYR/2/CELL_HH_PYR" postCellId="../PYR/1/CELL_HH_PYR" weight="0.002" delay="11.1134170437 ms"/>
+            <connectionWD id="4" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.002" delay="12.9100663402 ms"/>
+            <connectionWD id="5" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.002" delay="11.1134170437 ms"/>
         </projection>
-        <projection id="NetConn_NetStim_background_PYR_20_0_AMPA__PYR" presynapticPopulation="Pop_NetStim_background_PYR_20_0_AMPA" postsynapticPopulation="PYR" synapse="AMPA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[0]" postCellId="../PYR/0/CELL_HH_PYR" weight="0.1" delay="3.55765385643 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[1]" postCellId="../PYR/1/CELL_HH_PYR" weight="0.1" delay="3.03126478855 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_background_PYR_20_0_AMPA[2]" postCellId="../PYR/2/CELL_HH_PYR" weight="0.1" delay="2.42562143109 ms"/>
+        <projection id="NetConn_NetStim_bkg_PYR_20_0_AMPA__PYR" presynapticPopulation="Pop_NetStim_bkg_PYR_20_0_AMPA" postsynapticPopulation="PYR" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[0]" postCellId="../PYR/0/CELL_HH_PYR" weight="0.1" delay="2.07175864809 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[1]" postCellId="../PYR/1/CELL_HH_PYR" weight="0.1" delay="2.38131189806 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[2]" postCellId="../PYR/2/CELL_HH_PYR" weight="0.1" delay="2.58909865692 ms"/>
         </projection>
     </network>
 </neuroml>

@@ -25,9 +25,9 @@
         </Display>
         
         <Display id="DispPop__PYR_Izhi" title="Membrane potentials of cells in PYR_Izhi" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
-            <Line id="PYR_Izhi[0]: v" quantity="PYR_Izhi/0/CELL_Izhi2007b_PYR/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
-            <Line id="PYR_Izhi[1]: v" quantity="PYR_Izhi/1/CELL_Izhi2007b_PYR/v" scale="1mV" color="#f073ee" timeScale="1ms"/>
-            <Line id="PYR_Izhi[2]: v" quantity="PYR_Izhi/2/CELL_Izhi2007b_PYR/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
+            <Line id="PYR_Izhi[0]: v" quantity="PYR_Izhi/0/CELL_Izhi_PYR/v" scale="1mV" color="#e935b8" timeScale="1ms"/>
+            <Line id="PYR_Izhi[1]: v" quantity="PYR_Izhi/1/CELL_Izhi_PYR/v" scale="1mV" color="#f073ee" timeScale="1ms"/>
+            <Line id="PYR_Izhi[2]: v" quantity="PYR_Izhi/2/CELL_Izhi_PYR/v" scale="1mV" color="#950cdd" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Volts_file__PYR_HH" fileName="Sim_HybridSmall.PYR_HH.v.dat">
@@ -37,9 +37,9 @@
         </OutputFile>
         
         <OutputFile id="Volts_file__PYR_Izhi" fileName="Sim_HybridSmall.PYR_Izhi.v.dat">
-            <OutputColumn id="v_PYR_Izhi_0_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/0/CELL_Izhi2007b_PYR/v"/> 
-            <OutputColumn id="v_PYR_Izhi_1_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/1/CELL_Izhi2007b_PYR/v"/> 
-            <OutputColumn id="v_PYR_Izhi_2_CELL_Izhi2007b_PYR_v" quantity="PYR_Izhi/2/CELL_Izhi2007b_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_0_CELL_Izhi_PYR_v" quantity="PYR_Izhi/0/CELL_Izhi_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_1_CELL_Izhi_PYR_v" quantity="PYR_Izhi/1/CELL_Izhi_PYR/v"/> 
+            <OutputColumn id="v_PYR_Izhi_2_CELL_Izhi_PYR_v" quantity="PYR_Izhi/2/CELL_Izhi_PYR/v"/> 
         </OutputFile>
         
     </Simulation>

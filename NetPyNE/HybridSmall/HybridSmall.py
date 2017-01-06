@@ -26,10 +26,8 @@ simConfig = specs.SimConfig()   # object of class SimConfig to store the simulat
 pop_size = 3
 
 # Population parameters
-netParams.addPopParams('PYR_HH', {'cellModel': 'HH', 'cellType': 'PYR', 'numCells': pop_size}) # add dict with params for this pop 
-netParams.addPopParams('PYR_Izhi', {'cellModel': 'Izhi2007b', 'cellType': 'PYR', 'numCells': pop_size}) # add dict with params for this pop 
-netParams.addPopParams('background1', {'cellModel': 'NetStim', 'rate': 20, 'noise': 0})  # background inputs
-netParams.addPopParams('background2', {'cellModel': 'NetStim', 'rate': 20, 'noise': 1})  # background inputs
+netParams.popParams['PYR_HH'] = {'cellModel': 'HH', 'cellType': 'PYR', 'numCells': pop_size} # add dict with params for this pop 
+netParams.popParams['PYR_Izhi'] = {'cellModel': 'Izhi', 'cellType': 'PYR', 'numCells': pop_size} # add dict with params for this pop 
 
 
 # Cell parameters list
@@ -41,48 +39,40 @@ cellRule['secs']['soma']['geom']['pt3d'].append((0, 0, 0, 18.8))
 cellRule['secs']['soma']['geom']['pt3d'].append((0, 0, 18.8, 18.8))
 cellRule['secs']['soma']['mechs']['hh'] = {'gnabar': 0.12, 'gkbar': 0.036, 'gl': 0.003, 'el': -70} 
 
-netParams.addCellParams('PYR_HH', cellRule)  # add dict to list of cell properties
+netParams.cellParams['PYR_HH'] = cellRule  # add dict to list of cell properties
 
 ## PYR cell properties (Izhi)
-cellRule = {'conds': {'cellType': 'PYR', 'cellModel': 'Izhi2007b'},  'secs': {}}
+cellRule = {'conds': {'cellType': 'PYR', 'cellModel': 'Izhi'},  'secs': {}}
 cellRule['secs']['soma'] = {'geom': {}, 'pointps':{}}  # soma properties
 cellRule['secs']['soma']['geom'] = {'diam': 10, 'L': 10, 'cm': 31.831}
 cellRule['secs']['soma']['pointps']['Izhi'] = {'mod':'Izhi2007b', 
     'C':1, 'k':0.7, 'vr':-60, 'vt':-40, 'vpeak':35, 'a':0.03, 'b':-2, 'c':-50, 'd':100, 'celltype':1}
-netParams.addCellParams('PYR_Izhi', cellRule)  # add dict to list of cell properties
+netParams.cellParams['PYR_Izhi'] = cellRule  # add dict to list of cell properties
 
 
 # Synaptic mechanism parameters
-netParams.addSynMechParams('syn1', {'mod': 'ExpSyn', 'tau': 30, 'e': 0})
-netParams.addSynMechParams('syn2', {'mod': 'ExpSyn', 'tau': 4, 'e': 0})
+netParams.synMechParams['syn1'] = {'mod': 'ExpSyn', 'tau': 30, 'e': 0}
+netParams.synMechParams['syn2'] = {'mod': 'ExpSyn', 'tau': 4, 'e': 0}
  
 
+# Stimulation parameters
+netParams.stimSourceParams['bkg1'] = {'type': 'NetStim', 'rate': 20, 'noise': 0}
+netParams.stimSourceParams['bkg2'] = {'type': 'NetStim', 'rate': 20, 'noise': 1}
+netParams.stimTargetParams['bg->PYR_Izhi'] = {'source': 'bkg1', 'conds': {'cellType': 'PYR', 'cellModel': 'Izhi'}, 
+                                            'connFunc': 'fullConn','weight': 0.01, 'delay': 0, 'synMech': 'syn2'}  
+netParams.stimTargetParams['bg->PYR_HH'] = {'source': 'bkg2', 'conds': {'cellType': 'PYR', 'cellModel': 'HH'}, 
+                                            'connFunc': 'fullConn','weight': 0.005, 'synMech': 'syn1', 'sec': 'soma', 'loc': 1.0, 'delay': 0}
+
+
 # Connectivity parameters
-netParams.addConnParams('PYR->PYR',
-    {'preConds': {'cellType': 'PYR'}, 'postConds': {'cellType': 'PYR'},
-    'weight': 0.00,                    # weight of each connection
+netParams.connParams['PYR->PYR'] = {
+    'preConds': {'cellType': 'PYR'}, 'postConds': {'cellType': 'PYR'},
+    'weight': 0.0,                    # weight of each connection
     'delay': '0.2+gauss(13.0,1.4)',     # delay min=0.2, mean=13.0, var = 1.4
     'threshold': 10,                    # threshold
     'convergence': 'uniform(0,5)',       # convergence (num presyn targeting postsyn) is uniformly distributed between 1 and 10
-    'synMech': 'syn1'})   
+    'synMech': 'syn1'}    
 
-
-netParams.addConnParams('bg->PYR_Izhi',
-    {'preConds': {'popLabel': 'background1'}, 'postConds': {'cellType': 'PYR','cellModel': 'Izhi2007b'}, # background -> PYR (Izhi2007b)
-    'connFunc': 'fullConn',
-    'weight': 0.01, 
-    'delay': 0,
-    'synMech': 'syn2'})  
-
-
-netParams.addConnParams('bg->PYR_HH',
-    {'preConds': {'popLabel': 'background2'}, 'postConds': {'cellType': 'PYR', 'cellModel': 'HH'}, # background -> PYR (HH)
-    'connFunc': 'fullConn',
-    'weight': 0.005, 
-    'synMech': 'syn1',
-    'sec': 'soma',
-    'loc': 1.0,
-    'delay': 0})  
 
 
 
@@ -122,6 +112,7 @@ simConfig.saveDat = True
 
 
 # Analysis and plotting 
-simConfig.addAnalysis('plotRaster', True) # Whether or not to plot a raster
-simConfig.addAnalysis('plotTraces', {'include': [1,51]}) # plot recorded traces for this list of cells
+simConfig.analysis['plotRaster'] = {'orderInverse': False} #True # Whether or not to plot a raster
+simConfig.analysis['plotTraces'] = {'include': [1,51]} # plot recorded traces for this list of cells
+simConfig.analysis['plotRatePSD'] = {'include': ['allCells', 'PYR_HH', 'PYR_Izhi'], 'Fs': 200, 'smooth': 10} # plot recorded traces for this list of cells
 

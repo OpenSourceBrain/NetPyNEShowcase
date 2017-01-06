@@ -45,7 +45,7 @@ netParams.synMechParams['AMPA'] = {'mod': 'Exp2Syn', 'tau1': 0.1, 'tau2': 1.0, '
 
 
 # Stimulation parameters
-netParams.stimSourceParams['bkg'] = {'type': 'NetStim', 'rate': 10, 'noise': 1, 'start': 1}
+netParams.stimSourceParams['bkg'] = {'type': 'NetStim', 'rate': 20, 'noise': 0, 'start': 50}
 netParams.stimTargetParams['bkg->PYR1'] = {'source': 'bkg', 'conds': {'popLabel': 'PYR'}, 'weight': 0.1, 'delay': 'uniform(1,5)'}
 
 
