@@ -47,8 +47,8 @@
                 <channelDensity id="k_soma_group" ionChannel="k_hh" condDensity="0.036 S_per_cm2" erev="-77 mV" ion="k"/>
                 <channelDensity id="na_soma_group" ionChannel="na_hh" condDensity="0.12 S_per_cm2" erev="50 mV" ion="na"/>
                 <channelDensity id="leak_dend_group" ionChannel="leak_hh" condDensity="3.57e-05 mS_per_cm2" erev="-70 mV" ion="non_specific"/>
-                <spikeThresh value="0 mV"/>
-                <spikeThresh value="0 mV"/>
+                <spikeThresh value="10 mV"/>
+                <spikeThresh value="10 mV"/>
                 <specificCapacitance value="1 uF_per_cm2" segmentGroup="soma_group"/>
                 <specificCapacitance value="1 uF_per_cm2" segmentGroup="dend_group"/>
                 <initMembPotential value="-65 mV"/>
