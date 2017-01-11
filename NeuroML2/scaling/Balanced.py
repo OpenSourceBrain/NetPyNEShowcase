@@ -116,7 +116,8 @@ def generate(reference = "Balanced",
     #####   Save NeuroML and LEMS Simulation files      
     
 
-    nml_file_name = '%s.net.%s'%(network.id,'nml.h5' if format == 'hdf5' else 'nml')
+    nml_file_name = '%s%s.net.%s'%('XH_' if format == 'xml_hdf5' else '', network.id,'nml.h5' if format == 'hdf5' else 'nml')
+    
     oc.save_network(nml_doc, 
                     nml_file_name, 
                     validate=(format=='xml'),
@@ -154,7 +155,7 @@ if __name__ == '__main__':
     
     if '-all' in sys.argv:
         
-        for format in ['xml','hdf5']:
+        for format in ['xml','xml_hdf5']:
 
             generate(format=format)
 

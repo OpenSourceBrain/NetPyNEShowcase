@@ -94,5 +94,11 @@ NetPyNE/M1/movie
 /NeuroML2/scaling/*.hoc
 /NeuroML2/scaling/*.mod
 /NeuroML2/scaling/*.dat
+/NeuroML2/scaling/*.png
+
+/NeuroML2/scaling/*.pov
+
+/NeuroML2/scaling/*_10*
+/NeuroML2/scaling/*.spikes
 /NeuroML2/scaling/*nrn.py
 /NeuroML2/scaling/*netpyne.py
