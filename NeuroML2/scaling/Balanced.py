@@ -20,8 +20,11 @@ def generate(reference = "Balanced",
              scaley=1,
              scalez=1,
              connections=True,
+             connections_scaling=1,
              duration = 1000,
              global_delay = 0,
+             max_in_pop_to_plot_and_save = 5,
+             gen_spike_saves_for_all_somas = True,
              format='xml'):
 
     num_exc = scale_pop_size(80,scalePops)
@@ -83,22 +86,22 @@ def generate(reference = "Balanced",
     if connections:
         proj = oc.add_probabilistic_projection(network, "proj0",
                                         popExc, popExc,
-                                        synAmpa1.id, 0.3, delay = global_delay)
+                                        synAmpa1.id, connections_scaling*0.3, delay = global_delay)
         total_conns += len(proj.connection_wds)
 
         proj = oc.add_probabilistic_projection(network, "proj1",
                                         popExc, popInh,
-                                        synAmpa1.id, 0.5, delay = global_delay)
+                                        synAmpa1.id, connections_scaling*0.5, delay = global_delay)
         total_conns += len(proj.connection_wds)
 
         proj = oc.add_probabilistic_projection(network, "proj3",
                                         popInh, popExc,
-                                        synGaba1.id, 0.7, delay = global_delay)
+                                        synGaba1.id, connections_scaling*0.7, delay = global_delay)
         total_conns += len(proj.connection_wds)
 
         proj = oc.add_probabilistic_projection(network, "proj4",
                                         popInh, popInh,
-                                        synGaba1.id, 0.5, delay = global_delay)
+                                        synGaba1.id, connections_scaling*0.5, delay = global_delay)
         total_conns += len(proj.connection_wds)
 
 
@@ -120,10 +123,27 @@ def generate(reference = "Balanced",
                     format = format)
 
     if format=='xml':
+        
+        plot_v = {popExc.id:[],popInh.id:[]}
+        save_v = {'%s_v.dat'%popExc.id:[],'%s_v.dat'%popInh.id:[]}
+        
+        for i in range(min(max_in_pop_to_plot_and_save,num_exc)):
+            plot_v[popExc.id].append("%s/%i/%s/v"%(popExc.id,i,popExc.component))
+            save_v['%s_v.dat'%popExc.id].append("%s/%i/%s/v"%(popExc.id,i,popExc.component))
+            
+        for i in range(min(max_in_pop_to_plot_and_save,num_inh)):
+            plot_v[popInh.id].append("%s/%i/%s/v"%(popInh.id,i,popInh.component))
+            save_v['%s_v.dat'%popInh.id].append("%s/%i/%s/v"%(popInh.id,i,popInh.component))
+            
         lems_file_name = oc.generate_lems_simulation(nml_doc, network, 
                                 nml_file_name, 
                                 duration =      duration, 
-                                dt =            0.025)
+                                dt =            0.025,
+                                gen_plots_for_all_v = False,
+                                gen_plots_for_quantities = plot_v,
+                                gen_saves_for_all_v = False,
+                                gen_saves_for_quantities = save_v,
+                                gen_spike_saves_for_all_somas = gen_spike_saves_for_all_somas)
     else:
         lems_file_name = None
                                 
@@ -141,14 +161,20 @@ if __name__ == '__main__':
             generate(scalePops = 10,
                  scalex=2,
                  scalez=2,
+                 connections_scaling=0.002,
+                 gen_spike_saves_for_all_somas = False,
                  format=format)
         
              
+             
     elif '-test' in sys.argv:
         
-        generate(scalePops = 1,
+        generate(num_bbp =0,
+             scalePops = 0.2,
              scalex=2,
              scalez=2,
+             duration = 200,
+             max_in_pop_to_plot_and_save = 3,
              global_delay = 2)
     else:
         generate()
