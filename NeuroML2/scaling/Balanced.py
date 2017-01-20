@@ -22,7 +22,7 @@ def generate(reference = "Balanced",
              connections=True,
              connections_scaling=1,
              duration = 1000,
-             global_delay = 0,
+             global_delay = 2,
              max_in_pop_to_plot_and_save = 5,
              gen_spike_saves_for_all_somas = True,
              format='xml'):
@@ -123,30 +123,33 @@ def generate(reference = "Balanced",
                     validate=(format=='xml'),
                     format = format)
 
-    if format=='xml':
+
+    plot_v = {popExc.id:[],popInh.id:[]}
+    save_v = {'%s_v.dat'%popExc.id:[],'%s_v.dat'%popInh.id:[]}
+
+    for i in range(min(max_in_pop_to_plot_and_save,num_exc)):
+        plot_v[popExc.id].append("%s/%i/%s/v"%(popExc.id,i,popExc.component))
+        save_v['%s_v.dat'%popExc.id].append("%s/%i/%s/v"%(popExc.id,i,popExc.component))
+
+    for i in range(min(max_in_pop_to_plot_and_save,num_inh)):
+        plot_v[popInh.id].append("%s/%i/%s/v"%(popInh.id,i,popInh.component))
+        save_v['%s_v.dat'%popInh.id].append("%s/%i/%s/v"%(popInh.id,i,popInh.component))
         
-        plot_v = {popExc.id:[],popInh.id:[]}
-        save_v = {'%s_v.dat'%popExc.id:[],'%s_v.dat'%popInh.id:[]}
+    lems_file_name = "LEMS_%s.xml"%network.id
+    if format != 'xml':
+        lems_file_name = "LEMS_%s_%s.xml"%(network.id,format)
         
-        for i in range(min(max_in_pop_to_plot_and_save,num_exc)):
-            plot_v[popExc.id].append("%s/%i/%s/v"%(popExc.id,i,popExc.component))
-            save_v['%s_v.dat'%popExc.id].append("%s/%i/%s/v"%(popExc.id,i,popExc.component))
-            
-        for i in range(min(max_in_pop_to_plot_and_save,num_inh)):
-            plot_v[popInh.id].append("%s/%i/%s/v"%(popInh.id,i,popInh.component))
-            save_v['%s_v.dat'%popInh.id].append("%s/%i/%s/v"%(popInh.id,i,popInh.component))
-            
-        lems_file_name = oc.generate_lems_simulation(nml_doc, network, 
-                                nml_file_name, 
-                                duration =      duration, 
-                                dt =            0.025,
-                                gen_plots_for_all_v = False,
-                                gen_plots_for_quantities = plot_v,
-                                gen_saves_for_all_v = False,
-                                gen_saves_for_quantities = save_v,
-                                gen_spike_saves_for_all_somas = gen_spike_saves_for_all_somas)
-    else:
-        lems_file_name = None
+
+    lems_file_name = oc.generate_lems_simulation(nml_doc, network, 
+                            nml_file_name, 
+                            duration =      duration, 
+                            dt =            0.025,
+                            gen_plots_for_all_v = False,
+                            gen_plots_for_quantities = plot_v,
+                            gen_saves_for_all_v = False,
+                            gen_saves_for_quantities = save_v,
+                            gen_spike_saves_for_all_somas = gen_spike_saves_for_all_somas,
+                            lems_file_name = lems_file_name)
                                 
     return nml_doc, nml_file_name, lems_file_name
                                
@@ -155,27 +158,36 @@ if __name__ == '__main__':
     
     if '-all' in sys.argv:
         
-        for format in ['xml','xml_hdf5']:
+        for format in ['xml','hdf5']:
 
             generate(format=format)
 
             generate(scalePops = 10,
                  scalex=2,
                  scalez=2,
-                 connections_scaling=0.002,
+                 connections_scaling=0.2,
                  gen_spike_saves_for_all_somas = False,
+                 global_delay = 5,
+                 format=format)
+
+            generate(scalePops = .2,
+                 scalex=1,
+                 scalez=1,
+                 connections_scaling=0.1,
+                 gen_spike_saves_for_all_somas = False,
+                 global_delay = 5,
                  format=format)
         
              
              
     elif '-test' in sys.argv:
         
-        generate(num_bbp =0,
-             scalePops = 0.2,
-             scalex=2,
-             scalez=2,
-             duration = 200,
-             max_in_pop_to_plot_and_save = 3,
-             global_delay = 2)
+        generate(scalePops = .2,
+             scalex=1,
+             scalez=1,
+             connections_scaling=0.1,
+             gen_spike_saves_for_all_somas = False,
+             global_delay = 5,
+             format='hdf5')
     else:
         generate()
