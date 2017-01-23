@@ -106,3 +106,5 @@ NetPyNE/M1/movie
 /NeuroML2/scaling/*netpyne.py
 /NeuroML2/scaling/jsbml.log
 /NeuroML2/scaling/libjhdf5.so
+/NeuroML2/scaling/popExc_v.dat.n
+/NeuroML2/scaling/popInh_v.dat.n

@@ -169,6 +169,15 @@ if __name__ == '__main__':
                  gen_spike_saves_for_all_somas = False,
                  global_delay = 5,
                  format=format)
+            
+            if format == 'hdf5':
+                generate(scalePops = 100,
+                     scalex=6,
+                     scalez=6,
+                     connections_scaling=0.2,
+                     gen_spike_saves_for_all_somas = False,
+                     global_delay = 5,
+                     format=format)
 
             generate(scalePops = .2,
                  scalex=1,
@@ -181,6 +190,9 @@ if __name__ == '__main__':
              
              
     elif '-test' in sys.argv:
+        
+        import logging
+        logging.basicConfig(level=logging.INFO, format="%(name)-19s %(levelname)-5s - %(message)s")
         
         generate(scalePops = .2,
              scalex=1,
