@@ -6,6 +6,7 @@ for testing purposes
 import opencortex.build as oc
 import sys
 
+from random import random
 
 min_pop_size = 3
 
@@ -25,6 +26,7 @@ def generate(reference = "Balanced",
              global_delay = 2,
              max_in_pop_to_plot_and_save = 5,
              gen_spike_saves_for_all_somas = True,
+             deterministic = True,
              format='xml'):
 
     num_exc = scale_pop_size(80,scalePops)
@@ -56,11 +58,12 @@ def generate(reference = "Balanced",
 
     #####   Input types
 
+    if not deterministic:
+        pfs1 = oc.add_poisson_firing_synapse(nml_doc,
+                                           id="psf1",
+                                           average_rate="150 Hz",
+                                           synapse_id=synAmpa1.id)
 
-    pfs1 = oc.add_poisson_firing_synapse(nml_doc,
-                                       id="psf1",
-                                       average_rate="150 Hz",
-                                       synapse_id=synAmpa1.id)
 
 
     #####   Populations
@@ -107,9 +110,26 @@ def generate(reference = "Balanced",
 
     #####   Inputs
 
-    oc.add_inputs_to_population(network, "Stim0",
+    if not deterministic:
+        oc.add_inputs_to_population(network, "Stim0",
                                 popExc, pfs1.id,
                                 all_cells=True)
+                                
+    else:
+
+        for i in range(num_exc):
+
+            pg = oc.add_pulse_generator(nml_doc,
+                                   id="pg_%i"%i,
+                                   delay="0ms",
+                                   duration="10000ms",
+                                   amplitude="%snA"%(random()*0.5))
+
+            oc.add_inputs_to_population(network, "Stim_%i"%i,
+                                    popExc, pg.id,
+                                    all_cells=False,
+                                    only_cells=[i])
+                               
 
 
 
@@ -161,6 +181,14 @@ if __name__ == '__main__':
         for format in ['xml','hdf5']:
 
             generate(format=format)
+            
+            generate(scalePops = .2,
+                 scalex=1,
+                 scalez=1,
+                 connections_scaling=0.1,
+                 gen_spike_saves_for_all_somas = False,
+                 global_delay = 5,
+                 format=format)
 
             generate(scalePops = 10,
                  scalex=2,
@@ -168,6 +196,7 @@ if __name__ == '__main__':
                  connections_scaling=0.2,
                  gen_spike_saves_for_all_somas = False,
                  global_delay = 5,
+                 deterministic = False,
                  format=format)
             
             if format == 'hdf5':
@@ -178,6 +207,7 @@ if __name__ == '__main__':
                      connections_scaling=0.2,
                      gen_spike_saves_for_all_somas = False,
                      global_delay = 5,
+                     deterministic = False,
                      format=format)
             '''
             if format == 'hdf5':
@@ -187,15 +217,7 @@ if __name__ == '__main__':
                      connections_scaling=0.2,
                      gen_spike_saves_for_all_somas = False,
                      global_delay = 5,
-                     format=format)
-
-            generate(scalePops = .2,
-                 scalex=1,
-                 scalez=1,
-                 connections_scaling=0.1,
-                 gen_spike_saves_for_all_somas = False,
-                 global_delay = 5,
-                 format=format)'''
+                     format=format)'''
         
              
              
@@ -204,12 +226,13 @@ if __name__ == '__main__':
         import logging
         logging.basicConfig(level=logging.INFO, format="%(name)-19s %(levelname)-5s - %(message)s")
         
-        generate(scalePops = .2,
-             scalex=1,
-             scalez=1,
-             connections_scaling=0.1,
-             gen_spike_saves_for_all_somas = False,
-             global_delay = 5,
-             format='hdf5')
+        for format in ['xml','hdf5']:
+            generate(scalePops = .2,
+                 scalex=1,
+                 scalez=1,
+                 connections_scaling=0.1,
+                 gen_spike_saves_for_all_somas = False,
+                 global_delay = 5,
+                 format=format)
     else:
         generate()
