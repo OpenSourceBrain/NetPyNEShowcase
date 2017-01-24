@@ -100,7 +100,8 @@ NetPyNE/M1/movie
 
 /NeuroML2/scaling/*_10*
 /NeuroML2/scaling/*Balanced_0.2*
-/NeuroML2/scaling/*Balanced*json
+/NeuroML2/scaling/*Balanced_33*
+/NeuroML2/scaling/*json
 /NeuroML2/scaling/*.spikes
 /NeuroML2/scaling/*nrn.py
 /NeuroML2/scaling/*netpyne.py

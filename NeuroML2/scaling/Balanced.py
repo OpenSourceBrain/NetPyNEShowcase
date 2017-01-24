@@ -171,6 +171,16 @@ if __name__ == '__main__':
                  format=format)
             
             if format == 'hdf5':
+                generate(scalePops = 33,
+                     scalex=6,
+                     scalez=6,
+                     duration = 100,
+                     connections_scaling=0.2,
+                     gen_spike_saves_for_all_somas = False,
+                     global_delay = 5,
+                     format=format)
+            '''
+            if format == 'hdf5':
                 generate(scalePops = 100,
                      scalex=6,
                      scalez=6,
@@ -185,7 +195,7 @@ if __name__ == '__main__':
                  connections_scaling=0.1,
                  gen_spike_saves_for_all_somas = False,
                  global_delay = 5,
-                 format=format)
+                 format=format)'''
         
              
              
