@@ -1,0 +1,16 @@
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
+ 
+target: LEMS_Balanced_hdf5.xml
+engine: jNeuroML_NetPyNE_NP4
+mep: .test.bal.mep
+experiments:
+  v0:
+    observables:
+      spike times:
+        file: 
+          path: popExc_v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0

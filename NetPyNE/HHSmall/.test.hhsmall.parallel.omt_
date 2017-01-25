@@ -1,0 +1,36 @@
+target: HH_run.py 
+engine: NetPyNE_NP4
+mep: ../../NeuroML2/.test.hh.mep
+experiments:
+  v0:
+    observables:
+      spike times:
+        file: 
+          path: Vsoma_cell_0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.00
+
+  v1:
+    observables:
+      spike times:
+        file: 
+          path: Vsoma_cell_1.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.00
+
+  v2:
+    observables:
+      spike times:
+        file: 
+          path: Vsoma_cell_2.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0.00
