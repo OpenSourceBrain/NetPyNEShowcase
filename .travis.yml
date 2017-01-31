@@ -33,8 +33,8 @@ script:
     - omv list-engines
     - pwd
     - ls -al NeuroML2
-    - cd NeuroML2
-    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_2007One_netpyne.py ; fi
+    - cd NeuroML2/scaling
+    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_Balanced_hdf5_netpyne.py ; fi
     
     
     
