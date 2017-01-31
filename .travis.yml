@@ -10,7 +10,7 @@ addons:
     - python-numpy 
     - python-scipy 
     - python-lxml
-    - python-tables
+    - python-libhdf5
 
 language: python
 python: 2.7
@@ -27,6 +27,7 @@ env:
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+    - pip install pytables
     
 script:
     - omv all -V
