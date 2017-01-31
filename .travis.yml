@@ -10,7 +10,7 @@ addons:
     - python-numpy 
     - python-scipy 
     - python-lxml
-    - python-libhdf5
+    - libhdf5
 
 language: python
 python: 2.7
