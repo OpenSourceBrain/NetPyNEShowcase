@@ -7,10 +7,10 @@ addons:
     packages:
     - python-matplotlib 
     - python-tk
-    #- python-numpy 
+    - python-numpy 
     - python-scipy 
     - python-lxml
-    #- python-sympy
+    - python-tables
 
 language: python
 python: 2.7
