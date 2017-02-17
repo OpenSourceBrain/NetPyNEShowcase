@@ -104,7 +104,7 @@ if sim.rank==0:
 
     dat_file_of0 = open('exIzh.dat', 'w')
     for i in range(len(col_of0_t)):
-        dat_file_of0.write( '%s\t'%(col_of0_t[i]/1000) +  '%s\t'%(col_of0_v[i]/1000.0) +  '\n')
+        dat_file_of0.write( '%s\t'%(col_of0_t[i]/1000.0) +  '%s\t'%(col_of0_v[i]/1000.0) +  '\n')
     dat_file_of0.close()
 
 

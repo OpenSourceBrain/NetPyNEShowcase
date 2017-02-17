@@ -107,7 +107,7 @@ if sim.rank==0:
 
     dat_file_OF_E_net_v = open('E_net_v.dat', 'w')
     for i in range(len(col_OF_E_net_v_t)):
-        dat_file_OF_E_net_v.write( '%s\t'%(col_OF_E_net_v_t[i]/1000) +  '%s\t'%(col_OF_E_net_v_E_net_0_IF_curr_alpha_E_net_v[i]/1000.0) +  '\n')
+        dat_file_OF_E_net_v.write( '%s\t'%(col_OF_E_net_v_t[i]/1000.0) +  '%s\t'%(col_OF_E_net_v_E_net_0_IF_curr_alpha_E_net_v[i]/1000.0) +  '\n')
     dat_file_OF_E_net_v.close()
 
 
