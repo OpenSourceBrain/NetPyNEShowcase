@@ -11,21 +11,8 @@ ENDCOMMENT
 
 NEURON {
     POINT_PROCESS poissonFiringSyn100
-    ELECTRODE_CURRENT i
     RANGE averageRate                       : parameter
     RANGE averageIsi                        : parameter
-    
-    RANGE i                                 : exposure
-    RANGE synAmpa1_tauRise                  : parameter
-    RANGE synAmpa1_tauDecay                 : parameter
-    RANGE synAmpa1_peakTime                 : parameter
-    RANGE synAmpa1_waveformFactor           : parameter
-    RANGE synAmpa1_gbase                    : parameter
-    RANGE synAmpa1_erev                     : parameter
-    
-    RANGE synAmpa1_g                        : exposure
-    
-    RANGE synAmpa1_i                        : exposure
     
 }
 
@@ -51,33 +38,16 @@ PARAMETER {
     
     averageRate = 0.1 (kHz)
     averageIsi = 10 (ms)
-    synAmpa1_tauRise = 0.5 (ms)
-    synAmpa1_tauDecay = 10 (ms)
-    synAmpa1_peakTime = 1.5767012 (ms)
-    synAmpa1_waveformFactor = 1.2324 
-    synAmpa1_gbase = 9.999999E-4 (uS)
-    synAmpa1_erev = 0 (mV)
 }
 
 ASSIGNED {
-    v (mV)
-    
-    synAmpa1_g (uS)                        : derived variable
-    
-    synAmpa1_i (nA)                        : derived variable
-    
-    i (nA)                                 : derived variable
     rate_tsince (ms/ms)
-    rate_synAmpa1_A (/ms)
-    rate_synAmpa1_B (/ms)
     
 }
 
 STATE {
     tsince (ms) 
     isi (ms) 
-    synAmpa1_A  
-    synAmpa1_B  
     
 }
 
@@ -90,10 +60,6 @@ INITIAL {
     isi = -  averageIsi  * log(1 - random_float(1))
     
     net_send(0, 1) : go to NET_RECEIVE block, flag 1, for initial state
-    
-    synAmpa1_A = 0
-    
-    synAmpa1_B = 0
     
 }
 
@@ -118,19 +84,6 @@ NET_RECEIVE(flag) {
     
         isi = -  averageIsi  * log(1 - random_float(1))
     
-        : Child: Component(id=synAmpa1 type=expTwoSynapse)
-    
-        : This child is a synapse; defining weight
-        weight = 1
-    
-        : paramMappings: {synAmpa1={A=synAmpa1_A, tauRise=synAmpa1_tauRise, gbase=synAmpa1_gbase, erev=synAmpa1_erev, B=synAmpa1_B, peakTime=synAmpa1_peakTime, g=synAmpa1_g, i=synAmpa1_i, tauDecay=synAmpa1_tauDecay, waveformFactor=synAmpa1_waveformFactor}, poissonFiringSyn100={averageRate=averageRate, i=i, tsince=tsince, isi=isi, averageIsi=averageIsi}}
-    ?    state_discontinuity(synAmpa1_A, synAmpa1_A  + (weight *  synAmpa1_waveformFactor ))
-        synAmpa1_A = synAmpa1_A  + (weight *  synAmpa1_waveformFactor )
-    
-        : paramMappings: {synAmpa1={A=synAmpa1_A, tauRise=synAmpa1_tauRise, gbase=synAmpa1_gbase, erev=synAmpa1_erev, B=synAmpa1_B, peakTime=synAmpa1_peakTime, g=synAmpa1_g, i=synAmpa1_i, tauDecay=synAmpa1_tauDecay, waveformFactor=synAmpa1_waveformFactor}, poissonFiringSyn100={averageRate=averageRate, i=i, tsince=tsince, isi=isi, averageIsi=averageIsi}}
-    ?    state_discontinuity(synAmpa1_B, synAmpa1_B  + (weight *  synAmpa1_waveformFactor ))
-        synAmpa1_B = synAmpa1_B  + (weight *  synAmpa1_waveformFactor )
-    
         net_event(t)
         WATCH (tsince  >  isi) 1000
     
@@ -141,23 +94,12 @@ NET_RECEIVE(flag) {
 DERIVATIVE states {
     rates()
     tsince' = rate_tsince 
-    synAmpa1_A' = rate_synAmpa1_A 
-    synAmpa1_B' = rate_synAmpa1_B 
     
 }
 
 PROCEDURE rates() {
     
-    synAmpa1_g = synAmpa1_gbase  * ( synAmpa1_B  -  synAmpa1_A ) ? evaluable
-    synAmpa1_i = synAmpa1_g  * ( synAmpa1_erev  - v) ? evaluable
-    ? DerivedVariable is based on path: synapse/i, on: Component(id=poissonFiringSyn100 type=poissonFiringSynapse), from synapse; Component(id=synAmpa1 type=expTwoSynapse)
-    i = synAmpa1_i ? path based
-    
     rate_tsince = 1 ? Note units of all quantities used here need to be consistent!
-    
-     
-    rate_synAmpa1_B = - synAmpa1_B  /  synAmpa1_tauDecay ? Note units of all quantities used here need to be consistent!
-    rate_synAmpa1_A = - synAmpa1_A  /  synAmpa1_tauRise ? Note units of all quantities used here need to be consistent!
     
      
     
