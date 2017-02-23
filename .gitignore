@@ -103,6 +103,7 @@ NetPyNE/M1/movie
 /NeuroML2/scaling/*Balanced_33*
 /NeuroML2/scaling/*json
 /NeuroML2/scaling/*.spikes
+/NeuroML2/*.spikes
 /NeuroML2/scaling/*nrn.py
 /NeuroML2/scaling/*netpyne.py
 /NeuroML2/scaling/jsbml.log

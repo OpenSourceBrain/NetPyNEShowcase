@@ -2,6 +2,10 @@
 NetPyNE simulator compliant export for:
 
 Components:
+    passiveChan (Type: ionChannelPassive:  conductance=1.0E-11 (SI conductance))
+    naChan (Type: ionChannelHH:  conductance=1.0E-11 (SI conductance))
+    kChan (Type: ionChannelHH:  conductance=1.0E-11 (SI conductance))
+    hhcell (Type: cell)
     null (Type: property)
     IF_curr_alpha_E_net (Type: IF_curr_alpha:  tau_refrac=2.0 (dimensionless) v_thresh=20.0 (dimensionless) tau_m=20.0 (dimensionless) v_rest=0.0 (dimensionless) v_reset=0.0 (dimensionless) cm=0.001 (dimensionless) i_offset=0.0 (dimensionless) tau_syn_E=0.1 (dimensionless) tau_syn_I=0.1 (dimensionless) v_init=-10.0 (dimensionless) MSEC=0.001 (SI time) MVOLT=0.001 (SI voltage) NFARAD=1.0E-9 (SI capacitance))
     syn__expoisson__TO__E_net (Type: alphaCurrSynapse:  tau_syn=0.1 (dimensionless) MSEC=0.001 (SI time) MVOLT=0.001 (SI voltage) NAMP=1.0E-9 (SI current))
@@ -54,6 +58,9 @@ simConfig.recordTraces = {}
 # For saving to file: E_net_v.dat (ref: OF_E_net_v)
 # Column: E_net_0_IF_curr_alpha_E_net_v: Pop: E_net; cell: 0; segment id: $oc.segment_id; segment name: soma; Neuron loc: soma(0.5); value: v (v)
 simConfig.recordTraces['OF_E_net_v_E_net_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'v','conds':{'popLabel':'E_net','cellLabel':0}}
+# For saving to file: hh_net_v.dat (ref: OF_hh_net_v)
+# Column: hh_net_v: Pop: hh_net; cell: 0; segment id: 0; segment name: soma; Neuron loc: soma(0.5); value: v (v)
+simConfig.recordTraces['OF_hh_net_v_hh_net_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'v','conds':{'popLabel':'hh_net','cellLabel':0}}
 
 
 simConfig.plotCells = ['all']
@@ -109,6 +116,20 @@ if sim.rank==0:
     for i in range(len(col_OF_E_net_v_t)):
         dat_file_OF_E_net_v.write( '%s\t'%(col_OF_E_net_v_t[i]/1000.0) +  '%s\t'%(col_OF_E_net_v_E_net_0_IF_curr_alpha_E_net_v[i]/1000.0) +  '\n')
     dat_file_OF_E_net_v.close()
+
+    print("Saving to file: hh_net_v.dat (ref: OF_hh_net_v)")
+
+ 
+    # Column: t
+    col_OF_hh_net_v_t = [i*simConfig.dt for i in range(int(simConfig.duration/simConfig.dt))]
+
+    # Column: hh_net_v: Pop: hh_net; cell: 0; segment id: 0; segment name: soma; value: v
+    col_OF_hh_net_v_hh_net_v = sim.allSimData['OF_hh_net_v_hh_net_0_soma_v']['cell_%s'%gids['hh_net'][0]]
+
+    dat_file_OF_hh_net_v = open('hh_net_v.dat', 'w')
+    for i in range(len(col_OF_hh_net_v_t)):
+        dat_file_OF_hh_net_v.write( '%s\t'%(col_OF_hh_net_v_t[i]/1000.0) +  '%s\t'%(col_OF_hh_net_v_hh_net_v[i]/1000.0) +  '\n')
+    dat_file_OF_hh_net_v.close()
 
 
     print("Saved all data.")

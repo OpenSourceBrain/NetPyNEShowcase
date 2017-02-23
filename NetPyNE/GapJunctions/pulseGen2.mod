@@ -12,6 +12,7 @@ ENDCOMMENT
 NEURON {
     POINT_PROCESS pulseGen2
     ELECTRODE_CURRENT i
+    RANGE weight                            : property
     RANGE delay                             : parameter
     RANGE duration                          : parameter
     RANGE amplitude                         : parameter
@@ -38,6 +39,7 @@ UNITS {
 
 PARAMETER {
     
+    weight = 1
     delay = 400 (ms)
     duration = 200 (ms)
     amplitude = 0.0032 (nA)
@@ -62,7 +64,7 @@ BREAKPOINT {
     }
     
     if (t >=  delay  && t <  duration  +  delay) {
-        i = amplitude ? standard OnCondition
+        i = weight  *  amplitude ? standard OnCondition
     }
     
     if (t >=  duration  +  delay) {

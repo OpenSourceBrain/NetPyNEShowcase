@@ -1,7 +1,9 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="Spikers">
   
+    <include href="hhcell.cell.nml"/>
 
     <property tag="Python random seed" value="1234"/>
+    
     <IF_curr_alpha id="IF_curr_alpha_E_net" cm="0.001" i_offset="0." tau_syn_E="0.1" tau_syn_I="0.1" v_init="-10" tau_m="20." tau_refrac="2." v_reset="0." v_rest="0." v_thresh="20."/>
     
     <alphaCurrSynapse id="syn__expoisson__TO__E_net" tau_syn="0.1"/>
@@ -19,6 +21,12 @@
             <instance id="2">
                 <location x="67.156348148800006" y="8.393822683710001" z="76.648093279199998"/>
             </instance>-->
+        </population>
+        
+        <population id="hh_net" component="hhcell" size="1" type="populationList">
+            <instance id="0">
+                <location x="9" y="4" z="0"/>
+            </instance>
         </population>
         
         
@@ -39,7 +47,11 @@
         
         <projection id="expoisson__TO__E_net" presynapticPopulation="expoisson" postsynapticPopulation="E_net" synapse="syn__expoisson__TO__E_net">
             <connectionWD id="0" preCellId="../expoisson/0/SpikeSourcePoisson_expoisson" preSegmentId="0" preFractionAlong="0.5" postCellId="../E_net/0/IF_curr_alpha_E_net" postSegmentId="0" postFractionAlong="0.5" weight="0.01" delay="0.025ms"/>
-            
         </projection>
+        
+        <projection id="expoisson__TO__hh_net" presynapticPopulation="expoisson" postsynapticPopulation="hh_net" synapse="syn__expoisson__TO__E_net">
+            <connectionWD id="0" preCellId="../expoisson/0/SpikeSourcePoisson_expoisson" preSegmentId="0" preFractionAlong="0.5" postCellId="../hh_net/0/hhcell" postSegmentId="0" postFractionAlong="0.5" weight=".5" delay="0.025ms"/>
+        </projection>
+        
     </network>
 </neuroml>
