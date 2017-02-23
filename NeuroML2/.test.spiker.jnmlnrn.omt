@@ -2,3 +2,26 @@
  
 target: LEMS_Spikers.xml 
 engine: jNeuroML_NEURON
+mep: .test.spiker.mep
+experiments:
+  pynn:
+    observables:
+      spike times:
+        file: 
+          path: E_net_v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: 19.8
+        tolerance: 0
+  hh:
+    observables:
+      spike times:
+        file: 
+          path: hh_net_v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0

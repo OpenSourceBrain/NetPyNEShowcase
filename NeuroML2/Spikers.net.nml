@@ -8,7 +8,7 @@
     
     <alphaCurrSynapse id="syn__expoisson__TO__E_net" tau_syn="0.1"/>
     
-    <SpikeSourcePoisson id="SpikeSourcePoisson_expoisson" start="0.0ms" duration="10000000000.0ms" rate="200Hz"/>
+    <SpikeSourcePoisson id="SpikeSourcePoisson_expoisson" start="100.0ms" duration="800ms" rate="200Hz"/>
     
     <network id="Spikers" type="networkWithTemperature" temperature="32degC">
         <population id="E_net" component="IF_curr_alpha_E_net" size="1" type="populationList">
@@ -34,10 +34,10 @@
             <instance id="0">
                 <location x="0." y="0." z="0."/>
             </instance>
-         <!--   <instance id="1">
+            <instance id="1">
                 <location x="1." y="0." z="0."/>
             </instance>
-            <instance id="2">
+            <!--<instance id="2">
                 <location x="2." y="0." z="0."/>
             </instance>
             <instance id="3">
@@ -50,7 +50,7 @@
         </projection>
         
         <projection id="expoisson__TO__hh_net" presynapticPopulation="expoisson" postsynapticPopulation="hh_net" synapse="syn__expoisson__TO__E_net">
-            <connectionWD id="0" preCellId="../expoisson/0/SpikeSourcePoisson_expoisson" preSegmentId="0" preFractionAlong="0.5" postCellId="../hh_net/0/hhcell" postSegmentId="0" postFractionAlong="0.5" weight=".5" delay="0.025ms"/>
+            <connectionWD id="0" preCellId="../expoisson/1/SpikeSourcePoisson_expoisson" preSegmentId="0" preFractionAlong="0.5" postCellId="../hh_net/0/hhcell" postSegmentId="0" postFractionAlong="0.5" weight=".5" delay="0.025ms"/>
         </projection>
         
     </network>
