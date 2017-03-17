@@ -44,7 +44,7 @@ simConfig.dt = 0.01 # Internal integration timestep to use
 simConfig.randseed = 1 # Random seed to use
 simConfig.createNEURONObj = 1  # create HOC objects when instantiating network
 simConfig.createPyStruct = 1  # create Python structure (simulator-independent) when instantiating network
-simConfig.verbose = True  # show detailed messages 
+simConfig.verbose = False  # show detailed messages 
 
 # Recording 
 simConfig.recordCells = ['all']  
