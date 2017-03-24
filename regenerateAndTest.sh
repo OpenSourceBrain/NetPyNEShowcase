@@ -9,7 +9,7 @@ cp RS*.mod *_netpyne.py NET_2007One.net.nml ../NetPyNE
 
 jnml LEMS_GJ.xml -netpyne
 
-cp LEMS_GJ_netpyne.py pulseGen2.mod pulseGen1.mod gj1.mod iaf.mod NET_GJ.net.nml ../NetPyNE/GapJunctions
+cp LEMS_GJ_netpyne.py pulseGen2.mod pulseGen1.mod gj1.mod iaf.mod GJ.nml ../NetPyNE/GapJunctions
 
 
 ################  Copy over nml to netpyne dirs (for testing)

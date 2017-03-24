@@ -30,7 +30,7 @@ from neuron import h
 # NETWORK PARAMETERS
 ###############################################################################
 
-nml2_file_name = 'NET_GJ.net.nml'
+nml2_file_name = 'GJ.nml'
 
 ###############################################################################
 # SIMULATION PARAMETERS
@@ -41,7 +41,12 @@ simConfig = specs.SimConfig()   # object of class SimConfig to store the simulat
 # Simulation parameters
 simConfig.duration = simConfig.tstop = 700.0 # Duration of the simulation, in ms
 simConfig.dt = 0.01 # Internal integration timestep to use
-simConfig.randseed = 1 # Random seed to use
+
+# Seeds for randomizers (connectivity, input stimulation and cell locations)
+# Note: locations and connections should be fully specified by the structure of the NeuroML,
+# so seeds for conn & loc shouldn't affect networks structure/behaviour
+simConfig.seeds = {'conn': 0, 'stim': 123456789, 'loc': 0} 
+
 simConfig.createNEURONObj = 1  # create HOC objects when instantiating network
 simConfig.createPyStruct = 1  # create Python structure (simulator-independent) when instantiating network
 simConfig.verbose = False  # show detailed messages 
