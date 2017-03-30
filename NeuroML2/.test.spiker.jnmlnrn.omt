@@ -13,14 +13,24 @@ experiments:
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
-          threshold: 19.8
+          threshold: 19.7
         tolerance: 0
-  hh:
+  hh0:
     observables:
       spike times:
         file: 
           path: hh_net_v.dat
           columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0
+  hh4:
+    observables:
+      spike times:
+        file: 
+          path: hh_net_v.dat
+          columns: [0,5]
           scaling: [1000, 1000]
         spike detection: 
           method: threshold

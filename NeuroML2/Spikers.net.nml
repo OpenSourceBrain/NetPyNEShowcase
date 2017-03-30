@@ -1,14 +1,15 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="Spikers">
   
     <include href="hhcell.cell.nml"/>
-
-    <property tag="Python random seed" value="1234"/>
     
     <IF_curr_alpha id="IF_curr_alpha_E_net" cm="0.001" i_offset="0." tau_syn_E="0.1" tau_syn_I="0.1" v_init="-10" tau_m="20." tau_refrac="2." v_reset="0." v_rest="0." v_thresh="20."/>
     
     <alphaCurrSynapse id="syn__expoisson__TO__E_net" tau_syn="0.1"/>
     
     <SpikeSourcePoisson id="SpikeSourcePoisson_expoisson" start="100.0ms" duration="800ms" rate="200Hz"/>
+    
+    <expOneSynapse id="syn1" gbase="0.4nS" erev="0mV" tauDecay="3ms" />
+    <poissonFiringSynapse id="poissonFiringSyn" averageRate="150 Hz" synapse="syn1" spikeTarget="./syn1"/>
     
     <network id="Spikers" type="networkWithTemperature" temperature="32degC">
         
@@ -34,8 +35,13 @@
             <instance id="2">
                 <location x="29" y="24" z="20"/>
             </instance>
+            <instance id="3">
+                <location x="39" y="34" z="30"/>
+            </instance>
+            <instance id="4">
+                <location x="49" y="44" z="40"/>
+            </instance>
         </population>
-        
         
         <population id="expoisson" component="SpikeSourcePoisson_expoisson" size="1" type="populationList">
             <instance id="0">
@@ -60,6 +66,11 @@
             <connectionWD id="1" preCellId="../expoisson/1/SpikeSourcePoisson_expoisson" preSegmentId="0" preFractionAlong="0.5" postCellId="../hh_net/1/hhcell" postSegmentId="0" postFractionAlong="0.5" weight=".5" delay="0.025ms"/>
             <connectionWD id="2" preCellId="../expoisson/2/SpikeSourcePoisson_expoisson" preSegmentId="0" preFractionAlong="0.5" postCellId="../hh_net/2/hhcell" postSegmentId="0" postFractionAlong="0.5" weight=".5" delay="0.025ms"/>
         </projection>
+        
+        <inputList id="poissonSynInput" component="poissonFiringSyn" population="hh_net">
+            <input id="0" target="../hh_net/3/hhcell" destination="synapses"/>
+            <input id="1" target="../hh_net/4/hhcell" destination="synapses"/>
+        </inputList>
         
     </network>
 </neuroml>

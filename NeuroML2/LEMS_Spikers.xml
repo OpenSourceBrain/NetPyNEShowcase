@@ -15,7 +15,7 @@
     <Include file="kChan.channel.nml"/>
     <Include file="Spikers.net.nml"/>
    
-    <Simulation id="Sim_Spikers" length="1000ms" step="0.025ms" target="Spikers" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_Spikers" length="1000ms" step="0.025ms" target="Spikers" seed="1234567">  <!-- Note seed: ensures same random numbers used every run -->
         
  
         <Display id="E_net_v" title="E_net v" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-12" ymax="22">
@@ -27,14 +27,17 @@
             <Line id="hh_net v: cell 0" quantity="hh_net/0/hhcell/v" scale="1mV" color="#dd0a37" timeScale="1ms"/>
             <Line id="hh_net v: cell 1" quantity="hh_net/1/hhcell/v" scale="1mV" color="#dd0fff" timeScale="1ms"/>
             <Line id="hh_net v: cell 2" quantity="hh_net/2/hhcell/v" scale="1mV" color="#fffa37" timeScale="1ms"/>
-            <!--<Line id="E_net v: cell 43" quantity="E_net/1/IF_curr_alpha_E_net/v" scale="1mV" color="#6b1bbd" timeScale="1ms"/>-->
+        </Display>
+            
+        <Display id="hh_net_v_poisson_input" title="hh_net v poisson input" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-82" ymax="52">
+            <Line id="hh_net v: cell 3" quantity="hh_net/3/hhcell/v" scale="1mV" color="#fffa37" timeScale="1ms"/>
+            <Line id="hh_net v: cell 4" quantity="hh_net/4/hhcell/v" scale="1mV" color="#ffaaaa" timeScale="1ms"/>
         </Display>
         
         <Display id="spikes" title="Spike sources" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-5" ymax="50">
             <Line id="Spike Source 0: tsince" quantity="expoisson/0/SpikeSourcePoisson_expoisson/tsince" scale="1mV" color="#dd0a37" timeScale="1ms"/>
             <Line id="Spike Source 1: tsince" quantity="expoisson/1/SpikeSourcePoisson_expoisson/tsince" scale="1mV" color="#ddffff" timeScale="1ms"/>
             <Line id="Spike Source 2: tsince" quantity="expoisson/2/SpikeSourcePoisson_expoisson/tsince" scale="1mV" color="#aaaaff" timeScale="1ms"/>
-            <!--<Line id="E_net v: cell 43" quantity="E_net/1/IF_curr_alpha_E_net/v" scale="1mV" color="#6b1bbd" timeScale="1ms"/>-->
         </Display>
         
         <OutputFile id="OF_E_net_v" fileName="E_net_v.dat">
@@ -47,6 +50,8 @@
             <OutputColumn id="hh_net_v0" quantity="hh_net/0/hhcell/v"/> 
             <OutputColumn id="hh_net_v1" quantity="hh_net/1/hhcell/v"/> 
             <OutputColumn id="hh_net_v2" quantity="hh_net/2/hhcell/v"/> 
+            <OutputColumn id="hh_net_v3" quantity="hh_net/3/hhcell/v"/> 
+            <OutputColumn id="hh_net_v4" quantity="hh_net/4/hhcell/v"/> 
         </OutputFile>
         
         <!--
