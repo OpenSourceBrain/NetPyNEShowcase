@@ -109,7 +109,7 @@ NET_RECEIVE(flag) {
 PROCEDURE rates() {
     
     ? DerivedVariable is based on path: synapses[*]/i, on: Component(id=iaf type=iafCell), from synapses; null
-    iSyn = 0 ? Was: synapses[*]_i but insertion of currents from external attachments not yet supported ? path based
+    iSyn = 0 ? Was: synapses[*]_i but insertion of currents from external attachments not yet supported ? path based, prefix = 
     
     iMemb = leakConductance  * (  leakReversal   - v) +  iSyn ? evaluable
     rate_v = iMemb  /  C ? Note units of all quantities used here need to be consistent!

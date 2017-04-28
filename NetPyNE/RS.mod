@@ -132,7 +132,7 @@ DERIVATIVE states {
 PROCEDURE rates() {
     
     ? DerivedVariable is based on path: synapses[*]/i, on: Component(id=RS type=izhikevich2007Cell), from synapses; null
-    iSyn = 0 ? Was: synapses[*]_i but insertion of currents from external attachments not yet supported ? path based
+    iSyn = 0 ? Was: synapses[*]_i but insertion of currents from external attachments not yet supported ? path based, prefix = 
     
     iMemb = k  * (v-  vr  ) * (v-  vt  ) +  iSyn  -  u ? evaluable
     rate_v = iMemb  /  C ? Note units of all quantities used here need to be consistent!
