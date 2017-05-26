@@ -98,6 +98,8 @@ NET_RECEIVE(flag) {
     if (flag == 1000) {
     
         v = reset
+    
+        vI = 0 : Setting rate of change of v to 0
     }
     if (flag == 1) { : Set initial states
     
