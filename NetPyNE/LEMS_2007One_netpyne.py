@@ -23,6 +23,8 @@ from netpyne import sim    # import netpyne sim module
 
 from neuron import h
 
+import sys
+
 
 ###############################################################################
 # NETWORK PARAMETERS
@@ -55,7 +57,7 @@ simConfig.recordTraces = {}
 
 # For saving to file: exIzh.dat (ref: of0)
 # Column: v: Pop: RS_pop; cell: 0; segment id: $oc.segment_id; segment name: soma; Neuron loc: soma(0.5); value: v (v)
-simConfig.recordTraces['of0_RS_pop_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'v','conds':{'popLabel':'RS_pop','cellLabel':0}}
+simConfig.recordTraces['of0_RS_pop_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'v','conds':{'pop':'RS_pop','cellLabel':0}}
 
 
 simConfig.plotCells = ['all']
@@ -114,3 +116,6 @@ if sim.rank==0:
 
 
     print("Saved all data.")
+
+if '-nogui' in sys.argv:
+    quit()
