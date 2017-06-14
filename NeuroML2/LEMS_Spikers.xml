@@ -15,7 +15,7 @@
     <Include file="kChan.channel.nml"/>
     <Include file="Spikers.net.nml"/>
    
-    <Simulation id="Sim_Spikers" length="1000ms" step="0.025ms" target="Spikers" seed="1234567">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_Spikers" length="1000ms" step="0.025ms" target="Spikers" seed="123">  <!-- Note seed: ensures same random numbers used every run -->
         
  
         <Display id="E_net_v" title="E_net v" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-12" ymax="22">

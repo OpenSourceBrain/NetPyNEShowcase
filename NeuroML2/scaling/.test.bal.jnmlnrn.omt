@@ -4,7 +4,7 @@ target: LEMS_Balanced.xml
 engine: jNeuroML_NEURON
 mep: .test.bal.mep
 experiments:
-  v0:
+  E:
     observables:
       spike times:
         file: 
@@ -13,4 +13,14 @@ experiments:
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
-        tolerance: 4.1e-8
+        tolerance: 0
+  I:
+    observables:
+      spike times:
+        file: 
+          path: popInh_v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 0

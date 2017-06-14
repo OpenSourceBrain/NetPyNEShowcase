@@ -13,7 +13,7 @@ experiments:
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
-        tolerance: 0.000952
+        tolerance: 0.00096
   v1:
     observables:
       spike times:
@@ -23,7 +23,7 @@ experiments:
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
-        tolerance: 0.000947
+        tolerance: 0.000948
   v2:
     observables:
       spike times:
@@ -33,4 +33,4 @@ experiments:
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
-        tolerance: 0.000943
+        tolerance: 0.0009294

@@ -68,7 +68,7 @@ netParams.stimTargetParams['bg->PYR_HH'] = {'source': 'bkg2', 'conds': {'cellTyp
 netParams.connParams['PYR->PYR'] = {
     'preConds': {'cellType': 'PYR'}, 'postConds': {'cellType': 'PYR'},
     'weight': 0.0,                    # weight of each connection
-    'delay': '0.2+gauss(13.0,1.4)',     # delay min=0.2, mean=13.0, var = 1.4
+    'delay': '0.2+normal(13.0,1.4)',     # delay min=0.2, mean=13.0, var = 1.4
     'threshold': 10,                    # threshold
     'convergence': 'uniform(0,5)',       # convergence (num presyn targeting postsyn) is uniformly distributed between 1 and 10
     'synMech': 'syn1'}    
@@ -91,7 +91,7 @@ simConfig.verbose = False # show detailed messages
 
 
 # Recording 
-simConfig.recordCells = ['all']  # list of cells to record from 
+simConfig.recordCells = []  # list of cells to record from 
 simConfig.recordTraces = {'V':{'sec':'soma','loc':0.5,'var':'v'}, 
     'u':{'sec':'soma', 'pointp':'Izhi', 'var':'u'}, 
     'I':{'sec':'soma', 'pointp':'Izhi', 'var':'i'}, 

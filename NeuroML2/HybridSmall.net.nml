@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="HybridSmall">
-    <notes>NeuroML 2 file exported from NetPyNE v0.6.9</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.7.0</notes>
     <ionChannelHH id="leak_hh" type="ionChannelPassive" conductance="10pS">
         <notes>Single ion channel in NeuroML2 format: passive channel providing a leak conductance </notes>
     </ionChannelHH>
@@ -55,47 +55,48 @@
     <network id="HybridSmall">
         <population id="PYR_HH" component="CELL_HH_PYR" size="3" type="populationList">
             <instance id="0">
-                <location x="91.711585874816009" y="62.411324223264955" z="18.616023751669676"/>
+                <location x="29.565889544420436" y="18.528336282230836" z="13.667258291117088"/>
             </instance>
             <instance id="1">
-                <location x="67.115838414070012" y="36.72056502814722" z="88.648257869986452"/>
+                <location x="65.810369382190899" y="48.930452869057085" z="14.911683435805214"/>
             </instance>
             <instance id="2">
-                <location x="51.804630571516853" y="33.86307903737071" z="76.246429339951561"/>
+                <location x="28.392855676730893" y="55.244638897654454" z="91.525576195790066"/>
             </instance>
         </population>
         <population id="PYR_Izhi" component="CELL_Izhi_PYR" size="3" type="populationList">
             <instance id="0">
-                <location x="75.808601565255302" y="93.814138748371974" z="84.449803659466113"/>
+                <location x="10.241290808133481" y="19.834960270711463" z="85.925746316573168"/>
             </instance>
             <instance id="1">
-                <location x="12.871938171326081" y="98.428938989675913" z="94.201597751201774"/>
+                <location x="1.053910772070775" y="39.056449467535955" z="24.563573970328186"/>
             </instance>
             <instance id="2">
-                <location x="54.301956521295146" y="89.330204673193592" z="19.71886683227234"/>
+                <location x="81.868385993440555" y="93.398357254127419" z="51.077729265420288"/>
             </instance>
         </population>
         <population id="Pop_NetStim_bkg2_PYR_HH_20_1_syn1" component="NetStim_bkg2_PYR_HH_20_1_syn1" size="3"/>
         <population id="Pop_NetStim_bkg1_PYR_Izhi_20_0_syn2" component="NetStim_bkg1_PYR_Izhi_20_0_syn2" size="3"/>
         <projection id="NetConn_PYR_Izhi_PYR_HH_syn1" presynapticPopulation="PYR_Izhi" postsynapticPopulation="PYR_HH" synapse="syn1">
-            <connectionWD id="0" preCellId="../PYR_Izhi/2/CELL_Izhi_PYR" postCellId="../PYR_HH/1/CELL_HH_PYR" weight="0." delay="12.1064331365 ms"/>
+            <connectionWD id="0" preCellId="../PYR_Izhi/1/CELL_Izhi_PYR" postCellId="../PYR_HH/1/CELL_HH_PYR" weight="0." delay="13.4084299577 ms"/>
+            <connectionWD id="1" preCellId="../PYR_Izhi/0/CELL_Izhi_PYR" postCellId="../PYR_HH/2/CELL_HH_PYR" weight="0." delay="14.8040015185 ms"/>
         </projection>
         <projection id="NetConn_PYR_Izhi_PYR_Izhi_syn1" presynapticPopulation="PYR_Izhi" postsynapticPopulation="PYR_Izhi" synapse="syn1">
-            <connectionWD id="0" preCellId="../PYR_Izhi/2/CELL_Izhi_PYR" postCellId="../PYR_Izhi/0/CELL_Izhi_PYR" weight="0." delay="15.5241598032 ms"/>
-            <connectionWD id="1" preCellId="../PYR_Izhi/2/CELL_Izhi_PYR" postCellId="../PYR_Izhi/1/CELL_Izhi_PYR" weight="0." delay="12.6460994936 ms"/>
-            <connectionWD id="2" preCellId="../PYR_Izhi/1/CELL_Izhi_PYR" postCellId="../PYR_Izhi/2/CELL_Izhi_PYR" weight="0." delay="12.6460994936 ms"/>
+            <connectionWD id="0" preCellId="../PYR_Izhi/1/CELL_Izhi_PYR" postCellId="../PYR_Izhi/0/CELL_Izhi_PYR" weight="0." delay="11.2664518367 ms"/>
+            <connectionWD id="1" preCellId="../PYR_Izhi/0/CELL_Izhi_PYR" postCellId="../PYR_Izhi/1/CELL_Izhi_PYR" weight="0." delay="15.4152003218 ms"/>
+            <connectionWD id="2" preCellId="../PYR_Izhi/1/CELL_Izhi_PYR" postCellId="../PYR_Izhi/2/CELL_Izhi_PYR" weight="0." delay="13.9182283748 ms"/>
         </projection>
         <projection id="NetConn_PYR_HH_PYR_Izhi_syn1" presynapticPopulation="PYR_HH" postsynapticPopulation="PYR_Izhi" synapse="syn1">
-            <connectionWD id="0" preCellId="../PYR_HH/1/CELL_HH_PYR" postCellId="../PYR_Izhi/1/CELL_Izhi_PYR" weight="0." delay="14.385389754 ms"/>
-            <connectionWD id="1" preCellId="../PYR_HH/2/CELL_HH_PYR" postCellId="../PYR_Izhi/1/CELL_Izhi_PYR" weight="0." delay="12.1064331365 ms"/>
-            <connectionWD id="2" preCellId="../PYR_HH/0/CELL_HH_PYR" postCellId="../PYR_Izhi/2/CELL_Izhi_PYR" weight="0." delay="14.385389754 ms"/>
-            <connectionWD id="3" preCellId="../PYR_HH/1/CELL_HH_PYR" postCellId="../PYR_Izhi/2/CELL_Izhi_PYR" weight="0." delay="12.1064331365 ms"/>
-            <connectionWD id="4" preCellId="../PYR_HH/2/CELL_HH_PYR" postCellId="../PYR_Izhi/2/CELL_Izhi_PYR" weight="0." delay="14.2189777702 ms"/>
+            <connectionWD id="0" preCellId="../PYR_HH/1/CELL_HH_PYR" postCellId="../PYR_Izhi/0/CELL_Izhi_PYR" weight="0." delay="13.3325682454 ms"/>
+            <connectionWD id="1" preCellId="../PYR_HH/1/CELL_HH_PYR" postCellId="../PYR_Izhi/1/CELL_Izhi_PYR" weight="0." delay="13.5831601352 ms"/>
+            <connectionWD id="2" preCellId="../PYR_HH/0/CELL_HH_PYR" postCellId="../PYR_Izhi/2/CELL_Izhi_PYR" weight="0." delay="13.3662311635 ms"/>
+            <connectionWD id="3" preCellId="../PYR_HH/1/CELL_HH_PYR" postCellId="../PYR_Izhi/2/CELL_Izhi_PYR" weight="0." delay="11.9579794844 ms"/>
+            <connectionWD id="4" preCellId="../PYR_HH/2/CELL_HH_PYR" postCellId="../PYR_Izhi/2/CELL_Izhi_PYR" weight="0." delay="12.8902250635 ms"/>
         </projection>
         <projection id="NetConn_PYR_HH_PYR_HH_syn1" presynapticPopulation="PYR_HH" postsynapticPopulation="PYR_HH" synapse="syn1">
-            <connectionWD id="0" preCellId="../PYR_HH/1/CELL_HH_PYR" postCellId="../PYR_HH/0/CELL_HH_PYR" weight="0." delay="13.9025381799 ms"/>
-            <connectionWD id="1" preCellId="../PYR_HH/0/CELL_HH_PYR" postCellId="../PYR_HH/1/CELL_HH_PYR" weight="0." delay="13.9025381799 ms"/>
-            <connectionWD id="2" preCellId="../PYR_HH/0/CELL_HH_PYR" postCellId="../PYR_HH/2/CELL_HH_PYR" weight="0." delay="12.9100663402 ms"/>
+            <connectionWD id="0" preCellId="../PYR_HH/0/CELL_HH_PYR" postCellId="../PYR_HH/1/CELL_HH_PYR" weight="0." delay="12.8669280178 ms"/>
+            <connectionWD id="1" preCellId="../PYR_HH/0/CELL_HH_PYR" postCellId="../PYR_HH/2/CELL_HH_PYR" weight="0." delay="13.3567701351 ms"/>
+            <connectionWD id="2" preCellId="../PYR_HH/1/CELL_HH_PYR" postCellId="../PYR_HH/2/CELL_HH_PYR" weight="0." delay="12.2410506618 ms"/>
         </projection>
         <projection id="NetConn_NetStim_bkg2_PYR_HH_20_1_syn1__PYR_HH" presynapticPopulation="Pop_NetStim_bkg2_PYR_HH_20_1_syn1" postsynapticPopulation="PYR_HH" synapse="syn1">
             <connectionWD id="0" preCellId="../Pop_NetStim_bkg2_PYR_HH_20_1_syn1[0]" postCellId="../PYR_HH/0/CELL_HH_PYR" weight="0.005" delay="0 ms"/>

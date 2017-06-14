@@ -48,7 +48,7 @@ UNITS {
 
 PARAMETER {
     
-    leakConductance = 2.0000001E-4 (uS)
+    leakConductance = 2.0E-4 (uS)
     leakReversal = -70 (mV)
     thresh = -55 (mV)
     reset = -70 (mV)

@@ -4,7 +4,7 @@ target: LEMS_Balanced_hdf5.xml
 engine: jNeuroML_NetPyNE
 mep: .test.bal.mep
 experiments:
-  v0:
+  E:
     observables:
       spike times:
         file: 
@@ -14,3 +14,13 @@ experiments:
         spike detection: 
           method: threshold
         tolerance: 0
+  I:
+    observables:
+      spike times:
+        file: 
+          path: popInh_v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+        tolerance: 9.7761266986e-05
