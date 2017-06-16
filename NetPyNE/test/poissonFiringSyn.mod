@@ -51,13 +51,13 @@ UNITS {
 
 PARAMETER {
     
-    averageRate = 0.05 (kHz)
-    averageIsi = 20 (ms)
+    averageRate = 0.15 (kHz)
+    averageIsi = 6.666667 (ms)
     syn0_tauRise = 0.5 (ms)
     syn0_tauDecay = 10 (ms)
     syn0_peakTime = 1.5767012 (ms)
     syn0_waveformFactor = 1.2324 
-    syn0_gbase = 0.002 (uS)
+    syn0_gbase = 0.001 (uS)
     syn0_erev = 0 (mV)
 }
 
