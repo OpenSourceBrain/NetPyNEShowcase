@@ -114,3 +114,4 @@ NetPyNE/M1/movie
 /NetPyNE/LEMS_Spikers_netpyne.py
 /NetPyNE/test/LEMS_SpikingNet_netpyne.py_main.json
 /NetPyNE/test/*.dat
+/NeuroML2/NET_Spikers.net.nml
