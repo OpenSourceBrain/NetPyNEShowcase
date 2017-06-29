@@ -119,3 +119,6 @@ NetPyNE/M1/movie
 /NeuroML2/chanDens/*.dat
 /NeuroML2/chanDens/*_nrn.py
 /NeuroML2/chanDens/*.hoc
+/NeuroML2/chanDens/LEMS_cck_netpyne.py
+/NeuroML2/chanDens/LEMS_cck_netpyne.py_main.json
+/NeuroML2/chanDens/cck.dat.nrn
