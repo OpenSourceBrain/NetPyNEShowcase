@@ -122,3 +122,6 @@ NetPyNE/M1/movie
 /NeuroML2/chanDens/LEMS_cck_netpyne.py
 /NeuroML2/chanDens/LEMS_cck_netpyne.py_main.json
 /NeuroML2/chanDens/cck.dat.nrn
+/NeuroML2/times/LEMS_SpikingNet_netpyne.py_main.json
+/NeuroML2/times/Sim_SpikingNet.pop_*.dat*
+/NeuroML2/times/SpikingNet.py
