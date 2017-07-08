@@ -1,5 +1,5 @@
 target: HH_run.py 
-engine: NetPyNE_NP4
+engine: NetPyNE_NP2
 mep: ../../NeuroML2/.test.hh.mep
 experiments:
   v0:
