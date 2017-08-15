@@ -3,7 +3,7 @@ Generates a NeuroML 2 file with many types of cells, populations and inputs
 for testing purposes
 '''
 
-import opencortex.build as oc
+import opencortex.core as oc
 import sys
 
 from random import random
@@ -36,9 +36,9 @@ def generate(reference = "Balanced",
         reference += '_%s'%scalePops
     
     nml_doc, network = oc.generate_network(reference)
-
-    oc.add_cell_and_channels(nml_doc, 'AllenInstituteCellTypesDB_HH/HH_464198958.cell.nml','HH_464198958')
-    oc.add_cell_and_channels(nml_doc, 'AllenInstituteCellTypesDB_HH/HH_471141261.cell.nml','HH_471141261')
+    
+    oc.include_opencortex_cell(nml_doc, 'AllenInstituteCellTypesDB_HH/HH_477127614.cell.nml')
+    oc.include_opencortex_cell(nml_doc, 'AllenInstituteCellTypesDB_HH/HH_476686112.cell.nml')
     
     xDim = 400*scalex
     yDim = 500*scaley
@@ -70,14 +70,14 @@ def generate(reference = "Balanced",
 
     popExc = oc.add_population_in_rectangular_region(network,
                                                   'popExc',
-                                                  'HH_464198958',
+                                                  'HH_477127614',
                                                   num_exc,
                                                   xs,ys,zs,
                                                   xDim,yDim,zDim)
 
     popInh = oc.add_population_in_rectangular_region(network,
                                                   'popInh',
-                                                  'HH_471141261',
+                                                  'HH_476686112',
                                                   num_inh,
                                                   xs,ys,zs,
                                                   xDim,yDim,zDim)
