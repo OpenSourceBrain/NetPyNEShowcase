@@ -231,7 +231,7 @@ if __name__ == '__main__':
                  scalex=1,
                  scalez=1,
                  connections_scaling=0.1,
-                 gen_spike_saves_for_all_somas = False,
+                 gen_spike_saves_for_all_somas = True,
                  global_delay = 5,
                  format=format)
     else:

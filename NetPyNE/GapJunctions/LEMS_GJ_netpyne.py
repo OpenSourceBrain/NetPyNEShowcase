@@ -72,13 +72,13 @@ simConfig.recordStep = simConfig.dt # Step size in ms to save data (eg. V traces
 
 
 
-# Analysis and plotting 
-simConfig.plotRaster = True # Whether or not to plot a raster
-simConfig.plotLFPSpectrum = False # plot power spectral density
-simConfig.maxspikestoplot = 3e8 # Maximum number of spikes to plot
-simConfig.plotConn = False # whether to plot conn matrix
-simConfig.plotWeightChanges = False # whether to plot weight changes (shown in conn matrix)
-#simConfig.plot3dArch = True # plot 3d architecture
+# Analysis and plotting, see http://neurosimlab.org/netpyne/reference.html#analysis-related-functions
+simConfig.analysis['plotRaster'] = False  # Plot raster
+simConfig.analysis['plot2Dnet'] = False  # Plot 2D net cells and connections
+simConfig.analysis['plotSpikeHist'] = False # plot spike histogram
+simConfig.analysis['plotConn'] = False # plot network connectivity
+simConfig.analysis['plotSpikePSD'] = False # plot 3d architecture
+simConfig.analysis['plotShape'] = False # plot shape in Neuron
 
 # Saving
 simConfig.filename = 'net1.txt'  # Set file output name
@@ -104,7 +104,7 @@ print("Finished simulation")
 
 
 if sim.rank==0: 
-    print("Saving to file: ex19_v.dat (ref: of0)")
+    print("Saving traces to file: ex19_v.dat (ref: of0)")
 
  
     # Column: t
@@ -120,6 +120,8 @@ if sim.rank==0:
     for i in range(len(col_of0_t)):
         dat_file_of0.write( '%s\t'%(col_of0_t[i]/1000.0) +  '%s\t'%(col_of0_iafCell1_0[i]/1000.0) +  '%s\t'%(col_of0_iafCell2_0[i]/1000.0) +  '\n')
     dat_file_of0.close()
+
+
 
 
     print("Saved all data.")
