@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="HHSmall">
-    <notes>NeuroML 2 file exported from NetPyNE v0.7.3</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.7.4</notes>
     <ionChannelHH id="leak_hh" type="ionChannelPassive" conductance="10pS">
         <notes>Single ion channel in NeuroML2 format: passive channel providing a leak conductance </notes>
     </ionChannelHH>
@@ -63,9 +63,12 @@
         </population>
         <population id="Pop_NetStim_bkg_PYR_20_0_AMPA" component="NetStim_bkg_PYR_20_0_AMPA" size="3"/>
         <projection id="NetConn_PYR_PYR_AMPA" presynapticPopulation="PYR" postsynapticPopulation="PYR" synapse="AMPA">
-            <connectionWD id="0" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.002" delay="12.171921232 ms"/>
-            <connectionWD id="1" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.002" delay="13.8376459472 ms"/>
-            <connectionWD id="2" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.002" delay="13.8033988869 ms"/>
+            <connectionWD id="0" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.002" delay="12.2728802129 ms"/>
+            <connectionWD id="1" preCellId="../PYR/2/CELL_HH_PYR" postCellId="../PYR/0/CELL_HH_PYR" weight="0.002" delay="13.7412259946 ms"/>
+            <connectionWD id="2" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/1/CELL_HH_PYR" weight="0.002" delay="13.88543641 ms"/>
+            <connectionWD id="3" preCellId="../PYR/2/CELL_HH_PYR" postCellId="../PYR/1/CELL_HH_PYR" weight="0.002" delay="13.056016863 ms"/>
+            <connectionWD id="4" preCellId="../PYR/0/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.002" delay="14.387364889 ms"/>
+            <connectionWD id="5" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.002" delay="15.5625455948 ms"/>
         </projection>
         <projection id="NetConn_NetStim_bkg_PYR_20_0_AMPA__PYR" presynapticPopulation="Pop_NetStim_bkg_PYR_20_0_AMPA" postsynapticPopulation="PYR" synapse="AMPA">
             <connectionWD id="0" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[0]" postCellId="../PYR/0/CELL_HH_PYR" weight="0.1" delay="1.67975290569 ms"/>
