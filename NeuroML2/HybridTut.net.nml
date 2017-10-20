@@ -24,7 +24,7 @@
     <expOneSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="0.1ms"/>
     <cell id="CELL_HH_PYR">
         <notes>Cell exported from NetPyNE:
-{'secs': {'soma': {'mechs': {'hh': {'gnabar': 0.12, 'gl': 0.003, 'gkbar': 0.036, 'el': -70}}, 'geom': {'diam': 6.3, 'Ra': 123.0, 'pt3d': [(0, 0, 0, 20), (0, 0, 20, 20)], 'L': 5}, 'topol': {}}, 'dend': {'mechs': {'pas': {'e': -70, 'g': 3.57e-05}}, 'geom': {'diam': 5.0, 'Ra': 150.0, 'pt3d': [], 'cm': 1, 'L': 150.0}, 'topol': {'childX': 0, 'parentSec': 'soma', 'parentX': 1.0}}}, 'conds': {'cellModel': 'HH', 'cellType': 'PYR'}}</notes>
+{'secs': {'soma': {'mechs': {'hh': {'gnabar': 0.12, 'gl': 0.003, 'gkbar': 0.036, 'el': -70}}, 'geom': {'pt3d': [(0, 0, 0, 20), (0, 0, 20, 20)], 'diam': 6.3, 'L': 5, 'Ra': 123.0}, 'topol': {}}, 'dend': {'mechs': {'pas': {'e': -70, 'g': 3.57e-05}}, 'geom': {'pt3d': [], 'diam': 5.0, 'L': 150.0, 'cm': 1, 'Ra': 150.0}, 'topol': {'childX': 0, 'parentSec': 'soma', 'parentX': 1.0}}}, 'conds': {'cellModel': 'HH', 'cellType': 'PYR'}}</notes>
         <morphology id="morph_CELL_HH_PYR">
             <segment id="0" name="soma">
                 <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="20"/>
