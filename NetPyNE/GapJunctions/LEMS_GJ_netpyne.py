@@ -56,6 +56,9 @@ simConfig.verbose = False  # show detailed messages
 # Recording 
 simConfig.recordCells = ['all']  
 simConfig.recordTraces = {}
+simConfig.saveCellSecs=False
+simConfig.saveCellConns=False
+simConfig.gatherOnlySimData=True 
 
 # For saving to file: ex19_v.dat (ref: of0)
 # Column: iafCell1_0: Pop: iafPop1; cell: 0; segment id: $oc.segment_id; segment name: soma; Neuron loc: soma(0.5); value: v (v)

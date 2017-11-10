@@ -54,6 +54,9 @@ simConfig.verbose = False  # show detailed messages
 # Recording 
 simConfig.recordCells = ['all']  
 simConfig.recordTraces = {}
+simConfig.saveCellSecs=False
+simConfig.saveCellConns=False
+simConfig.gatherOnlySimData=True 
 
 # For saving to file: exIzh.dat (ref: of0)
 # Column: v: Pop: RS_pop; cell: 0; segment id: $oc.segment_id; segment name: soma; Neuron loc: soma(0.5); value: v (v)
