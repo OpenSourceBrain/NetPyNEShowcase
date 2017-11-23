@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.3.4 (libNeuroML v0.2.34)
+        This LEMS file has been automatically generated using PyNeuroML v0.3.5 (libNeuroML v0.2.34)
 
      -->
     
@@ -19,15 +19,15 @@
     <Simulation id="Sim_HybridSmall" length="1000.0ms" step="0.005ms" target="HybridSmall" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__PYR_HH" title="Membrane potentials of cells in PYR_HH" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
-            <Line id="PYR_HH[0]: v" quantity="PYR_HH/0/CELL_HH_PYR/v" scale="1mV" color="#f8ab96" timeScale="1ms"/>
-            <Line id="PYR_HH[1]: v" quantity="PYR_HH/1/CELL_HH_PYR/v" scale="1mV" color="#aa7457" timeScale="1ms"/>
-            <Line id="PYR_HH[2]: v" quantity="PYR_HH/2/CELL_HH_PYR/v" scale="1mV" color="#23f3e6" timeScale="1ms"/>
+            <Line id="PYR_HH[0]: v" quantity="PYR_HH/0/CELL_HH_PYR/v" scale="1mV" color="#45c8a7" timeScale="1ms"/>
+            <Line id="PYR_HH[1]: v" quantity="PYR_HH/1/CELL_HH_PYR/v" scale="1mV" color="#cde23f" timeScale="1ms"/>
+            <Line id="PYR_HH[2]: v" quantity="PYR_HH/2/CELL_HH_PYR/v" scale="1mV" color="#816ab2" timeScale="1ms"/>
         </Display>
         
         <Display id="DispPop__PYR_Izhi" title="Membrane potentials of cells in PYR_Izhi" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
-            <Line id="PYR_Izhi[0]: v" quantity="PYR_Izhi/0/CELL_Izhi_PYR/v" scale="1mV" color="#b1be3d" timeScale="1ms"/>
-            <Line id="PYR_Izhi[1]: v" quantity="PYR_Izhi/1/CELL_Izhi_PYR/v" scale="1mV" color="#5d5fca" timeScale="1ms"/>
-            <Line id="PYR_Izhi[2]: v" quantity="PYR_Izhi/2/CELL_Izhi_PYR/v" scale="1mV" color="#be5ffa" timeScale="1ms"/>
+            <Line id="PYR_Izhi[0]: v" quantity="PYR_Izhi/0/CELL_Izhi_PYR/v" scale="1mV" color="#3c36ed" timeScale="1ms"/>
+            <Line id="PYR_Izhi[1]: v" quantity="PYR_Izhi/1/CELL_Izhi_PYR/v" scale="1mV" color="#f1a4c3" timeScale="1ms"/>
+            <Line id="PYR_Izhi[2]: v" quantity="PYR_Izhi/2/CELL_Izhi_PYR/v" scale="1mV" color="#c7c8d3" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Volts_file__PYR_HH" fileName="Sim_HybridSmall.PYR_HH.v.dat">

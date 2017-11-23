@@ -13,7 +13,7 @@ NEURON {
     POINT_PROCESS iaf
     
     
-    NONSPECIFIC_CURRENT i                    : To ensure v of section follows vI
+    NONSPECIFIC_CURRENT i                    : To ensure v of section follows v_I
     RANGE leakConductance                   : parameter
     RANGE leakReversal                      : parameter
     RANGE thresh                            : parameter
@@ -61,6 +61,7 @@ ASSIGNED {
     
     copy_v (mV)
     
+    v_I (nA) 
     
     iSyn (nA)                              : derived variable
     
@@ -70,7 +71,6 @@ ASSIGNED {
 }
 
 STATE {
-    vI (nA) 
     
 }
 
@@ -87,7 +87,7 @@ BREAKPOINT {
     rates()
     
     copy_v = v
-    i = vI * C
+    i = v_I * C
 }
 
 NET_RECEIVE(flag) {
@@ -99,7 +99,7 @@ NET_RECEIVE(flag) {
     
         v = reset
     
-        vI = 0 : Setting rate of change of v to 0
+        v_I = 0 : Setting rate of change of v to 0
     }
     if (flag == 1) { : Set initial states
     
@@ -116,7 +116,7 @@ PROCEDURE rates() {
     iMemb = leakConductance  * (  leakReversal   - v) +  iSyn ? evaluable
     rate_v = iMemb  /  C ? Note units of all quantities used here need to be consistent!
     
-    vI = -1 * rate_v
+    v_I = -1 * rate_v
      
     
 }
