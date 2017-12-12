@@ -2,18 +2,19 @@
   
     <include href="hhcell.cell.nml"/>
     
+    <expOneSynapse id="syn1" gbase="0.4nS" erev="0mV" tauDecay="3ms" />
+    <poissonFiringSynapse id="poissonFiringSyn" averageRate="150 Hz" synapse="syn1" spikeTarget="./syn1"/>
+    
     <IF_curr_alpha id="IF_curr_alpha_E_net" cm="0.001" i_offset="0." tau_syn_E="0.1" tau_syn_I="0.1" v_init="-10" tau_m="20." tau_refrac="2." v_reset="0." v_rest="0." v_thresh="20."/>
     
     <alphaCurrSynapse id="syn__expoisson__TO__E_net" tau_syn="0.1"/>
     
     <SpikeSourcePoisson id="SpikeSourcePoisson_expoisson" start="100.0ms" duration="800ms" rate="200Hz"/>
     
-    <expOneSynapse id="syn1" gbase="0.4nS" erev="0mV" tauDecay="3ms" />
-    <poissonFiringSynapse id="poissonFiringSyn" averageRate="150 Hz" synapse="syn1" spikeTarget="./syn1"/>
     
     <network id="Spikers" type="networkWithTemperature" temperature="32degC">
         
-        <population id="E_net" component="IF_curr_alpha_E_net" size="1" type="populationList">
+        <population id="E_net" component="IF_curr_alpha_E_net" size="3" type="populationList">
             <instance id="0">
                 <location x="96.645353569199997" y="44.073259917500003" z="0.749147005859"/>
             </instance>
@@ -25,33 +26,33 @@
             </instance>
         </population>
         
-        <population id="hh_net" component="hhcell" size="1" type="populationList">
+        <population id="hh_net" component="hhcell" size="5" type="populationList">
             <instance id="0">
-                <location x="9" y="4" z="0"/>
+                <location x="9" y="104" z="0"/>
             </instance>
             <instance id="1">
-                <location x="19" y="14" z="10"/>
+                <location x="19" y="104" z="10"/>
             </instance>
             <instance id="2">
-                <location x="29" y="24" z="20"/>
+                <location x="29" y="124" z="20"/>
             </instance>
             <instance id="3">
-                <location x="39" y="34" z="30"/>
+                <location x="39" y="134" z="30"/>
             </instance>
             <instance id="4">
-                <location x="49" y="44" z="40"/>
+                <location x="49" y="144" z="40"/>
             </instance>
         </population>
         
-        <population id="expoisson" component="SpikeSourcePoisson_expoisson" size="1" type="populationList">
+        <population id="expoisson" component="SpikeSourcePoisson_expoisson" size="3" type="populationList">
             <instance id="0">
-                <location x="0." y="0." z="0."/>
+                <location x="10." y="200." z="0."/>
             </instance>
             <instance id="1">
-                <location x="1." y="0." z="0."/>
+                <location x="20." y="200." z="0."/>
             </instance>
             <instance id="2">
-                <location x="2." y="0." z="0."/>
+                <location x="30." y="200." z="0."/>
             </instance>
         </population>
         
