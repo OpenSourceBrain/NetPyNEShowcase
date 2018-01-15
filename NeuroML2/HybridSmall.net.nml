@@ -54,6 +54,8 @@
     <spikeGeneratorPoisson id="NetStim_bkg2_PYR_HH_20_1_syn1" averageRate="20 Hz"/>
     <network id="HybridSmall">
         <population id="PYR_HH" component="CELL_HH_PYR" size="3" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.996712931667 0.833252323846 0.428784326273"/>
             <instance id="0">
                 <location x="29.565889544420436" y="18.528336282230836" z="13.667258291117088"/>
             </instance>
@@ -65,6 +67,8 @@
             </instance>
         </population>
         <population id="PYR_Izhi" component="CELL_Izhi_PYR" size="3" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.341587169537 0.544166245598 0.503290473514"/>
             <instance id="0">
                 <location x="10.241290808133481" y="19.834960270711463" z="85.925746316573168"/>
             </instance>

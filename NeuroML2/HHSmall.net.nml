@@ -51,6 +51,8 @@
     <spikeGenerator id="NetStim_bkg_PYR_20_0_AMPA" period="0.05s"/>
     <network id="HHSmall">
         <population id="PYR" component="CELL_HH_PYR" size="3" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.684794104388 0.589626980563 0.0950577661661"/>
             <instance id="0">
                 <location x="29.565889544420436" y="18.528336282230836" z="13.667258291117088"/>
             </instance>
