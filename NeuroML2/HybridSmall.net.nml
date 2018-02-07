@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="HybridSmall">
-    <notes>NeuroML 2 file exported from NetPyNE v0.7.5</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.7.6</notes>
     <ionChannelHH id="leak_hh" type="ionChannelPassive" conductance="10pS">
         <notes>Single ion channel in NeuroML2 format: passive channel providing a leak conductance </notes>
     </ionChannelHH>
@@ -55,7 +55,7 @@
     <network id="HybridSmall">
         <population id="PYR_HH" component="CELL_HH_PYR" size="3" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.996712931667 0.833252323846 0.428784326273"/>
+            <property tag="color" value="0.884492685802 0.775792510904 0.663832374754"/>
             <instance id="0">
                 <location x="29.565889544420436" y="18.528336282230836" z="13.667258291117088"/>
             </instance>
@@ -68,7 +68,7 @@
         </population>
         <population id="PYR_Izhi" component="CELL_Izhi_PYR" size="3" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.341587169537 0.544166245598 0.503290473514"/>
+            <property tag="color" value="0.87663803018 0.317641541793 0.111132250119"/>
             <instance id="0">
                 <location x="10.241290808133481" y="19.834960270711463" z="85.925746316573168"/>
             </instance>

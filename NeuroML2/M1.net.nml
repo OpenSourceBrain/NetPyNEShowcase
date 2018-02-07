@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="M1">
-    <notes>NeuroML 2 file exported from NetPyNE v0.7.5</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.7.6</notes>
     <expTwoSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="5.3ms" tauRise="0.05ms"/>
     <expTwoSynapse id="NMDA" gbase="1uS" erev="0mV" tauDecay="15ms" tauRise="0.15ms"/>
     <expTwoSynapse id="GABAA" gbase="1uS" erev="-80mV" tauDecay="9.1ms" tauRise="0.07ms"/>
@@ -25,7 +25,7 @@
     <network id="M1">
         <population id="IT_L23" component="CELL_IT" size="51" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.620393340504 0.823170549641 0.214538507295"/>
+            <property tag="color" value="0.359772332606 0.294855489082 0.94088497332"/>
             <instance id="0">
                 <location x="33.335887237140938" y="312.742451868312742" z="23.50954373285418"/>
             </instance>
@@ -182,7 +182,7 @@
         </population>
         <population id="IT_L4" component="CELL_IT" size="26" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.320732094098 0.566950423403 0.305069686532"/>
+            <property tag="color" value="0.854743326573 0.0837001267581 0.31977675951"/>
             <instance id="0">
                 <location x="17.386634469175096" y="423.815386514338854" z="11.397751767328533"/>
             </instance>
@@ -264,7 +264,7 @@
         </population>
         <population id="IT_L5A" component="CELL_IT" size="29" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.358576157372 0.667712714908 0.516186471469"/>
+            <property tag="color" value="0.0204549416692 0.645777729078 0.919269330359"/>
             <instance id="0">
                 <location x="1.919020385965933" y="665.476017034967413" z="40.281073180893188"/>
             </instance>
@@ -355,7 +355,7 @@
         </population>
         <population id="IT_L5B" component="CELL_IT" size="33" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.726932442061 0.752452293041 0.661935491495"/>
+            <property tag="color" value="0.031502530857 0.435542078277 0.433017166788"/>
             <instance id="0">
                 <location x="43.467302947894829" y="738.809525097648248" z="30.268148127880846"/>
             </instance>
@@ -458,7 +458,7 @@
         </population>
         <population id="PT_L5B" component="CELL_PT" size="33" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.589655555632 0.120920565271 0.289359444916"/>
+            <property tag="color" value="0.636341545233 0.577110441432 0.762416809734"/>
             <instance id="0">
                 <location x="0.833534204672665" y="855.456750729596934" z="14.393497965206976"/>
             </instance>
@@ -561,7 +561,7 @@
         </population>
         <population id="IT_L6" component="CELL_IT" size="31" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.744605293431 0.0958002622575 0.899465270981"/>
+            <property tag="color" value="0.985885170694 0.816312003227 0.142267333357"/>
             <instance id="0">
                 <location x="34.120741664869534" y="1315.796834661439789" z="45.1711707876131"/>
             </instance>
@@ -658,7 +658,7 @@
         </population>
         <population id="CT_L6" component="CELL_CT" size="31" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.45861900887 0.426469464437 0.136719449525"/>
+            <property tag="color" value="0.519007705374 0.249862179699 0.545543345357"/>
             <instance id="0">
                 <location x="3.958655089615226" y="1300.23295671825008" z="23.62227405569929"/>
             </instance>
@@ -755,7 +755,7 @@
         </population>
         <population id="PV_L23" component="CELL_PV" size="7" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.680306697386 0.407786009404 0.822053067038"/>
+            <property tag="color" value="0.822366302837 0.764263910515 0.902450904394"/>
             <instance id="0">
                 <location x="22.363584378649577" y="149.840399972549562" z="24.686610949065859"/>
             </instance>
@@ -780,7 +780,7 @@
         </population>
         <population id="SOM_L23" component="CELL_SOM" size="7" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.106390985593 0.920854719178 0.224709042202"/>
+            <property tag="color" value="0.717938799784 0.7448956961 0.027253058127"/>
             <instance id="0">
                 <location x="39.405205312789136" y="346.899919582088501" z="21.997690125834733"/>
             </instance>
@@ -805,7 +805,7 @@
         </population>
         <population id="PV_L5" component="CELL_PV" size="15" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.873486919405 0.384662344686 0.057213349455"/>
+            <property tag="color" value="0.145489806997 0.704814598727 0.755960596674"/>
             <instance id="0">
                 <location x="0.986292469085592" y="987.523261329619345" z="47.327739711076084"/>
             </instance>
@@ -854,7 +854,7 @@
         </population>
         <population id="SOM_L5" component="CELL_SOM" size="15" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.00220489087623 0.514178850341 0.238857002084"/>
+            <property tag="color" value="0.514412296879 0.527013139826 0.694637428062"/>
             <instance id="0">
                 <location x="13.389457246896471" y="1039.021870313789123" z="10.764657901421968"/>
             </instance>
@@ -903,7 +903,7 @@
         </population>
         <population id="PV_L6" component="CELL_PV" size="7" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.739921177561 0.826195418347 0.254104793026"/>
+            <property tag="color" value="0.953212274157 0.809630646029 0.596517508235"/>
             <instance id="0">
                 <location x="32.745942326088915" y="1153.988812076396016" z="39.195109394100704"/>
             </instance>
@@ -928,7 +928,7 @@
         </population>
         <population id="SOM_L6" component="CELL_SOM" size="7" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.64809386397 0.535760715513 0.405137195793"/>
+            <property tag="color" value="0.865149756739 0.494836314628 0.204211599125"/>
             <instance id="0">
                 <location x="13.896505729319411" y="1247.369303866087193" z="5.872878419264946"/>
             </instance>
