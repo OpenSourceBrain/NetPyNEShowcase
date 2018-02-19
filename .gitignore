@@ -134,3 +134,7 @@ NetPyNE/M1/movie
 /NeuroML2/multicomp/*_netpyne.py
 /NeuroML2/multicomp/*_nrn.py
 /NeuroML2/multicomp/*.hoc
+/NeuroML2/times/*_netpyne.py
+/NeuroML2/times/*_nrn.py
+/NeuroML2/times/*.mod
+/NeuroML2/times/*.dat

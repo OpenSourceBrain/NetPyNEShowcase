@@ -5,6 +5,9 @@
     <expTwoSynapse id="syn0" gbase="1nS" erev="0mV" tauDecay="10ms" tauRise="0.5ms"/>
     <expTwoSynapse id="syn1" gbase="2nS" erev="0mV" tauDecay="15ms" tauRise="1ms"/>
     <poissonFiringSynapse id="poissonFiringSyn" averageRate="150 Hz" synapse="syn0" spikeTarget="./syn0"/>
+    
+    <transientPoissonFiringSynapse id="tpsfB" averageRate="20 Hz" delay="650.0ms" duration="500.0ms" synapse="syn1" spikeTarget="./syn1"/>
+    
     <network id="SpikingNet" type="networkWithTemperature" temperature="32degC">
         <population id="pop_pre" component="RS" size="5" type="populationList">
             <instance id="0">
@@ -30,6 +33,15 @@
             <instance id="1">
                 <location x="34.6088965597" y="224.656295008000001" z="61.581569510400001"/>
             </instance>
+            <instance id="2">
+                <location x="222" y="224.656295008000001" z="61.581569510400001"/>
+            </instance>
+            <instance id="3">
+                <location x="333" y="224.656295008000001" z="61.581569510400001"/>
+            </instance>
+            <instance id="4">
+                <location x="444" y="224.656295008000001" z="61.581569510400001"/>
+            </instance>
         </population>
         <projection id="proj0_pop_pre_pop_post" presynapticPopulation="pop_pre" postsynapticPopulation="pop_post" synapse="syn1">
             <connectionWD id="0" preCellId="../pop_pre/0/RS" postCellId="../pop_post/0/RS" weight="0.05" delay="5 ms"/>
@@ -41,6 +53,13 @@
             <input id="2" target="../pop_pre/2/RS" destination="synapses" segmentId="0" fractionAlong="0.5"/>
             <input id="3" target="../pop_pre/3/RS" destination="synapses" segmentId="0" fractionAlong="0.5"/>
             <input id="4" target="../pop_pre/4/RS" destination="synapses" segmentId="0" fractionAlong="0.5"/>
+        </inputList>
+        <inputList id="Stim1" population="pop_post" component="tpsfB">
+            <input id="0" target="../pop_post/0/RS" destination="synapses" segmentId="0" fractionAlong="0.5"/>
+            <input id="1" target="../pop_post/1/RS" destination="synapses" segmentId="0" fractionAlong="0.5"/>
+            <input id="2" target="../pop_post/2/RS" destination="synapses" segmentId="0" fractionAlong="0.5"/>
+            <input id="3" target="../pop_post/3/RS" destination="synapses" segmentId="0" fractionAlong="0.5"/>
+            <input id="4" target="../pop_post/4/RS" destination="synapses" segmentId="0" fractionAlong="0.5"/>
         </inputList>
     </network>
 </neuroml>

@@ -37,3 +37,39 @@ experiments:
           method: threshold
           threshold: 0
         tolerance: 0
+        
+  cc0:
+    observables:
+      spike times:
+        file: 
+          path: Sim_SpikingNet.pop_post.v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: 0
+        tolerance: 0
+        
+  cc3:
+    observables:
+      spike times:
+        file: 
+          path: Sim_SpikingNet.pop_post.v.dat
+          columns: [0,3]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: 0
+        tolerance: 0
+        
+  cc5:
+    observables:
+      spike times:
+        file: 
+          path: Sim_SpikingNet.pop_post.v.dat
+          columns: [0,5]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: 0
+        tolerance: 0
