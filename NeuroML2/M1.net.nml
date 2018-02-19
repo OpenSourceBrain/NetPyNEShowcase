@@ -25,7 +25,7 @@
     <network id="M1">
         <population id="IT_L23" component="CELL_IT" size="51" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.359772332606 0.294855489082 0.94088497332"/>
+            <property tag="color" value="0.416619872545 0.0101691694571 0.825206509254"/>
             <instance id="0">
                 <location x="33.335887237140938" y="312.742451868312742" z="23.50954373285418"/>
             </instance>
@@ -182,7 +182,7 @@
         </population>
         <population id="IT_L4" component="CELL_IT" size="26" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.854743326573 0.0837001267581 0.31977675951"/>
+            <property tag="color" value="0.2986398552 0.368411689488 0.193661349045"/>
             <instance id="0">
                 <location x="17.386634469175096" y="423.815386514338854" z="11.397751767328533"/>
             </instance>
@@ -264,7 +264,7 @@
         </population>
         <population id="IT_L5A" component="CELL_IT" size="29" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.0204549416692 0.645777729078 0.919269330359"/>
+            <property tag="color" value="0.566008168729 0.161687823929 0.124266884284"/>
             <instance id="0">
                 <location x="1.919020385965933" y="665.476017034967413" z="40.281073180893188"/>
             </instance>
@@ -355,7 +355,7 @@
         </population>
         <population id="IT_L5B" component="CELL_IT" size="33" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.031502530857 0.435542078277 0.433017166788"/>
+            <property tag="color" value="0.43293626801 0.562078488076 0.174343560724"/>
             <instance id="0">
                 <location x="43.467302947894829" y="738.809525097648248" z="30.268148127880846"/>
             </instance>
@@ -458,7 +458,7 @@
         </population>
         <population id="PT_L5B" component="CELL_PT" size="33" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.636341545233 0.577110441432 0.762416809734"/>
+            <property tag="color" value="0.553221085569 0.354901386337 0.9580647851"/>
             <instance id="0">
                 <location x="0.833534204672665" y="855.456750729596934" z="14.393497965206976"/>
             </instance>
@@ -561,7 +561,7 @@
         </population>
         <population id="IT_L6" component="CELL_IT" size="31" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.985885170694 0.816312003227 0.142267333357"/>
+            <property tag="color" value="0.0912940988767 0.97863999557 0.412119392939"/>
             <instance id="0">
                 <location x="34.120741664869534" y="1315.796834661439789" z="45.1711707876131"/>
             </instance>
@@ -658,7 +658,7 @@
         </population>
         <population id="CT_L6" component="CELL_CT" size="31" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.519007705374 0.249862179699 0.545543345357"/>
+            <property tag="color" value="0.50393536811 0.14814616893 0.718967140301"/>
             <instance id="0">
                 <location x="3.958655089615226" y="1300.23295671825008" z="23.62227405569929"/>
             </instance>
@@ -755,7 +755,7 @@
         </population>
         <population id="PV_L23" component="CELL_PV" size="7" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.822366302837 0.764263910515 0.902450904394"/>
+            <property tag="color" value="0.189971378722 0.341560425774 0.0235212181422"/>
             <instance id="0">
                 <location x="22.363584378649577" y="149.840399972549562" z="24.686610949065859"/>
             </instance>
@@ -780,7 +780,7 @@
         </population>
         <population id="SOM_L23" component="CELL_SOM" size="7" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.717938799784 0.7448956961 0.027253058127"/>
+            <property tag="color" value="0.339517772398 0.96748245888 0.978798454186"/>
             <instance id="0">
                 <location x="39.405205312789136" y="346.899919582088501" z="21.997690125834733"/>
             </instance>
@@ -805,7 +805,7 @@
         </population>
         <population id="PV_L5" component="CELL_PV" size="15" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.145489806997 0.704814598727 0.755960596674"/>
+            <property tag="color" value="0.744530040141 0.0034546107551 0.940238503098"/>
             <instance id="0">
                 <location x="0.986292469085592" y="987.523261329619345" z="47.327739711076084"/>
             </instance>
@@ -854,7 +854,7 @@
         </population>
         <population id="SOM_L5" component="CELL_SOM" size="15" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.514412296879 0.527013139826 0.694637428062"/>
+            <property tag="color" value="0.870766968755 0.770834338517 0.178873764624"/>
             <instance id="0">
                 <location x="13.389457246896471" y="1039.021870313789123" z="10.764657901421968"/>
             </instance>
@@ -903,7 +903,7 @@
         </population>
         <population id="PV_L6" component="CELL_PV" size="7" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.953212274157 0.809630646029 0.596517508235"/>
+            <property tag="color" value="0.0994996328096 0.414532468512 0.885536467145"/>
             <instance id="0">
                 <location x="32.745942326088915" y="1153.988812076396016" z="39.195109394100704"/>
             </instance>
@@ -928,7 +928,7 @@
         </population>
         <population id="SOM_L6" component="CELL_SOM" size="7" type="populationList">
             <property tag="radius" value="5"/>
-            <property tag="color" value="0.865149756739 0.494836314628 0.204211599125"/>
+            <property tag="color" value="0.578086027366 0.736582214944 0.232621103228"/>
             <instance id="0">
                 <location x="13.896505729319411" y="1247.369303866087193" z="5.872878419264946"/>
             </instance>
