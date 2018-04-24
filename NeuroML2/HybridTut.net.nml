@@ -1,5 +1,5 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="HybridTut">
-    <notes>NeuroML 2 file exported from NetPyNE v0.7.7</notes>
+    <notes>NeuroML 2 file exported from NetPyNE v0.7.8</notes>
     <ionChannelHH id="leak_hh" type="ionChannelPassive" conductance="10pS">
         <notes>Single ion channel in NeuroML2 format: passive channel providing a leak conductance </notes>
     </ionChannelHH>
@@ -27,11 +27,11 @@
 {'secs': {'soma': {'mechs': {'hh': {'gnabar': 0.12, 'gl': 0.003, 'gkbar': 0.036, 'el': -70}}, 'geom': {'pt3d': [(0, 0, 0, 20), (0, 0, 20, 20)], 'diam': 6.3, 'L': 5, 'Ra': 123.0}, 'topol': {}}, 'dend': {'mechs': {'pas': {'e': -70, 'g': 3.57e-05}}, 'geom': {'pt3d': [], 'diam': 5.0, 'L': 150.0, 'cm': 1, 'Ra': 150.0}, 'topol': {'childX': 0, 'parentSec': 'soma', 'parentX': 1.0}}}, 'conds': {'cellModel': 'HH', 'cellType': 'PYR'}}</notes>
         <morphology id="morph_CELL_HH_PYR">
             <segment id="0" name="soma">
-                <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="20"/>
-                <distal x="0.000000e+00" y="0.000000e+00" z="2.000000e+01" diameter="20"/>
+                <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="20.0"/>
+                <distal x="0.000000e+00" y="0.000000e+00" z="2.000000e+01" diameter="20.0"/>
             </segment>
             <segment id="1" name="dend">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="0"/>
                 <distal x="0.000000e+00" y="1.500000e+02" z="0.000000e+00" diameter="5.0"/>
             </segment>
             <segmentGroup id="soma_group">

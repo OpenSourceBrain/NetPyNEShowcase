@@ -63,6 +63,7 @@ simConfig.gatherOnlySimData=True
 simConfig.recordTraces['of0_RS_pop_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'v','conds':{'pop':'RS_pop','cellLabel':0}}
 
 
+
 simConfig.plotCells = ['all']
 
 

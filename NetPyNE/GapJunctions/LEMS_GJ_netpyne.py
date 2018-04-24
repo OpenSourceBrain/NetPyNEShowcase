@@ -67,6 +67,7 @@ simConfig.recordTraces['of0_iafPop1_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'
 simConfig.recordTraces['of0_iafPop2_0_soma_v'] = {'sec':'soma','loc':0.5,'var':'v','conds':{'pop':'iafPop2','cellLabel':0}}
 
 
+
 simConfig.plotCells = ['all']
 
 
