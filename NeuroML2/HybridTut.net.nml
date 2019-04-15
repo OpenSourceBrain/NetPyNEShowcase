@@ -34,11 +34,17 @@
                 <parent segment="0"/>
                 <distal x="0.000000e+00" y="1.500000e+02" z="0.000000e+00" diameter="5.0"/>
             </segment>
-            <segmentGroup id="soma_group">
+            <segmentGroup neuroLexId="sao864921383" id="soma_SECTION">
                 <member segment="0"/>
             </segmentGroup>
-            <segmentGroup id="dend_group">
+            <segmentGroup id="soma_group">
+                <include segmentGroup="soma_SECTION"/>
+            </segmentGroup>
+            <segmentGroup neuroLexId="sao864921383" id="dend_SECTION">
                 <member segment="1"/>
+            </segmentGroup>
+            <segmentGroup id="dend_group">
+                <include segmentGroup="dend_SECTION"/>
             </segmentGroup>
         </morphology>
         <biophysicalProperties id="biophys_CELL_HH_PYR">

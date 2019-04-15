@@ -31,8 +31,11 @@
                 <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="18.8"/>
                 <distal x="0.000000e+00" y="0.000000e+00" z="1.880000e+01" diameter="18.8"/>
             </segment>
-            <segmentGroup id="soma_group">
+            <segmentGroup neuroLexId="sao864921383" id="soma_SECTION">
                 <member segment="0"/>
+            </segmentGroup>
+            <segmentGroup id="soma_group">
+                <include segmentGroup="soma_SECTION"/>
             </segmentGroup>
         </morphology>
         <biophysicalProperties id="biophys_CELL_HH_PYR">
