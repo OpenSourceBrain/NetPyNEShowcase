@@ -6,10 +6,10 @@ sudo: false
 addons:
   apt:
     packages:
-    - python-matplotlib 
+    #- python-matplotlib 
+    #- python-numpy 
+    #- python-scipy 
     - python-tk
-    - python-numpy 
-    - python-scipy 
     - python-lxml
     - python-tornado
     - libhdf5-7
@@ -30,7 +30,7 @@ env:
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
-    - pip install scipy # Why is this needed? Doesn't seem to get installed correctly on trusty with addons above...
+    - pip install numpy scipy # Why is this needed? Scipy doesn't seem to get installed correctly on trusty with addons above...
     - pip install tables # Ditto
     - pip install matplotlib # This is more because Matplotlib v2.x is required...
     
