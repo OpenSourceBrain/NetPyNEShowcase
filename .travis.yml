@@ -36,7 +36,7 @@ install:
     
 script:
     - omv all -V
-    - omv list-engines
+    - omv list
     - pwd
     - ls -al NeuroML2
     - cd NeuroML2/scaling
