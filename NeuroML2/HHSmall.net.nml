@@ -24,14 +24,17 @@
     <expTwoSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="1.0ms" tauRise="0.1ms"/>
     <cell id="CELL_HH_PYR">
         <notes>Cell exported from NetPyNE:
-{'secs': {'soma': {'mechs': {'hh': {'gnabar': 0.12, 'gl': 0.003, 'gkbar': 0.036, 'el': -70}}, 'geom': {'diam': 18.8, 'L': 18.8, 'Ra': 123.0}, 'vinit': -71}}, 'conds': {'cellModel': 'HH', 'cellType': 'PYR'}}</notes>
+{'secs': {'soma': {'mechs': {'hh': {'gnabar': 0.12, 'gl': 0.003, 'gkbar': 0.036, 'el': -70}}, 'geom': {'diam': 18.8, 'L': 18.8, 'cm': 1, 'Ra': 123.0}, 'vinit': -71}}, 'conds': {'cellModel': 'HH', 'cellType': 'PYR'}}</notes>
         <morphology id="morph_CELL_HH_PYR">
             <segment id="0" name="soma">
                 <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="18.8"/>
                 <distal x="0.000000e+00" y="1.880000e+01" z="0.000000e+00" diameter="18.8"/>
             </segment>
-            <segmentGroup id="soma_group">
+            <segmentGroup neuroLexId="sao864921383" id="soma_SECTION">
                 <member segment="0"/>
+            </segmentGroup>
+            <segmentGroup id="soma_group">
+                <include segmentGroup="soma_SECTION"/>
             </segmentGroup>
         </morphology>
         <biophysicalProperties id="biophys_CELL_HH_PYR">
@@ -41,7 +44,7 @@
                 <channelDensity id="na_soma_group" ionChannel="na_hh" condDensity="0.12 S_per_cm2" erev="50 mV" ion="na"/>
                 <spikeThresh value="10 mV"/>
                 <specificCapacitance value="1 uF_per_cm2" segmentGroup="soma_group"/>
-                <initMembPotential value="-65 mV"/>
+                <initMembPotential value="-71 mV"/>
             </membraneProperties>
             <intracellularProperties>
                 <resistivity value="123.0 ohm_cm" segmentGroup="soma_group"/>
@@ -73,9 +76,9 @@
             <connectionWD id="5" preCellId="../PYR/1/CELL_HH_PYR" postCellId="../PYR/2/CELL_HH_PYR" weight="0.002" delay="11.514025612 ms"/>
         </projection>
         <projection id="NetConn_NetStim_bkg_PYR_20_0_AMPA__PYR" presynapticPopulation="Pop_NetStim_bkg_PYR_20_0_AMPA" postsynapticPopulation="PYR" synapse="AMPA">
-            <connectionWD id="0" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[0]" postCellId="../PYR/0/CELL_HH_PYR" weight="0.1" delay="2.92162748009 ms"/>
-            <connectionWD id="1" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[1]" postCellId="../PYR/1/CELL_HH_PYR" weight="0.1" delay="4.37910581301 ms"/>
-            <connectionWD id="2" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[2]" postCellId="../PYR/2/CELL_HH_PYR" weight="0.1" delay="3.33878044543 ms"/>
+            <connectionWD id="0" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[0]" postCellId="../PYR/0/CELL_HH_PYR" weight="0.1" delay="9.80406870022 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[1]" postCellId="../PYR/1/CELL_HH_PYR" weight="0.1" delay="13.4477645325 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_bkg_PYR_20_0_AMPA[2]" postCellId="../PYR/2/CELL_HH_PYR" weight="0.1" delay="10.8469511136 ms"/>
         </projection>
     </network>
 </neuroml>

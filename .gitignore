@@ -142,3 +142,6 @@ NetPyNE/M1/movie
 /NeuroML2/*.gv.pdf
 /NeuroML2/M1.gv.png
 /NetPyNE/ACnet/*.dat
+/NeuroML2/*.gv*
+/NeuroML2/*.pov
+/NeuroML2/*movie.ini
