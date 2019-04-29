@@ -16,7 +16,7 @@
     
     <Include file="M1.net.nml"/>
    
-    <Simulation id="Sim_M1" length="100ms" step="0.01ms" target="M1" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+    <Simulation id="Sim_M1" length="100.0ms" step="0.01ms" target="M1" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__IT_L23" title="Membrane potentials of cells in IT_L23" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
             <Line id="IT_L23[0]: v" quantity="IT_L23/0/CELL_IT/v" scale="1mV" color="#6aa799" timeScale="1ms"/>
