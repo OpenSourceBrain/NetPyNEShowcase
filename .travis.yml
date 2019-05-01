@@ -20,9 +20,6 @@ python:
     - 2.7
     - 3.6
 
-virtualenv:
-    system_site_packages: true
-
 env:
     - OMV_ENGINE=jNeuroML
     - OMV_ENGINE=jNeuroML_NEURON
