@@ -22,10 +22,15 @@ Components:
 
 from netpyne import specs  # import netpyne specs module
 from netpyne import sim    # import netpyne sim module
+from netpyne import __version__ as version
 
 from neuron import h
 
 import sys
+import time
+import datetime
+
+setup_start = time.time()
 
 
 ###############################################################################
@@ -95,9 +100,12 @@ simConfig.saveFileStep = simConfig.dt # step size in ms to save data to disk
 
 print("Running a NetPyNE based simulation for %sms (dt: %sms) at %s degC"%(simConfig.duration, simConfig.dt, simConfig.hParams['celsius']))
 
+setup_sim_start = time.time()
 gids = sim.importNeuroML2SimulateAnalyze(nml2_file_name,simConfig)
 
-print("Finished simulation")
+sim_end = time.time()
+setup_sim_time = sim_end - setup_sim_start
+print("Finished NetPyNE simulation in %f seconds (%f mins)..."%(setup_sim_time, setup_sim_time/60.0))
 
 
 ###############################################################################
@@ -126,8 +134,11 @@ if sim.rank==0:
 
 
 
+    save_end = time.time()
+    save_time = save_end - sim_end
+    print("Finished saving results in %f seconds"%(save_time))
 
-    print("Saved all data.")
+
 
 if '-nogui' in sys.argv:
     quit()
