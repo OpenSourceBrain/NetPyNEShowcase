@@ -145,3 +145,4 @@ NetPyNE/M1/movie
 /NeuroML2/*.gv*
 /NeuroML2/*.pov
 /NeuroML2/*movie.ini
+/tests.log

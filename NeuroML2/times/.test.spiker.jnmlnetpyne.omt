@@ -36,7 +36,7 @@ experiments:
         spike detection: 
           method: threshold
           threshold: 0
-        tolerance: 0
+        tolerance: 6.6892316749958394e-06
         
   cc0:
     observables:
