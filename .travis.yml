@@ -21,10 +21,10 @@ python:
 
 env:
     - OMV_ENGINE=jNeuroML
-    - OMV_ENGINE=jNeuroML_NEURON
-    - OMV_ENGINE=jNeuroML_validate
+    #- OMV_ENGINE=jNeuroML_NEURON
+    #- OMV_ENGINE=jNeuroML_validate
     - OMV_ENGINE=jNeuroML_NetPyNE
-    - OMV_ENGINE=NetPyNE 
+    #- OMV_ENGINE=NetPyNE 
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
