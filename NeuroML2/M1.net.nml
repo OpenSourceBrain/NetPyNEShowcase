@@ -1,4 +1,4 @@
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2.0.xsd" id="M1">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2.1.xsd" id="M1">
     <notes>NeuroML 2 file exported from NetPyNE v0.9.5</notes>
     <expTwoSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="5.3ms" tauRise="0.05ms"/>
     <expTwoSynapse id="NMDA" gbase="1uS" erev="0mV" tauDecay="15ms" tauRise="0.15ms"/>
@@ -1543,7 +1543,7 @@
             <connectionWD id="4" preCellId="../IT_L6/11/CELL_IT" postCellId="../IT_L4/10/CELL_IT" weight="0.002" delay="8.12221073765792 ms"/>
             <connectionWD id="5" preCellId="../IT_L6/6/CELL_IT" postCellId="../IT_L4/12/CELL_IT" weight="0.002" delay="8.961755432286708 ms"/>
             <connectionWD id="6" preCellId="../IT_L6/9/CELL_IT" postCellId="../IT_L4/14/CELL_IT" weight="0.002" delay="9.31267388909686 ms"/>
-            <connectionWD id="7" preCellId="../IT_L6/8/CELL_IT" postCellId="../IT_L4/17/CELL_IT" weight="0.002" delay="9.982359789017677 ms"/>
+            <connectionWD id="7" preCellId="../IT_L6/8/CELL_IT" postCellId="../IT_L4/17/CELL_IT" weight="0.002" delay="9.982359789017679 ms"/>
             <connectionWD id="8" preCellId="../IT_L6/20/CELL_IT" postCellId="../IT_L4/19/CELL_IT" weight="0.0085" delay="7.887012180597188 ms"/>
             <connectionWD id="9" preCellId="../IT_L6/30/CELL_IT" postCellId="../IT_L4/20/CELL_IT" weight="0.00425" delay="8.183987568588709 ms"/>
             <connectionWD id="10" preCellId="../IT_L6/4/CELL_IT" postCellId="../IT_L4/21/CELL_IT" weight="0.00425" delay="7.738945824199985 ms"/>
