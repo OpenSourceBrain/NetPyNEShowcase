@@ -32,7 +32,7 @@ install:
     - pip install numpy scipy # Why is this needed? Scipy doesn't seem to get installed correctly on trusty with addons above...
     - pip install tables # Ditto
     - pip install matplotlib>=2.2.5 # This is more because Matplotlib v2.x is required...
-    - pip install future pandas matplotlib-scalebar
+    - pip install future pandas matplotlib-scalebar bokeh
     
 script:
     - omv all -V
