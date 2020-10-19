@@ -146,3 +146,4 @@ NetPyNE/M1/movie
 /NeuroML2/*.pov
 /NeuroML2/*movie.ini
 /tests.log
+/NeuroML2/scaling/libjhdf5.jnilib

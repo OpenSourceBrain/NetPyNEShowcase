@@ -30,14 +30,15 @@ install:
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
     - pip install numpy scipy # Why is this needed? Scipy doesn't seem to get installed correctly on trusty with addons above...
     - pip install tables # Ditto
-    - pip install matplotlib # This is more because Matplotlib v2.x is required...
+    - pip install matplotlib>=2.2.5 # This is more because Matplotlib v2.x is required...
+    - pip install future pandas matplotlib-scalebar bokeh
     
 script:
     - omv all -V
     - pwd
     - ls -al NeuroML2
     - cd NeuroML2/scaling
-    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_Balanced_hdf5_netpyne.py ; fi
+    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_Balanced_hdf5_netpyne.py ; cd /home/travis/jnml/jNeuroMLJar; ./jnml -v ; fi
     - omv list-engines -V
     
     
