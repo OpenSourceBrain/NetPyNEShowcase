@@ -29,7 +29,7 @@ install:
     - pip install tables # Ditto
     - pip install matplotlib
     - pip install future pandas matplotlib-scalebar bokeh
-    - pip install neuron 
+    #- pip install neuron # to test - need to find out where nrn installed...
     
 script:
     - omv list-engines -V
@@ -37,7 +37,7 @@ script:
     - pwd
     - ls -al NeuroML2
     - cd NeuroML2/scaling
-    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_Balanced_hdf5_netpyne.py ; cd /home/travis/jnml/jNeuroMLJar; ./jnml -v ; fi
+    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_Balanced_hdf5_netpyne.py ; fi
     - cd ../..
     - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then ./regenerateAndTest.sh ; fi
     - omv list-engines -V

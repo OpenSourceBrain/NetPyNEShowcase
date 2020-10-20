@@ -1,0 +1,188 @@
+{
+    "netParams": {
+        "_labelid": 0,
+        "cellParams": {
+            "PYR": {
+                "conds": {
+                    "cellModel": "HH",
+                    "cellType": "PYR"
+                },
+                "secs": {
+                    "soma": {
+                        "geom": {
+                            "L": 18.8,
+                            "Ra": 123.0,
+                            "cm": 1,
+                            "diam": 18.8
+                        },
+                        "mechs": {
+                            "hh": {
+                                "el": -70,
+                                "gkbar": 0.036,
+                                "gl": 0.003,
+                                "gnabar": 0.12
+                            }
+                        },
+                        "vinit": -71
+                    }
+                }
+            }
+        },
+        "connParams": {
+            "PYR->PYR": {
+                "convergence": 2,
+                "delay": "0.2+normal(13.0,1.4)",
+                "postConds": {
+                    "pop": "PYR"
+                },
+                "preConds": {
+                    "pop": "PYR"
+                },
+                "threshold": 10,
+                "weight": 0.002
+            }
+        },
+        "correctBorder": false,
+        "defaultDelay": 1,
+        "defaultThreshold": 10,
+        "defaultWeight": 1,
+        "defineCellShapes": false,
+        "popParams": {
+            "PYR": {
+                "cellModel": "HH",
+                "cellType": "PYR",
+                "numCells": 3
+            }
+        },
+        "popTagsCopiedToCells": [
+            "cellModel",
+            "cellType"
+        ],
+        "propVelocity": 500.0,
+        "rotateCellsRandomly": false,
+        "rxdParams": {},
+        "scale": 1,
+        "scaleConnWeight": 1,
+        "scaleConnWeightModels": false,
+        "scaleConnWeightNetStims": 1,
+        "shape": "cuboid",
+        "sizeX": 100,
+        "sizeY": 100,
+        "sizeZ": 100,
+        "stimSourceParams": {
+            "bkg": {
+                "noise": 0,
+                "rate": 20,
+                "start": 50,
+                "type": "NetStim"
+            }
+        },
+        "stimTargetParams": {
+            "bkg->PYR1": {
+                "conds": {
+                    "pop": "PYR"
+                },
+                "delay": "uniform(5,15)",
+                "source": "bkg",
+                "weight": 0.1
+            }
+        },
+        "subConnParams": {},
+        "synMechParams": {
+            "AMPA": {
+                "e": 0,
+                "mod": "Exp2Syn",
+                "tau1": 0.1,
+                "tau2": 1.0
+            }
+        }
+    },
+    "simConfig": {
+        "addSynMechs": true,
+        "allowConnsWithWeight0": true,
+        "allowSelfConns": false,
+        "analysis": {
+            "plot2Dnet": true,
+            "plotRaster": true,
+            "plotTraces": {
+                "include": [
+                    2
+                ]
+            }
+        },
+        "backupCfgFile": [],
+        "cache_efficient": false,
+        "checkErrors": false,
+        "checkErrorsVerbose": false,
+        "compactConnFormat": false,
+        "connRandomSecFromList": true,
+        "createNEURONObj": 1,
+        "createPyStruct": 1,
+        "cvode_active": false,
+        "cvode_atol": 0.001,
+        "distributeSynsUniformly": true,
+        "dt": 0.0025,
+        "duration": 300,
+        "filename": "HHTut",
+        "gatherOnlySimData": false,
+        "hParams": {
+            "celsius": 6.3,
+            "clamp_resist": 0.001,
+            "v_init": -65.0
+        },
+        "includeParamsLabel": true,
+        "invertedYCoord": true,
+        "oneSynPerNetcon": true,
+        "printPopAvgRates": false,
+        "printRunTime": false,
+        "printSynsAfterRule": false,
+        "pt3dRelativeToCellLocation": true,
+        "rand123GlobalIndex": null,
+        "recordCells": [
+            "all"
+        ],
+        "recordCellsSpikes": -1,
+        "recordDipoles": false,
+        "recordLFP": [],
+        "recordStep": 0.0025,
+        "recordStim": true,
+        "recordTime": true,
+        "recordTraces": {
+            "Vsoma": {
+                "loc": 0.5,
+                "sec": "soma",
+                "var": "v"
+            }
+        },
+        "saveCSV": false,
+        "saveCellConns": true,
+        "saveCellSecs": true,
+        "saveDat": true,
+        "saveDataInclude": [
+            "netParams",
+            "netCells",
+            "netPops",
+            "simConfig",
+            "simData"
+        ],
+        "saveDpk": false,
+        "saveFileStep": 0.0025,
+        "saveFolder": "",
+        "saveHDF5": false,
+        "saveJson": false,
+        "saveLFPCells": false,
+        "saveMat": false,
+        "savePickle": false,
+        "saveTiming": false,
+        "seeds": {
+            "conn": 1,
+            "loc": 1,
+            "stim": 1
+        },
+        "simLabel": "",
+        "timestampFilename": false,
+        "timing": true,
+        "tstop": 1000.0,
+        "verbose": false
+    }
+}
