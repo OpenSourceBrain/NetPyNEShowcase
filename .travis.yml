@@ -39,7 +39,7 @@ script:
     - cd NeuroML2/scaling
     - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_Balanced_hdf5_netpyne.py ; fi
     - cd ../..
-    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then ./regenerateAndTest.sh ; fi
+    #- if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then ./regenerateAndTest.sh ; fi
     - omv list-engines -V
     
     
