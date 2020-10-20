@@ -6,9 +6,6 @@ sudo: false
 addons:
   apt:
     packages:
-    #- python-matplotlib 
-    #- python-numpy 
-    #- python-scipy 
     - python-tk
     - python-lxml
     - python-tornado
@@ -17,28 +14,32 @@ addons:
 language: python
 python: 
     - 2.7
-    - 3.6
+    - 3.7
 
 env:
-    #- OMV_ENGINE=jNeuroML
-    #- OMV_ENGINE=jNeuroML_NEURON
-    #- OMV_ENGINE=jNeuroML_validate
+    - OMV_ENGINE=jNeuroML
+    - OMV_ENGINE=jNeuroML_NEURON
+    - OMV_ENGINE=jNeuroML_validate
     - OMV_ENGINE=jNeuroML_NetPyNE
     - OMV_ENGINE=NetPyNE 
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
-    - pip install numpy scipy # Why is this needed? Scipy doesn't seem to get installed correctly on trusty with addons above...
+    - pip install numpy scipy # Why is this needed? Scipy doesn't seem to get installed correctly with addons above...
     - pip install tables # Ditto
     - pip install matplotlib
     - pip install future pandas matplotlib-scalebar bokeh
+    - pip install neuron 
     
 script:
+    - omv list-engines -V
     - omv all -V
     - pwd
     - ls -al NeuroML2
     - cd NeuroML2/scaling
     - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then python LEMS_Balanced_hdf5_netpyne.py ; cd /home/travis/jnml/jNeuroMLJar; ./jnml -v ; fi
+    - cd ../..
+    - if [[ ${OMV_ENGINE} == "jNeuroML_NetPyNE" ]]; then ./regenerateAndTest.sh ; fi
     - omv list-engines -V
     
     
