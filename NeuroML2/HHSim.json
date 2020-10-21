@@ -1,0 +1,208 @@
+{
+    "netParams": {
+        "_labelid": 0,
+        "cellParams": {
+            "hhcell": {
+                "conds": {
+                    "cellModel": "hhcell",
+                    "cellType": "hhcell"
+                },
+                "secLists": {
+                    "soma_group": [
+                        "soma"
+                    ]
+                },
+                "secs": {
+                    "soma": {
+                        "geom": {
+                            "Ra": 34.56,
+                            "cm": 1.6,
+                            "pt3d": [
+                                [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    17.841242
+                                ],
+                                [
+                                    0.0,
+                                    17.841242,
+                                    0.0,
+                                    17.841242
+                                ]
+                            ]
+                        },
+                        "ions": {
+                            "k": {
+                                "e": -79.0
+                            },
+                            "na": {
+                                "e": 51.0
+                            }
+                        },
+                        "mechs": {
+                            "kChan": {
+                                "gmax": 0.031
+                            },
+                            "naChan": {
+                                "gmax": 0.121
+                            },
+                            "passiveChan": {
+                                "e": -57.0,
+                                "gmax": 0.00031
+                            }
+                        },
+                        "vinit": -70.0
+                    }
+                }
+            }
+        },
+        "connParams": {},
+        "correctBorder": false,
+        "defaultDelay": 1,
+        "defaultThreshold": 10,
+        "defaultWeight": 1,
+        "defineCellShapes": false,
+        "popParams": {
+            "hhpop": {
+                "cellModel": "hhcell",
+                "cellType": "hhcell",
+                "cellsList": [
+                    {
+                        "cellLabel": 0,
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                ],
+                "numCells": 1,
+                "originalFormat": "NeuroML2",
+                "pop": "hhpop"
+            }
+        },
+        "popTagsCopiedToCells": [
+            "cellModel",
+            "cellType"
+        ],
+        "propVelocity": 500.0,
+        "rotateCellsRandomly": false,
+        "rxdParams": {},
+        "scale": 1,
+        "scaleConnWeight": 1,
+        "scaleConnWeightModels": false,
+        "scaleConnWeightNetStims": 1,
+        "shape": "cuboid",
+        "sizeX": 100,
+        "sizeY": 100,
+        "sizeZ": 100,
+        "stimSourceParams": {
+            "INPUT_pulseGen1_hhpop_0_0_hhpop_0_soma_0_5": {
+                "label": "INPUT_pulseGen1_hhpop_0_0_hhpop_0_soma_0_5",
+                "originalFormat": "NeuroML2",
+                "type": "pulseGen1"
+            },
+            "INPUT_pulseGen2_hhpop_0_0_hhpop_0_soma_0_5": {
+                "label": "INPUT_pulseGen2_hhpop_0_0_hhpop_0_soma_0_5",
+                "originalFormat": "NeuroML2",
+                "type": "pulseGen2"
+            }
+        },
+        "stimTargetParams": {
+            "INPUT_pulseGen1_hhpop_0_0_hhpop_0_soma_0_5": {
+                "conds": {
+                    "cellList": [
+                        0
+                    ],
+                    "pop": "hhpop"
+                },
+                "loc": 0.5,
+                "sec": "soma",
+                "source": "INPUT_pulseGen1_hhpop_0_0_hhpop_0_soma_0_5"
+            },
+            "INPUT_pulseGen2_hhpop_0_0_hhpop_0_soma_0_5": {
+                "conds": {
+                    "cellList": [
+                        0
+                    ],
+                    "pop": "hhpop"
+                },
+                "loc": 0.5,
+                "sec": "soma",
+                "source": "INPUT_pulseGen2_hhpop_0_0_hhpop_0_soma_0_5"
+            }
+        },
+        "subConnParams": {},
+        "synMechParams": {}
+    },
+    "simConfig": {
+        "addSynMechs": true,
+        "allowConnsWithWeight0": true,
+        "allowSelfConns": false,
+        "analysis": {},
+        "backupCfgFile": [],
+        "cache_efficient": false,
+        "checkErrors": false,
+        "checkErrorsVerbose": false,
+        "compactConnFormat": false,
+        "connRandomSecFromList": true,
+        "createNEURONObj": true,
+        "createPyStruct": true,
+        "cvode_active": false,
+        "cvode_atol": 0.001,
+        "distributeSynsUniformly": true,
+        "dt": 0.025,
+        "duration": 1000.0,
+        "filename": "model_output",
+        "gatherOnlySimData": false,
+        "hParams": {
+            "celsius": 6.3,
+            "clamp_resist": 0.001,
+            "v_init": -65.0
+        },
+        "includeParamsLabel": true,
+        "invertedYCoord": true,
+        "oneSynPerNetcon": true,
+        "printPopAvgRates": false,
+        "printRunTime": false,
+        "printSynsAfterRule": false,
+        "pt3dRelativeToCellLocation": true,
+        "rand123GlobalIndex": null,
+        "recordCells": [],
+        "recordCellsSpikes": -1,
+        "recordDipoles": false,
+        "recordLFP": [],
+        "recordStep": 0.1,
+        "recordStim": false,
+        "recordTime": true,
+        "recordTraces": {},
+        "saveCSV": false,
+        "saveCellConns": true,
+        "saveCellSecs": true,
+        "saveDat": false,
+        "saveDataInclude": [
+            "netParams",
+            "netCells",
+            "netPops",
+            "simConfig",
+            "simData"
+        ],
+        "saveDpk": false,
+        "saveFolder": "",
+        "saveHDF5": false,
+        "saveJson": false,
+        "saveLFPCells": false,
+        "saveMat": false,
+        "savePickle": false,
+        "saveTiming": false,
+        "seeds": {
+            "conn": 1,
+            "loc": 1,
+            "stim": 1
+        },
+        "simLabel": "",
+        "timestampFilename": false,
+        "timing": true,
+        "tstop": 1000.0,
+        "verbose": false
+    }
+}
