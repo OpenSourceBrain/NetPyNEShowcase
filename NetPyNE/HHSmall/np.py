@@ -8,17 +8,23 @@
     That functionality should fail if this method is missing or doesn't 
     return 2 dict like objects
 '''
-def load_netpyne():
-    from HHSmall import netParams, simConfig
+def load_netpyne(*argv):
+    from HHSmall import simConfig, description, generate_netParams
+    netParams = generate_netParams(argv)
 
-    return netParams, simConfig
+    return netParams, simConfig, description
 
+    
+def get_model_parameters():
+    
+    from HHSmall import parameters
+    return parameters
 
 '''
     Not necessary to have this here, just a useful way to serialise the model
 '''
 def save_as_json(filename):
-    netParams, simConfig = load_netpyne()
+    netParams, simConfig, desc = load_netpyne()
     
     info = {'netParams':netParams.__dict__,
             'simConfig':simConfig.__dict__}
