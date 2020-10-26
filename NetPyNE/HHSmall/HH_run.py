@@ -4,7 +4,8 @@ if '-nogui' in sys.argv:
     import netpyne
     netpyne.__gui__ = False
     
-import HHSmall  # import parameters file 
+from HHSmall import generate_netParams, simConfig
+netParams = generate_netParams(None)
 from netpyne import sim  # import netpyne sim module
 
-sim.createSimulateAnalyze(netParams = HHSmall.netParams, simConfig = HHSmall.simConfig)  # create and simulate network
+sim.createSimulateAnalyze(netParams = netParams, simConfig = simConfig)  # create and simulate network
