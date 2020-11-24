@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.5.6 (libNeuroML v0.2.52)
+        This LEMS file has been automatically generated using PyNeuroML v0.5.7 (libNeuroML v0.2.53)
 
      -->
     
@@ -18,335 +18,335 @@
    
     <Simulation id="Sim_M1" length="100.0ms" step="0.01ms" target="M1" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
-        <Display id="DispPop__IT_L23" title="Membrane potentials of cells in IT_L23" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="IT_L23[0]: v" quantity="IT_L23/0/CELL_IT/v" scale="1mV" color="#6aa799" timeScale="1ms"/>
-            <Line id="IT_L23[1]: v" quantity="IT_L23/1/CELL_IT/v" scale="1mV" color="#029a72" timeScale="1ms"/>
-            <Line id="IT_L23[2]: v" quantity="IT_L23/2/CELL_IT/v" scale="1mV" color="#d340bb" timeScale="1ms"/>
-            <Line id="IT_L23[3]: v" quantity="IT_L23/3/CELL_IT/v" scale="1mV" color="#4c73a9" timeScale="1ms"/>
-            <Line id="IT_L23[4]: v" quantity="IT_L23/4/CELL_IT/v" scale="1mV" color="#5e503a" timeScale="1ms"/>
-            <Line id="IT_L23[5]: v" quantity="IT_L23/5/CELL_IT/v" scale="1mV" color="#3193ca" timeScale="1ms"/>
-            <Line id="IT_L23[6]: v" quantity="IT_L23/6/CELL_IT/v" scale="1mV" color="#90e5e9" timeScale="1ms"/>
-            <Line id="IT_L23[7]: v" quantity="IT_L23/7/CELL_IT/v" scale="1mV" color="#29645f" timeScale="1ms"/>
-            <Line id="IT_L23[8]: v" quantity="IT_L23/8/CELL_IT/v" scale="1mV" color="#1fcff4" timeScale="1ms"/>
-            <Line id="IT_L23[9]: v" quantity="IT_L23/9/CELL_IT/v" scale="1mV" color="#6ed4e9" timeScale="1ms"/>
-            <Line id="IT_L23[10]: v" quantity="IT_L23/10/CELL_IT/v" scale="1mV" color="#8fe460" timeScale="1ms"/>
-            <Line id="IT_L23[11]: v" quantity="IT_L23/11/CELL_IT/v" scale="1mV" color="#2ca1c7" timeScale="1ms"/>
-            <Line id="IT_L23[12]: v" quantity="IT_L23/12/CELL_IT/v" scale="1mV" color="#8d9fe5" timeScale="1ms"/>
-            <Line id="IT_L23[13]: v" quantity="IT_L23/13/CELL_IT/v" scale="1mV" color="#5adad1" timeScale="1ms"/>
-            <Line id="IT_L23[14]: v" quantity="IT_L23/14/CELL_IT/v" scale="1mV" color="#f543bb" timeScale="1ms"/>
-            <Line id="IT_L23[15]: v" quantity="IT_L23/15/CELL_IT/v" scale="1mV" color="#175f0c" timeScale="1ms"/>
-            <Line id="IT_L23[16]: v" quantity="IT_L23/16/CELL_IT/v" scale="1mV" color="#fa8826" timeScale="1ms"/>
-            <Line id="IT_L23[17]: v" quantity="IT_L23/17/CELL_IT/v" scale="1mV" color="#6980a8" timeScale="1ms"/>
-            <Line id="IT_L23[18]: v" quantity="IT_L23/18/CELL_IT/v" scale="1mV" color="#8101e8" timeScale="1ms"/>
-            <Line id="IT_L23[19]: v" quantity="IT_L23/19/CELL_IT/v" scale="1mV" color="#25ece8" timeScale="1ms"/>
-            <Line id="IT_L23[20]: v" quantity="IT_L23/20/CELL_IT/v" scale="1mV" color="#b80e3b" timeScale="1ms"/>
-            <Line id="IT_L23[21]: v" quantity="IT_L23/21/CELL_IT/v" scale="1mV" color="#30a1f6" timeScale="1ms"/>
-            <Line id="IT_L23[22]: v" quantity="IT_L23/22/CELL_IT/v" scale="1mV" color="#577081" timeScale="1ms"/>
-            <Line id="IT_L23[23]: v" quantity="IT_L23/23/CELL_IT/v" scale="1mV" color="#06057c" timeScale="1ms"/>
-            <Line id="IT_L23[24]: v" quantity="IT_L23/24/CELL_IT/v" scale="1mV" color="#56eaa3" timeScale="1ms"/>
-            <Line id="IT_L23[25]: v" quantity="IT_L23/25/CELL_IT/v" scale="1mV" color="#f7acee" timeScale="1ms"/>
-            <Line id="IT_L23[26]: v" quantity="IT_L23/26/CELL_IT/v" scale="1mV" color="#fa9289" timeScale="1ms"/>
-            <Line id="IT_L23[27]: v" quantity="IT_L23/27/CELL_IT/v" scale="1mV" color="#be9985" timeScale="1ms"/>
-            <Line id="IT_L23[28]: v" quantity="IT_L23/28/CELL_IT/v" scale="1mV" color="#00e266" timeScale="1ms"/>
-            <Line id="IT_L23[29]: v" quantity="IT_L23/29/CELL_IT/v" scale="1mV" color="#f0b378" timeScale="1ms"/>
-            <Line id="IT_L23[30]: v" quantity="IT_L23/30/CELL_IT/v" scale="1mV" color="#deea95" timeScale="1ms"/>
-            <Line id="IT_L23[31]: v" quantity="IT_L23/31/CELL_IT/v" scale="1mV" color="#c55566" timeScale="1ms"/>
-            <Line id="IT_L23[32]: v" quantity="IT_L23/32/CELL_IT/v" scale="1mV" color="#2dcaab" timeScale="1ms"/>
-            <Line id="IT_L23[33]: v" quantity="IT_L23/33/CELL_IT/v" scale="1mV" color="#1978ce" timeScale="1ms"/>
-            <Line id="IT_L23[34]: v" quantity="IT_L23/34/CELL_IT/v" scale="1mV" color="#6a1ecc" timeScale="1ms"/>
-            <Line id="IT_L23[35]: v" quantity="IT_L23/35/CELL_IT/v" scale="1mV" color="#e2b284" timeScale="1ms"/>
-            <Line id="IT_L23[36]: v" quantity="IT_L23/36/CELL_IT/v" scale="1mV" color="#93fd72" timeScale="1ms"/>
-            <Line id="IT_L23[37]: v" quantity="IT_L23/37/CELL_IT/v" scale="1mV" color="#bc90a6" timeScale="1ms"/>
-            <Line id="IT_L23[38]: v" quantity="IT_L23/38/CELL_IT/v" scale="1mV" color="#3b8d0e" timeScale="1ms"/>
-            <Line id="IT_L23[39]: v" quantity="IT_L23/39/CELL_IT/v" scale="1mV" color="#860a7d" timeScale="1ms"/>
-            <Line id="IT_L23[40]: v" quantity="IT_L23/40/CELL_IT/v" scale="1mV" color="#b59a59" timeScale="1ms"/>
-            <Line id="IT_L23[41]: v" quantity="IT_L23/41/CELL_IT/v" scale="1mV" color="#d32851" timeScale="1ms"/>
-            <Line id="IT_L23[42]: v" quantity="IT_L23/42/CELL_IT/v" scale="1mV" color="#ce9fb6" timeScale="1ms"/>
-            <Line id="IT_L23[43]: v" quantity="IT_L23/43/CELL_IT/v" scale="1mV" color="#3b788b" timeScale="1ms"/>
-            <Line id="IT_L23[44]: v" quantity="IT_L23/44/CELL_IT/v" scale="1mV" color="#df8960" timeScale="1ms"/>
-            <Line id="IT_L23[45]: v" quantity="IT_L23/45/CELL_IT/v" scale="1mV" color="#3764b5" timeScale="1ms"/>
-            <Line id="IT_L23[46]: v" quantity="IT_L23/46/CELL_IT/v" scale="1mV" color="#cd4944" timeScale="1ms"/>
-            <Line id="IT_L23[47]: v" quantity="IT_L23/47/CELL_IT/v" scale="1mV" color="#8e1a11" timeScale="1ms"/>
-            <Line id="IT_L23[48]: v" quantity="IT_L23/48/CELL_IT/v" scale="1mV" color="#2f9272" timeScale="1ms"/>
-            <Line id="IT_L23[49]: v" quantity="IT_L23/49/CELL_IT/v" scale="1mV" color="#96af0d" timeScale="1ms"/>
-            <Line id="IT_L23[50]: v" quantity="IT_L23/50/CELL_IT/v" scale="1mV" color="#84ab56" timeScale="1ms"/>
+        <Display id="DispPop__IT_L23" title="Membrane potentials of cells in IT_L23" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="IT_L23[0]: v" quantity="IT_L23/0/CELL_IT/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
+            <Line id="IT_L23[1]: v" quantity="IT_L23/1/CELL_IT/v" scale="1mV" color="#0534e4" timeScale="1ms"/>
+            <Line id="IT_L23[2]: v" quantity="IT_L23/2/CELL_IT/v" scale="1mV" color="#98e752" timeScale="1ms"/>
+            <Line id="IT_L23[3]: v" quantity="IT_L23/3/CELL_IT/v" scale="1mV" color="#bca074" timeScale="1ms"/>
+            <Line id="IT_L23[4]: v" quantity="IT_L23/4/CELL_IT/v" scale="1mV" color="#632794" timeScale="1ms"/>
+            <Line id="IT_L23[5]: v" quantity="IT_L23/5/CELL_IT/v" scale="1mV" color="#8a5d88" timeScale="1ms"/>
+            <Line id="IT_L23[6]: v" quantity="IT_L23/6/CELL_IT/v" scale="1mV" color="#df5954" timeScale="1ms"/>
+            <Line id="IT_L23[7]: v" quantity="IT_L23/7/CELL_IT/v" scale="1mV" color="#52c8bf" timeScale="1ms"/>
+            <Line id="IT_L23[8]: v" quantity="IT_L23/8/CELL_IT/v" scale="1mV" color="#bf0239" timeScale="1ms"/>
+            <Line id="IT_L23[9]: v" quantity="IT_L23/9/CELL_IT/v" scale="1mV" color="#3f9fe8" timeScale="1ms"/>
+            <Line id="IT_L23[10]: v" quantity="IT_L23/10/CELL_IT/v" scale="1mV" color="#dda9d2" timeScale="1ms"/>
+            <Line id="IT_L23[11]: v" quantity="IT_L23/11/CELL_IT/v" scale="1mV" color="#85ad96" timeScale="1ms"/>
+            <Line id="IT_L23[12]: v" quantity="IT_L23/12/CELL_IT/v" scale="1mV" color="#59438f" timeScale="1ms"/>
+            <Line id="IT_L23[13]: v" quantity="IT_L23/13/CELL_IT/v" scale="1mV" color="#5fa56f" timeScale="1ms"/>
+            <Line id="IT_L23[14]: v" quantity="IT_L23/14/CELL_IT/v" scale="1mV" color="#b5b5a2" timeScale="1ms"/>
+            <Line id="IT_L23[15]: v" quantity="IT_L23/15/CELL_IT/v" scale="1mV" color="#2ebe19" timeScale="1ms"/>
+            <Line id="IT_L23[16]: v" quantity="IT_L23/16/CELL_IT/v" scale="1mV" color="#d30150" timeScale="1ms"/>
+            <Line id="IT_L23[17]: v" quantity="IT_L23/17/CELL_IT/v" scale="1mV" color="#55490a" timeScale="1ms"/>
+            <Line id="IT_L23[18]: v" quantity="IT_L23/18/CELL_IT/v" scale="1mV" color="#4bd9d0" timeScale="1ms"/>
+            <Line id="IT_L23[19]: v" quantity="IT_L23/19/CELL_IT/v" scale="1mV" color="#69535e" timeScale="1ms"/>
+            <Line id="IT_L23[20]: v" quantity="IT_L23/20/CELL_IT/v" scale="1mV" color="#27dae9" timeScale="1ms"/>
+            <Line id="IT_L23[21]: v" quantity="IT_L23/21/CELL_IT/v" scale="1mV" color="#6143ed" timeScale="1ms"/>
+            <Line id="IT_L23[22]: v" quantity="IT_L23/22/CELL_IT/v" scale="1mV" color="#aee102" timeScale="1ms"/>
+            <Line id="IT_L23[23]: v" quantity="IT_L23/23/CELL_IT/v" scale="1mV" color="#a4e245" timeScale="1ms"/>
+            <Line id="IT_L23[24]: v" quantity="IT_L23/24/CELL_IT/v" scale="1mV" color="#0c0af9" timeScale="1ms"/>
+            <Line id="IT_L23[25]: v" quantity="IT_L23/25/CELL_IT/v" scale="1mV" color="#eaece2" timeScale="1ms"/>
+            <Line id="IT_L23[26]: v" quantity="IT_L23/26/CELL_IT/v" scale="1mV" color="#add546" timeScale="1ms"/>
+            <Line id="IT_L23[27]: v" quantity="IT_L23/27/CELL_IT/v" scale="1mV" color="#0dc1e8" timeScale="1ms"/>
+            <Line id="IT_L23[28]: v" quantity="IT_L23/28/CELL_IT/v" scale="1mV" color="#d4b998" timeScale="1ms"/>
+            <Line id="IT_L23[29]: v" quantity="IT_L23/29/CELL_IT/v" scale="1mV" color="#01c4cd" timeScale="1ms"/>
+            <Line id="IT_L23[30]: v" quantity="IT_L23/30/CELL_IT/v" scale="1mV" color="#036aae" timeScale="1ms"/>
+            <Line id="IT_L23[31]: v" quantity="IT_L23/31/CELL_IT/v" scale="1mV" color="#53de83" timeScale="1ms"/>
+            <Line id="IT_L23[32]: v" quantity="IT_L23/32/CELL_IT/v" scale="1mV" color="#5b9557" timeScale="1ms"/>
+            <Line id="IT_L23[33]: v" quantity="IT_L23/33/CELL_IT/v" scale="1mV" color="#92b9f4" timeScale="1ms"/>
+            <Line id="IT_L23[34]: v" quantity="IT_L23/34/CELL_IT/v" scale="1mV" color="#32f19d" timeScale="1ms"/>
+            <Line id="IT_L23[35]: v" quantity="IT_L23/35/CELL_IT/v" scale="1mV" color="#d43d99" timeScale="1ms"/>
+            <Line id="IT_L23[36]: v" quantity="IT_L23/36/CELL_IT/v" scale="1mV" color="#36379e" timeScale="1ms"/>
+            <Line id="IT_L23[37]: v" quantity="IT_L23/37/CELL_IT/v" scale="1mV" color="#5d01b7" timeScale="1ms"/>
+            <Line id="IT_L23[38]: v" quantity="IT_L23/38/CELL_IT/v" scale="1mV" color="#c0004f" timeScale="1ms"/>
+            <Line id="IT_L23[39]: v" quantity="IT_L23/39/CELL_IT/v" scale="1mV" color="#771a1c" timeScale="1ms"/>
+            <Line id="IT_L23[40]: v" quantity="IT_L23/40/CELL_IT/v" scale="1mV" color="#a8e7b4" timeScale="1ms"/>
+            <Line id="IT_L23[41]: v" quantity="IT_L23/41/CELL_IT/v" scale="1mV" color="#149bc7" timeScale="1ms"/>
+            <Line id="IT_L23[42]: v" quantity="IT_L23/42/CELL_IT/v" scale="1mV" color="#76f116" timeScale="1ms"/>
+            <Line id="IT_L23[43]: v" quantity="IT_L23/43/CELL_IT/v" scale="1mV" color="#3d56b9" timeScale="1ms"/>
+            <Line id="IT_L23[44]: v" quantity="IT_L23/44/CELL_IT/v" scale="1mV" color="#ff9a67" timeScale="1ms"/>
+            <Line id="IT_L23[45]: v" quantity="IT_L23/45/CELL_IT/v" scale="1mV" color="#6ec96a" timeScale="1ms"/>
+            <Line id="IT_L23[46]: v" quantity="IT_L23/46/CELL_IT/v" scale="1mV" color="#5f24e5" timeScale="1ms"/>
+            <Line id="IT_L23[47]: v" quantity="IT_L23/47/CELL_IT/v" scale="1mV" color="#83f5a5" timeScale="1ms"/>
+            <Line id="IT_L23[48]: v" quantity="IT_L23/48/CELL_IT/v" scale="1mV" color="#de0aae" timeScale="1ms"/>
+            <Line id="IT_L23[49]: v" quantity="IT_L23/49/CELL_IT/v" scale="1mV" color="#427e32" timeScale="1ms"/>
+            <Line id="IT_L23[50]: v" quantity="IT_L23/50/CELL_IT/v" scale="1mV" color="#1544a0" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__IT_L4" title="Membrane potentials of cells in IT_L4" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="IT_L4[0]: v" quantity="IT_L4/0/CELL_IT/v" scale="1mV" color="#f56ae7" timeScale="1ms"/>
-            <Line id="IT_L4[1]: v" quantity="IT_L4/1/CELL_IT/v" scale="1mV" color="#0aa250" timeScale="1ms"/>
-            <Line id="IT_L4[2]: v" quantity="IT_L4/2/CELL_IT/v" scale="1mV" color="#2a04f7" timeScale="1ms"/>
-            <Line id="IT_L4[3]: v" quantity="IT_L4/3/CELL_IT/v" scale="1mV" color="#fbb911" timeScale="1ms"/>
-            <Line id="IT_L4[4]: v" quantity="IT_L4/4/CELL_IT/v" scale="1mV" color="#d50b61" timeScale="1ms"/>
-            <Line id="IT_L4[5]: v" quantity="IT_L4/5/CELL_IT/v" scale="1mV" color="#267841" timeScale="1ms"/>
-            <Line id="IT_L4[6]: v" quantity="IT_L4/6/CELL_IT/v" scale="1mV" color="#3aa725" timeScale="1ms"/>
-            <Line id="IT_L4[7]: v" quantity="IT_L4/7/CELL_IT/v" scale="1mV" color="#8a04f7" timeScale="1ms"/>
-            <Line id="IT_L4[8]: v" quantity="IT_L4/8/CELL_IT/v" scale="1mV" color="#282fe5" timeScale="1ms"/>
-            <Line id="IT_L4[9]: v" quantity="IT_L4/9/CELL_IT/v" scale="1mV" color="#52e1fb" timeScale="1ms"/>
-            <Line id="IT_L4[10]: v" quantity="IT_L4/10/CELL_IT/v" scale="1mV" color="#0ca02f" timeScale="1ms"/>
-            <Line id="IT_L4[11]: v" quantity="IT_L4/11/CELL_IT/v" scale="1mV" color="#b6307b" timeScale="1ms"/>
-            <Line id="IT_L4[12]: v" quantity="IT_L4/12/CELL_IT/v" scale="1mV" color="#141cb0" timeScale="1ms"/>
-            <Line id="IT_L4[13]: v" quantity="IT_L4/13/CELL_IT/v" scale="1mV" color="#fe9e62" timeScale="1ms"/>
-            <Line id="IT_L4[14]: v" quantity="IT_L4/14/CELL_IT/v" scale="1mV" color="#ebaa77" timeScale="1ms"/>
-            <Line id="IT_L4[15]: v" quantity="IT_L4/15/CELL_IT/v" scale="1mV" color="#c9f0b0" timeScale="1ms"/>
-            <Line id="IT_L4[16]: v" quantity="IT_L4/16/CELL_IT/v" scale="1mV" color="#c5bc64" timeScale="1ms"/>
-            <Line id="IT_L4[17]: v" quantity="IT_L4/17/CELL_IT/v" scale="1mV" color="#5e2503" timeScale="1ms"/>
-            <Line id="IT_L4[18]: v" quantity="IT_L4/18/CELL_IT/v" scale="1mV" color="#adbfb0" timeScale="1ms"/>
-            <Line id="IT_L4[19]: v" quantity="IT_L4/19/CELL_IT/v" scale="1mV" color="#c2e1da" timeScale="1ms"/>
-            <Line id="IT_L4[20]: v" quantity="IT_L4/20/CELL_IT/v" scale="1mV" color="#7b1427" timeScale="1ms"/>
-            <Line id="IT_L4[21]: v" quantity="IT_L4/21/CELL_IT/v" scale="1mV" color="#0fc01b" timeScale="1ms"/>
-            <Line id="IT_L4[22]: v" quantity="IT_L4/22/CELL_IT/v" scale="1mV" color="#a04859" timeScale="1ms"/>
-            <Line id="IT_L4[23]: v" quantity="IT_L4/23/CELL_IT/v" scale="1mV" color="#53650f" timeScale="1ms"/>
-            <Line id="IT_L4[24]: v" quantity="IT_L4/24/CELL_IT/v" scale="1mV" color="#9c2ecc" timeScale="1ms"/>
-            <Line id="IT_L4[25]: v" quantity="IT_L4/25/CELL_IT/v" scale="1mV" color="#6bbb69" timeScale="1ms"/>
+        <Display id="DispPop__IT_L4" title="Membrane potentials of cells in IT_L4" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="IT_L4[0]: v" quantity="IT_L4/0/CELL_IT/v" scale="1mV" color="#5409ee" timeScale="1ms"/>
+            <Line id="IT_L4[1]: v" quantity="IT_L4/1/CELL_IT/v" scale="1mV" color="#9a477d" timeScale="1ms"/>
+            <Line id="IT_L4[2]: v" quantity="IT_L4/2/CELL_IT/v" scale="1mV" color="#04ca61" timeScale="1ms"/>
+            <Line id="IT_L4[3]: v" quantity="IT_L4/3/CELL_IT/v" scale="1mV" color="#4cf083" timeScale="1ms"/>
+            <Line id="IT_L4[4]: v" quantity="IT_L4/4/CELL_IT/v" scale="1mV" color="#754e4b" timeScale="1ms"/>
+            <Line id="IT_L4[5]: v" quantity="IT_L4/5/CELL_IT/v" scale="1mV" color="#b30f75" timeScale="1ms"/>
+            <Line id="IT_L4[6]: v" quantity="IT_L4/6/CELL_IT/v" scale="1mV" color="#af1648" timeScale="1ms"/>
+            <Line id="IT_L4[7]: v" quantity="IT_L4/7/CELL_IT/v" scale="1mV" color="#505fca" timeScale="1ms"/>
+            <Line id="IT_L4[8]: v" quantity="IT_L4/8/CELL_IT/v" scale="1mV" color="#c5a380" timeScale="1ms"/>
+            <Line id="IT_L4[9]: v" quantity="IT_L4/9/CELL_IT/v" scale="1mV" color="#a5c3f7" timeScale="1ms"/>
+            <Line id="IT_L4[10]: v" quantity="IT_L4/10/CELL_IT/v" scale="1mV" color="#06933f" timeScale="1ms"/>
+            <Line id="IT_L4[11]: v" quantity="IT_L4/11/CELL_IT/v" scale="1mV" color="#19405e" timeScale="1ms"/>
+            <Line id="IT_L4[12]: v" quantity="IT_L4/12/CELL_IT/v" scale="1mV" color="#1f2cf7" timeScale="1ms"/>
+            <Line id="IT_L4[13]: v" quantity="IT_L4/13/CELL_IT/v" scale="1mV" color="#e3e5f3" timeScale="1ms"/>
+            <Line id="IT_L4[14]: v" quantity="IT_L4/14/CELL_IT/v" scale="1mV" color="#283960" timeScale="1ms"/>
+            <Line id="IT_L4[15]: v" quantity="IT_L4/15/CELL_IT/v" scale="1mV" color="#c6b519" timeScale="1ms"/>
+            <Line id="IT_L4[16]: v" quantity="IT_L4/16/CELL_IT/v" scale="1mV" color="#5be56f" timeScale="1ms"/>
+            <Line id="IT_L4[17]: v" quantity="IT_L4/17/CELL_IT/v" scale="1mV" color="#05febe" timeScale="1ms"/>
+            <Line id="IT_L4[18]: v" quantity="IT_L4/18/CELL_IT/v" scale="1mV" color="#bc4a07" timeScale="1ms"/>
+            <Line id="IT_L4[19]: v" quantity="IT_L4/19/CELL_IT/v" scale="1mV" color="#6e4273" timeScale="1ms"/>
+            <Line id="IT_L4[20]: v" quantity="IT_L4/20/CELL_IT/v" scale="1mV" color="#3e35e3" timeScale="1ms"/>
+            <Line id="IT_L4[21]: v" quantity="IT_L4/21/CELL_IT/v" scale="1mV" color="#f6284e" timeScale="1ms"/>
+            <Line id="IT_L4[22]: v" quantity="IT_L4/22/CELL_IT/v" scale="1mV" color="#1f8036" timeScale="1ms"/>
+            <Line id="IT_L4[23]: v" quantity="IT_L4/23/CELL_IT/v" scale="1mV" color="#07131e" timeScale="1ms"/>
+            <Line id="IT_L4[24]: v" quantity="IT_L4/24/CELL_IT/v" scale="1mV" color="#fbcc00" timeScale="1ms"/>
+            <Line id="IT_L4[25]: v" quantity="IT_L4/25/CELL_IT/v" scale="1mV" color="#a6ca1f" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__IT_L5A" title="Membrane potentials of cells in IT_L5A" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="IT_L5A[0]: v" quantity="IT_L5A/0/CELL_IT/v" scale="1mV" color="#f3d90e" timeScale="1ms"/>
-            <Line id="IT_L5A[1]: v" quantity="IT_L5A/1/CELL_IT/v" scale="1mV" color="#339bb4" timeScale="1ms"/>
-            <Line id="IT_L5A[2]: v" quantity="IT_L5A/2/CELL_IT/v" scale="1mV" color="#c4d3c5" timeScale="1ms"/>
-            <Line id="IT_L5A[3]: v" quantity="IT_L5A/3/CELL_IT/v" scale="1mV" color="#b2d4f3" timeScale="1ms"/>
-            <Line id="IT_L5A[4]: v" quantity="IT_L5A/4/CELL_IT/v" scale="1mV" color="#8e7ae9" timeScale="1ms"/>
-            <Line id="IT_L5A[5]: v" quantity="IT_L5A/5/CELL_IT/v" scale="1mV" color="#147de9" timeScale="1ms"/>
-            <Line id="IT_L5A[6]: v" quantity="IT_L5A/6/CELL_IT/v" scale="1mV" color="#2a3a46" timeScale="1ms"/>
-            <Line id="IT_L5A[7]: v" quantity="IT_L5A/7/CELL_IT/v" scale="1mV" color="#f79fca" timeScale="1ms"/>
-            <Line id="IT_L5A[8]: v" quantity="IT_L5A/8/CELL_IT/v" scale="1mV" color="#3b0b63" timeScale="1ms"/>
-            <Line id="IT_L5A[9]: v" quantity="IT_L5A/9/CELL_IT/v" scale="1mV" color="#29ddf4" timeScale="1ms"/>
-            <Line id="IT_L5A[10]: v" quantity="IT_L5A/10/CELL_IT/v" scale="1mV" color="#49cdbe" timeScale="1ms"/>
-            <Line id="IT_L5A[11]: v" quantity="IT_L5A/11/CELL_IT/v" scale="1mV" color="#8980bb" timeScale="1ms"/>
-            <Line id="IT_L5A[12]: v" quantity="IT_L5A/12/CELL_IT/v" scale="1mV" color="#850561" timeScale="1ms"/>
-            <Line id="IT_L5A[13]: v" quantity="IT_L5A/13/CELL_IT/v" scale="1mV" color="#00da5a" timeScale="1ms"/>
-            <Line id="IT_L5A[14]: v" quantity="IT_L5A/14/CELL_IT/v" scale="1mV" color="#00d0ba" timeScale="1ms"/>
-            <Line id="IT_L5A[15]: v" quantity="IT_L5A/15/CELL_IT/v" scale="1mV" color="#7efe36" timeScale="1ms"/>
-            <Line id="IT_L5A[16]: v" quantity="IT_L5A/16/CELL_IT/v" scale="1mV" color="#2f529f" timeScale="1ms"/>
-            <Line id="IT_L5A[17]: v" quantity="IT_L5A/17/CELL_IT/v" scale="1mV" color="#9b852c" timeScale="1ms"/>
-            <Line id="IT_L5A[18]: v" quantity="IT_L5A/18/CELL_IT/v" scale="1mV" color="#cc6812" timeScale="1ms"/>
-            <Line id="IT_L5A[19]: v" quantity="IT_L5A/19/CELL_IT/v" scale="1mV" color="#188b26" timeScale="1ms"/>
-            <Line id="IT_L5A[20]: v" quantity="IT_L5A/20/CELL_IT/v" scale="1mV" color="#8152a2" timeScale="1ms"/>
-            <Line id="IT_L5A[21]: v" quantity="IT_L5A/21/CELL_IT/v" scale="1mV" color="#67f8ab" timeScale="1ms"/>
-            <Line id="IT_L5A[22]: v" quantity="IT_L5A/22/CELL_IT/v" scale="1mV" color="#ca5b25" timeScale="1ms"/>
-            <Line id="IT_L5A[23]: v" quantity="IT_L5A/23/CELL_IT/v" scale="1mV" color="#f46d4e" timeScale="1ms"/>
-            <Line id="IT_L5A[24]: v" quantity="IT_L5A/24/CELL_IT/v" scale="1mV" color="#6aae0b" timeScale="1ms"/>
-            <Line id="IT_L5A[25]: v" quantity="IT_L5A/25/CELL_IT/v" scale="1mV" color="#3e46cc" timeScale="1ms"/>
-            <Line id="IT_L5A[26]: v" quantity="IT_L5A/26/CELL_IT/v" scale="1mV" color="#e0e3a1" timeScale="1ms"/>
-            <Line id="IT_L5A[27]: v" quantity="IT_L5A/27/CELL_IT/v" scale="1mV" color="#06fb8a" timeScale="1ms"/>
-            <Line id="IT_L5A[28]: v" quantity="IT_L5A/28/CELL_IT/v" scale="1mV" color="#549968" timeScale="1ms"/>
+        <Display id="DispPop__IT_L5A" title="Membrane potentials of cells in IT_L5A" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="IT_L5A[0]: v" quantity="IT_L5A/0/CELL_IT/v" scale="1mV" color="#d776d3" timeScale="1ms"/>
+            <Line id="IT_L5A[1]: v" quantity="IT_L5A/1/CELL_IT/v" scale="1mV" color="#673768" timeScale="1ms"/>
+            <Line id="IT_L5A[2]: v" quantity="IT_L5A/2/CELL_IT/v" scale="1mV" color="#ba83d6" timeScale="1ms"/>
+            <Line id="IT_L5A[3]: v" quantity="IT_L5A/3/CELL_IT/v" scale="1mV" color="#3d1f96" timeScale="1ms"/>
+            <Line id="IT_L5A[4]: v" quantity="IT_L5A/4/CELL_IT/v" scale="1mV" color="#4ca02a" timeScale="1ms"/>
+            <Line id="IT_L5A[5]: v" quantity="IT_L5A/5/CELL_IT/v" scale="1mV" color="#28fbd3" timeScale="1ms"/>
+            <Line id="IT_L5A[6]: v" quantity="IT_L5A/6/CELL_IT/v" scale="1mV" color="#fd629f" timeScale="1ms"/>
+            <Line id="IT_L5A[7]: v" quantity="IT_L5A/7/CELL_IT/v" scale="1mV" color="#54748c" timeScale="1ms"/>
+            <Line id="IT_L5A[8]: v" quantity="IT_L5A/8/CELL_IT/v" scale="1mV" color="#abcdf4" timeScale="1ms"/>
+            <Line id="IT_L5A[9]: v" quantity="IT_L5A/9/CELL_IT/v" scale="1mV" color="#7616c7" timeScale="1ms"/>
+            <Line id="IT_L5A[10]: v" quantity="IT_L5A/10/CELL_IT/v" scale="1mV" color="#6810ad" timeScale="1ms"/>
+            <Line id="IT_L5A[11]: v" quantity="IT_L5A/11/CELL_IT/v" scale="1mV" color="#53bbe9" timeScale="1ms"/>
+            <Line id="IT_L5A[12]: v" quantity="IT_L5A/12/CELL_IT/v" scale="1mV" color="#5354af" timeScale="1ms"/>
+            <Line id="IT_L5A[13]: v" quantity="IT_L5A/13/CELL_IT/v" scale="1mV" color="#939b7d" timeScale="1ms"/>
+            <Line id="IT_L5A[14]: v" quantity="IT_L5A/14/CELL_IT/v" scale="1mV" color="#4cdfbe" timeScale="1ms"/>
+            <Line id="IT_L5A[15]: v" quantity="IT_L5A/15/CELL_IT/v" scale="1mV" color="#2e6290" timeScale="1ms"/>
+            <Line id="IT_L5A[16]: v" quantity="IT_L5A/16/CELL_IT/v" scale="1mV" color="#01b4b5" timeScale="1ms"/>
+            <Line id="IT_L5A[17]: v" quantity="IT_L5A/17/CELL_IT/v" scale="1mV" color="#4b077f" timeScale="1ms"/>
+            <Line id="IT_L5A[18]: v" quantity="IT_L5A/18/CELL_IT/v" scale="1mV" color="#01a175" timeScale="1ms"/>
+            <Line id="IT_L5A[19]: v" quantity="IT_L5A/19/CELL_IT/v" scale="1mV" color="#fdfc6d" timeScale="1ms"/>
+            <Line id="IT_L5A[20]: v" quantity="IT_L5A/20/CELL_IT/v" scale="1mV" color="#5ea53f" timeScale="1ms"/>
+            <Line id="IT_L5A[21]: v" quantity="IT_L5A/21/CELL_IT/v" scale="1mV" color="#31164d" timeScale="1ms"/>
+            <Line id="IT_L5A[22]: v" quantity="IT_L5A/22/CELL_IT/v" scale="1mV" color="#874f89" timeScale="1ms"/>
+            <Line id="IT_L5A[23]: v" quantity="IT_L5A/23/CELL_IT/v" scale="1mV" color="#cff156" timeScale="1ms"/>
+            <Line id="IT_L5A[24]: v" quantity="IT_L5A/24/CELL_IT/v" scale="1mV" color="#21da04" timeScale="1ms"/>
+            <Line id="IT_L5A[25]: v" quantity="IT_L5A/25/CELL_IT/v" scale="1mV" color="#ebf688" timeScale="1ms"/>
+            <Line id="IT_L5A[26]: v" quantity="IT_L5A/26/CELL_IT/v" scale="1mV" color="#d55c16" timeScale="1ms"/>
+            <Line id="IT_L5A[27]: v" quantity="IT_L5A/27/CELL_IT/v" scale="1mV" color="#5d26ec" timeScale="1ms"/>
+            <Line id="IT_L5A[28]: v" quantity="IT_L5A/28/CELL_IT/v" scale="1mV" color="#7c8d98" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__IT_L5B" title="Membrane potentials of cells in IT_L5B" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="IT_L5B[0]: v" quantity="IT_L5B/0/CELL_IT/v" scale="1mV" color="#650ffb" timeScale="1ms"/>
-            <Line id="IT_L5B[1]: v" quantity="IT_L5B/1/CELL_IT/v" scale="1mV" color="#2d9059" timeScale="1ms"/>
-            <Line id="IT_L5B[2]: v" quantity="IT_L5B/2/CELL_IT/v" scale="1mV" color="#ae1036" timeScale="1ms"/>
-            <Line id="IT_L5B[3]: v" quantity="IT_L5B/3/CELL_IT/v" scale="1mV" color="#84ad19" timeScale="1ms"/>
-            <Line id="IT_L5B[4]: v" quantity="IT_L5B/4/CELL_IT/v" scale="1mV" color="#3fba91" timeScale="1ms"/>
-            <Line id="IT_L5B[5]: v" quantity="IT_L5B/5/CELL_IT/v" scale="1mV" color="#69cacc" timeScale="1ms"/>
-            <Line id="IT_L5B[6]: v" quantity="IT_L5B/6/CELL_IT/v" scale="1mV" color="#b11f43" timeScale="1ms"/>
-            <Line id="IT_L5B[7]: v" quantity="IT_L5B/7/CELL_IT/v" scale="1mV" color="#5330d7" timeScale="1ms"/>
-            <Line id="IT_L5B[8]: v" quantity="IT_L5B/8/CELL_IT/v" scale="1mV" color="#11552d" timeScale="1ms"/>
-            <Line id="IT_L5B[9]: v" quantity="IT_L5B/9/CELL_IT/v" scale="1mV" color="#75e387" timeScale="1ms"/>
-            <Line id="IT_L5B[10]: v" quantity="IT_L5B/10/CELL_IT/v" scale="1mV" color="#31efbe" timeScale="1ms"/>
-            <Line id="IT_L5B[11]: v" quantity="IT_L5B/11/CELL_IT/v" scale="1mV" color="#9f0e56" timeScale="1ms"/>
-            <Line id="IT_L5B[12]: v" quantity="IT_L5B/12/CELL_IT/v" scale="1mV" color="#33af06" timeScale="1ms"/>
-            <Line id="IT_L5B[13]: v" quantity="IT_L5B/13/CELL_IT/v" scale="1mV" color="#22910c" timeScale="1ms"/>
-            <Line id="IT_L5B[14]: v" quantity="IT_L5B/14/CELL_IT/v" scale="1mV" color="#e4daa2" timeScale="1ms"/>
-            <Line id="IT_L5B[15]: v" quantity="IT_L5B/15/CELL_IT/v" scale="1mV" color="#548dc2" timeScale="1ms"/>
-            <Line id="IT_L5B[16]: v" quantity="IT_L5B/16/CELL_IT/v" scale="1mV" color="#4ad484" timeScale="1ms"/>
-            <Line id="IT_L5B[17]: v" quantity="IT_L5B/17/CELL_IT/v" scale="1mV" color="#89cb56" timeScale="1ms"/>
-            <Line id="IT_L5B[18]: v" quantity="IT_L5B/18/CELL_IT/v" scale="1mV" color="#b1817b" timeScale="1ms"/>
-            <Line id="IT_L5B[19]: v" quantity="IT_L5B/19/CELL_IT/v" scale="1mV" color="#abc677" timeScale="1ms"/>
-            <Line id="IT_L5B[20]: v" quantity="IT_L5B/20/CELL_IT/v" scale="1mV" color="#cc638b" timeScale="1ms"/>
-            <Line id="IT_L5B[21]: v" quantity="IT_L5B/21/CELL_IT/v" scale="1mV" color="#428b2d" timeScale="1ms"/>
-            <Line id="IT_L5B[22]: v" quantity="IT_L5B/22/CELL_IT/v" scale="1mV" color="#6d47be" timeScale="1ms"/>
-            <Line id="IT_L5B[23]: v" quantity="IT_L5B/23/CELL_IT/v" scale="1mV" color="#5d2c80" timeScale="1ms"/>
-            <Line id="IT_L5B[24]: v" quantity="IT_L5B/24/CELL_IT/v" scale="1mV" color="#84459a" timeScale="1ms"/>
-            <Line id="IT_L5B[25]: v" quantity="IT_L5B/25/CELL_IT/v" scale="1mV" color="#92f4b2" timeScale="1ms"/>
-            <Line id="IT_L5B[26]: v" quantity="IT_L5B/26/CELL_IT/v" scale="1mV" color="#a11908" timeScale="1ms"/>
-            <Line id="IT_L5B[27]: v" quantity="IT_L5B/27/CELL_IT/v" scale="1mV" color="#11656e" timeScale="1ms"/>
-            <Line id="IT_L5B[28]: v" quantity="IT_L5B/28/CELL_IT/v" scale="1mV" color="#5f0819" timeScale="1ms"/>
-            <Line id="IT_L5B[29]: v" quantity="IT_L5B/29/CELL_IT/v" scale="1mV" color="#b56471" timeScale="1ms"/>
-            <Line id="IT_L5B[30]: v" quantity="IT_L5B/30/CELL_IT/v" scale="1mV" color="#090b35" timeScale="1ms"/>
-            <Line id="IT_L5B[31]: v" quantity="IT_L5B/31/CELL_IT/v" scale="1mV" color="#bf0976" timeScale="1ms"/>
-            <Line id="IT_L5B[32]: v" quantity="IT_L5B/32/CELL_IT/v" scale="1mV" color="#af973c" timeScale="1ms"/>
+        <Display id="DispPop__IT_L5B" title="Membrane potentials of cells in IT_L5B" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="IT_L5B[0]: v" quantity="IT_L5B/0/CELL_IT/v" scale="1mV" color="#5e5f55" timeScale="1ms"/>
+            <Line id="IT_L5B[1]: v" quantity="IT_L5B/1/CELL_IT/v" scale="1mV" color="#0df715" timeScale="1ms"/>
+            <Line id="IT_L5B[2]: v" quantity="IT_L5B/2/CELL_IT/v" scale="1mV" color="#beee88" timeScale="1ms"/>
+            <Line id="IT_L5B[3]: v" quantity="IT_L5B/3/CELL_IT/v" scale="1mV" color="#a932d1" timeScale="1ms"/>
+            <Line id="IT_L5B[4]: v" quantity="IT_L5B/4/CELL_IT/v" scale="1mV" color="#5a1782" timeScale="1ms"/>
+            <Line id="IT_L5B[5]: v" quantity="IT_L5B/5/CELL_IT/v" scale="1mV" color="#ca1ff7" timeScale="1ms"/>
+            <Line id="IT_L5B[6]: v" quantity="IT_L5B/6/CELL_IT/v" scale="1mV" color="#5b0f75" timeScale="1ms"/>
+            <Line id="IT_L5B[7]: v" quantity="IT_L5B/7/CELL_IT/v" scale="1mV" color="#5b20b3" timeScale="1ms"/>
+            <Line id="IT_L5B[8]: v" quantity="IT_L5B/8/CELL_IT/v" scale="1mV" color="#7f7523" timeScale="1ms"/>
+            <Line id="IT_L5B[9]: v" quantity="IT_L5B/9/CELL_IT/v" scale="1mV" color="#d39598" timeScale="1ms"/>
+            <Line id="IT_L5B[10]: v" quantity="IT_L5B/10/CELL_IT/v" scale="1mV" color="#d5c6d0" timeScale="1ms"/>
+            <Line id="IT_L5B[11]: v" quantity="IT_L5B/11/CELL_IT/v" scale="1mV" color="#a661af" timeScale="1ms"/>
+            <Line id="IT_L5B[12]: v" quantity="IT_L5B/12/CELL_IT/v" scale="1mV" color="#3d83b6" timeScale="1ms"/>
+            <Line id="IT_L5B[13]: v" quantity="IT_L5B/13/CELL_IT/v" scale="1mV" color="#22aa5b" timeScale="1ms"/>
+            <Line id="IT_L5B[14]: v" quantity="IT_L5B/14/CELL_IT/v" scale="1mV" color="#ebc70e" timeScale="1ms"/>
+            <Line id="IT_L5B[15]: v" quantity="IT_L5B/15/CELL_IT/v" scale="1mV" color="#63df7d" timeScale="1ms"/>
+            <Line id="IT_L5B[16]: v" quantity="IT_L5B/16/CELL_IT/v" scale="1mV" color="#675e0c" timeScale="1ms"/>
+            <Line id="IT_L5B[17]: v" quantity="IT_L5B/17/CELL_IT/v" scale="1mV" color="#452218" timeScale="1ms"/>
+            <Line id="IT_L5B[18]: v" quantity="IT_L5B/18/CELL_IT/v" scale="1mV" color="#776b45" timeScale="1ms"/>
+            <Line id="IT_L5B[19]: v" quantity="IT_L5B/19/CELL_IT/v" scale="1mV" color="#a91b84" timeScale="1ms"/>
+            <Line id="IT_L5B[20]: v" quantity="IT_L5B/20/CELL_IT/v" scale="1mV" color="#95a908" timeScale="1ms"/>
+            <Line id="IT_L5B[21]: v" quantity="IT_L5B/21/CELL_IT/v" scale="1mV" color="#402f4d" timeScale="1ms"/>
+            <Line id="IT_L5B[22]: v" quantity="IT_L5B/22/CELL_IT/v" scale="1mV" color="#1e4fcb" timeScale="1ms"/>
+            <Line id="IT_L5B[23]: v" quantity="IT_L5B/23/CELL_IT/v" scale="1mV" color="#85165a" timeScale="1ms"/>
+            <Line id="IT_L5B[24]: v" quantity="IT_L5B/24/CELL_IT/v" scale="1mV" color="#da8f7d" timeScale="1ms"/>
+            <Line id="IT_L5B[25]: v" quantity="IT_L5B/25/CELL_IT/v" scale="1mV" color="#168c69" timeScale="1ms"/>
+            <Line id="IT_L5B[26]: v" quantity="IT_L5B/26/CELL_IT/v" scale="1mV" color="#ba5900" timeScale="1ms"/>
+            <Line id="IT_L5B[27]: v" quantity="IT_L5B/27/CELL_IT/v" scale="1mV" color="#3712f1" timeScale="1ms"/>
+            <Line id="IT_L5B[28]: v" quantity="IT_L5B/28/CELL_IT/v" scale="1mV" color="#22cadd" timeScale="1ms"/>
+            <Line id="IT_L5B[29]: v" quantity="IT_L5B/29/CELL_IT/v" scale="1mV" color="#4ff5f4" timeScale="1ms"/>
+            <Line id="IT_L5B[30]: v" quantity="IT_L5B/30/CELL_IT/v" scale="1mV" color="#be1033" timeScale="1ms"/>
+            <Line id="IT_L5B[31]: v" quantity="IT_L5B/31/CELL_IT/v" scale="1mV" color="#12166b" timeScale="1ms"/>
+            <Line id="IT_L5B[32]: v" quantity="IT_L5B/32/CELL_IT/v" scale="1mV" color="#8cc3a0" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__PT_L5B" title="Membrane potentials of cells in PT_L5B" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="PT_L5B[0]: v" quantity="PT_L5B/0/CELL_PT/v" scale="1mV" color="#66dbcc" timeScale="1ms"/>
-            <Line id="PT_L5B[1]: v" quantity="PT_L5B/1/CELL_PT/v" scale="1mV" color="#72fce3" timeScale="1ms"/>
-            <Line id="PT_L5B[2]: v" quantity="PT_L5B/2/CELL_PT/v" scale="1mV" color="#43abd5" timeScale="1ms"/>
-            <Line id="PT_L5B[3]: v" quantity="PT_L5B/3/CELL_PT/v" scale="1mV" color="#bcba85" timeScale="1ms"/>
-            <Line id="PT_L5B[4]: v" quantity="PT_L5B/4/CELL_PT/v" scale="1mV" color="#7afbd9" timeScale="1ms"/>
-            <Line id="PT_L5B[5]: v" quantity="PT_L5B/5/CELL_PT/v" scale="1mV" color="#43df86" timeScale="1ms"/>
-            <Line id="PT_L5B[6]: v" quantity="PT_L5B/6/CELL_PT/v" scale="1mV" color="#0783a8" timeScale="1ms"/>
-            <Line id="PT_L5B[7]: v" quantity="PT_L5B/7/CELL_PT/v" scale="1mV" color="#58569a" timeScale="1ms"/>
-            <Line id="PT_L5B[8]: v" quantity="PT_L5B/8/CELL_PT/v" scale="1mV" color="#ebc622" timeScale="1ms"/>
-            <Line id="PT_L5B[9]: v" quantity="PT_L5B/9/CELL_PT/v" scale="1mV" color="#ad17d5" timeScale="1ms"/>
-            <Line id="PT_L5B[10]: v" quantity="PT_L5B/10/CELL_PT/v" scale="1mV" color="#a0277b" timeScale="1ms"/>
-            <Line id="PT_L5B[11]: v" quantity="PT_L5B/11/CELL_PT/v" scale="1mV" color="#ef12d1" timeScale="1ms"/>
-            <Line id="PT_L5B[12]: v" quantity="PT_L5B/12/CELL_PT/v" scale="1mV" color="#07d5ba" timeScale="1ms"/>
-            <Line id="PT_L5B[13]: v" quantity="PT_L5B/13/CELL_PT/v" scale="1mV" color="#9a3a95" timeScale="1ms"/>
-            <Line id="PT_L5B[14]: v" quantity="PT_L5B/14/CELL_PT/v" scale="1mV" color="#301d8a" timeScale="1ms"/>
-            <Line id="PT_L5B[15]: v" quantity="PT_L5B/15/CELL_PT/v" scale="1mV" color="#659e23" timeScale="1ms"/>
-            <Line id="PT_L5B[16]: v" quantity="PT_L5B/16/CELL_PT/v" scale="1mV" color="#2e8cc3" timeScale="1ms"/>
-            <Line id="PT_L5B[17]: v" quantity="PT_L5B/17/CELL_PT/v" scale="1mV" color="#596091" timeScale="1ms"/>
-            <Line id="PT_L5B[18]: v" quantity="PT_L5B/18/CELL_PT/v" scale="1mV" color="#e6c0bc" timeScale="1ms"/>
-            <Line id="PT_L5B[19]: v" quantity="PT_L5B/19/CELL_PT/v" scale="1mV" color="#b9b34e" timeScale="1ms"/>
-            <Line id="PT_L5B[20]: v" quantity="PT_L5B/20/CELL_PT/v" scale="1mV" color="#d8a692" timeScale="1ms"/>
-            <Line id="PT_L5B[21]: v" quantity="PT_L5B/21/CELL_PT/v" scale="1mV" color="#1352e6" timeScale="1ms"/>
-            <Line id="PT_L5B[22]: v" quantity="PT_L5B/22/CELL_PT/v" scale="1mV" color="#4d0412" timeScale="1ms"/>
-            <Line id="PT_L5B[23]: v" quantity="PT_L5B/23/CELL_PT/v" scale="1mV" color="#c8bec0" timeScale="1ms"/>
-            <Line id="PT_L5B[24]: v" quantity="PT_L5B/24/CELL_PT/v" scale="1mV" color="#0a5b03" timeScale="1ms"/>
-            <Line id="PT_L5B[25]: v" quantity="PT_L5B/25/CELL_PT/v" scale="1mV" color="#3091a7" timeScale="1ms"/>
-            <Line id="PT_L5B[26]: v" quantity="PT_L5B/26/CELL_PT/v" scale="1mV" color="#14f491" timeScale="1ms"/>
-            <Line id="PT_L5B[27]: v" quantity="PT_L5B/27/CELL_PT/v" scale="1mV" color="#d14b5d" timeScale="1ms"/>
-            <Line id="PT_L5B[28]: v" quantity="PT_L5B/28/CELL_PT/v" scale="1mV" color="#3b747b" timeScale="1ms"/>
-            <Line id="PT_L5B[29]: v" quantity="PT_L5B/29/CELL_PT/v" scale="1mV" color="#6c9e62" timeScale="1ms"/>
-            <Line id="PT_L5B[30]: v" quantity="PT_L5B/30/CELL_PT/v" scale="1mV" color="#038c13" timeScale="1ms"/>
-            <Line id="PT_L5B[31]: v" quantity="PT_L5B/31/CELL_PT/v" scale="1mV" color="#1d1940" timeScale="1ms"/>
-            <Line id="PT_L5B[32]: v" quantity="PT_L5B/32/CELL_PT/v" scale="1mV" color="#839542" timeScale="1ms"/>
+        <Display id="DispPop__PT_L5B" title="Membrane potentials of cells in PT_L5B" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="PT_L5B[0]: v" quantity="PT_L5B/0/CELL_PT/v" scale="1mV" color="#e35f91" timeScale="1ms"/>
+            <Line id="PT_L5B[1]: v" quantity="PT_L5B/1/CELL_PT/v" scale="1mV" color="#bcc452" timeScale="1ms"/>
+            <Line id="PT_L5B[2]: v" quantity="PT_L5B/2/CELL_PT/v" scale="1mV" color="#cdb798" timeScale="1ms"/>
+            <Line id="PT_L5B[3]: v" quantity="PT_L5B/3/CELL_PT/v" scale="1mV" color="#9d5071" timeScale="1ms"/>
+            <Line id="PT_L5B[4]: v" quantity="PT_L5B/4/CELL_PT/v" scale="1mV" color="#e5f9c6" timeScale="1ms"/>
+            <Line id="PT_L5B[5]: v" quantity="PT_L5B/5/CELL_PT/v" scale="1mV" color="#8757aa" timeScale="1ms"/>
+            <Line id="PT_L5B[6]: v" quantity="PT_L5B/6/CELL_PT/v" scale="1mV" color="#9faaa1" timeScale="1ms"/>
+            <Line id="PT_L5B[7]: v" quantity="PT_L5B/7/CELL_PT/v" scale="1mV" color="#fc29fc" timeScale="1ms"/>
+            <Line id="PT_L5B[8]: v" quantity="PT_L5B/8/CELL_PT/v" scale="1mV" color="#f5f7b3" timeScale="1ms"/>
+            <Line id="PT_L5B[9]: v" quantity="PT_L5B/9/CELL_PT/v" scale="1mV" color="#19c95a" timeScale="1ms"/>
+            <Line id="PT_L5B[10]: v" quantity="PT_L5B/10/CELL_PT/v" scale="1mV" color="#87bf0d" timeScale="1ms"/>
+            <Line id="PT_L5B[11]: v" quantity="PT_L5B/11/CELL_PT/v" scale="1mV" color="#e42034" timeScale="1ms"/>
+            <Line id="PT_L5B[12]: v" quantity="PT_L5B/12/CELL_PT/v" scale="1mV" color="#0f0750" timeScale="1ms"/>
+            <Line id="PT_L5B[13]: v" quantity="PT_L5B/13/CELL_PT/v" scale="1mV" color="#707406" timeScale="1ms"/>
+            <Line id="PT_L5B[14]: v" quantity="PT_L5B/14/CELL_PT/v" scale="1mV" color="#b0ad35" timeScale="1ms"/>
+            <Line id="PT_L5B[15]: v" quantity="PT_L5B/15/CELL_PT/v" scale="1mV" color="#45aaf9" timeScale="1ms"/>
+            <Line id="PT_L5B[16]: v" quantity="PT_L5B/16/CELL_PT/v" scale="1mV" color="#010abc" timeScale="1ms"/>
+            <Line id="PT_L5B[17]: v" quantity="PT_L5B/17/CELL_PT/v" scale="1mV" color="#2a91c4" timeScale="1ms"/>
+            <Line id="PT_L5B[18]: v" quantity="PT_L5B/18/CELL_PT/v" scale="1mV" color="#0fab75" timeScale="1ms"/>
+            <Line id="PT_L5B[19]: v" quantity="PT_L5B/19/CELL_PT/v" scale="1mV" color="#38dcf7" timeScale="1ms"/>
+            <Line id="PT_L5B[20]: v" quantity="PT_L5B/20/CELL_PT/v" scale="1mV" color="#603b15" timeScale="1ms"/>
+            <Line id="PT_L5B[21]: v" quantity="PT_L5B/21/CELL_PT/v" scale="1mV" color="#cb3c47" timeScale="1ms"/>
+            <Line id="PT_L5B[22]: v" quantity="PT_L5B/22/CELL_PT/v" scale="1mV" color="#fb267b" timeScale="1ms"/>
+            <Line id="PT_L5B[23]: v" quantity="PT_L5B/23/CELL_PT/v" scale="1mV" color="#5d1987" timeScale="1ms"/>
+            <Line id="PT_L5B[24]: v" quantity="PT_L5B/24/CELL_PT/v" scale="1mV" color="#8b9545" timeScale="1ms"/>
+            <Line id="PT_L5B[25]: v" quantity="PT_L5B/25/CELL_PT/v" scale="1mV" color="#b2c123" timeScale="1ms"/>
+            <Line id="PT_L5B[26]: v" quantity="PT_L5B/26/CELL_PT/v" scale="1mV" color="#6ac783" timeScale="1ms"/>
+            <Line id="PT_L5B[27]: v" quantity="PT_L5B/27/CELL_PT/v" scale="1mV" color="#99ad14" timeScale="1ms"/>
+            <Line id="PT_L5B[28]: v" quantity="PT_L5B/28/CELL_PT/v" scale="1mV" color="#a16fb4" timeScale="1ms"/>
+            <Line id="PT_L5B[29]: v" quantity="PT_L5B/29/CELL_PT/v" scale="1mV" color="#c6cc69" timeScale="1ms"/>
+            <Line id="PT_L5B[30]: v" quantity="PT_L5B/30/CELL_PT/v" scale="1mV" color="#26a5cd" timeScale="1ms"/>
+            <Line id="PT_L5B[31]: v" quantity="PT_L5B/31/CELL_PT/v" scale="1mV" color="#9a0824" timeScale="1ms"/>
+            <Line id="PT_L5B[32]: v" quantity="PT_L5B/32/CELL_PT/v" scale="1mV" color="#bc9fa6" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__IT_L6" title="Membrane potentials of cells in IT_L6" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="IT_L6[0]: v" quantity="IT_L6/0/CELL_IT/v" scale="1mV" color="#ca9353" timeScale="1ms"/>
-            <Line id="IT_L6[1]: v" quantity="IT_L6/1/CELL_IT/v" scale="1mV" color="#574d88" timeScale="1ms"/>
-            <Line id="IT_L6[2]: v" quantity="IT_L6/2/CELL_IT/v" scale="1mV" color="#51c0d2" timeScale="1ms"/>
-            <Line id="IT_L6[3]: v" quantity="IT_L6/3/CELL_IT/v" scale="1mV" color="#0a72aa" timeScale="1ms"/>
-            <Line id="IT_L6[4]: v" quantity="IT_L6/4/CELL_IT/v" scale="1mV" color="#19806f" timeScale="1ms"/>
-            <Line id="IT_L6[5]: v" quantity="IT_L6/5/CELL_IT/v" scale="1mV" color="#260512" timeScale="1ms"/>
-            <Line id="IT_L6[6]: v" quantity="IT_L6/6/CELL_IT/v" scale="1mV" color="#34cd4f" timeScale="1ms"/>
-            <Line id="IT_L6[7]: v" quantity="IT_L6/7/CELL_IT/v" scale="1mV" color="#91e19c" timeScale="1ms"/>
-            <Line id="IT_L6[8]: v" quantity="IT_L6/8/CELL_IT/v" scale="1mV" color="#5be070" timeScale="1ms"/>
-            <Line id="IT_L6[9]: v" quantity="IT_L6/9/CELL_IT/v" scale="1mV" color="#fa4c52" timeScale="1ms"/>
-            <Line id="IT_L6[10]: v" quantity="IT_L6/10/CELL_IT/v" scale="1mV" color="#48bb6e" timeScale="1ms"/>
-            <Line id="IT_L6[11]: v" quantity="IT_L6/11/CELL_IT/v" scale="1mV" color="#db3522" timeScale="1ms"/>
-            <Line id="IT_L6[12]: v" quantity="IT_L6/12/CELL_IT/v" scale="1mV" color="#177e84" timeScale="1ms"/>
-            <Line id="IT_L6[13]: v" quantity="IT_L6/13/CELL_IT/v" scale="1mV" color="#87111a" timeScale="1ms"/>
-            <Line id="IT_L6[14]: v" quantity="IT_L6/14/CELL_IT/v" scale="1mV" color="#8caa59" timeScale="1ms"/>
-            <Line id="IT_L6[15]: v" quantity="IT_L6/15/CELL_IT/v" scale="1mV" color="#a8448d" timeScale="1ms"/>
-            <Line id="IT_L6[16]: v" quantity="IT_L6/16/CELL_IT/v" scale="1mV" color="#68feb0" timeScale="1ms"/>
-            <Line id="IT_L6[17]: v" quantity="IT_L6/17/CELL_IT/v" scale="1mV" color="#862427" timeScale="1ms"/>
-            <Line id="IT_L6[18]: v" quantity="IT_L6/18/CELL_IT/v" scale="1mV" color="#c71eb8" timeScale="1ms"/>
-            <Line id="IT_L6[19]: v" quantity="IT_L6/19/CELL_IT/v" scale="1mV" color="#26cf61" timeScale="1ms"/>
-            <Line id="IT_L6[20]: v" quantity="IT_L6/20/CELL_IT/v" scale="1mV" color="#881836" timeScale="1ms"/>
-            <Line id="IT_L6[21]: v" quantity="IT_L6/21/CELL_IT/v" scale="1mV" color="#968c80" timeScale="1ms"/>
-            <Line id="IT_L6[22]: v" quantity="IT_L6/22/CELL_IT/v" scale="1mV" color="#c81d4c" timeScale="1ms"/>
-            <Line id="IT_L6[23]: v" quantity="IT_L6/23/CELL_IT/v" scale="1mV" color="#29e8fa" timeScale="1ms"/>
-            <Line id="IT_L6[24]: v" quantity="IT_L6/24/CELL_IT/v" scale="1mV" color="#6a2254" timeScale="1ms"/>
-            <Line id="IT_L6[25]: v" quantity="IT_L6/25/CELL_IT/v" scale="1mV" color="#064a2c" timeScale="1ms"/>
-            <Line id="IT_L6[26]: v" quantity="IT_L6/26/CELL_IT/v" scale="1mV" color="#a99d45" timeScale="1ms"/>
-            <Line id="IT_L6[27]: v" quantity="IT_L6/27/CELL_IT/v" scale="1mV" color="#de372e" timeScale="1ms"/>
-            <Line id="IT_L6[28]: v" quantity="IT_L6/28/CELL_IT/v" scale="1mV" color="#5a80c8" timeScale="1ms"/>
-            <Line id="IT_L6[29]: v" quantity="IT_L6/29/CELL_IT/v" scale="1mV" color="#d0f6cb" timeScale="1ms"/>
-            <Line id="IT_L6[30]: v" quantity="IT_L6/30/CELL_IT/v" scale="1mV" color="#a8748e" timeScale="1ms"/>
+        <Display id="DispPop__IT_L6" title="Membrane potentials of cells in IT_L6" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="IT_L6[0]: v" quantity="IT_L6/0/CELL_IT/v" scale="1mV" color="#14b607" timeScale="1ms"/>
+            <Line id="IT_L6[1]: v" quantity="IT_L6/1/CELL_IT/v" scale="1mV" color="#d6a8f8" timeScale="1ms"/>
+            <Line id="IT_L6[2]: v" quantity="IT_L6/2/CELL_IT/v" scale="1mV" color="#61234e" timeScale="1ms"/>
+            <Line id="IT_L6[3]: v" quantity="IT_L6/3/CELL_IT/v" scale="1mV" color="#52307d" timeScale="1ms"/>
+            <Line id="IT_L6[4]: v" quantity="IT_L6/4/CELL_IT/v" scale="1mV" color="#29e922" timeScale="1ms"/>
+            <Line id="IT_L6[5]: v" quantity="IT_L6/5/CELL_IT/v" scale="1mV" color="#4922ed" timeScale="1ms"/>
+            <Line id="IT_L6[6]: v" quantity="IT_L6/6/CELL_IT/v" scale="1mV" color="#9cef2c" timeScale="1ms"/>
+            <Line id="IT_L6[7]: v" quantity="IT_L6/7/CELL_IT/v" scale="1mV" color="#76e8f7" timeScale="1ms"/>
+            <Line id="IT_L6[8]: v" quantity="IT_L6/8/CELL_IT/v" scale="1mV" color="#aa6902" timeScale="1ms"/>
+            <Line id="IT_L6[9]: v" quantity="IT_L6/9/CELL_IT/v" scale="1mV" color="#d93cc5" timeScale="1ms"/>
+            <Line id="IT_L6[10]: v" quantity="IT_L6/10/CELL_IT/v" scale="1mV" color="#66dd0e" timeScale="1ms"/>
+            <Line id="IT_L6[11]: v" quantity="IT_L6/11/CELL_IT/v" scale="1mV" color="#071826" timeScale="1ms"/>
+            <Line id="IT_L6[12]: v" quantity="IT_L6/12/CELL_IT/v" scale="1mV" color="#4cbff9" timeScale="1ms"/>
+            <Line id="IT_L6[13]: v" quantity="IT_L6/13/CELL_IT/v" scale="1mV" color="#3a3281" timeScale="1ms"/>
+            <Line id="IT_L6[14]: v" quantity="IT_L6/14/CELL_IT/v" scale="1mV" color="#102432" timeScale="1ms"/>
+            <Line id="IT_L6[15]: v" quantity="IT_L6/15/CELL_IT/v" scale="1mV" color="#ae9b10" timeScale="1ms"/>
+            <Line id="IT_L6[16]: v" quantity="IT_L6/16/CELL_IT/v" scale="1mV" color="#c8c63b" timeScale="1ms"/>
+            <Line id="IT_L6[17]: v" quantity="IT_L6/17/CELL_IT/v" scale="1mV" color="#a381a5" timeScale="1ms"/>
+            <Line id="IT_L6[18]: v" quantity="IT_L6/18/CELL_IT/v" scale="1mV" color="#14e554" timeScale="1ms"/>
+            <Line id="IT_L6[19]: v" quantity="IT_L6/19/CELL_IT/v" scale="1mV" color="#7b9340" timeScale="1ms"/>
+            <Line id="IT_L6[20]: v" quantity="IT_L6/20/CELL_IT/v" scale="1mV" color="#3300df" timeScale="1ms"/>
+            <Line id="IT_L6[21]: v" quantity="IT_L6/21/CELL_IT/v" scale="1mV" color="#f82266" timeScale="1ms"/>
+            <Line id="IT_L6[22]: v" quantity="IT_L6/22/CELL_IT/v" scale="1mV" color="#4c0a24" timeScale="1ms"/>
+            <Line id="IT_L6[23]: v" quantity="IT_L6/23/CELL_IT/v" scale="1mV" color="#699a9f" timeScale="1ms"/>
+            <Line id="IT_L6[24]: v" quantity="IT_L6/24/CELL_IT/v" scale="1mV" color="#84afe3" timeScale="1ms"/>
+            <Line id="IT_L6[25]: v" quantity="IT_L6/25/CELL_IT/v" scale="1mV" color="#b7c0e1" timeScale="1ms"/>
+            <Line id="IT_L6[26]: v" quantity="IT_L6/26/CELL_IT/v" scale="1mV" color="#5117f7" timeScale="1ms"/>
+            <Line id="IT_L6[27]: v" quantity="IT_L6/27/CELL_IT/v" scale="1mV" color="#9176dc" timeScale="1ms"/>
+            <Line id="IT_L6[28]: v" quantity="IT_L6/28/CELL_IT/v" scale="1mV" color="#13766c" timeScale="1ms"/>
+            <Line id="IT_L6[29]: v" quantity="IT_L6/29/CELL_IT/v" scale="1mV" color="#2efd08" timeScale="1ms"/>
+            <Line id="IT_L6[30]: v" quantity="IT_L6/30/CELL_IT/v" scale="1mV" color="#301ee5" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__CT_L6" title="Membrane potentials of cells in CT_L6" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="CT_L6[0]: v" quantity="CT_L6/0/CELL_CT/v" scale="1mV" color="#045ca3" timeScale="1ms"/>
-            <Line id="CT_L6[1]: v" quantity="CT_L6/1/CELL_CT/v" scale="1mV" color="#7861a5" timeScale="1ms"/>
-            <Line id="CT_L6[2]: v" quantity="CT_L6/2/CELL_CT/v" scale="1mV" color="#0bb58d" timeScale="1ms"/>
-            <Line id="CT_L6[3]: v" quantity="CT_L6/3/CELL_CT/v" scale="1mV" color="#502f52" timeScale="1ms"/>
-            <Line id="CT_L6[4]: v" quantity="CT_L6/4/CELL_CT/v" scale="1mV" color="#ccf6ae" timeScale="1ms"/>
-            <Line id="CT_L6[5]: v" quantity="CT_L6/5/CELL_CT/v" scale="1mV" color="#201e28" timeScale="1ms"/>
-            <Line id="CT_L6[6]: v" quantity="CT_L6/6/CELL_CT/v" scale="1mV" color="#90bc0e" timeScale="1ms"/>
-            <Line id="CT_L6[7]: v" quantity="CT_L6/7/CELL_CT/v" scale="1mV" color="#0e851f" timeScale="1ms"/>
-            <Line id="CT_L6[8]: v" quantity="CT_L6/8/CELL_CT/v" scale="1mV" color="#1c1d86" timeScale="1ms"/>
-            <Line id="CT_L6[9]: v" quantity="CT_L6/9/CELL_CT/v" scale="1mV" color="#f3c10a" timeScale="1ms"/>
-            <Line id="CT_L6[10]: v" quantity="CT_L6/10/CELL_CT/v" scale="1mV" color="#18ae27" timeScale="1ms"/>
-            <Line id="CT_L6[11]: v" quantity="CT_L6/11/CELL_CT/v" scale="1mV" color="#2c92bd" timeScale="1ms"/>
-            <Line id="CT_L6[12]: v" quantity="CT_L6/12/CELL_CT/v" scale="1mV" color="#f0a8c3" timeScale="1ms"/>
-            <Line id="CT_L6[13]: v" quantity="CT_L6/13/CELL_CT/v" scale="1mV" color="#4f10da" timeScale="1ms"/>
-            <Line id="CT_L6[14]: v" quantity="CT_L6/14/CELL_CT/v" scale="1mV" color="#376bec" timeScale="1ms"/>
-            <Line id="CT_L6[15]: v" quantity="CT_L6/15/CELL_CT/v" scale="1mV" color="#18b151" timeScale="1ms"/>
-            <Line id="CT_L6[16]: v" quantity="CT_L6/16/CELL_CT/v" scale="1mV" color="#7fcf87" timeScale="1ms"/>
-            <Line id="CT_L6[17]: v" quantity="CT_L6/17/CELL_CT/v" scale="1mV" color="#0f137e" timeScale="1ms"/>
-            <Line id="CT_L6[18]: v" quantity="CT_L6/18/CELL_CT/v" scale="1mV" color="#38556b" timeScale="1ms"/>
-            <Line id="CT_L6[19]: v" quantity="CT_L6/19/CELL_CT/v" scale="1mV" color="#38dcc1" timeScale="1ms"/>
-            <Line id="CT_L6[20]: v" quantity="CT_L6/20/CELL_CT/v" scale="1mV" color="#bec1e4" timeScale="1ms"/>
-            <Line id="CT_L6[21]: v" quantity="CT_L6/21/CELL_CT/v" scale="1mV" color="#29815f" timeScale="1ms"/>
-            <Line id="CT_L6[22]: v" quantity="CT_L6/22/CELL_CT/v" scale="1mV" color="#969031" timeScale="1ms"/>
-            <Line id="CT_L6[23]: v" quantity="CT_L6/23/CELL_CT/v" scale="1mV" color="#3ddf7b" timeScale="1ms"/>
-            <Line id="CT_L6[24]: v" quantity="CT_L6/24/CELL_CT/v" scale="1mV" color="#fe6b0f" timeScale="1ms"/>
-            <Line id="CT_L6[25]: v" quantity="CT_L6/25/CELL_CT/v" scale="1mV" color="#fd9a77" timeScale="1ms"/>
-            <Line id="CT_L6[26]: v" quantity="CT_L6/26/CELL_CT/v" scale="1mV" color="#ec81ac" timeScale="1ms"/>
-            <Line id="CT_L6[27]: v" quantity="CT_L6/27/CELL_CT/v" scale="1mV" color="#e66be0" timeScale="1ms"/>
-            <Line id="CT_L6[28]: v" quantity="CT_L6/28/CELL_CT/v" scale="1mV" color="#8dbee3" timeScale="1ms"/>
-            <Line id="CT_L6[29]: v" quantity="CT_L6/29/CELL_CT/v" scale="1mV" color="#ee4c8d" timeScale="1ms"/>
-            <Line id="CT_L6[30]: v" quantity="CT_L6/30/CELL_CT/v" scale="1mV" color="#a3cddd" timeScale="1ms"/>
+        <Display id="DispPop__CT_L6" title="Membrane potentials of cells in CT_L6" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="CT_L6[0]: v" quantity="CT_L6/0/CELL_CT/v" scale="1mV" color="#6a26de" timeScale="1ms"/>
+            <Line id="CT_L6[1]: v" quantity="CT_L6/1/CELL_CT/v" scale="1mV" color="#d1fd61" timeScale="1ms"/>
+            <Line id="CT_L6[2]: v" quantity="CT_L6/2/CELL_CT/v" scale="1mV" color="#07ca1c" timeScale="1ms"/>
+            <Line id="CT_L6[3]: v" quantity="CT_L6/3/CELL_CT/v" scale="1mV" color="#4d9ec2" timeScale="1ms"/>
+            <Line id="CT_L6[4]: v" quantity="CT_L6/4/CELL_CT/v" scale="1mV" color="#a6955a" timeScale="1ms"/>
+            <Line id="CT_L6[5]: v" quantity="CT_L6/5/CELL_CT/v" scale="1mV" color="#53d1f4" timeScale="1ms"/>
+            <Line id="CT_L6[6]: v" quantity="CT_L6/6/CELL_CT/v" scale="1mV" color="#ea3a1b" timeScale="1ms"/>
+            <Line id="CT_L6[7]: v" quantity="CT_L6/7/CELL_CT/v" scale="1mV" color="#d444a9" timeScale="1ms"/>
+            <Line id="CT_L6[8]: v" quantity="CT_L6/8/CELL_CT/v" scale="1mV" color="#e1151a" timeScale="1ms"/>
+            <Line id="CT_L6[9]: v" quantity="CT_L6/9/CELL_CT/v" scale="1mV" color="#0c9458" timeScale="1ms"/>
+            <Line id="CT_L6[10]: v" quantity="CT_L6/10/CELL_CT/v" scale="1mV" color="#be5631" timeScale="1ms"/>
+            <Line id="CT_L6[11]: v" quantity="CT_L6/11/CELL_CT/v" scale="1mV" color="#0e0126" timeScale="1ms"/>
+            <Line id="CT_L6[12]: v" quantity="CT_L6/12/CELL_CT/v" scale="1mV" color="#c6e0d1" timeScale="1ms"/>
+            <Line id="CT_L6[13]: v" quantity="CT_L6/13/CELL_CT/v" scale="1mV" color="#b50190" timeScale="1ms"/>
+            <Line id="CT_L6[14]: v" quantity="CT_L6/14/CELL_CT/v" scale="1mV" color="#08b946" timeScale="1ms"/>
+            <Line id="CT_L6[15]: v" quantity="CT_L6/15/CELL_CT/v" scale="1mV" color="#a37319" timeScale="1ms"/>
+            <Line id="CT_L6[16]: v" quantity="CT_L6/16/CELL_CT/v" scale="1mV" color="#f0c34b" timeScale="1ms"/>
+            <Line id="CT_L6[17]: v" quantity="CT_L6/17/CELL_CT/v" scale="1mV" color="#e012c8" timeScale="1ms"/>
+            <Line id="CT_L6[18]: v" quantity="CT_L6/18/CELL_CT/v" scale="1mV" color="#176b1a" timeScale="1ms"/>
+            <Line id="CT_L6[19]: v" quantity="CT_L6/19/CELL_CT/v" scale="1mV" color="#a3559d" timeScale="1ms"/>
+            <Line id="CT_L6[20]: v" quantity="CT_L6/20/CELL_CT/v" scale="1mV" color="#a05ea4" timeScale="1ms"/>
+            <Line id="CT_L6[21]: v" quantity="CT_L6/21/CELL_CT/v" scale="1mV" color="#c769a6" timeScale="1ms"/>
+            <Line id="CT_L6[22]: v" quantity="CT_L6/22/CELL_CT/v" scale="1mV" color="#98d0e5" timeScale="1ms"/>
+            <Line id="CT_L6[23]: v" quantity="CT_L6/23/CELL_CT/v" scale="1mV" color="#403c50" timeScale="1ms"/>
+            <Line id="CT_L6[24]: v" quantity="CT_L6/24/CELL_CT/v" scale="1mV" color="#c26a5d" timeScale="1ms"/>
+            <Line id="CT_L6[25]: v" quantity="CT_L6/25/CELL_CT/v" scale="1mV" color="#1d0a3f" timeScale="1ms"/>
+            <Line id="CT_L6[26]: v" quantity="CT_L6/26/CELL_CT/v" scale="1mV" color="#383b0d" timeScale="1ms"/>
+            <Line id="CT_L6[27]: v" quantity="CT_L6/27/CELL_CT/v" scale="1mV" color="#f8ebbd" timeScale="1ms"/>
+            <Line id="CT_L6[28]: v" quantity="CT_L6/28/CELL_CT/v" scale="1mV" color="#3cc5e0" timeScale="1ms"/>
+            <Line id="CT_L6[29]: v" quantity="CT_L6/29/CELL_CT/v" scale="1mV" color="#315c4e" timeScale="1ms"/>
+            <Line id="CT_L6[30]: v" quantity="CT_L6/30/CELL_CT/v" scale="1mV" color="#59257b" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__PV_L23" title="Membrane potentials of cells in PV_L23" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="PV_L23[0]: v" quantity="PV_L23/0/CELL_PV/v" scale="1mV" color="#28cdd5" timeScale="1ms"/>
-            <Line id="PV_L23[1]: v" quantity="PV_L23/1/CELL_PV/v" scale="1mV" color="#bb7b32" timeScale="1ms"/>
-            <Line id="PV_L23[2]: v" quantity="PV_L23/2/CELL_PV/v" scale="1mV" color="#d96ad6" timeScale="1ms"/>
-            <Line id="PV_L23[3]: v" quantity="PV_L23/3/CELL_PV/v" scale="1mV" color="#03b318" timeScale="1ms"/>
-            <Line id="PV_L23[4]: v" quantity="PV_L23/4/CELL_PV/v" scale="1mV" color="#31e638" timeScale="1ms"/>
-            <Line id="PV_L23[5]: v" quantity="PV_L23/5/CELL_PV/v" scale="1mV" color="#c8c7e5" timeScale="1ms"/>
-            <Line id="PV_L23[6]: v" quantity="PV_L23/6/CELL_PV/v" scale="1mV" color="#c49ee9" timeScale="1ms"/>
+        <Display id="DispPop__PV_L23" title="Membrane potentials of cells in PV_L23" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="PV_L23[0]: v" quantity="PV_L23/0/CELL_PV/v" scale="1mV" color="#11077a" timeScale="1ms"/>
+            <Line id="PV_L23[1]: v" quantity="PV_L23/1/CELL_PV/v" scale="1mV" color="#1a38d4" timeScale="1ms"/>
+            <Line id="PV_L23[2]: v" quantity="PV_L23/2/CELL_PV/v" scale="1mV" color="#9e21b4" timeScale="1ms"/>
+            <Line id="PV_L23[3]: v" quantity="PV_L23/3/CELL_PV/v" scale="1mV" color="#6ed7d8" timeScale="1ms"/>
+            <Line id="PV_L23[4]: v" quantity="PV_L23/4/CELL_PV/v" scale="1mV" color="#3162a2" timeScale="1ms"/>
+            <Line id="PV_L23[5]: v" quantity="PV_L23/5/CELL_PV/v" scale="1mV" color="#ebbf97" timeScale="1ms"/>
+            <Line id="PV_L23[6]: v" quantity="PV_L23/6/CELL_PV/v" scale="1mV" color="#ff9f0e" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__SOM_L23" title="Membrane potentials of cells in SOM_L23" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="SOM_L23[0]: v" quantity="SOM_L23/0/CELL_SOM/v" scale="1mV" color="#8f8236" timeScale="1ms"/>
-            <Line id="SOM_L23[1]: v" quantity="SOM_L23/1/CELL_SOM/v" scale="1mV" color="#1f4fb4" timeScale="1ms"/>
-            <Line id="SOM_L23[2]: v" quantity="SOM_L23/2/CELL_SOM/v" scale="1mV" color="#43e7a2" timeScale="1ms"/>
-            <Line id="SOM_L23[3]: v" quantity="SOM_L23/3/CELL_SOM/v" scale="1mV" color="#3c57d6" timeScale="1ms"/>
-            <Line id="SOM_L23[4]: v" quantity="SOM_L23/4/CELL_SOM/v" scale="1mV" color="#fb078b" timeScale="1ms"/>
-            <Line id="SOM_L23[5]: v" quantity="SOM_L23/5/CELL_SOM/v" scale="1mV" color="#39aee1" timeScale="1ms"/>
-            <Line id="SOM_L23[6]: v" quantity="SOM_L23/6/CELL_SOM/v" scale="1mV" color="#5ec053" timeScale="1ms"/>
+        <Display id="DispPop__SOM_L23" title="Membrane potentials of cells in SOM_L23" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="SOM_L23[0]: v" quantity="SOM_L23/0/CELL_SOM/v" scale="1mV" color="#f02d7c" timeScale="1ms"/>
+            <Line id="SOM_L23[1]: v" quantity="SOM_L23/1/CELL_SOM/v" scale="1mV" color="#1e26fc" timeScale="1ms"/>
+            <Line id="SOM_L23[2]: v" quantity="SOM_L23/2/CELL_SOM/v" scale="1mV" color="#d8c21d" timeScale="1ms"/>
+            <Line id="SOM_L23[3]: v" quantity="SOM_L23/3/CELL_SOM/v" scale="1mV" color="#70aad6" timeScale="1ms"/>
+            <Line id="SOM_L23[4]: v" quantity="SOM_L23/4/CELL_SOM/v" scale="1mV" color="#71b982" timeScale="1ms"/>
+            <Line id="SOM_L23[5]: v" quantity="SOM_L23/5/CELL_SOM/v" scale="1mV" color="#a8b721" timeScale="1ms"/>
+            <Line id="SOM_L23[6]: v" quantity="SOM_L23/6/CELL_SOM/v" scale="1mV" color="#5302bf" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__PV_L5" title="Membrane potentials of cells in PV_L5" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="PV_L5[0]: v" quantity="PV_L5/0/CELL_PV/v" scale="1mV" color="#b06475" timeScale="1ms"/>
-            <Line id="PV_L5[1]: v" quantity="PV_L5/1/CELL_PV/v" scale="1mV" color="#a9c544" timeScale="1ms"/>
-            <Line id="PV_L5[2]: v" quantity="PV_L5/2/CELL_PV/v" scale="1mV" color="#8febd8" timeScale="1ms"/>
-            <Line id="PV_L5[3]: v" quantity="PV_L5/3/CELL_PV/v" scale="1mV" color="#a692be" timeScale="1ms"/>
-            <Line id="PV_L5[4]: v" quantity="PV_L5/4/CELL_PV/v" scale="1mV" color="#dd710d" timeScale="1ms"/>
-            <Line id="PV_L5[5]: v" quantity="PV_L5/5/CELL_PV/v" scale="1mV" color="#e9f8fc" timeScale="1ms"/>
-            <Line id="PV_L5[6]: v" quantity="PV_L5/6/CELL_PV/v" scale="1mV" color="#1bc32d" timeScale="1ms"/>
-            <Line id="PV_L5[7]: v" quantity="PV_L5/7/CELL_PV/v" scale="1mV" color="#07b67c" timeScale="1ms"/>
-            <Line id="PV_L5[8]: v" quantity="PV_L5/8/CELL_PV/v" scale="1mV" color="#e9e110" timeScale="1ms"/>
-            <Line id="PV_L5[9]: v" quantity="PV_L5/9/CELL_PV/v" scale="1mV" color="#e90726" timeScale="1ms"/>
-            <Line id="PV_L5[10]: v" quantity="PV_L5/10/CELL_PV/v" scale="1mV" color="#5e33e8" timeScale="1ms"/>
-            <Line id="PV_L5[11]: v" quantity="PV_L5/11/CELL_PV/v" scale="1mV" color="#66528d" timeScale="1ms"/>
-            <Line id="PV_L5[12]: v" quantity="PV_L5/12/CELL_PV/v" scale="1mV" color="#af5641" timeScale="1ms"/>
-            <Line id="PV_L5[13]: v" quantity="PV_L5/13/CELL_PV/v" scale="1mV" color="#6be805" timeScale="1ms"/>
-            <Line id="PV_L5[14]: v" quantity="PV_L5/14/CELL_PV/v" scale="1mV" color="#1c6c52" timeScale="1ms"/>
+        <Display id="DispPop__PV_L5" title="Membrane potentials of cells in PV_L5" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="PV_L5[0]: v" quantity="PV_L5/0/CELL_PV/v" scale="1mV" color="#c432e1" timeScale="1ms"/>
+            <Line id="PV_L5[1]: v" quantity="PV_L5/1/CELL_PV/v" scale="1mV" color="#7bbef7" timeScale="1ms"/>
+            <Line id="PV_L5[2]: v" quantity="PV_L5/2/CELL_PV/v" scale="1mV" color="#f17192" timeScale="1ms"/>
+            <Line id="PV_L5[3]: v" quantity="PV_L5/3/CELL_PV/v" scale="1mV" color="#5c5fee" timeScale="1ms"/>
+            <Line id="PV_L5[4]: v" quantity="PV_L5/4/CELL_PV/v" scale="1mV" color="#6abc6b" timeScale="1ms"/>
+            <Line id="PV_L5[5]: v" quantity="PV_L5/5/CELL_PV/v" scale="1mV" color="#6d818b" timeScale="1ms"/>
+            <Line id="PV_L5[6]: v" quantity="PV_L5/6/CELL_PV/v" scale="1mV" color="#519bab" timeScale="1ms"/>
+            <Line id="PV_L5[7]: v" quantity="PV_L5/7/CELL_PV/v" scale="1mV" color="#e930e3" timeScale="1ms"/>
+            <Line id="PV_L5[8]: v" quantity="PV_L5/8/CELL_PV/v" scale="1mV" color="#076630" timeScale="1ms"/>
+            <Line id="PV_L5[9]: v" quantity="PV_L5/9/CELL_PV/v" scale="1mV" color="#63cc70" timeScale="1ms"/>
+            <Line id="PV_L5[10]: v" quantity="PV_L5/10/CELL_PV/v" scale="1mV" color="#257c20" timeScale="1ms"/>
+            <Line id="PV_L5[11]: v" quantity="PV_L5/11/CELL_PV/v" scale="1mV" color="#23b622" timeScale="1ms"/>
+            <Line id="PV_L5[12]: v" quantity="PV_L5/12/CELL_PV/v" scale="1mV" color="#3e9f69" timeScale="1ms"/>
+            <Line id="PV_L5[13]: v" quantity="PV_L5/13/CELL_PV/v" scale="1mV" color="#305d87" timeScale="1ms"/>
+            <Line id="PV_L5[14]: v" quantity="PV_L5/14/CELL_PV/v" scale="1mV" color="#87cf45" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__SOM_L5" title="Membrane potentials of cells in SOM_L5" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="SOM_L5[0]: v" quantity="SOM_L5/0/CELL_SOM/v" scale="1mV" color="#3fccf7" timeScale="1ms"/>
-            <Line id="SOM_L5[1]: v" quantity="SOM_L5/1/CELL_SOM/v" scale="1mV" color="#4dc094" timeScale="1ms"/>
-            <Line id="SOM_L5[2]: v" quantity="SOM_L5/2/CELL_SOM/v" scale="1mV" color="#90f23c" timeScale="1ms"/>
-            <Line id="SOM_L5[3]: v" quantity="SOM_L5/3/CELL_SOM/v" scale="1mV" color="#2bd47c" timeScale="1ms"/>
-            <Line id="SOM_L5[4]: v" quantity="SOM_L5/4/CELL_SOM/v" scale="1mV" color="#ba87b5" timeScale="1ms"/>
-            <Line id="SOM_L5[5]: v" quantity="SOM_L5/5/CELL_SOM/v" scale="1mV" color="#f84417" timeScale="1ms"/>
-            <Line id="SOM_L5[6]: v" quantity="SOM_L5/6/CELL_SOM/v" scale="1mV" color="#62852c" timeScale="1ms"/>
-            <Line id="SOM_L5[7]: v" quantity="SOM_L5/7/CELL_SOM/v" scale="1mV" color="#920026" timeScale="1ms"/>
-            <Line id="SOM_L5[8]: v" quantity="SOM_L5/8/CELL_SOM/v" scale="1mV" color="#a2e109" timeScale="1ms"/>
-            <Line id="SOM_L5[9]: v" quantity="SOM_L5/9/CELL_SOM/v" scale="1mV" color="#cc4883" timeScale="1ms"/>
-            <Line id="SOM_L5[10]: v" quantity="SOM_L5/10/CELL_SOM/v" scale="1mV" color="#a10d94" timeScale="1ms"/>
-            <Line id="SOM_L5[11]: v" quantity="SOM_L5/11/CELL_SOM/v" scale="1mV" color="#843aac" timeScale="1ms"/>
-            <Line id="SOM_L5[12]: v" quantity="SOM_L5/12/CELL_SOM/v" scale="1mV" color="#b872d8" timeScale="1ms"/>
-            <Line id="SOM_L5[13]: v" quantity="SOM_L5/13/CELL_SOM/v" scale="1mV" color="#0614cf" timeScale="1ms"/>
-            <Line id="SOM_L5[14]: v" quantity="SOM_L5/14/CELL_SOM/v" scale="1mV" color="#f09646" timeScale="1ms"/>
+        <Display id="DispPop__SOM_L5" title="Membrane potentials of cells in SOM_L5" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="SOM_L5[0]: v" quantity="SOM_L5/0/CELL_SOM/v" scale="1mV" color="#78afad" timeScale="1ms"/>
+            <Line id="SOM_L5[1]: v" quantity="SOM_L5/1/CELL_SOM/v" scale="1mV" color="#6d5bbc" timeScale="1ms"/>
+            <Line id="SOM_L5[2]: v" quantity="SOM_L5/2/CELL_SOM/v" scale="1mV" color="#8e24a8" timeScale="1ms"/>
+            <Line id="SOM_L5[3]: v" quantity="SOM_L5/3/CELL_SOM/v" scale="1mV" color="#735dc3" timeScale="1ms"/>
+            <Line id="SOM_L5[4]: v" quantity="SOM_L5/4/CELL_SOM/v" scale="1mV" color="#fecea5" timeScale="1ms"/>
+            <Line id="SOM_L5[5]: v" quantity="SOM_L5/5/CELL_SOM/v" scale="1mV" color="#bd80a6" timeScale="1ms"/>
+            <Line id="SOM_L5[6]: v" quantity="SOM_L5/6/CELL_SOM/v" scale="1mV" color="#e4ba3a" timeScale="1ms"/>
+            <Line id="SOM_L5[7]: v" quantity="SOM_L5/7/CELL_SOM/v" scale="1mV" color="#ce9d9f" timeScale="1ms"/>
+            <Line id="SOM_L5[8]: v" quantity="SOM_L5/8/CELL_SOM/v" scale="1mV" color="#7f8e65" timeScale="1ms"/>
+            <Line id="SOM_L5[9]: v" quantity="SOM_L5/9/CELL_SOM/v" scale="1mV" color="#e6b541" timeScale="1ms"/>
+            <Line id="SOM_L5[10]: v" quantity="SOM_L5/10/CELL_SOM/v" scale="1mV" color="#37865a" timeScale="1ms"/>
+            <Line id="SOM_L5[11]: v" quantity="SOM_L5/11/CELL_SOM/v" scale="1mV" color="#0f6cf9" timeScale="1ms"/>
+            <Line id="SOM_L5[12]: v" quantity="SOM_L5/12/CELL_SOM/v" scale="1mV" color="#bc67d0" timeScale="1ms"/>
+            <Line id="SOM_L5[13]: v" quantity="SOM_L5/13/CELL_SOM/v" scale="1mV" color="#7a4857" timeScale="1ms"/>
+            <Line id="SOM_L5[14]: v" quantity="SOM_L5/14/CELL_SOM/v" scale="1mV" color="#cca51a" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__PV_L6" title="Membrane potentials of cells in PV_L6" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="PV_L6[0]: v" quantity="PV_L6/0/CELL_PV/v" scale="1mV" color="#e60cca" timeScale="1ms"/>
-            <Line id="PV_L6[1]: v" quantity="PV_L6/1/CELL_PV/v" scale="1mV" color="#b19e09" timeScale="1ms"/>
-            <Line id="PV_L6[2]: v" quantity="PV_L6/2/CELL_PV/v" scale="1mV" color="#339d4e" timeScale="1ms"/>
-            <Line id="PV_L6[3]: v" quantity="PV_L6/3/CELL_PV/v" scale="1mV" color="#a02798" timeScale="1ms"/>
-            <Line id="PV_L6[4]: v" quantity="PV_L6/4/CELL_PV/v" scale="1mV" color="#073321" timeScale="1ms"/>
-            <Line id="PV_L6[5]: v" quantity="PV_L6/5/CELL_PV/v" scale="1mV" color="#65cfa1" timeScale="1ms"/>
-            <Line id="PV_L6[6]: v" quantity="PV_L6/6/CELL_PV/v" scale="1mV" color="#372273" timeScale="1ms"/>
+        <Display id="DispPop__PV_L6" title="Membrane potentials of cells in PV_L6" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="PV_L6[0]: v" quantity="PV_L6/0/CELL_PV/v" scale="1mV" color="#fc86ca" timeScale="1ms"/>
+            <Line id="PV_L6[1]: v" quantity="PV_L6/1/CELL_PV/v" scale="1mV" color="#2a32b8" timeScale="1ms"/>
+            <Line id="PV_L6[2]: v" quantity="PV_L6/2/CELL_PV/v" scale="1mV" color="#d7d00b" timeScale="1ms"/>
+            <Line id="PV_L6[3]: v" quantity="PV_L6/3/CELL_PV/v" scale="1mV" color="#ee5d90" timeScale="1ms"/>
+            <Line id="PV_L6[4]: v" quantity="PV_L6/4/CELL_PV/v" scale="1mV" color="#38d8a4" timeScale="1ms"/>
+            <Line id="PV_L6[5]: v" quantity="PV_L6/5/CELL_PV/v" scale="1mV" color="#a7cfbd" timeScale="1ms"/>
+            <Line id="PV_L6[6]: v" quantity="PV_L6/6/CELL_PV/v" scale="1mV" color="#7f99ef" timeScale="1ms"/>
         </Display>
         
-        <Display id="DispPop__SOM_L6" title="Membrane potentials of cells in SOM_L6" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-90" ymax="50">
-            <Line id="SOM_L6[0]: v" quantity="SOM_L6/0/CELL_SOM/v" scale="1mV" color="#8fad43" timeScale="1ms"/>
-            <Line id="SOM_L6[1]: v" quantity="SOM_L6/1/CELL_SOM/v" scale="1mV" color="#401c00" timeScale="1ms"/>
-            <Line id="SOM_L6[2]: v" quantity="SOM_L6/2/CELL_SOM/v" scale="1mV" color="#179fb7" timeScale="1ms"/>
-            <Line id="SOM_L6[3]: v" quantity="SOM_L6/3/CELL_SOM/v" scale="1mV" color="#cb3aae" timeScale="1ms"/>
-            <Line id="SOM_L6[4]: v" quantity="SOM_L6/4/CELL_SOM/v" scale="1mV" color="#405355" timeScale="1ms"/>
-            <Line id="SOM_L6[5]: v" quantity="SOM_L6/5/CELL_SOM/v" scale="1mV" color="#8f492c" timeScale="1ms"/>
-            <Line id="SOM_L6[6]: v" quantity="SOM_L6/6/CELL_SOM/v" scale="1mV" color="#043c86" timeScale="1ms"/>
+        <Display id="DispPop__SOM_L6" title="Membrane potentials of cells in SOM_L6" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-90" ymax="50">
+            <Line id="SOM_L6[0]: v" quantity="SOM_L6/0/CELL_SOM/v" scale="1mV" color="#e37015" timeScale="1ms"/>
+            <Line id="SOM_L6[1]: v" quantity="SOM_L6/1/CELL_SOM/v" scale="1mV" color="#9b8129" timeScale="1ms"/>
+            <Line id="SOM_L6[2]: v" quantity="SOM_L6/2/CELL_SOM/v" scale="1mV" color="#d96988" timeScale="1ms"/>
+            <Line id="SOM_L6[3]: v" quantity="SOM_L6/3/CELL_SOM/v" scale="1mV" color="#3fcc72" timeScale="1ms"/>
+            <Line id="SOM_L6[4]: v" quantity="SOM_L6/4/CELL_SOM/v" scale="1mV" color="#57a8f8" timeScale="1ms"/>
+            <Line id="SOM_L6[5]: v" quantity="SOM_L6/5/CELL_SOM/v" scale="1mV" color="#6f9906" timeScale="1ms"/>
+            <Line id="SOM_L6[6]: v" quantity="SOM_L6/6/CELL_SOM/v" scale="1mV" color="#c50a58" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Volts_file__IT_L23" fileName="Sim_M1.IT_L23.v.dat">

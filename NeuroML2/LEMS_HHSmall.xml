@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.5.6 (libNeuroML v0.2.52)
+        This LEMS file has been automatically generated using PyNeuroML v0.5.7 (libNeuroML v0.2.53)
 
      -->
     
@@ -19,9 +19,9 @@
     <Simulation id="Sim_HHSmall" length="300.0ms" step="0.0025ms" target="HHSmall" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__PYR" title="Membrane potentials of cells in PYR" timeScale="1ms" xmin="-30.0" xmax="330.0" ymin="-90" ymax="50">
-            <Line id="PYR[0]: v" quantity="PYR/0/CELL_HH_PYR/v" scale="1mV" color="#6aa799" timeScale="1ms"/>
-            <Line id="PYR[1]: v" quantity="PYR/1/CELL_HH_PYR/v" scale="1mV" color="#029a72" timeScale="1ms"/>
-            <Line id="PYR[2]: v" quantity="PYR/2/CELL_HH_PYR/v" scale="1mV" color="#d340bb" timeScale="1ms"/>
+            <Line id="PYR[0]: v" quantity="PYR/0/CELL_HH_PYR/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
+            <Line id="PYR[1]: v" quantity="PYR/1/CELL_HH_PYR/v" scale="1mV" color="#0534e4" timeScale="1ms"/>
+            <Line id="PYR[2]: v" quantity="PYR/2/CELL_HH_PYR/v" scale="1mV" color="#98e752" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Volts_file__PYR" fileName="Sim_HHSmall.PYR.v.dat">
