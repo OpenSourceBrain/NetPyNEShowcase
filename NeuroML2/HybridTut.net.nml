@@ -54,10 +54,8 @@
                 <channelDensity id="na_soma_group" ionChannel="na_hh" condDensity="0.12 S_per_cm2" erev="50 mV" ion="na"/>
                 <channelDensity id="leak_dend_group" ionChannel="leak_hh" condDensity="3.57e-05 mS_per_cm2" erev="-70 mV" ion="non_specific"/>
                 <spikeThresh value="10 mV"/>
-                <spikeThresh value="10 mV"/>
                 <specificCapacitance value="1 uF_per_cm2" segmentGroup="soma_group"/>
                 <specificCapacitance value="1 uF_per_cm2" segmentGroup="dend_group"/>
-                <initMembPotential value="-65 mV"/>
                 <initMembPotential value="-65 mV"/>
             </membraneProperties>
             <intracellularProperties>
@@ -71,7 +69,6 @@
     <spikeGeneratorPoisson id="NetStim_bkg_PYR_Izhi_10_1_AMPA" averageRate="10 Hz"/>
     <network id="HybridTut">
         <population id="PYR_HH" component="CELL_HH_PYR" size="50" type="populationList">
-            <property tag="radius" value="5"/>
             <property tag="color" value="0.41661987254534116 0.010169169457068361 0.8252065092537432"/>
             <instance id="0">
                 <location x="80.394960618485939" y="3.438118285630337" z="73.926470621040451"/>
