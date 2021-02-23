@@ -151,3 +151,8 @@ NetPyNE/M1/movie
 /NetPyNE/UI/*.dat
 /NetPyNE/HHSmall/HHTut.json
 /NetPyNE/HybridSmall/HybridTut.json
+/NetPyNE/UI/*_netpyne.py
+/NetPyNE/UI/*_nrn.py
+/NetPyNE/UI/*.hoc
+/NetPyNE/UI/*.mod
+/NetPyNE/UI/NET_HHSimple.net.nml
