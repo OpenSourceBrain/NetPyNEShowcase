@@ -149,3 +149,5 @@ NetPyNE/M1/movie
 /NeuroML2/scaling/libjhdf5.jnilib
 /NeuroML2/scaling/*.gv*
 /NetPyNE/UI/*.dat
+/NetPyNE/HHSmall/HHTut.json
+/NetPyNE/HybridSmall/HybridTut.json
