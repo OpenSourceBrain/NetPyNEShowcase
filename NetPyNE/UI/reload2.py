@@ -13,5 +13,7 @@ with json_file.open(mode='r') as f:
 
     # Prevent overwriting json gnerated by nml export
     simConfig['saveJson'] = False
+    print('> Creating, simulating, analyzing...')
     sim.createSimulateAnalyze(netParams=netParams, simConfig=simConfig,
                                   output=False)
+    print('> Done...')

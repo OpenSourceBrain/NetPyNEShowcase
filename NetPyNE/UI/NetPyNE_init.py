@@ -119,6 +119,11 @@ simConfig.filename = "output"
 simConfig.saveJson = True
 simConfig.saveDat = True
 
+
+print(' - simConfig (%s) with keys: \n      %s'%(type(simConfig),simConfig.todict().keys()))
+print(' - netParams (%s) with keys: \n      %s'%(type(netParams),netParams.todict().keys()))
+print(' - netParams.cellParams: \n      %s'%(netParams.cellParams))
+
 # CREATE SIMULATE ANALYZE  NETWORK ---------------------------------------------
 import sys
 if '-run' in sys.argv:
