@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-# This python script was exported from NetPyNE UI & runsd fine
+# This python script was exported from NetPyNE UI & runs fine
 python NetPyNE_init.py -run
 # JSON generated following that simulation is reloaded and run
 python reload.py

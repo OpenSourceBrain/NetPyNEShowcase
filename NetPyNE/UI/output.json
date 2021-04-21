@@ -2300,7 +2300,6 @@
         ],
         "params": {
             "cellParams": {
-                "__dict__": {},
                 "pyr_rule": {
                     "conds": {
                         "cellType": "pyr"
@@ -2357,8 +2356,7 @@
                     "sec": "soma",
                     "synMech": "exc",
                     "weight": 0.03
-                },
-                "__dict__": {}
+                }
             },
             "correctBorder": false,
             "defaultDelay": 1,
@@ -2367,13 +2365,11 @@
             "defineCellShapes": false,
             "popParams": {
                 "Exc": {
-                    "__dict__": {},
                     "cellModel": "",
                     "cellType": "pyr",
                     "numCells": 16,
                     "pop": "Exc"
-                },
-                "__dict__": {}
+                }
             },
             "popTagsCopiedToCells": [
                 "cellModel",
@@ -2381,9 +2377,7 @@
             ],
             "propVelocity": 500.0,
             "rotateCellsRandomly": false,
-            "rxdParams": {
-                "__dict__": {}
-            },
+            "rxdParams": {},
             "scale": 1,
             "scaleConnWeight": 1,
             "scaleConnWeightModels": false,
@@ -2398,8 +2392,7 @@
                     "del": 20,
                     "dur": 10,
                     "type": "IClamp"
-                },
-                "__dict__": {}
+                }
             },
             "stimTargetParams": {
                 "IClamp1->cell0": {
@@ -2411,14 +2404,10 @@
                     "loc": 1.0,
                     "sec": "dend",
                     "source": "IClamp1"
-                },
-                "__dict__": {}
+                }
             },
-            "subConnParams": {
-                "__dict__": {}
-            },
+            "subConnParams": {},
             "synMechParams": {
-                "__dict__": {},
                 "exc": {
                     "e": 0,
                     "mod": "Exp2Syn",
@@ -2448,7 +2437,6 @@
                     15
                 ],
                 "tags": {
-                    "__dict__": {},
                     "cellModel": "",
                     "cellType": "pyr",
                     "numCells": 16,
@@ -2458,7 +2446,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "0.9.8",
+    "netpyne_version": "0.9.9.1",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,
