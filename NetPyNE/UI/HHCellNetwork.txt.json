@@ -245,7 +245,7 @@
         "saveCSV": false,
         "saveCellConns": false,
         "saveCellSecs": false,
-        "saveDat": true,
+        "saveDat": false,
         "saveDataInclude": [
             "netParams",
             "netCells",

@@ -11,8 +11,9 @@ with json_file.open(mode='r') as f:
     netParams = netpyne_info['net']['params']
     simConfig = netpyne_info['simConfig']
 
-    # Prevent overwriting json gnerated by nml export
-    simConfig['saveJson'] = False
+
+    simConfig['saveJson'] = False # Prevent overwriting json gnerated by nml export
+    simConfig['saveDat'] = True # Save data from this run
     print('> Creating, simulating, analyzing...')
     sim.createSimulateAnalyze(netParams=netParams, simConfig=simConfig,
                                   output=False)
