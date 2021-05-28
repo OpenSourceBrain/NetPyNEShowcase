@@ -2343,6 +2343,11 @@
                     }
                 }
             },
+            "cellsVisualizationSpacingMultiplier": [
+                1,
+                1,
+                1
+            ],
             "connParams": {
                 "Exc->Exc": {
                     "delay": 5,
@@ -2446,7 +2451,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "0.9.9.1",
+    "netpyne_version": "1.0.0.2",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,

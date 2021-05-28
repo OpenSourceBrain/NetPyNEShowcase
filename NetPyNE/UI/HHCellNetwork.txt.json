@@ -9,7 +9,6 @@
                 "stims": [],
                 "tags": {
                     "cellLabel": 0,
-                    "cellModel": "hhcell",
                     "cellType": "hhcell",
                     "label": [
                         "hhcell"
@@ -31,7 +30,6 @@
                 "stims": [],
                 "tags": {
                     "cellLabel": 1,
-                    "cellModel": "hhcell",
                     "cellType": "hhcell",
                     "label": [
                         "hhcell"
@@ -49,10 +47,6 @@
         "params": {
             "cellParams": {
                 "hhcell": {
-                    "conds": {
-                        "cellModel": "hhcell",
-                        "cellType": "hhcell"
-                    },
                     "secLists": {
                         "soma_group": [
                             "soma"
@@ -90,6 +84,11 @@
                     }
                 }
             },
+            "cellsVisualizationSpacingMultiplier": [
+                1,
+                1,
+                1
+            ],
             "connParams": {},
             "correctBorder": false,
             "defaultDelay": 1,
@@ -98,7 +97,6 @@
             "defineCellShapes": false,
             "popParams": {
                 "hhpop": {
-                    "cellModel": "hhcell",
                     "cellType": "hhcell",
                     "cellsList": [
                         {
@@ -146,7 +144,6 @@
                     1
                 ],
                 "tags": {
-                    "cellModel": "hhcell",
                     "cellType": "hhcell",
                     "cellsList": [
                         {
@@ -170,7 +167,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "0.9.9.1",
+    "netpyne_version": "1.0.0.2",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,
