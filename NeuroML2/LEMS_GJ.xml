@@ -1,6 +1,6 @@
 <Lems>
-  
-    <Target component="sim1" />
+
+    <Target component="sim1" reportFile="report.gj.txt" />
 
 
     <Include file="Cells.xml" />
@@ -14,21 +14,21 @@
     <Include file="GJ.nml"/>
 
     <!-- End of NeuroML2 content -->
-    
-    
+
+
     <Simulation id="sim1" length="700ms" step="0.01ms" target="net1">
 
         <Display id="d0" title="Ex19: GJ in LEMS" timeScale="1ms" xmin="-50"  xmax="750" ymin="-75" ymax="-50">
             <Line id="iafCell1_0" quantity="iafPop1/0/iaf/v" scale="1mV" color="#FF0000" timeScale="1ms" />
             <Line id="iafCell2_0" quantity="iafPop2/0/iaf/v" scale="1mV" color="#FFFF00" timeScale="1ms" />
         </Display>
-        
-        
+
+
         <OutputFile id="of0" fileName="ex19_v.dat">
             <OutputColumn id="iafCell1_0" quantity="iafPop1/0/iaf/v" />
             <OutputColumn id="iafCell2_0" quantity="iafPop2/0/iaf/v" />
         </OutputFile>
-        
+
     </Simulation>
-    
+
 </Lems>

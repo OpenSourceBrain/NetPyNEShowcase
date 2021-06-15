@@ -156,3 +156,5 @@ NetPyNE/M1/movie
 /NetPyNE/UI/*.mod
 /NetPyNE/UI/NET_HHSimple.net.nml
 /NetPyNE/UI/HHCellNetwork.txt2.json
+/NetPyNE/GapJunctions/report.gj.txt
+/NeuroML2/report*.txt

@@ -36,6 +36,15 @@ class NetPyNESimulation():
 
         self.setup_start = time.time()
         
+        self.report_file = open('report.gj.txt','w')
+        self.report_file.write('# Report of running simulation with NetPyNE v%s\n'%version)
+        self.report_file.write('Simulator=NetPyNE\n')
+        self.report_file.write('SimulatorVersion=%s\n'%version)
+        self.report_file.write('SimulationFile=%s\n'%__file__)
+        self.report_file.write('PythonVersion=%s\n'%sys.version.replace('\n',' '))
+        self.report_file.write('NeuronVersion=%s\n'%h.nrnversion())
+        self.report_file.write('NeuroMLExportVersion=1.8.0\n')
+        
 
         ###############################################################################
         # NETWORK PARAMETERS
@@ -152,6 +161,12 @@ class NetPyNESimulation():
             print("Finished saving results in %f seconds"%(save_time))
 
 
+           
+            self.report_file.write('StartTime=%s\n'%datetime.datetime.fromtimestamp(self.setup_start).strftime('%Y-%m-%d %H:%M:%S'))
+            self.report_file.write('RealSetupAndSimulationTime=%s\n'%self.setup_sim_time)
+            self.report_file.write('SimulationSaveTime=%s\n'%save_time)
+            self.report_file.close()
+            print("Saving report of simulation to %s"%('report.gj.txt'))
         
 if __name__ == '__main__':
 
