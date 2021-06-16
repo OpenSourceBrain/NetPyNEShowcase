@@ -1,0 +1,274 @@
+{
+    "net": {
+        "cells": [{
+                "conns": [],
+                "gid": 0,
+                "secLists": {},
+                "secs": {
+                    "soma": {
+                        "geom": {
+                            "L": 20,
+                            "Ra": 100,
+                            "cm": 1,
+                            "diam": 20,
+                            "pt3d": [
+                                [
+                                    0,
+                                    0,
+                                    0,
+                                    20
+                                ],
+                                [
+                                    0,
+                                    10,
+                                    0,
+                                    20
+                                ],
+                                [
+                                    0,
+                                    20,
+                                    0,
+                                    20
+                                ]
+                            ]
+                        },
+                        "mechs": {
+                            "hh": {
+                                "el": -54.3,
+                                "gkbar": 0.036,
+                                "gl": 0.0003,
+                                "gnabar": 0.12
+                            }
+                        },
+                        "topol": {}
+                    }
+                },
+                "stims": [],
+                "tags": {
+                    "cellModel": "",
+                    "cellType": "hhcell",
+                    "label": [
+                        "hhcell"
+                    ],
+                    "pop": "hhpop",
+                    "x": 18.504696195361976,
+                    "xnorm": 0.18504696195361975,
+                    "y": 23.301226407452198,
+                    "ynorm": 0.233012264074522,
+                    "z": 3.9059431050191766,
+                    "znorm": 0.039059431050191766
+                }
+            },
+            {
+                "conns": [],
+                "gid": 1,
+                "secLists": {},
+                "secs": {
+                    "soma": {
+                        "geom": {
+                            "L": 20,
+                            "Ra": 100,
+                            "cm": 1,
+                            "diam": 20,
+                            "pt3d": [
+                                [
+                                    0,
+                                    0,
+                                    0,
+                                    20
+                                ],
+                                [
+                                    0,
+                                    10,
+                                    0,
+                                    20
+                                ],
+                                [
+                                    0,
+                                    20,
+                                    0,
+                                    20
+                                ]
+                            ]
+                        },
+                        "mechs": {
+                            "hh": {
+                                "el": -54.3,
+                                "gkbar": 0.036,
+                                "gl": 0.0003,
+                                "gnabar": 0.12
+                            }
+                        },
+                        "topol": {}
+                    }
+                },
+                "stims": [],
+                "tags": {
+                    "cellModel": "",
+                    "cellType": "hhcell",
+                    "label": [
+                        "hhcell"
+                    ],
+                    "pop": "hhpop",
+                    "x": 34.9302405410143,
+                    "xnorm": 0.349302405410143,
+                    "y": 79.68087227091173,
+                    "ynorm": 0.7968087227091173,
+                    "z": 73.2085084605011,
+                    "znorm": 0.7320850846050109
+                }
+            }
+        ],
+        "params": {
+            "cellParams": {
+                "hhcell": {
+                    "conds": {},
+                    "secs": {
+                        "soma": {
+                            "geom": {
+                                "L": 20,
+                                "Ra": 100,
+                                "cm": 1,
+                                "diam": 20
+                            },
+                            "mechs": {
+                                "hh": {
+                                    "el": -54.3,
+                                    "gkbar": 0.036,
+                                    "gl": 0.0003,
+                                    "gnabar": 0.12
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "cellsVisualizationSpacingMultiplier": [
+                1,
+                1,
+                1
+            ],
+            "connParams": {},
+            "correctBorder": false,
+            "defaultDelay": 1,
+            "defaultThreshold": 10,
+            "defaultWeight": 1,
+            "defineCellShapes": false,
+            "popParams": {
+                "hhpop": {
+                    "cellModel": "",
+                    "cellType": "hhcell",
+                    "numCells": 2,
+                    "pop": "hhpop"
+                }
+            },
+            "popTagsCopiedToCells": [
+                "cellModel",
+                "cellType"
+            ],
+            "propVelocity": 500,
+            "rotateCellsRandomly": false,
+            "rxdParams": {},
+            "scale": 1,
+            "scaleConnWeight": 1,
+            "scaleConnWeightModels": false,
+            "scaleConnWeightNetStims": 1,
+            "shape": "cuboid",
+            "sizeX": 100,
+            "sizeY": 100,
+            "sizeZ": 100,
+            "stimSourceParams": {},
+            "stimTargetParams": {},
+            "subConnParams": {},
+            "synMechParams": {}
+        },
+        "pops": {
+            "hhpop": {
+                "cellGids": [
+                    0,
+                    1
+                ],
+                "tags": {
+                    "cellModel": "",
+                    "cellType": "hhcell",
+                    "numCells": 2,
+                    "pop": "hhpop"
+                }
+            }
+        }
+    },
+    "netpyne_changeset": "",
+    "netpyne_version": "1.0.0.2pg",
+    "simConfig": {
+        "addSynMechs": true,
+        "allowConnsWithWeight0": true,
+        "allowSelfConns": false,
+        "analysis": {},
+        "backupCfgFile": [],
+        "cache_efficient": false,
+        "checkErrors": false,
+        "checkErrorsVerbose": false,
+        "compactConnFormat": false,
+        "connRandomSecFromList": true,
+        "createNEURONObj": true,
+        "createPyStruct": true,
+        "cvode_active": false,
+        "cvode_atol": 0.001,
+        "distributeSynsUniformly": true,
+        "dt": 0.025,
+        "duration": 1000,
+        "filename": "hh2.json",
+        "gatherOnlySimData": false,
+        "hParams": {
+            "celsius": 6.3,
+            "clamp_resist": 0.001,
+            "v_init": -65
+        },
+        "includeParamsLabel": true,
+        "invertedYCoord": true,
+        "oneSynPerNetcon": true,
+        "printPopAvgRates": false,
+        "printRunTime": false,
+        "printSynsAfterRule": false,
+        "pt3dRelativeToCellLocation": true,
+        "rand123GlobalIndex": null,
+        "recordCells": [],
+        "recordCellsSpikes": -1,
+        "recordDipoles": false,
+        "recordLFP": [],
+        "recordStep": 0.1,
+        "recordStim": false,
+        "recordTime": true,
+        "recordTraces": {},
+        "saveCSV": false,
+        "saveCellConns": true,
+        "saveCellSecs": true,
+        "saveDat": false,
+        "saveDataInclude": [
+            "netParams",
+            "netCells",
+            "netPops",
+            "simConfig",
+            "simData"
+        ],
+        "saveDpk": false,
+        "saveFolder": "",
+        "saveHDF5": false,
+        "saveJson": true,
+        "saveLFPCells": false,
+        "saveMat": false,
+        "savePickle": false,
+        "saveTiming": false,
+        "seeds": {
+            "conn": 1,
+            "loc": 1,
+            "stim": 1
+        },
+        "simLabel": "",
+        "timestampFilename": false,
+        "timing": true,
+        "tstop": 1000,
+        "use_fast_imem": false,
+        "verbose": false
+    }
+}
