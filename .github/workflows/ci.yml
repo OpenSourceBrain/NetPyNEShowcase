@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         python-version: [ 3.7, 3.9 ]
-        engine: [ NetPyNE, jNeuroML, jNeuroML_NEURON, jNeuroML_NetPyNE, jNeuroML_validate]
+        engine: [ NetPyNE, jNeuroML, jNeuroML_NEURON, jNeuroML_NetPyNE, jNeuroML_validate ]
 
     steps:
     - uses: actions/checkout@v2
