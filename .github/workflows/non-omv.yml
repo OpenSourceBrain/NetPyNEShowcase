@@ -31,6 +31,7 @@ jobs:
     - name: Regenerate and test
       run: |
         omv install netpyne
+        which nrnivmodl
         omv install pyNeuroML
         ./regenerateAndTest.sh
 

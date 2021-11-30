@@ -1,4 +1,5 @@
-set -e
+set -ex
+
 ################  Regenerate NetPyNE from NeuroML 2
 
 cd NeuroML2
