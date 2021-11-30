@@ -28,8 +28,8 @@
 {'conds': {'cellType': 'PYR', 'cellModel': 'HH'}, 'secs': {'soma': {'geom': {'diam': 18.8, 'L': 18.8, 'Ra': 123.0, 'pt3d': [(0, 0, 0, 18.8), (0, 0, 18.8, 18.8)]}, 'topol': {}, 'mechs': {'hh': {'gnabar': 0.12, 'gkbar': 0.036, 'gl': 0.003, 'el': -70}}}}}</notes>
         <morphology id="morph_CELL_HH_PYR">
             <segment id="0" name="soma">
-                <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="18.8"/>
-                <distal x="0.000000e+00" y="0.000000e+00" z="1.880000e+01" diameter="18.8"/>
+                <proximal x="0.0" y="0.0" z="0.0" diameter="18.8"/>
+                <distal x="0.0" y="0.0" z="18.8" diameter="18.8"/>
             </segment>
             <segmentGroup neuroLexId="sao864921383" id="soma_SECTION">
                 <member segment="0"/>
