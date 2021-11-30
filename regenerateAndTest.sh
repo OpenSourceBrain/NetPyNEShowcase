@@ -3,11 +3,11 @@ set -e
 
 cd NeuroML2
 
-jnml LEMS_2007One.xml -netpyne
+pynml LEMS_2007One.xml -netpyne
 
 cp RS*.mod *_netpyne.py NET_2007One.net.nml ../NetPyNE
 
-jnml LEMS_GJ.xml -netpyne
+pynml LEMS_GJ.xml -netpyne
 
 cp LEMS_GJ_netpyne.py pulseGen2.mod pulseGen1.mod gj1.mod iaf.mod GJ.nml ../NetPyNE/GapJunctions
 
@@ -47,31 +47,29 @@ python HybridTut_run.py -nogui
 ################ Export NeuroML 2
 
 cd ../HHSmall
-python HH_export.py 
+python HH_export.py
 cp *.nml ../../NeuroML2
 cp LEMS*.xml ../../NeuroML2
 
 cd ../HybridSmall
-python Hybrid_export.py 
+python Hybrid_export.py
 cp *.nml ../../NeuroML2
 cp LEMS*.xml ../../NeuroML2
 
 cd ../HybridTut
-python HybridTut_export.py 
+python HybridTut_export.py
 cp *.nml ../../NeuroML2
 cp LEMS*.xml ../../NeuroML2
 
 cd ../M1
 nrnivmodl
-python M1_export.py 
+python M1_export.py
 cp *.nml ../../NeuroML2
 cp LEMS*.xml ../../NeuroML2
 
 cd ../../NeuroML2
-jnml -validate *cell.nml *channel.nml *synapse.nml HHCellNetwork.net.nml  HHSmall.net.nml  HybridSmall.net.nml  HybridTut.net.nml  M1.net.nml SimpleNet.net.nml
+pynml -validate *cell.nml *channel.nml *synapse.nml HHCellNetwork.net.nml  HHSmall.net.nml  HybridSmall.net.nml  HybridTut.net.nml  M1.net.nml SimpleNet.net.nml
 
 ################  Done
 
 cd ../..
-
-

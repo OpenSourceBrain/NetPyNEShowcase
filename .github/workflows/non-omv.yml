@@ -31,8 +31,14 @@ jobs:
     - name: Regenerate and test
       run: |
         omv install netpyne
+        omv install pyNeuroML
         ./regenerateAndTest.sh
-        
+
+    - name: Test UI scripts
+      run: |
+        cd NetPyNE/UI
+        ./test_all.sh
+
     - name: OMV final version info
       run: |
         omv list -V # list installed engines
