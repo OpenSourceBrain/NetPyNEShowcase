@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ex
 
+rm output_data.json HHCellNetwork.txt_data.json # Remove previous versions
+
 # This python script was exported from NetPyNE UI & runs fine
 # It saves output_data.json
 python NetPyNE_init.py -run
@@ -17,3 +19,7 @@ pynml LEMS_HHSimple.xml -netpyne -run -nogui   # run in NetPyNE
 python LEMS_HHSimple_netpyne.py -json
 # Try reloading that JSON model and rerunning
 python reload2.py
+
+
+# Try loading & running file LEMS_HHSimple_netpyne.py
+python reload3.py
