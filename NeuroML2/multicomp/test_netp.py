@@ -151,9 +151,7 @@ class NetPyNESimulation():
 
 if __name__ == '__main__':
 
-    save_json = '-json' in sys.argv
-
-    ns = NetPyNESimulation(tstop=500.0, dt=0.025, seed=12345, save_json=save_json)
+    ns = NetPyNESimulation(tstop=500.0, dt=0.025, seed=12345, save_json=True)
 
     simConfig = ns.run()
 

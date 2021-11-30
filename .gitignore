@@ -125,12 +125,10 @@ NetPyNE/M1/movie
 /NeuroML2/times/LEMS_SpikingNet_netpyne.py_main.json
 /NeuroML2/times/Sim_SpikingNet.pop_*.dat*
 /NeuroML2/times/SpikingNet.py
-/NeuroML2/multicomp/*.mod
 /NeuroML2/multicomp/*.pov
 /NeuroML2/multicomp/*.png
 /NeuroML2/multicomp/*.ini
 /NeuroML2/multicomp/*.dat
-/NeuroML2/multicomp/*.json
 /NeuroML2/multicomp/*_netpyne.py
 /NeuroML2/multicomp/*_nrn.py
 /NeuroML2/multicomp/*.hoc
