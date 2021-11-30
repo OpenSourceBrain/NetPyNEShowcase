@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.3.8 (libNeuroML v0.2.37)
+        This LEMS file has been automatically generated using PyNeuroML v0.5.18 (libNeuroML v0.2.58)
 
      -->
     
@@ -30,10 +30,10 @@
     <Simulation id="Sim_DendConn" length="500ms" step="0.025ms" target="DendConn" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="Display_pop_pyr_v" title="Plots of Display_pop_pyr_v" timeScale="1ms" xmin="-50.0" xmax="550.0" ymin="-80" ymax="40">
-            <Line id="pop_pyr_0_pyr_4_sym_0_v" quantity="pop_pyr/0/pyr_4_sym/0/v" scale="1mV" color="#6aa799" timeScale="1ms"/>
-            <Line id="pop_pyr_1_pyr_4_sym_0_v" quantity="pop_pyr/1/pyr_4_sym/0/v" scale="1mV" color="#029a72" timeScale="1ms"/>
-            <Line id="pop_pyr_2_pyr_4_sym_0_v" quantity="pop_pyr/2/pyr_4_sym/0/v" scale="1mV" color="#d340bb" timeScale="1ms"/>
-            <Line id="pop_pyr_3_pyr_4_sym_0_v" quantity="pop_pyr/3/pyr_4_sym/0/v" scale="1mV" color="#4c73a9" timeScale="1ms"/>
+            <Line id="pop_pyr_0_pyr_4_sym_0_v" quantity="pop_pyr/0/pyr_4_sym/0/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
+            <Line id="pop_pyr_1_pyr_4_sym_0_v" quantity="pop_pyr/1/pyr_4_sym/0/v" scale="1mV" color="#0534e4" timeScale="1ms"/>
+            <Line id="pop_pyr_2_pyr_4_sym_0_v" quantity="pop_pyr/2/pyr_4_sym/0/v" scale="1mV" color="#98e752" timeScale="1ms"/>
+            <Line id="pop_pyr_3_pyr_4_sym_0_v" quantity="pop_pyr/3/pyr_4_sym/0/v" scale="1mV" color="#bca074" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Sim_DendConn_pop_pyr_v_dat" fileName="Sim_DendConn.pop_pyr.v.dat">
