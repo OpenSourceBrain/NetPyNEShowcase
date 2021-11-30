@@ -4,7 +4,7 @@ from pathlib import Path
 from netpyne import sim
 import json
 
-json_file = Path('HHCellNetwork.txt.json')
+json_file = Path('HHCellNetwork.txt_data.json')
 with json_file.open(mode='r') as f:
     netpyne_info = json.load(f)
 

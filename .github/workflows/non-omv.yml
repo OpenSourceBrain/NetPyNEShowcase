@@ -30,9 +30,12 @@ jobs:
 
     - name: Regenerate and test
       run: |
+        omv install neuron
         omv install netpyne
-        which nrnivmodl
         omv install pyNeuroML
+        omv list -V 
+        which nrnivmodl
+
         ./regenerateAndTest.sh
 
     - name: Test UI scripts

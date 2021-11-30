@@ -4,7 +4,7 @@ from pathlib import Path
 from netpyne import sim
 import json
 
-json_file = Path('output.json')
+json_file = Path('output_data.json')
 with json_file.open(mode='r') as f:
     netpyne_info = json.load(f)
 

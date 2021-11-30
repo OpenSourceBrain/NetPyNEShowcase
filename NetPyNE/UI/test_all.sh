@@ -2,7 +2,7 @@
 set -ex
 
 # This python script was exported from NetPyNE UI & runs fine
-# It saves output.json
+# It saves output_data.json
 python NetPyNE_init.py -run
 # JSON file generated following that simulation is reloaded and run
 python reload.py

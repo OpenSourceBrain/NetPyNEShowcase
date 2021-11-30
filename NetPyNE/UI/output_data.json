@@ -2463,6 +2463,7 @@
         "checkErrorsVerbose": false,
         "compactConnFormat": false,
         "connRandomSecFromList": true,
+        "coreneuron": false,
         "createNEURONObj": true,
         "createPyStruct": true,
         "cvode_active": false,
@@ -2472,6 +2473,7 @@
         "duration": 200.0,
         "filename": "output",
         "gatherOnlySimData": false,
+        "gpu": false,
         "hParams": {
             "celsius": 6.3,
             "clamp_resist": 0.001,
@@ -2485,6 +2487,7 @@
         "printSynsAfterRule": false,
         "pt3dRelativeToCellLocation": true,
         "rand123GlobalIndex": null,
+        "random123": false,
         "recordCells": [
             0,
             1
@@ -2523,6 +2526,7 @@
         "saveHDF5": false,
         "saveJson": true,
         "saveLFPCells": false,
+        "saveLFPPops": false,
         "saveMat": false,
         "savePickle": false,
         "saveTiming": false,

@@ -185,6 +185,7 @@
         "checkErrorsVerbose": false,
         "compactConnFormat": false,
         "connRandomSecFromList": true,
+        "coreneuron": false,
         "createNEURONObj": 1,
         "createPyStruct": 1,
         "cvode_active": false,
@@ -194,6 +195,7 @@
         "duration": 450.0,
         "filename": "HHCellNetwork.txt",
         "gatherOnlySimData": true,
+        "gpu": false,
         "hParams": {
             "celsius": 6.3,
             "clamp_resist": 0.001,
@@ -210,6 +212,7 @@
         "printSynsAfterRule": false,
         "pt3dRelativeToCellLocation": true,
         "rand123GlobalIndex": null,
+        "random123": false,
         "recordCells": [
             "all"
         ],
@@ -256,6 +259,7 @@
         "saveHDF5": false,
         "saveJson": true,
         "saveLFPCells": false,
+        "saveLFPPops": false,
         "saveMat": false,
         "savePickle": false,
         "saveTiming": false,
