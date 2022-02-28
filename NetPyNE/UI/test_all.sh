@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-rm output_data.json HHCellNetwork.txt_data.json # Remove previous versions
+rm -f output_data.json HHCellNetwork.txt_data.json # Remove previous versions
 
 # This python script was exported from NetPyNE UI & runs fine
 # It saves output_data.json

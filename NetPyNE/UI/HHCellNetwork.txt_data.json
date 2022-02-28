@@ -95,6 +95,9 @@
             "defaultThreshold": 10,
             "defaultWeight": 1,
             "defineCellShapes": false,
+            "mapping": {
+                "__dict__": {}
+            },
             "popParams": {
                 "hhpop": {
                     "cellType": "hhcell",
@@ -167,7 +170,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "1.0.0.2",
+    "netpyne_version": "1.0.1",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,
@@ -181,8 +184,6 @@
         },
         "backupCfgFile": [],
         "cache_efficient": false,
-        "checkErrors": false,
-        "checkErrorsVerbose": false,
         "compactConnFormat": false,
         "connRandomSecFromList": true,
         "coreneuron": false,
@@ -217,7 +218,8 @@
             "all"
         ],
         "recordCellsSpikes": -1,
-        "recordDipoles": false,
+        "recordDipole": false,
+        "recordDipolesHNN": false,
         "recordLFP": [],
         "recordStep": 0.05,
         "recordStim": true,
@@ -253,6 +255,8 @@
             "simConfig",
             "simData"
         ],
+        "saveDipoleCells": false,
+        "saveDipolePops": false,
         "saveDpk": false,
         "saveFileStep": 0.05,
         "saveFolder": "",
@@ -273,6 +277,7 @@
         "timing": true,
         "tstop": 450.0,
         "use_fast_imem": false,
+        "validateNetParams": false,
         "verbose": false
     },
     "simData": {

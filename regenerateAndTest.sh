@@ -71,6 +71,14 @@ cp LEMS*.xml ../../NeuroML2
 cd ../../NeuroML2
 pynml -validate *cell.nml *channel.nml *synapse.nml HHCellNetwork.net.nml  HHSmall.net.nml  HybridSmall.net.nml  HybridTut.net.nml  M1.net.nml SimpleNet.net.nml
 
+
+
+################ Test scripts for UI
+
+cd ../NetPyNE/UI
+./test_all.sh
+
+
 ################  Done
 
 cd ../..
