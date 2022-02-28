@@ -33,16 +33,14 @@ jobs:
         omv install neuron
         omv install netpyne
         omv install pyNeuroML
+
+        export NEURON_HOME=$pythonLocation
+
         omv list -V
         which nrnivmodl
 
-        ./regenerateAndTest.sh
+        ./regenerateAndTest.sh  # includes test of UI scripts
 
-    - name: Test UI scripts
-      run: |
-        export NEURON_HOME=$pythonLocation
-        cd NetPyNE/UI
-        ./test_all.sh
 
     - name: OMV final version info
       run: |
