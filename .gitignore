@@ -158,3 +158,6 @@ NetPyNE/M1/movie
 /NeuroML2/report*.txt
 /NetPyNE/HHSmall/HHTut_data.json
 /NetPyNE/HybridSmall/HybridTut_data.json
+*code.gen.c
+*code.gen.so
+*_eden.py
