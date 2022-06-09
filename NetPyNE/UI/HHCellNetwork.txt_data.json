@@ -5,7 +5,7 @@
                 "conns": [],
                 "gid": 0,
                 "secLists": null,
-                "secs": null,
+                "secs": {},
                 "stims": [],
                 "tags": {
                     "cellLabel": 0,
@@ -26,7 +26,7 @@
                 "conns": [],
                 "gid": 1,
                 "secLists": null,
-                "secs": null,
+                "secs": {},
                 "stims": [],
                 "tags": {
                     "cellLabel": 1,
