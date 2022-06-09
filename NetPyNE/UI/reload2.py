@@ -5,25 +5,33 @@ from netpyne import sim
 import json
 
 json_file = Path('HHCellNetwork.txt_data.json')
-netParams = None
-simConfig = None
+netParams_dict = None
+simConfig_dict = None
 
 with json_file.open(mode='r') as f:
     netpyne_info = json.load(f)
 
-    netParams = netpyne_info['net']['params']
-    simConfig = netpyne_info['simConfig']
+    netParams_dict = netpyne_info['net']['params']
+    simConfig_dict = netpyne_info['simConfig']
 
 
-    simConfig['saveJson'] = False # Prevent overwriting json gnerated by nml export
-    simConfig['saveDat'] = True # Save data from this run
+    simConfig_dict['saveJson'] = False # Prevent overwriting json gnerated by nml export
+    simConfig_dict['saveDat'] = True # Save data from this run
     print('> Creating, simulating, analyzing...')
-    sim.createSimulateAnalyze(netParams=netParams, simConfig=simConfig,
+    sim.createSimulateAnalyze(netParams=netParams_dict, simConfig=simConfig_dict,
                                   output=False)
 
+print(' - simConfig_dict (%s) with keys: \n      %s'%(type(simConfig_dict),simConfig_dict.keys()))
+print(' - netParams_dict (%s) with keys: \n      %s'%(type(netParams_dict),netParams_dict.keys()))
+print(" - netParams_dict['cellParams']: \n      %s"%(netParams_dict['cellParams']))
 
-print(' - simConfig (%s) with keys: \n      %s'%(type(simConfig),simConfig.keys()))
-print(' - netParams (%s) with keys: \n      %s'%(type(netParams),netParams.keys()))
-print(" - netParams['cellParams']: \n      %s"%(netParams['cellParams']))
+from netpyne.specs.simConfig import SimConfig
+from netpyne.specs.netParams import NetParams
+
+simConfig = SimConfig(simConfig_dict)
+netParams = NetParams(netParams_dict)
+print(' - simConfig (%s) with keys: \n      %s'%(type(simConfig),simConfig.todict().keys()))
+print(' - netParams (%s) with keys: \n      %s'%(type(netParams),netParams.todict().keys()))
+
 
 print('> Done...')
