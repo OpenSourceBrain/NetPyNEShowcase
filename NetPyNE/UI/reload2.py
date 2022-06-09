@@ -5,6 +5,9 @@ from netpyne import sim
 import json
 
 json_file = Path('HHCellNetwork.txt_data.json')
+netParams = None
+simConfig = None
+
 with json_file.open(mode='r') as f:
     netpyne_info = json.load(f)
 
@@ -17,4 +20,10 @@ with json_file.open(mode='r') as f:
     print('> Creating, simulating, analyzing...')
     sim.createSimulateAnalyze(netParams=netParams, simConfig=simConfig,
                                   output=False)
-    print('> Done...')
+
+
+print(' - simConfig (%s) with keys: \n      %s'%(type(simConfig),simConfig.keys()))
+print(' - netParams (%s) with keys: \n      %s'%(type(netParams),netParams.keys()))
+print(" - netParams['cellParams']: \n      %s"%(netParams['cellParams']))
+
+print('> Done...')
