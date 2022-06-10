@@ -1,3 +1,4 @@
+#!/bin/bash
 set -ex
 
 ################  Regenerate NetPyNE from NeuroML 2
