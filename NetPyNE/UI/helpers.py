@@ -11,15 +11,15 @@ def convertAndImportLEMSSimulation(lemsFileName, simulate=True, analyze=True):
     )
     netpyne_file = lemsFileName.replace('.xml', '_netpyne')
 
-    #import_str = 'from %s import NetPyNESimulation'%netpyne_file
+    import_str = 'from %s import NetPyNESimulation'%netpyne_file
+    '''
     import importlib
     importlib.import_module('%s'%netpyne_file)
+    from LEMS_HHSimple_netpyne import NetPyNESimulation'''
 
-    from LEMS_HHSimple_netpyne import NetPyNESimulation
+    exec(import_str, globals())
 
     print('Loading from python generated from jnml (using: %s)...'%netpyne_file)
-
-    print(importlib)
 
     ns = eval('NetPyNESimulation(tstop=450.0, dt=0.05, seed=1234, save_json=False)')
 
@@ -45,4 +45,6 @@ def convertAndImportLEMSSimulation(lemsFileName, simulate=True, analyze=True):
     print(' >> Done...')
 
 
-convertAndImportLEMSSimulation("LEMS_HHSimple.xml", simulate=False)
+if __name__ == "__main__":
+
+    convertAndImportLEMSSimulation("LEMS_HHSimple.xml", simulate=False)
