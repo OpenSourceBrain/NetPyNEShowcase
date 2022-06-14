@@ -23,3 +23,8 @@ python reload2.py
 
 # Try loading & running file LEMS_HHSimple_netpyne.py
 python reload3.py
+
+
+# Test helper methods
+
+python helpers.py

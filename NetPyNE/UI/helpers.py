@@ -37,5 +37,12 @@ def convertAndImportLEMSSimulation(lemsFileName, simulate=True, analyze=True):
     print(' - simConfig (%s) with keys: \n      %s'%(type(simConfig),simConfig.todict().keys()))
     print(' - netParams (%s) with keys: \n      %s'%(type(netParams),netParams.todict().keys()))
 
+    from netpyne.sim.save import saveData
+    simConfig.saveJson = True
+
+    saveData(filename='test.json', include=['simConfig','netParams','net'])
+
+    print(' >> Done...')
+
 
 convertAndImportLEMSSimulation("LEMS_HHSimple.xml", simulate=False)
