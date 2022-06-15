@@ -1,4 +1,7 @@
 from pyneuroml import pynml
+from pyneuroml.lems import generate_lems_file_for_neuroml
+from pyneuroml.pynml import read_neuroml2_file
+
 import os
 import sys
 import shutil
@@ -6,13 +9,14 @@ import subprocess
 import neuron
 
 
-from pyneuroml.lems import generate_lems_file_for_neuroml
-from pyneuroml.pynml import read_neuroml2_file
+'''
+    Converts a LEMS Simulation file (https://docs.neuroml.org/Userdocs/LEMSSimulation.html)
+    pointing to a NeuroML 2 file into the equivalent in NetPyNE
 
-
-def convertAndImportLEMSSimulation(
-    lemsFileName, verbose=True
-):
+    Returns:
+        simConfig, netParams for the model in NetPyNE
+'''
+def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
 
     fullLemsFileName = os.path.abspath(lemsFileName)
     if verbose:
@@ -69,7 +73,10 @@ def convertAndImportLEMSSimulation(
 
     return simConfig, netParams
 
-
+'''
+    Compiles the mod files in a directory, removing the old compiled files if found
+    and throwing an erro if they had already been loaded
+'''
 def compileModMechFiles(compileMod, modFolder):
     # Create Symbolic link
     if compileMod:
@@ -101,9 +108,15 @@ def compileModMechFiles(compileMod, modFolder):
             raise
 
 
-def convertAndImportNeuroML2(
-    nml2FileName, verbose=True
-):
+'''
+    Loads a NeuroML 2 file into NetPyNE by creating a new LEMS Simulation
+    file (https://docs.neuroml.org/Userdocs/LEMSSimulation.html) and using jNeuroML
+    to convert it.
+
+    Returns:
+        simConfig, netParams for the model in NetPyNE
+'''
+def convertAndImportNeuroML2(nml2FileName, verbose=True):
 
     fullNmlFileName = os.path.abspath(nml2FileName)
     if verbose:
@@ -142,7 +155,7 @@ def convertAndImportNeuroML2(
         copy_neuroml=False,
         verbose=verbose,
     )
-    convertAndImportLEMSSimulation(lems_file_name)
+    return convertAndImportLEMSSimulation(lems_file_name)
 
 
 if __name__ == "__main__":

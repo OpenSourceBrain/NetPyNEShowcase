@@ -164,3 +164,14 @@ NetPyNE/M1/movie
 /NetPyNE/LEMS_HHSmall_netpyne.py
 simulator.props
 /NetPyNE/ACnet/test.json_data.json
+*.spikes
+/NetPyNE/UI/*_netpyne.py
+/NetPyNE/UI/LEMS_Sim_Spikers.xml
+/NetPyNE/UI/Spikers.net.nml
+/NetPyNE/UI/hhcell.cell.nml
+/NetPyNE/UI/kChan.channel.nml
+/NetPyNE/UI/naChan.channel.nml
+/NetPyNE/UI/passiveChan.channel.nml
+/NetPyNE/UI/report*.txt
+/NetPyNE/UI/test.json_data.json
+/NetPyNE/UI/HHCellNetwork.txt_NOdata.json
