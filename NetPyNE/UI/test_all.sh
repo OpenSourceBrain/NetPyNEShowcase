@@ -29,3 +29,5 @@ python reload3.py
 
 rm -rf x86_64
 python helpers.py
+rm -rf x86_64
+python helpers.py -nml

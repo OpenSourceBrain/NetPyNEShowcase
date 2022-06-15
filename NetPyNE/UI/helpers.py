@@ -1,8 +1,13 @@
 from pyneuroml import pynml
 import os
+import sys
 import shutil
 import subprocess
 import neuron
+
+
+from pyneuroml.lems import generate_lems_file_for_neuroml
+from pyneuroml.pynml import read_neuroml2_file
 
 
 def convertAndImportLEMSSimulation(
@@ -96,6 +101,54 @@ def compileModMechFiles(compileMod, modFolder):
             raise
 
 
+def convertAndImportNeuroML2(
+    nml2FileName, verbose=True
+):
+
+    fullNmlFileName = os.path.abspath(nml2FileName)
+    if verbose:
+        print(
+            "Importing NeuroML 2 network from: %s"
+            % fullNmlFileName
+        )
+    nml_model = read_neuroml2_file(fullNmlFileName)
+
+    target = nml_model.networks[0].id
+    sim_id = "Sim_%s"%target
+    duration = 1000
+    dt = 0.025
+    lems_file_name = "LEMS_%s.xml" % sim_id
+    target_dir = "."
+
+    generate_lems_file_for_neuroml(
+        sim_id,
+        fullNmlFileName,
+        target,
+        duration,
+        dt,
+        lems_file_name,
+        target_dir,
+        include_extra_files=["PyNN.xml"],
+        gen_plots_for_all_v=True,
+        plot_all_segments=False,
+        gen_plots_for_quantities={},  # Dict with displays vs lists of quantity paths
+        gen_plots_for_only_populations=[],  # List of populations, all pops if = []
+        gen_saves_for_all_v=True,
+        save_all_segments=False,
+        gen_saves_for_only_populations=[],  # List of populations, all pops if = []
+        gen_saves_for_quantities={},  # Dict with file names vs lists of quantity paths
+        gen_spike_saves_for_all_somas=True,
+        report_file_name="report.txt",
+        copy_neuroml=False,
+        verbose=verbose,
+    )
+    convertAndImportLEMSSimulation(lems_file_name)
+
+
 if __name__ == "__main__":
 
-    convertAndImportLEMSSimulation("LEMS_HHSimple.xml")
+
+    if '-nml' in sys.argv:
+        convertAndImportNeuroML2("../../NeuroML2/Spikers.net.nml")
+    else:
+        convertAndImportLEMSSimulation("LEMS_HHSimple.xml")
