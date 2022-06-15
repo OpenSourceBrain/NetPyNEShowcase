@@ -79,6 +79,10 @@ pynml -validate *cell.nml *channel.nml *synapse.nml HHCellNetwork.net.nml  HHSma
 cd ../NetPyNE/UI
 ./test_all.sh
 
+cd ../ACnet
+rm -rf x86_64
+python convert.py
+
 
 ################  Done
 

@@ -6,7 +6,7 @@ import neuron
 
 
 def convertAndImportLEMSSimulation(
-    lemsFileName, simulate=False, analyze=False, verbose=True
+    lemsFileName, verbose=True
 ):
 
     fullLemsFileName = os.path.abspath(lemsFileName)
@@ -20,8 +20,6 @@ def convertAndImportLEMSSimulation(
     netpyne_file = lemsFileName.replace(".xml", "_netpyne")
 
     compileModMechFiles(compileMod=True, modFolder=os.path.dirname(fullLemsFileName))
-
-    #print(os.getcwd())
 
     import_str = "from %s import NetPyNESimulation" % netpyne_file
 
@@ -37,13 +35,14 @@ def convertAndImportLEMSSimulation(
 
     from netpyne.conversion.neuromlFormat import importNeuroML2
 
-    gids, netParams = importNeuroML2(
+    gids = importNeuroML2(
         fileName,
         simConfig,
-        simulate=simulate,
-        analyze=analyze,
-        return_net_params_also=True,
+        simulate=False,
+        analyze=False,
     )
+    from netpyne import sim
+    netParams = sim.net.params
 
     if verbose:
         print("Finished NeuroML/LEMS import!...")
@@ -62,6 +61,8 @@ def convertAndImportLEMSSimulation(
     simConfig.saveJson = True
 
     saveData(filename="test.json", include=["simConfig", "netParams", "net"])
+
+    return simConfig, netParams
 
 
 def compileModMechFiles(compileMod, modFolder):
@@ -97,4 +98,4 @@ def compileModMechFiles(compileMod, modFolder):
 
 if __name__ == "__main__":
 
-    convertAndImportLEMSSimulation("LEMS_HHSimple.xml", simulate=False)
+    convertAndImportLEMSSimulation("LEMS_HHSimple.xml")

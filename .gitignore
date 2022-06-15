@@ -163,3 +163,4 @@ NetPyNE/M1/movie
 *_eden.py
 /NetPyNE/LEMS_HHSmall_netpyne.py
 simulator.props
+/NetPyNE/ACnet/test.json_data.json

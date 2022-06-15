@@ -27,4 +27,5 @@ python reload3.py
 
 # Test helper methods
 
+rm -rf x86_64
 python helpers.py
