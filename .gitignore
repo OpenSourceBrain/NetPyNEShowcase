@@ -175,3 +175,6 @@ simulator.props
 /NetPyNE/UI/report*.txt
 /NetPyNE/UI/test.json_data.json
 /NetPyNE/UI/HHCellNetwork.txt_NOdata.json
+/NetPyNE/ACnet/LEMS_MediumNet_netpyne_data.json
+/NetPyNE/UI/LEMS_HHSimple_netpyne_data.json
+/NetPyNE/UI/LEMS_Sim_Spikers_netpyne_data.json

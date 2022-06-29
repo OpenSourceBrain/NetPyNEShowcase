@@ -30,8 +30,6 @@ def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
 
     lems = pynml.read_lems_file(lemsFileName)
 
-    #print(lems.components[lems.targets[0]])
-    #network = lems.components[lems.targets[0]].parameters['target']
     json_filename = lemsFileName.replace('.xml','_netpyne_data.json')
     print('Loading JSON file: %s'%json_filename)
 
@@ -40,12 +38,11 @@ def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
 
         print("All keys: {}".format(netpyne_info.keys()))
         print("net keys: {}".format(netpyne_info['net'].keys()))
-        netParams_dict = netpyne_info['net']['params']
-        simConfig_dict = netpyne_info['simConfig']
 
 
-        sim.createSimulateAnalyze(netParams=netParams_dict, simConfig=simConfig_dict,
-                                      output=False)
+    sim.loadAll(json_filename)
+
+    print("Loaded network into NetPyNE containing  %s which would run for %s ms"%([d for d in sim.net.params.popParams.keys()], sim.cfg.duration))
 
 
     '''
