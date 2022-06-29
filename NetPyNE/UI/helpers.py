@@ -7,14 +7,15 @@ import sys
 import shutil
 import subprocess
 import neuron
+import json
+
+from netpyne import sim
 
 
 '''
     Converts a LEMS Simulation file (https://docs.neuroml.org/Userdocs/LEMSSimulation.html)
     pointing to a NeuroML 2 file into the equivalent in NetPyNE
 
-    Returns:
-        simConfig, netParams for the model in NetPyNE
 '''
 def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
 
@@ -25,7 +26,29 @@ def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
             % fullLemsFileName
         )
 
-    pynml.run_lems_with_jneuroml_netpyne(lemsFileName, only_generate_scripts=True)
+    pynml.run_lems_with_jneuroml_netpyne(lemsFileName, only_generate_json=True)
+
+    lems = pynml.read_lems_file(lemsFileName)
+
+    #print(lems.components[lems.targets[0]])
+    #network = lems.components[lems.targets[0]].parameters['target']
+    json_filename = lemsFileName.replace('.xml','_netpyne_data.json')
+    print('Loading JSON file: %s'%json_filename)
+
+    with open(json_filename, 'r') as f:
+        netpyne_info = json.load(f)
+
+        print("All keys: {}".format(netpyne_info.keys()))
+        print("net keys: {}".format(netpyne_info['net'].keys()))
+        netParams_dict = netpyne_info['net']['params']
+        simConfig_dict = netpyne_info['simConfig']
+
+
+        sim.createSimulateAnalyze(netParams=netParams_dict, simConfig=simConfig_dict,
+                                      output=False)
+
+
+    '''
     netpyne_file = lemsFileName.replace(".xml", "_netpyne")
 
     compileModMechFiles(compileMod=True, modFolder=os.path.dirname(fullLemsFileName))
@@ -37,7 +60,7 @@ def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
     if verbose:
         print("Loading from python generated from jnml (using: %s)..." % import_str)
 
-    ns = eval("NetPyNESimulation(tstop=1000, dt=0.025)")
+    ns = eval("NetPyNESimulation()")
 
     simConfig = ns.simConfig
     fileName = ns.nml2_file_name
@@ -71,11 +94,12 @@ def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
 
     saveData(filename="test.json", include=["simConfig", "netParams", "net"])
 
-    return simConfig, netParams
+    return simConfig, netParams'''
 
 '''
     Compiles the mod files in a directory, removing the old compiled files if found
     and throwing an erro if they had already been loaded
+'''
 '''
 def compileModMechFiles(compileMod, modFolder):
     # Create Symbolic link
@@ -105,7 +129,7 @@ def compileModMechFiles(compileMod, modFolder):
                 + "directories before calling this method.\n"+
                 "************************************************************"
             )
-            raise
+            raise'''
 
 
 '''

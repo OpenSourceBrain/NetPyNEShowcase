@@ -32,7 +32,7 @@ import datetime
 
 class NetPyNESimulation():
 
-    def __init__(self, tstop, dt, seed=123456789, save_json=False):
+    def __init__(self, tstop=700.0, dt=0.01, seed=123456789, save_json=False):
 
         self.setup_start = time.time()
         
@@ -44,6 +44,7 @@ class NetPyNESimulation():
         self.report_file.write('PythonVersion=%s\n'%sys.version.replace('\n',' '))
         self.report_file.write('NeuronVersion=%s\n'%h.nrnversion())
         self.report_file.write('NeuroMLExportVersion=1.9.0\n')
+        self.report_file.close()
         
 
         ###############################################################################
@@ -65,18 +66,18 @@ class NetPyNESimulation():
         # Seeds for randomizers (connectivity, input stimulation and cell locations)
         # Note: locations and connections should be fully specified by the structure of the NeuroML,
         # so seeds for conn & loc shouldn't affect networks structure/behaviour
-        self.simConfig.seeds = {'conn': 0, 'stim': 123456789, 'loc': 0} 
+        self.simConfig.seeds = {'conn': 0, 'stim': 123456789, 'loc': 0}
 
         self.simConfig.createNEURONObj = 1  # create HOC objects when instantiating network
         self.simConfig.createPyStruct = 1  # create Python structure (simulator-independent) when instantiating network
-        self.simConfig.verbose = False  # show detailed messages 
+        self.simConfig.verbose = False  # show detailed messages
         
-        # Recording 
-        self.simConfig.recordCells = ['all']  
+        # Recording
+        self.simConfig.recordCells = ['all']
         self.simConfig.recordTraces = {}
         self.simConfig.saveCellSecs=False
         self.simConfig.saveCellConns=False
-        self.simConfig.gatherOnlySimData=True 
+        self.simConfig.gatherOnlySimData=True
 
                 # For saving to file: ex19_v.dat (ref: of0)
                                 
@@ -127,15 +128,39 @@ class NetPyNESimulation():
             print("Exception saving results of NetPyNE simulation: %s" % (e))
             return
 
+    def generate_json_only(self):
+
+          ###############################################################################
+          # GENERATE NETPYNE JSON REPRESENTATION OF NETWORK
+          ###############################################################################
+
+          print("Generating NetPyNE JSON (and mod files)")
+
+          self.simConfig.saveJson = True # save to json file
+          from netpyne.conversion.neuromlFormat import importNeuroML2
+          self.gids = sim.importNeuroML2(self.nml2_file_name,
+                                         self.simConfig,
+                                         simulate=False,
+                                         analyze=False)
+
+          from netpyne.sim.save import saveData
+
+          saveData(filename=self.nml2_file_name.replace(".nml",""), include=["simConfig", "netParams", "net"])
+
+          probable_filenames = [self.nml2_file_name.replace(".nml","")+"_data.json"] # may change in netpyne core...
+          print("Finished NetPyNE JSON")
+
+          return probable_filenames
+
 
     def save_results(self):
 
         ###############################################################################
-        #   Saving data (this ensures the data gets saved in the format/files 
+        #   Saving data (this ensures the data gets saved in the format/files
         #   as specified in the LEMS <Simulation> element)
         ###############################################################################
 
-        if sim.rank==0: 
+        if sim.rank==0:
         
             print("Saving traces to file: ex19_v.dat (ref: of0)")
 
@@ -161,7 +186,8 @@ class NetPyNESimulation():
             print("Finished saving results in %f seconds"%(save_time))
 
 
-           
+        
+            self.report_file = open('report.gj.txt','a')
             self.report_file.write('StartTime=%s\n'%datetime.datetime.fromtimestamp(self.setup_start).strftime('%Y-%m-%d %H:%M:%S'))
             self.report_file.write('RealSetupAndSimulationTime=%s\n'%self.setup_sim_time)
             self.report_file.write('SimulationSaveTime=%s\n'%save_time)
@@ -171,10 +197,17 @@ class NetPyNESimulation():
 if __name__ == '__main__':
 
     save_json = '-json' in sys.argv
+    no_run = '-norun' in sys.argv
 
     ns = NetPyNESimulation(tstop=700.0, dt=0.01, seed=123456789, save_json=save_json)
 
-    ns.run()
+    if not no_run:
+      ns.run()
+    else:
+      if save_json:
+        fn = ns.generate_json_only()
+        print("Generated: %s"%fn)
+        quit()
 
     if '-nogui' in sys.argv:
         quit()
