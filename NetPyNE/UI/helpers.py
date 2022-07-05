@@ -11,7 +11,6 @@ import json
 
 from netpyne import sim
 
-
 '''
     Converts a LEMS Simulation file (https://docs.neuroml.org/Userdocs/LEMSSimulation.html)
     pointing to a NeuroML 2 file into the equivalent in NetPyNE
@@ -42,91 +41,9 @@ def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
 
     sim.loadAll(json_filename)
 
-    print("Loaded network into NetPyNE containing  %s which would run for %s ms"%([d for d in sim.net.params.popParams.keys()], sim.cfg.duration))
+    print("Loaded network into NetPyNE containing %s which would run for %s ms"%([d for d in sim.net.params.popParams.keys()], sim.cfg.duration))
 
 
-    '''
-    netpyne_file = lemsFileName.replace(".xml", "_netpyne")
-
-    compileModMechFiles(compileMod=True, modFolder=os.path.dirname(fullLemsFileName))
-
-    import_str = "from %s import NetPyNESimulation" % netpyne_file
-
-    exec(import_str, globals())
-
-    if verbose:
-        print("Loading from python generated from jnml (using: %s)..." % import_str)
-
-    ns = eval("NetPyNESimulation()")
-
-    simConfig = ns.simConfig
-    fileName = ns.nml2_file_name
-
-    from netpyne.conversion.neuromlFormat import importNeuroML2
-
-    gids = importNeuroML2(
-        fileName,
-        simConfig,
-        simulate=False,
-        analyze=False,
-    )
-    from netpyne import sim
-    netParams = sim.net.params
-
-    if verbose:
-        print("Finished NeuroML/LEMS import!...")
-
-        print(
-            " - simConfig (%s) with keys: \n      %s"
-            % (type(simConfig), simConfig.todict().keys())
-        )
-        print(
-            " - netParams (%s) with keys: \n      %s"
-            % (type(netParams), netParams.todict().keys())
-        )
-
-    from netpyne.sim.save import saveData
-
-    simConfig.saveJson = True
-
-    saveData(filename="test.json", include=["simConfig", "netParams", "net"])
-
-    return simConfig, netParams'''
-
-'''
-    Compiles the mod files in a directory, removing the old compiled files if found
-    and throwing an erro if they had already been loaded
-'''
-'''
-def compileModMechFiles(compileMod, modFolder):
-    # Create Symbolic link
-    if compileMod:
-        modPath = os.path.join(str(modFolder), "x86_64")
-
-        if os.path.exists(modPath):
-            print("Deleting existing %s"%modPath)
-            shutil.rmtree(modPath)
-
-        os.chdir(modFolder)
-        subprocess.call(["nrnivmodl"])
-
-        try:
-            neuron.load_mechanisms(str(modFolder))
-            print("Loaded mod file mechanisms from %s" % modFolder)
-        except:
-            print(
-                "************************************************************\n"
-                +"Error loading the newly generated mod file mechanisms from folder: %s"
-                % modFolder
-            )
-            print(
-                "\nNote: if this is the current folder, this may be due to a preexisting "
-                + "mod file of the same name being already compiled in that folder and "
-                + "NEURON attempting to load it agian. \nRemove any previous x86_64 etc. "
-                + "directories before calling this method.\n"+
-                "************************************************************"
-            )
-            raise'''
 
 
 '''
