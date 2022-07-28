@@ -1,0 +1,48 @@
+<Lems>
+
+
+    <Target component="sim1"/>
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    <Include file="HHActive.net.nml"/>
+
+
+
+
+    <Simulation id="sim1" length="450ms" step="0.05ms" target="HHActive">
+
+        <Display id="d1" title="Hodgkin-Huxley Neuron: V (mV)" timeScale="1ms" xmin="-20" xmax="470" ymin="-90" ymax="50">
+            <Line id="V0" quantity="hhpop/0/hhcell/v" scale="1mV" color="#000000" timeScale="1ms"/>
+            <Line id="V1" quantity="hhpop/1/hhcell/v" scale="1mV" color="#fff000" timeScale="1ms"/>
+        </Display>
+        <!--
+        <Display id="d2" title="Hodgkin-Huxley Neuron: Gating Variables" timeScale="1ms" xmin="-20" xmax="470" ymin="-0.1" ymax="1.1">
+            <Line id="m" quantity="hhpop[0]/bioPhys1/membraneProperties/naChans/naChan/m/q" scale="1"  color="#ff0000" timeScale="1ms"/>
+            <Line id="h" quantity="hhpop[0]/bioPhys1/membraneProperties/naChans/naChan/h/q" scale="1"  color="#00dd00" timeScale="1ms"/>
+            <Line id="n" quantity="hhpop[0]/bioPhys1/membraneProperties/kChans/kChan/n/q" scale="1"  color="#0000ff" timeScale="1ms"/>
+        </Display>
+
+        <Display id="d3" title="Hodgkin-Huxley Neuron: Current" timeScale="1ms" xmin="-20" xmax="470" ymin="-10" ymax="10">
+            <Line id="I_na" quantity="hhpop[0]/bioPhys1/membraneProperties/naChans/iDensity" scale="1"  color="#00ffff" timeScale="1ms"/>
+            <Line id="I_k" quantity="hhpop[0]/bioPhys1/membraneProperties/kChans/iDensity" scale="1"  color="#ffff00" timeScale="1ms"/>
+            <Line id="I_l" quantity="hhpop[0]/bioPhys1/membraneProperties/leak/iDensity" scale="1"  color="#ff00ff" timeScale="1ms"/>
+        </Display>
+
+        <Display id="d4" title="Hodgkin-Huxley Neuron: I_inj (nA)" timeScale="1ms" xmin="-20" xmax="470" ymin="-0.01" ymax="0.4">
+            <Line id="I_inj1" quantity="hhpop[0]/pulseGen1/i" scale="1nA"  color="#ffffff" timeScale="1ms"/>
+            <Line id="I_inj2" quantity="hhpop[0]/pulseGen2/i" scale="1nA"  color="#000000" timeScale="1ms"/>
+        </Display>-->
+
+        <!-- Saved the membrane potential to file: hh_v.dat -->
+        <OutputFile id="of0" fileName="hh_v.dat">
+            <OutputColumn id="v0" quantity="hhpop/0/hhcell/v"/>
+            <OutputColumn id="v1" quantity="hhpop/1/hhcell/v"/>
+        </OutputFile>
+
+
+    </Simulation>
+
+
+</Lems>

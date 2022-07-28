@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.githubusercontent.com/NeuroML/NeuroML2/master/Schemas/NeuroML2/NeuroML_v2beta3.xsd"
+         id="HHActive">
+
+        <ionChannelHH id="pas" conductance="10pS" type="ionChannelPassive">
+
+            <notes>Single ion channel in NeuroML2 format: passive channel providing a leak conductance </notes>
+
+        </ionChannelHH>
+
+
+            <ionChannelHH id="naChan" conductance="10pS" species="na">
+                <notes>Na channel</notes>
+
+                <gateHHrates id="m" instances="3">
+                    <forwardRate type="HHExpLinearRate" rate="1per_ms" midpoint="-40mV" scale="10mV"/>
+                    <reverseRate type="HHExpRate" rate="4per_ms" midpoint="-65mV" scale="-18mV"/>
+                </gateHHrates>
+
+                <gateHHrates id="h" instances="1">
+                    <forwardRate type="HHExpRate" rate="0.07per_ms" midpoint="-65mV" scale="-20mV"/>
+                    <reverseRate type="HHSigmoidRate" rate="1per_ms" midpoint="-35mV" scale="10mV"/>
+                </gateHHrates>
+
+            </ionChannelHH>
+
+
+            <ionChannelHH id="kChan" conductance="10pS" species="k">
+
+                <gateHHrates id="n" instances="4">
+                    <forwardRate type="HHExpLinearRate" rate="0.1per_ms" midpoint="-55mV" scale="10mV"/>
+                    <reverseRate type="HHExpRate" rate="0.125per_ms" midpoint="-65mV" scale="-80mV"/>
+                </gateHHrates>
+
+            </ionChannelHH>
+
+
+
+        <cell id="hhcell">
+
+            <notes>Conductance based cell model NeuroML2 format: standard Hodgkin Huxley model cell with Na, K and passive conductances</notes>
+
+            <morphology id="morph1">
+                <segment id="0" name="soma">
+                    <proximal x="0" y="0" z="0" diameter="17.841242"/> <!--Gives a convenient surface area of 1000.0 um^2-->
+                    <distal x="0" y="0" z="0" diameter="17.841242"/>
+                </segment>
+
+                <segmentGroup id="soma_group">
+                    <member segment="0"/>
+                </segmentGroup>
+
+            </morphology>
+
+            <biophysicalProperties id="bioPhys1">
+
+                <membraneProperties>
+
+                    <channelDensity id="leak" ionChannel="pas" condDensity="0.31 mS_per_cm2" erev="-57mV" ion="non_specific"/>
+                    <channelDensity id="naChans" ionChannel="naChan" condDensity="121.0 mS_per_cm2" erev="51 mV" ion="na"/>
+                    <channelDensity id="kChans" ionChannel="kChan" condDensity="31 mS_per_cm2" erev="-79mV" ion="k"/>
+
+                    <spikeThresh value="-20mV"/>
+                    <specificCapacitance value="1.6 uF_per_cm2"/>
+                    <initMembPotential value="-70mV"/>
+
+                </membraneProperties>
+
+                <intracellularProperties>
+                    <resistivity value="0.03456 kohm_cm"/>   <!-- Note: not used in single compartment simulations -->
+                </intracellularProperties>
+
+            </biophysicalProperties>
+
+        </cell>
+
+        <pulseGenerator id="pulseGen1" delay="100ms" duration="100ms" amplitude="0.10nA"/>
+    <!-- Short small current pulse input & short larger current pulse input
+    <pulseGenerator id="pulseGen2" delay="300ms" duration="100ms" amplitude="0.35nA"/> -->
+
+    <network id="HHActive">
+        <population id="hhpop" component="hhcell" size="2" type="populationList">
+            <instance id="0">
+                <location x="0" y="20" z="0"/>
+            </instance>
+            <instance id="1">
+                <location x="20" y="10" z="0"/>
+            </instance>
+          </population>
+
+        <inputList id="il0" component="pulseGen1" population="hhpop">
+            <input id="0" target="../hhpop/0/hhcell" destination="synapses"/>
+        </inputList>
+<!--      <inputList id="il1" component="pulseGen2" population="hhpop">
+          <input id="0" target="../hhpop/1/hhcell" destination="synapses"/>
+      </inputList>-->
+
+    </network>
+
+
+    </neuroml>
