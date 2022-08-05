@@ -8,6 +8,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 4,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -17,6 +18,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 7,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -26,6 +28,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 15,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -131,6 +134,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 3,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -140,6 +144,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 8,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -149,6 +154,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 9,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -158,6 +164,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 10,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -167,6 +174,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 15,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -277,6 +285,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 1,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -286,6 +295,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 7,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -295,6 +305,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 9,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -304,6 +315,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 11,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -313,6 +325,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 12,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -322,6 +335,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 13,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -331,6 +345,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 15,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -457,6 +472,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 2,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -466,6 +482,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 6,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -475,6 +492,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 9,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -484,6 +502,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 14,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -586,6 +605,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 0,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -595,6 +615,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 1,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -604,6 +625,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 9,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -613,6 +635,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 10,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -622,6 +645,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 13,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -631,6 +655,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 14,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -640,6 +665,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 15,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -766,6 +792,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 9,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -844,6 +871,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 1,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -853,6 +881,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 3,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -862,6 +891,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 8,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -871,6 +901,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 11,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -880,6 +911,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 14,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -889,6 +921,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 15,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1007,6 +1040,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 0,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1016,6 +1050,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 1,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1025,6 +1060,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 6,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1034,6 +1070,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 14,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1136,6 +1173,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 2,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1145,6 +1183,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 6,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1154,6 +1193,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 12,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1163,6 +1203,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 13,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1172,6 +1213,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 14,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1282,6 +1324,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 3,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1291,6 +1334,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 5,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1300,6 +1344,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 8,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1309,6 +1354,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 11,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1318,6 +1364,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 13,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1428,6 +1475,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 2,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1437,6 +1485,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 4,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1446,6 +1495,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 9,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1455,6 +1505,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 14,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1557,6 +1608,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 1,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1566,6 +1618,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 2,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1575,6 +1628,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 4,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1584,6 +1638,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 8,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1593,6 +1648,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 10,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1703,6 +1759,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 1,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1712,6 +1769,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 4,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1721,6 +1779,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 5,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1730,6 +1789,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 6,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1739,6 +1799,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 7,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1748,6 +1809,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 8,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1757,6 +1819,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 15,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1883,6 +1946,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 0,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1892,6 +1956,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 5,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1901,6 +1966,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 9,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1910,6 +1976,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 11,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -1919,6 +1986,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 14,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2029,6 +2097,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 6,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2038,6 +2107,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 8,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2047,6 +2117,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 9,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2056,6 +2127,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 13,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2065,6 +2137,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 15,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2175,6 +2248,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 1,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2184,6 +2258,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 2,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2193,6 +2268,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 7,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2202,6 +2278,7 @@
                         "label": "Exc->Exc",
                         "loc": 0.5,
                         "preGid": 14,
+                        "preLoc": 0.5,
                         "sec": "soma",
                         "synMech": "exc",
                         "weight": 0.03
@@ -2422,7 +2499,8 @@
                     "tau1": 0.1,
                     "tau2": 1.0
                 }
-            }
+            },
+            "synMechsReferringPreLoc": []
         },
         "pops": {
             "Exc": {
@@ -2537,7 +2615,8 @@
         "seeds": {
             "conn": 1,
             "loc": 1,
-            "stim": 1
+            "stim": 1,
+            "synMech": 1
         },
         "simLabel": "",
         "timestampFilename": false,
