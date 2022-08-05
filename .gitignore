@@ -178,3 +178,6 @@ simulator.props
 /NetPyNE/ACnet/LEMS_MediumNet_netpyne_data.json
 /NetPyNE/UI/LEMS_HHSimple_netpyne_data.json
 /NetPyNE/UI/LEMS_Sim_Spikers_netpyne_data.json
+/NetPyNE/UI/active/LEMS_HHActive_netpyne.py
+/NetPyNE/UI/active/*.dat
+/NetPyNE/UI/active/hhcell.hoc

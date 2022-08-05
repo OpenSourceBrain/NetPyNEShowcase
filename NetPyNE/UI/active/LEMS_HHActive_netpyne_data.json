@@ -234,7 +234,7 @@
         "distributeSynsUniformly": true,
         "dt": 0.05,
         "duration": 450.0,
-        "filename": "/Users/padraig/neuroConstruct/osb/showcase/NetPyNEShowcase/NetPyNE/UI/active/LEMS_HHActive_netpyne",
+        "filename": "LEMS_HHActive_netpyne",
         "gatherOnlySimData": true,
         "gpu": false,
         "hParams": {
