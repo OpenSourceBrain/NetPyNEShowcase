@@ -24,7 +24,7 @@ jobs:
         python-version:  ${{ matrix.python-version }}
     - name: Install OMV
       run: |
-        pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+        pip install git+https://github.com/OpenSourceBrain/osb-model-validation@test_nest
         pip install scipy sympy matplotlib cython pandas tables
     - name: Run OMV tests on engine ${{ matrix.engine }}
       run: |
