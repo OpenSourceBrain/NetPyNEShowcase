@@ -34,13 +34,13 @@
                 <parent segment="0"/>
                 <distal x="0.0" y="150.0" z="0.0" diameter="5.0"/>
             </segment>
-            <segmentGroup neuroLexId="sao864921383" id="soma_SECTION">
+            <segmentGroup id="soma_SECTION" neuroLexId="sao864921383">
                 <member segment="0"/>
             </segmentGroup>
             <segmentGroup id="soma_group">
                 <include segmentGroup="soma_SECTION"/>
             </segmentGroup>
-            <segmentGroup neuroLexId="sao864921383" id="dend_SECTION">
+            <segmentGroup id="dend_SECTION" neuroLexId="sao864921383">
                 <member segment="1"/>
             </segmentGroup>
             <segmentGroup id="dend_group">
