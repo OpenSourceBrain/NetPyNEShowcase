@@ -30,7 +30,7 @@
                 <proximal x="0.0" y="0.0" z="0.0" diameter="18.8"/>
                 <distal x="0.0" y="18.8" z="0.0" diameter="18.8"/>
             </segment>
-            <segmentGroup neuroLexId="sao864921383" id="soma_SECTION">
+            <segmentGroup id="soma_SECTION" neuroLexId="sao864921383">
                 <member segment="0"/>
             </segmentGroup>
             <segmentGroup id="soma_group">
