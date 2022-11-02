@@ -1,0 +1,433 @@
+// Cell: pyr_4_sym
+/*
+{
+  "id" : "pyr_4_sym",
+  "sections" : [ {
+    "name" : "soma",
+    "id" : "soma",
+    "points3d" : [ "0.0, 0.0, 0.0, 23.0", "0.0, 17.0, 0.0, 23.0" ]
+  }, {
+    "name" : "apical0",
+    "id" : "apical0",
+    "points3d" : [ "0.0, 17.0, 0.0, 6.0", "0.0, 77.0, 0.0, 6.0" ],
+    "parent" : "soma",
+    "fractionAlong" : 1.0
+  }, {
+    "name" : "apical2",
+    "id" : "apical2",
+    "points3d" : [ "0.0, 77.0, 0.0, 4.4", "0.0, 477.0, 0.0, 4.4" ],
+    "parent" : "apical0",
+    "fractionAlong" : 1.0
+  }, {
+    "name" : "apical3",
+    "id" : "apical3",
+    "points3d" : [ "0.0, 477.0, 0.0, 2.9", "0.0, 877.0, 0.0, 2.9" ],
+    "parent" : "apical2",
+    "fractionAlong" : 1.0
+  }, {
+    "name" : "apical4",
+    "id" : "apical4",
+    "points3d" : [ "0.0, 877.0, 0.0, 2.0", "0.0, 1127.0, 0.0, 2.0" ],
+    "parent" : "apical3",
+    "fractionAlong" : 1.0
+  }, {
+    "name" : "apical1",
+    "id" : "apical1",
+    "points3d" : [ "0.0, 77.0, 0.0, 3.0", "-150.0, 77.0, 0.0, 3.0" ],
+    "parent" : "apical0",
+    "fractionAlong" : 1.0
+  }, {
+    "name" : "basal0",
+    "id" : "basal0",
+    "points3d" : [ "0.0, 0.0, 0.0, 4.0", "0.0, -50.0, 0.0, 4.0" ],
+    "parent" : "soma",
+    "fractionAlong" : 0.0
+  }, {
+    "name" : "basal1",
+    "id" : "basal1",
+    "points3d" : [ "0.0, -50.0, 0.0, 5.0", "106.07, -156.07, 0.0, 5.0" ],
+    "parent" : "basal0",
+    "fractionAlong" : 1.0
+  }, {
+    "name" : "basal2",
+    "id" : "basal2",
+    "points3d" : [ "0.0, -50.0, 0.0, 5.0", "-106.07, -156.07, 0.0, 5.0" ],
+    "parent" : "basal0",
+    "fractionAlong" : 1.0
+  } ],
+  "groups" : [ {
+    "name" : "soma_group",
+    "groups" : [ ],
+    "sections" : [ "soma" ]
+  }, {
+    "name" : "dendrite_group",
+    "groups" : [ ],
+    "sections" : [ "apical0", "apical2", "apical3", "apical4", "apical1", "basal0", "basal1", "basal2" ]
+  }, {
+    "name" : "apical_dends",
+    "groups" : [ ],
+    "sections" : [ "apical0", "apical2", "apical3", "apical4", "apical1" ]
+  }, {
+    "name" : "middle_apical_dendrite",
+    "groups" : [ ],
+    "sections" : [ "apical3" ]
+  }, {
+    "name" : "thalamic_input",
+    "groups" : [ ],
+    "sections" : [ "apical1" ]
+  }, {
+    "name" : "basal_dends",
+    "groups" : [ ],
+    "sections" : [ "basal0", "basal1", "basal2" ]
+  }, {
+    "name" : "basal_gaba_input",
+    "groups" : [ ],
+    "sections" : [ "basal0" ]
+  }, {
+    "name" : "background_input",
+    "groups" : [ ],
+    "sections" : [ "basal1" ]
+  }, {
+    "name" : "all",
+    "sections" : [ "soma", "apical0", "apical2", "apical3", "apical4", "apical1", "basal0", "basal1", "basal2" ]
+  } ],
+  "specificCapacitance" : [ {
+    "group" : "all",
+    "value" : "2.84"
+  } ],
+  "initMembPotential" : [ {
+    "group" : "all",
+    "value" : "-65.0"
+  } ],
+  "resistivity" : [ {
+    "group" : "all",
+    "value" : "200.0"
+  } ],
+  "channelDensity" : [ {
+    "id" : "Ca_pyr_soma_group",
+    "ionChannel" : "Ca_pyr",
+    "ion" : "ca",
+    "group" : "soma_group",
+    "condDens" : "0.01",
+    "erev" : "80.0"
+  }, {
+    "id" : "Kahp_pyr_soma_group",
+    "ionChannel" : "Kahp_pyr",
+    "ion" : "k",
+    "group" : "soma_group",
+    "condDens" : "0.0025",
+    "erev" : "-75.0"
+  }, {
+    "id" : "Kdr_pyr_soma_group",
+    "ionChannel" : "Kdr_pyr",
+    "ion" : "k",
+    "group" : "soma_group",
+    "condDens" : "0.08",
+    "erev" : "-75.0"
+  }, {
+    "id" : "LeakConductance_pyr_all",
+    "ionChannel" : "LeakConductance_pyr",
+    "ion" : "non_specific",
+    "group" : "all",
+    "condDens" : "1.420051E-4",
+    "erev" : "-66.0"
+  }, {
+    "id" : "Na_pyr_soma_group",
+    "ionChannel" : "Na_pyr",
+    "ion" : "na",
+    "group" : "soma_group",
+    "condDens" : "0.12",
+    "erev" : "55.0"
+  } ],
+  "species" : [ {
+    "id" : "ca",
+    "ion" : "ca",
+    "concentrationModel" : "Ca_conc",
+    "group" : "soma_group",
+    "initialConcentration" : "5.0E-5",
+    "initialExtConcentration" : "3.0"
+  } ]
+}
+*/
+
+load_file("subiter.hoc")
+
+begintemplate pyr_4_sym
+
+public init, topol, basic_shape, subsets, geom, memb
+public x, y, z, position
+
+
+//  Some methods for referencing the cells
+
+public toString, netInfo, set_initial_v, set_initial_ion_properties, synlist
+
+
+// Section: soma, id: soma, parent: $s.parent
+create soma
+public soma
+// Section: apical0, id: apical0, parent: soma
+create apical0
+public apical0
+// Section: apical2, id: apical2, parent: apical0
+create apical2
+public apical2
+// Section: apical3, id: apical3, parent: apical2
+create apical3
+public apical3
+// Section: apical4, id: apical4, parent: apical3
+create apical4
+public apical4
+// Section: apical1, id: apical1, parent: apical0
+create apical1
+public apical1
+// Section: basal0, id: basal0, parent: soma
+create basal0
+public basal0
+// Section: basal1, id: basal1, parent: basal0
+create basal1
+public basal1
+// Section: basal2, id: basal2, parent: basal0
+create basal2
+public basal2
+
+// Group: {name=soma_group, groups=[], sections=[soma]}
+objref soma_group
+// Group: {name=dendrite_group, groups=[], sections=[apical0, apical2, apical3, apical4, apical1, basal0, basal1, basal2]}
+objref dendrite_group
+// Group: {name=apical_dends, groups=[], sections=[apical0, apical2, apical3, apical4, apical1]}
+objref apical_dends
+// Group: {name=middle_apical_dendrite, groups=[], sections=[apical3]}
+objref middle_apical_dendrite
+// Group: {name=thalamic_input, groups=[], sections=[apical1]}
+objref thalamic_input
+// Group: {name=basal_dends, groups=[], sections=[basal0, basal1, basal2]}
+objref basal_dends
+// Group: {name=basal_gaba_input, groups=[], sections=[basal0]}
+objref basal_gaba_input
+// Group: {name=background_input, groups=[], sections=[basal1]}
+objref background_input
+// Group: {name=all, sections=[soma, apical0, apical2, apical3, apical4, apical1, basal0, basal1, basal2]}
+objref all
+
+objref synlist
+
+proc init() {
+    topol()
+    geom_nseg()
+    subsets()
+    subsets_inhomogeneous()
+    biophys()
+    biophys_inhomogeneous()
+    synlist = new List()
+    x = y = z = 0
+
+}
+
+proc set_initial_v() {
+    // Taken from the initMembPotential value
+    forsec all v = -65.0  // units: mV
+}
+
+
+proc set_initial_ion_properties() {
+    // From species
+    // Ion: ca on group: soma_group, with concentration model: Ca_conc
+    forsec soma_group {
+        cai = 5.0E-5  // units: mM
+        cao = 3.0  // units: mM
+    }
+}
+
+
+proc topol() {
+    basic_shape()
+    connect apical0(0), soma(1.0)
+    connect apical2(0), apical0(1.0)
+    connect apical3(0), apical2(1.0)
+    connect apical4(0), apical3(1.0)
+    connect apical1(0), apical0(1.0)
+    connect basal0(0), soma(0.0)
+    connect basal1(0), basal0(1.0)
+    connect basal2(0), basal0(1.0)
+
+}
+
+
+proc basic_shape() {
+
+    // Section: soma, id: soma, parent: $s.parent (entry count 0/100)
+    soma { pt3dclear() }
+    soma { pt3dadd( 0.0, 0.0, 0.0, 23.0 ) }
+    soma { pt3dadd( 0.0, 17.0, 0.0, 23.0 ) }
+    // Section: apical0, id: apical0, parent: soma (entry count 2/100)
+    apical0 { pt3dclear() }
+    apical0 { pt3dadd( 0.0, 17.0, 0.0, 6.0 ) }
+    apical0 { pt3dadd( 0.0, 77.0, 0.0, 6.0 ) }
+    // Section: apical2, id: apical2, parent: apical0 (entry count 4/100)
+    apical2 { pt3dclear() }
+    apical2 { pt3dadd( 0.0, 77.0, 0.0, 4.4 ) }
+    apical2 { pt3dadd( 0.0, 477.0, 0.0, 4.4 ) }
+    // Section: apical3, id: apical3, parent: apical2 (entry count 6/100)
+    apical3 { pt3dclear() }
+    apical3 { pt3dadd( 0.0, 477.0, 0.0, 2.9 ) }
+    apical3 { pt3dadd( 0.0, 877.0, 0.0, 2.9 ) }
+    // Section: apical4, id: apical4, parent: apical3 (entry count 8/100)
+    apical4 { pt3dclear() }
+    apical4 { pt3dadd( 0.0, 877.0, 0.0, 2.0 ) }
+    apical4 { pt3dadd( 0.0, 1127.0, 0.0, 2.0 ) }
+    // Section: apical1, id: apical1, parent: apical0 (entry count 10/100)
+    apical1 { pt3dclear() }
+    apical1 { pt3dadd( 0.0, 77.0, 0.0, 3.0 ) }
+    apical1 { pt3dadd( -150.0, 77.0, 0.0, 3.0 ) }
+    // Section: basal0, id: basal0, parent: soma (entry count 12/100)
+    basal0 { pt3dclear() }
+    basal0 { pt3dadd( 0.0, 0.0, 0.0, 4.0 ) }
+    basal0 { pt3dadd( 0.0, -50.0, 0.0, 4.0 ) }
+    // Section: basal1, id: basal1, parent: basal0 (entry count 14/100)
+    basal1 { pt3dclear() }
+    basal1 { pt3dadd( 0.0, -50.0, 0.0, 5.0 ) }
+    basal1 { pt3dadd( 106.07, -156.07, 0.0, 5.0 ) }
+    // Section: basal2, id: basal2, parent: basal0 (entry count 16/100)
+    basal2 { pt3dclear() }
+    basal2 { pt3dadd( 0.0, -50.0, 0.0, 5.0 ) }
+    basal2 { pt3dadd( -106.07, -156.07, 0.0, 5.0 ) }
+
+}
+
+
+proc subsets() { local i
+
+    // Group: {name=soma_group, groups=[], sections=[soma]}
+    soma_group = new SectionList()
+    soma soma_group.append()
+
+    // Group: {name=dendrite_group, groups=[], sections=[apical0, apical2, apical3, apical4, apical1, basal0, basal1, basal2]}
+    dendrite_group = new SectionList()
+    apical0 dendrite_group.append()
+    apical2 dendrite_group.append()
+    apical3 dendrite_group.append()
+    apical4 dendrite_group.append()
+    apical1 dendrite_group.append()
+    basal0 dendrite_group.append()
+    basal1 dendrite_group.append()
+    basal2 dendrite_group.append()
+
+    // Group: {name=apical_dends, groups=[], sections=[apical0, apical2, apical3, apical4, apical1]}
+    apical_dends = new SectionList()
+    apical0 apical_dends.append()
+    apical2 apical_dends.append()
+    apical3 apical_dends.append()
+    apical4 apical_dends.append()
+    apical1 apical_dends.append()
+
+    // Group: {name=middle_apical_dendrite, groups=[], sections=[apical3]}
+    middle_apical_dendrite = new SectionList()
+    apical3 middle_apical_dendrite.append()
+
+    // Group: {name=thalamic_input, groups=[], sections=[apical1]}
+    thalamic_input = new SectionList()
+    apical1 thalamic_input.append()
+
+    // Group: {name=basal_dends, groups=[], sections=[basal0, basal1, basal2]}
+    basal_dends = new SectionList()
+    basal0 basal_dends.append()
+    basal1 basal_dends.append()
+    basal2 basal_dends.append()
+
+    // Group: {name=basal_gaba_input, groups=[], sections=[basal0]}
+    basal_gaba_input = new SectionList()
+    basal0 basal_gaba_input.append()
+
+    // Group: {name=background_input, groups=[], sections=[basal1]}
+    background_input = new SectionList()
+    basal1 background_input.append()
+
+    // Group: {name=all, sections=[soma, apical0, apical2, apical3, apical4, apical1, basal0, basal1, basal2]}
+    all = new SectionList()
+    soma all.append()
+    apical0 all.append()
+    apical2 all.append()
+    apical3 all.append()
+    apical4 all.append()
+    apical1 all.append()
+    basal0 all.append()
+    basal1 all.append()
+    basal2 all.append()
+
+}
+
+
+proc subsets_inhomogeneous() {
+}
+
+proc biophys() {
+
+    // Specific capacitance
+    forsec all cm = 2.84  // units: uF/cm2
+
+    // Specific axial resistance/resistivity
+    forsec all Ra = 200.0  // units: ohm cm
+
+    // Channel densities
+    forsec soma_group {
+        insert Ca_pyr
+        gmax_Ca_pyr = 0.01  // units: S cm-2
+        eca = 80.0  // units: mV
+    }
+    forsec soma_group {
+        insert Kahp_pyr
+        gmax_Kahp_pyr = 0.0025  // units: S cm-2
+        ek = -75.0  // units: mV
+    }
+    forsec soma_group {
+        insert Kdr_pyr
+        gmax_Kdr_pyr = 0.08  // units: S cm-2
+        ek = -75.0  // units: mV
+    }
+    forsec all {
+        insert LeakConductance_pyr
+        gmax_LeakConductance_pyr = 1.420051E-4  // units: S cm-2
+        e_LeakConductance_pyr = -66.0  // units: mV
+    }
+    forsec soma_group {
+        insert Na_pyr
+        gmax_Na_pyr = 0.12  // units: S cm-2
+        ena = 55.0  // units: mV
+    }
+
+    // Concentration models for species
+    // Ion: ca on group: soma_group, with concentration model: Ca_conc
+    forsec soma_group {
+        insert Ca_conc
+    }
+
+}
+
+func H() { // Heaviside function
+    if ($1>=0) return 1
+    if ($1==0) return 0.5
+    return 0
+}
+
+proc biophys_inhomogeneous() {
+}
+
+proc geom_nseg() {
+    // All sections not mentioned here have nseg = 1
+}
+
+
+proc position() { local i
+    forsec all {
+        for i = 0, n3d()-1 {
+            pt3dchange(i, $1+x3d(i), $2+y3d(i), $3+z3d(i), diam3d(i))
+        }
+    }
+    x = $1  y = $2  z = $3
+}
+
+
+endtemplate pyr_4_sym
+
+
