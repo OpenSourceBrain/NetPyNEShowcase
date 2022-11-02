@@ -2299,7 +2299,7 @@
             <connectionWD id="4" preCellId="../IT_L6/11/CELL_IT" postCellId="../IT_L4/10/CELL_IT" weight="0.002" delay="8.12221073765792 ms"/>
             <connectionWD id="5" preCellId="../IT_L6/6/CELL_IT" postCellId="../IT_L4/12/CELL_IT" weight="0.002" delay="8.961755432286708 ms"/>
             <connectionWD id="6" preCellId="../IT_L6/9/CELL_IT" postCellId="../IT_L4/14/CELL_IT" weight="0.002" delay="9.31267388909686 ms"/>
-            <connectionWD id="7" preCellId="../IT_L6/8/CELL_IT" postCellId="../IT_L4/17/CELL_IT" weight="0.002" delay="9.982359789017677 ms"/>
+            <connectionWD id="7" preCellId="../IT_L6/8/CELL_IT" postCellId="../IT_L4/17/CELL_IT" weight="0.002" delay="9.982359789017679 ms"/>
             <connectionWD id="8" preCellId="../IT_L6/20/CELL_IT" postCellId="../IT_L4/19/CELL_IT" weight="0.0085" delay="7.887012180597188 ms"/>
             <connectionWD id="9" preCellId="../IT_L6/30/CELL_IT" postCellId="../IT_L4/20/CELL_IT" weight="0.00425" delay="8.183987568588709 ms"/>
             <connectionWD id="10" preCellId="../IT_L6/4/CELL_IT" postCellId="../IT_L4/21/CELL_IT" weight="0.00425" delay="7.738945824199985 ms"/>
@@ -4764,7 +4764,7 @@
             <connectionWD id="17" preCellId="../IT_L4/7/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.053875" delay="7.764029036427225 ms"/>
             <connectionWD id="18" preCellId="../IT_L4/8/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.053875" delay="6.862472370545089 ms"/>
             <connectionWD id="19" preCellId="../IT_L4/12/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.053875" delay="6.891862886462782 ms"/>
-            <connectionWD id="20" preCellId="../IT_L4/14/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.053875" delay="7.103599473769186 ms"/>
+            <connectionWD id="20" preCellId="../IT_L4/14/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.053875" delay="7.1035994737691865 ms"/>
             <connectionWD id="21" preCellId="../IT_L4/19/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.053875" delay="7.607955287824856 ms"/>
             <connectionWD id="22" preCellId="../IT_L4/25/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.053875" delay="7.1289841909835605 ms"/>
             <connectionWD id="23" preCellId="../IT_L4/2/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.053875" delay="3.363205823047788 ms"/>
