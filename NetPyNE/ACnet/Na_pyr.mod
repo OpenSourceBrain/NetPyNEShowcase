@@ -13,7 +13,8 @@ NEURON {
     SUFFIX Na_pyr
     USEION na WRITE ina VALENCE 1 ? Assuming valence = 1; TODO check this!!
     
-    RANGE gion                           
+    RANGE gion
+    RANGE i__Na_pyr : a copy of the variable for current which makes it easier to access from outside the mod file
     RANGE gmax                              : Will be changed when ion channel mechanism placed on cell!
     RANGE conductance                       : parameter
     
@@ -120,6 +121,7 @@ ASSIGNED {
     temperature (K)
     ena (mV)
     ina (mA/cm2)
+    i__Na_pyr (mA/cm2)
     
     
     m_forwardRate_x                        : derived variable
@@ -208,6 +210,7 @@ BREAKPOINT {
     gion = gmax * fopen 
     
     ina = gion * (v - ena)
+    i__Na_pyr =  -1 * ina : set this variable to the current also - note -1 as channel current convention for LEMS used!
     
 }
 
