@@ -32,7 +32,7 @@ Components:
     pyr_4_sym (Type: cell)
     null (Type: notes)
     BackgroundRandomIClamps (Type: pulseGenerator:  delay=0.0 (SI time) duration=100.0 (SI time) amplitude=6.0E-10 (SI current))
-    network_ACnet2 (Type: networkWithTemperature:  temperature=279.45 (SI temperature))
+    network_ACvvvnet2 (Type: networkWithTemperature:  temperature=279.45 (SI temperature))
     sim1 (Type: Simulation:  length=0.5 (SI time) step=1.0E-5 (SI time))
 
 
@@ -42,7 +42,7 @@ Components:
          jLEMS               v0.10.7
 
 '''
-# Main NetPyNE script for: network_ACnet2
+# Main NetPyNE script for: network_ACvvvnet2
 
 # See https://github.com/Neurosim-lab/netpyne
 
@@ -421,7 +421,7 @@ class NetPyNESimulation():
         self.simConfig.analysis['plotSpikePSD'] = False # plot 3d architecture
 
         # Saving
-        self.simConfig.filename = 'network_ACnet2.txt'  # Set file output name
+        self.simConfig.filename = 'network_ACvvvnet2.txt'  # Set file output name
         self.simConfig.saveFileStep = self.simConfig.dt # step size in ms to save data to disk
         # self.simConfig.saveDat = True # save to dat file
         self.simConfig.saveJson = save_json # save to json file

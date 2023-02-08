@@ -1,4 +1,4 @@
-TITLE Mod file for component: Component(id=Kdr_bask type=ionChannelHH)
+TITLE Mod file for component: Component(id=Kdr_pyr type=ionChannelHH)
 
 COMMENT
 
@@ -10,11 +10,10 @@ COMMENT
 ENDCOMMENT
 
 NEURON {
-    SUFFIX Kdr_bask
+    SUFFIX Kdr_pyr
     USEION k WRITE ik VALENCE 1 ? Assuming valence = 1; TODO check this!!
     
-    RANGE gion
-    RANGE i__Kdr_bask : a copy of the variable for current which makes it easier to access from outside the mod file
+    RANGE gion                           
     RANGE gmax                              : Will be changed when ion channel mechanism placed on cell!
     RANGE conductance                       : parameter
     
@@ -73,12 +72,12 @@ PARAMETER {
     gmax = 0  (S/cm2)                       : Will be changed when ion channel mechanism placed on cell!
     
     conductance = 1.0E-5 (uS)
-    n_instances = 4 
-    n_forwardRate_rate = 0.32000002 (kHz)
-    n_forwardRate_midpoint = -48 (mV)
+    n_instances = 1 
+    n_forwardRate_rate = 0.040000003 (kHz)
+    n_forwardRate_midpoint = -24.9 (mV)
     n_forwardRate_scale = 5 (mV)
-    n_reverseRate_rate = 1 (kHz)
-    n_reverseRate_midpoint = -53 (mV)
+    n_reverseRate_rate = 0.125 (kHz)
+    n_reverseRate_midpoint = -40 (mV)
     n_reverseRate_scale = -40 (mV)
 }
 
@@ -90,7 +89,6 @@ ASSIGNED {
     temperature (K)
     ek (mV)
     ik (mA/cm2)
-    i__Kdr_bask (mA/cm2)
     
     
     n_forwardRate_x                        : derived variable
@@ -128,7 +126,7 @@ STATE {
 }
 
 INITIAL {
-    ek = -90.0
+    ek = -75.0
     
     temperature = celsius + 273.15
     
@@ -143,12 +141,12 @@ BREAKPOINT {
     
     SOLVE states METHOD cnexp
     
-    ? DerivedVariable is based on path: conductanceScaling[*]/factor, on: Component(id=Kdr_bask type=ionChannelHH), from conductanceScaling; null
+    ? DerivedVariable is based on path: conductanceScaling[*]/factor, on: Component(id=Kdr_pyr type=ionChannelHH), from conductanceScaling; null
     ? Path not present in component, using factor: 1
     
     conductanceScale = 1 
     
-    ? DerivedVariable is based on path: gates[*]/fcond, on: Component(id=Kdr_bask type=ionChannelHH), from gates; Component(id=n type=gateHHrates)
+    ? DerivedVariable is based on path: gates[*]/fcond, on: Component(id=Kdr_pyr type=ionChannelHH), from gates; Component(id=n type=gateHHrates)
     ? multiply applied to all instances of fcond in: <gates> ([Component(id=n type=gateHHrates)]))
     fopen0 = n_fcond ? path based, prefix = 
     
@@ -157,7 +155,6 @@ BREAKPOINT {
     gion = gmax * fopen 
     
     ik = gion * (v - ek)
-    i__Kdr_bask =  -1 * ik : set this variable to the current also - note -1 as channel current convention for LEMS used!
     
 }
 

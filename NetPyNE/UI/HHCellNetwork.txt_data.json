@@ -138,8 +138,7 @@
             "stimSourceParams": {},
             "stimTargetParams": {},
             "subConnParams": {},
-            "synMechParams": {},
-            "synMechsReferringPreLoc": []
+            "synMechParams": {}
         },
         "pops": {
             "hhpop": {
@@ -194,6 +193,7 @@
         "cvode_atol": 0.001,
         "distributeSynsUniformly": true,
         "dt": 0.05,
+        "dump_coreneuron_model": false,
         "duration": 450.0,
         "filename": "HHCellNetwork.txt",
         "gatherOnlySimData": true,

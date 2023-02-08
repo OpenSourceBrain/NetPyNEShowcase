@@ -14,8 +14,7 @@ NEURON {
     USEION ca READ cai,cao VALENCE 2
     USEION k WRITE ik VALENCE 1 ? Assuming valence = 1; TODO check this!!
     
-    RANGE gion
-    RANGE i__Kahp_pyr : a copy of the variable for current which makes it easier to access from outside the mod file
+    RANGE gion                           
     RANGE gmax                              : Will be changed when ion channel mechanism placed on cell!
     RANGE conductance                       : parameter
     
@@ -94,7 +93,6 @@ ASSIGNED {
     temperature (K)
     ek (mV)
     ik (mA/cm2)
-    i__Kahp_pyr (mA/cm2)
     
     cai (mM)
     
@@ -171,7 +169,6 @@ BREAKPOINT {
     gion = gmax * fopen 
     
     ik = gion * (v - ek)
-    i__Kahp_pyr =  -1 * ik : set this variable to the current also - note -1 as channel current convention for LEMS used!
     
 }
 

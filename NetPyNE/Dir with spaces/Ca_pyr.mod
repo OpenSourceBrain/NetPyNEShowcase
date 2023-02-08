@@ -1,4 +1,4 @@
-TITLE Mod file for component: Component(id=Na_bask type=ionChannelHH)
+TITLE Mod file for component: Component(id=Ca_pyr type=ionChannelHH)
 
 COMMENT
 
@@ -10,11 +10,10 @@ COMMENT
 ENDCOMMENT
 
 NEURON {
-    SUFFIX Na_bask
-    USEION na WRITE ina VALENCE 1 ? Assuming valence = 1; TODO check this!!
+    SUFFIX Ca_pyr
+    USEION ca WRITE ica VALENCE 2 ? Assuming valence = 2 (Ca ion); TODO check this!!
     
-    RANGE gion
-    RANGE i__Na_bask : a copy of the variable for current which makes it easier to access from outside the mod file
+    RANGE gion                           
     RANGE gmax                              : Will be changed when ion channel mechanism placed on cell!
     RANGE conductance                       : parameter
     
@@ -46,10 +45,6 @@ NEURON {
     RANGE m_reverseRate_r                   : exposure
     RANGE h_instances                       : parameter
     
-    RANGE h_alpha                           : exposure
-    
-    RANGE h_beta                            : exposure
-    
     RANGE h_tau                             : exposure
     
     RANGE h_inf                             : exposure
@@ -57,18 +52,18 @@ NEURON {
     RANGE h_rateScale                       : exposure
     
     RANGE h_fcond                           : exposure
-    RANGE h_forwardRate_TIME_SCALE          : parameter
-    RANGE h_forwardRate_VOLT_SCALE          : parameter
+    RANGE h_timeCourse_TIME_SCALE           : parameter
+    RANGE h_timeCourse_VOLT_SCALE           : parameter
     
-    RANGE h_forwardRate_r                   : exposure
-    RANGE h_reverseRate_TIME_SCALE          : parameter
-    RANGE h_reverseRate_VOLT_SCALE          : parameter
+    RANGE h_timeCourse_t                    : exposure
+    RANGE h_steadyState_TIME_SCALE          : parameter
+    RANGE h_steadyState_VOLT_SCALE          : parameter
     
-    RANGE h_reverseRate_r                   : exposure
-    RANGE m_forwardRate_x                   : derived variable
+    RANGE h_steadyState_x                   : exposure
     RANGE m_reverseRate_x                   : derived variable
-    RANGE h_forwardRate_V                   : derived variable
-    RANGE h_reverseRate_V                   : derived variable
+    RANGE h_timeCourse_V                    : derived variable
+    RANGE h_steadyState_V                   : derived variable
+    RANGE h_tauUnscaled                     : derived variable
     RANGE conductanceScale                  : derived variable
     RANGE fopen0                            : derived variable
     
@@ -97,18 +92,18 @@ PARAMETER {
     gmax = 0  (S/cm2)                       : Will be changed when ion channel mechanism placed on cell!
     
     conductance = 1.0E-5 (uS)
-    m_instances = 3 
-    m_forwardRate_rate = 2.5600002 (kHz)
-    m_forwardRate_midpoint = -50 (mV)
-    m_forwardRate_scale = 4 (mV)
-    m_reverseRate_rate = 2.8000002 (kHz)
-    m_reverseRate_midpoint = -23 (mV)
+    m_instances = 2 
+    m_forwardRate_rate = 1.6 (kHz)
+    m_forwardRate_midpoint = 5 (mV)
+    m_forwardRate_scale = 13.89 (mV)
+    m_reverseRate_rate = 0.1 (kHz)
+    m_reverseRate_midpoint = -8.9 (mV)
     m_reverseRate_scale = -5 (mV)
     h_instances = 1 
-    h_forwardRate_TIME_SCALE = 1000 (ms)
-    h_forwardRate_VOLT_SCALE = 1000 (mV)
-    h_reverseRate_TIME_SCALE = 1000 (ms)
-    h_reverseRate_VOLT_SCALE = 1000 (mV)
+    h_timeCourse_TIME_SCALE = 1000 (ms)
+    h_timeCourse_VOLT_SCALE = 1000 (mV)
+    h_steadyState_TIME_SCALE = 1000 (ms)
+    h_steadyState_VOLT_SCALE = 1000 (mV)
 }
 
 ASSIGNED {
@@ -117,14 +112,11 @@ ASSIGNED {
     v (mV)
     celsius (degC)
     temperature (K)
-    ena (mV)
-    ina (mA/cm2)
-    i__Na_bask (mA/cm2)
+    eca (mV)
+    ica (mA/cm2)
     
     
-    m_forwardRate_x                        : derived variable
-    
-    m_forwardRate_r (kHz)                  : conditional derived var...
+    m_forwardRate_r (kHz)                  : derived variable
     
     m_reverseRate_x                        : derived variable
     
@@ -142,23 +134,21 @@ ASSIGNED {
     
     m_tau (ms)                             : derived variable
     
-    h_forwardRate_V                        : derived variable
+    h_timeCourse_V                         : derived variable
     
-    h_forwardRate_r (kHz)                  : derived variable
+    h_timeCourse_t (ms)                    : derived variable
     
-    h_reverseRate_V                        : derived variable
+    h_steadyState_V                        : derived variable
     
-    h_reverseRate_r (kHz)                  : derived variable
+    h_steadyState_x                        : conditional derived var...
     
     h_rateScale                            : derived variable
-    
-    h_alpha (kHz)                          : derived variable
-    
-    h_beta (kHz)                           : derived variable
     
     h_fcond                                : derived variable
     
     h_inf                                  : derived variable
+    
+    h_tauUnscaled (ms)                     : derived variable
     
     h_tau (ms)                             : derived variable
     
@@ -181,7 +171,7 @@ STATE {
 }
 
 INITIAL {
-    ena = 50.0
+    eca = 80.0
     
     temperature = celsius + 273.15
     
@@ -198,21 +188,20 @@ BREAKPOINT {
     
     SOLVE states METHOD cnexp
     
-    ? DerivedVariable is based on path: conductanceScaling[*]/factor, on: Component(id=Na_bask type=ionChannelHH), from conductanceScaling; null
+    ? DerivedVariable is based on path: conductanceScaling[*]/factor, on: Component(id=Ca_pyr type=ionChannelHH), from conductanceScaling; null
     ? Path not present in component, using factor: 1
     
     conductanceScale = 1 
     
-    ? DerivedVariable is based on path: gates[*]/fcond, on: Component(id=Na_bask type=ionChannelHH), from gates; Component(id=m type=gateHHrates)
-    ? multiply applied to all instances of fcond in: <gates> ([Component(id=m type=gateHHrates), Component(id=h type=gateHHrates)]))
+    ? DerivedVariable is based on path: gates[*]/fcond, on: Component(id=Ca_pyr type=ionChannelHH), from gates; Component(id=m type=gateHHrates)
+    ? multiply applied to all instances of fcond in: <gates> ([Component(id=m type=gateHHrates), Component(id=h type=gateHHtauInf)]))
     fopen0 = m_fcond * h_fcond ? path based, prefix = 
     
     fopen = conductanceScale  *  fopen0 ? evaluable
     g = conductance  *  fopen ? evaluable
     gion = gmax * fopen 
     
-    ina = gion * (v - ena)
-    i__Na_bask =  -1 * ina : set this variable to the current also - note -1 as channel current convention for LEMS used!
+    ica = gion * (v - eca)
     
 }
 
@@ -225,13 +214,7 @@ DERIVATIVE states {
 
 PROCEDURE rates() {
     
-    m_forwardRate_x = (v -  m_forwardRate_midpoint ) /  m_forwardRate_scale ? evaluable
-    if (m_forwardRate_x  != 0)  { 
-        m_forwardRate_r = m_forwardRate_rate  *  m_forwardRate_x  / (1 - exp(0 -  m_forwardRate_x )) ? evaluable cdv
-    } else if (m_forwardRate_x  == 0)  { 
-        m_forwardRate_r = m_forwardRate_rate ? evaluable cdv
-    }
-    
+    m_forwardRate_r = m_forwardRate_rate  / (1 + exp(0 - (v -  m_forwardRate_midpoint )/ m_forwardRate_scale )) ? evaluable
     m_reverseRate_x = (v -  m_reverseRate_midpoint ) /  m_reverseRate_scale ? evaluable
     if (m_reverseRate_x  != 0)  { 
         m_reverseRate_r = m_reverseRate_rate  *  m_reverseRate_x  / (1 - exp(0 -  m_reverseRate_x )) ? evaluable cdv
@@ -244,7 +227,7 @@ PROCEDURE rates() {
     
     m_rateScale = 1 
     
-    ? DerivedVariable is based on path: forwardRate/r, on: Component(id=m type=gateHHrates), from forwardRate; Component(id=null type=HHExpLinearRate)
+    ? DerivedVariable is based on path: forwardRate/r, on: Component(id=m type=gateHHrates), from forwardRate; Component(id=null type=HHSigmoidRate)
     m_alpha = m_forwardRate_r ? path based, prefix = m_
     
     ? DerivedVariable is based on path: reverseRate/r, on: Component(id=m type=gateHHrates), from reverseRate; Component(id=null type=HHExpLinearRate)
@@ -253,24 +236,28 @@ PROCEDURE rates() {
     m_fcond = m_q ^ m_instances ? evaluable
     m_inf = m_alpha /( m_alpha + m_beta ) ? evaluable
     m_tau = 1/(( m_alpha + m_beta ) *  m_rateScale ) ? evaluable
-    h_forwardRate_V = v /  h_forwardRate_VOLT_SCALE ? evaluable
-    h_forwardRate_r = (2 * 9.93908245804491 * (exp (-55.5555555555556* h_forwardRate_V ))) /  h_forwardRate_TIME_SCALE ? evaluable
-    h_reverseRate_V = v /  h_reverseRate_VOLT_SCALE ? evaluable
-    h_reverseRate_r = (2 * 4000.0/(0.0100518357446336* (exp (-200.0* h_reverseRate_V )) + 1.0)) /  h_reverseRate_TIME_SCALE ? evaluable
-    ? DerivedVariable is based on path: q10Settings[*]/q10, on: Component(id=h type=gateHHrates), from q10Settings; null
+    h_timeCourse_V = v /  h_timeCourse_VOLT_SCALE ? evaluable
+    h_timeCourse_t = 0.2  *  h_timeCourse_TIME_SCALE ? evaluable
+    h_steadyState_V = v /  h_steadyState_VOLT_SCALE ? evaluable
+    if (h_steadyState_V   > ( -0.06 ))  { 
+        h_steadyState_x = (exp (-50*( h_steadyState_V  + 0.06))) ? evaluable cdv
+    } else  { 
+        h_steadyState_x = 1 ? evaluable cdv
+    }
+    
+    ? DerivedVariable is based on path: q10Settings[*]/q10, on: Component(id=h type=gateHHtauInf), from q10Settings; null
     ? Path not present in component, using factor: 1
     
     h_rateScale = 1 
     
-    ? DerivedVariable is based on path: forwardRate/r, on: Component(id=h type=gateHHrates), from forwardRate; Component(id=null type=Na_bask_h_alpha_rate)
-    h_alpha = h_forwardRate_r ? path based, prefix = h_
-    
-    ? DerivedVariable is based on path: reverseRate/r, on: Component(id=h type=gateHHrates), from reverseRate; Component(id=null type=Na_bask_h_beta_rate)
-    h_beta = h_reverseRate_r ? path based, prefix = h_
-    
     h_fcond = h_q ^ h_instances ? evaluable
-    h_inf = h_alpha /( h_alpha + h_beta ) ? evaluable
-    h_tau = 1/(( h_alpha + h_beta ) *  h_rateScale ) ? evaluable
+    ? DerivedVariable is based on path: steadyState/x, on: Component(id=h type=gateHHtauInf), from steadyState; Component(id=null type=Ca_pyr_h_inf_inf)
+    h_inf = h_steadyState_x ? path based, prefix = h_
+    
+    ? DerivedVariable is based on path: timeCourse/t, on: Component(id=h type=gateHHtauInf), from timeCourse; Component(id=null type=Ca_pyr_h_tau_tau)
+    h_tauUnscaled = h_timeCourse_t ? path based, prefix = h_
+    
+    h_tau = h_tauUnscaled  /  h_rateScale ? evaluable
     
      
     

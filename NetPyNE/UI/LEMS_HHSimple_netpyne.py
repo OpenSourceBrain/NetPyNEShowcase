@@ -137,7 +137,7 @@ class NetPyNESimulation():
           saveData(filename=json_filename, include=["simConfig", "netParams", "net"])
           real_json_filename='%s_data.json'%json_filename
 
-          print("Finished exporting NetPyNE JSON to %s"%real_json_filename)
+          print("Finished exporting the NetPyNE JSON to %s"%real_json_filename)
 
           return real_json_filename
 

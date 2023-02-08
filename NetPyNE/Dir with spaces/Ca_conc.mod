@@ -55,7 +55,6 @@ ASSIGNED {
     cai (mM)
     cao (mM)
     ica (mA/cm2)
-    i__Ca_conc (mA/cm2)
     diam (um)
     area (um2)
     rate_concentration (mM/ms)

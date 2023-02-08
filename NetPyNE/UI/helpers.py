@@ -25,9 +25,14 @@ def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
             % fullLemsFileName
         )
 
-    pynml.run_lems_with_jneuroml_netpyne(lemsFileName, only_generate_json=True)
+    success = pynml.run_lems_with_jneuroml_netpyne(lemsFileName, only_generate_json=True, verbose=True)
 
-    lems = pynml.read_lems_file(lemsFileName)
+    if not success == True:
+        raise Exception('Problem running netpyne: %s'%success)
+    else:
+        print('Successful generation of the NetPyNE files...')
+
+    #lems = pynml.read_lems_file(lemsFileName)
 
     json_filename = lemsFileName.replace('.xml','_netpyne_data.json')
     print('Loading JSON file: %s'%json_filename)
@@ -101,5 +106,11 @@ if __name__ == "__main__":
 
     if '-nml' in sys.argv:
         convertAndImportNeuroML2("../../NeuroML2/Spikers.net.nml")
+    elif '-nml2' in sys.argv:
+        convertAndImportNeuroML2("../../NeuroML2/multicomp/DendConn.net.nml")
+    elif '-nml3' in sys.argv:
+        convertAndImportNeuroML2("../ACnet/MediumNet.net.nml")
+    elif '-l2' in sys.argv:
+        convertAndImportLEMSSimulation("../Dir with spaces/LEMS_MediumNet.xml")
     else:
         convertAndImportLEMSSimulation("LEMS_HHSimple.xml")

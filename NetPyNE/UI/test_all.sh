@@ -31,3 +31,7 @@ rm -rf x86_64
 python helpers.py
 rm -rf x86_64
 python helpers.py -nml
+rm -rf x86_64
+python helpers.py -nml2
+rm -rf x86_64
+python helpers.py -nml3

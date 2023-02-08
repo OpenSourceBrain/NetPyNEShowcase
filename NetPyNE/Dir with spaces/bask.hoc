@@ -1,0 +1,215 @@
+// Cell: bask
+/*
+{
+  "id" : "bask",
+  "sections" : [ {
+    "name" : "soma",
+    "id" : "soma",
+    "points3d" : [ "0.0, 0.0, 0.0, 40.0", "0.0, 40.0, 0.0, 40.0" ]
+  }, {
+    "name" : "dend",
+    "id" : "dend",
+    "points3d" : [ "0.0, 40.0, 0.0, 2.0", "0.0, 200.0, 0.0, 2.0" ],
+    "parent" : "soma",
+    "fractionAlong" : 1.0
+  } ],
+  "groups" : [ {
+    "name" : "soma_group",
+    "groups" : [ ],
+    "sections" : [ "soma" ]
+  }, {
+    "name" : "dendrite_group",
+    "groups" : [ ],
+    "sections" : [ "dend" ]
+  }, {
+    "name" : "all",
+    "sections" : [ "soma", "dend" ]
+  } ],
+  "specificCapacitance" : [ {
+    "group" : "all",
+    "value" : "1.5"
+  } ],
+  "initMembPotential" : [ {
+    "group" : "all",
+    "value" : "-65.0"
+  } ],
+  "resistivity" : [ {
+    "group" : "all",
+    "value" : "70.0"
+  } ],
+  "channelDensity" : [ {
+    "id" : "Kdr_bask_soma_group",
+    "ionChannel" : "Kdr_bask",
+    "ion" : "k",
+    "group" : "soma_group",
+    "condDens" : "0.049999997",
+    "erev" : "-90.0"
+  }, {
+    "id" : "LeakConductance_bask_all",
+    "ionChannel" : "LeakConductance_bask",
+    "ion" : "non_specific",
+    "group" : "all",
+    "condDens" : "1.428571E-4",
+    "erev" : "-65.0"
+  }, {
+    "id" : "Na_bask_soma_group",
+    "ionChannel" : "Na_bask",
+    "ion" : "na",
+    "group" : "soma_group",
+    "condDens" : "0.099999994",
+    "erev" : "50.0"
+  } ],
+  "species" : [ ]
+}
+*/
+
+load_file("subiter.hoc")
+
+begintemplate bask
+
+public init, topol, basic_shape, subsets, geom, memb
+public x, y, z, position
+
+
+//  Some methods for referencing the cells
+
+public toString, netInfo, set_initial_v, set_initial_ion_properties, synlist
+
+
+// Section: soma, id: soma, parent: $s.parent
+create soma
+public soma
+// Section: dend, id: dend, parent: soma
+create dend
+public dend
+
+// Group: {name=soma_group, groups=[], sections=[soma]}
+objref soma_group
+// Group: {name=dendrite_group, groups=[], sections=[dend]}
+objref dendrite_group
+// Group: {name=all, sections=[soma, dend]}
+objref all
+
+objref synlist
+
+proc init() {
+    topol()
+    geom_nseg()
+    subsets()
+    subsets_inhomogeneous()
+    biophys()
+    biophys_inhomogeneous()
+    synlist = new List()
+    x = y = z = 0
+
+}
+
+proc set_initial_v() {
+    // Taken from the initMembPotential value
+    forsec all v = -65.0  // units: mV
+}
+
+
+proc set_initial_ion_properties() {
+    // From species
+}
+
+
+proc topol() {
+    basic_shape()
+    connect dend(0), soma(1.0)
+
+}
+
+
+proc basic_shape() {
+
+    // Section: soma, id: soma, parent: $s.parent (entry count 0/100)
+    soma { pt3dclear() }
+    soma { pt3dadd( 0.0, 0.0, 0.0, 40.0 ) }
+    soma { pt3dadd( 0.0, 40.0, 0.0, 40.0 ) }
+    // Section: dend, id: dend, parent: soma (entry count 2/100)
+    dend { pt3dclear() }
+    dend { pt3dadd( 0.0, 40.0, 0.0, 2.0 ) }
+    dend { pt3dadd( 0.0, 200.0, 0.0, 2.0 ) }
+
+}
+
+
+proc subsets() { local i
+
+    // Group: {name=soma_group, groups=[], sections=[soma]}
+    soma_group = new SectionList()
+    soma soma_group.append()
+
+    // Group: {name=dendrite_group, groups=[], sections=[dend]}
+    dendrite_group = new SectionList()
+    dend dendrite_group.append()
+
+    // Group: {name=all, sections=[soma, dend]}
+    all = new SectionList()
+    soma all.append()
+    dend all.append()
+
+}
+
+
+proc subsets_inhomogeneous() {
+}
+
+proc biophys() {
+
+    // Specific capacitance
+    forsec all cm = 1.5  // units: uF/cm2
+
+    // Specific axial resistance/resistivity
+    forsec all Ra = 70.0  // units: ohm cm
+
+    // Channel densities
+    forsec soma_group {
+        insert Kdr_bask
+        gmax_Kdr_bask = 0.049999997  // units: S cm-2
+        ek = -90.0  // units: mV
+    }
+    forsec all {
+        insert LeakConductance_bask
+        gmax_LeakConductance_bask = 1.428571E-4  // units: S cm-2
+        e_LeakConductance_bask = -65.0  // units: mV
+    }
+    forsec soma_group {
+        insert Na_bask
+        gmax_Na_bask = 0.099999994  // units: S cm-2
+        ena = 50.0  // units: mV
+    }
+
+    // Concentration models for species
+
+}
+
+func H() { // Heaviside function
+    if ($1>=0) return 1
+    if ($1==0) return 0.5
+    return 0
+}
+
+proc biophys_inhomogeneous() {
+}
+
+proc geom_nseg() {
+    // All sections not mentioned here have nseg = 1
+}
+
+
+proc position() { local i
+    forsec all {
+        for i = 0, n3d()-1 {
+            pt3dchange(i, $1+x3d(i), $2+y3d(i), $3+z3d(i), diam3d(i))
+        }
+    }
+    x = $1  y = $2  z = $3
+}
+
+
+endtemplate bask
+
+
