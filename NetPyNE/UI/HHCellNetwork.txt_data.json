@@ -170,7 +170,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "1.0.2.1",
+    "netpyne_version": "1.0.3.1",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,
@@ -278,7 +278,7 @@
         "timing": true,
         "tstop": 450.0,
         "use_fast_imem": false,
-        "validateNetParams": false,
+        "validateNetParams": true,
         "verbose": false
     },
     "simData": {
