@@ -13,7 +13,8 @@ NEURON {
     SUFFIX Ca_pyr
     USEION ca WRITE ica VALENCE 2 ? Assuming valence = 2 (Ca ion); TODO check this!!
     
-    RANGE gion                           
+    RANGE gion
+    RANGE i__Ca_pyr : a copy of the variable for current which makes it easier to access from outside the mod file
     RANGE gmax                              : Will be changed when ion channel mechanism placed on cell!
     RANGE conductance                       : parameter
     
@@ -114,6 +115,7 @@ ASSIGNED {
     temperature (K)
     eca (mV)
     ica (mA/cm2)
+    i__Ca_pyr (mA/cm2)
     
     
     m_forwardRate_r (kHz)                  : derived variable
@@ -202,6 +204,7 @@ BREAKPOINT {
     gion = gmax * fopen 
     
     ica = gion * (v - eca)
+    i__Ca_pyr =  -1 * ica : set this variable to the current also - note -1 as channel current convention for LEMS used!
     
 }
 
