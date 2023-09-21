@@ -170,7 +170,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "1.0.4.2",
+    "netpyne_version": "1.0.5",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,
