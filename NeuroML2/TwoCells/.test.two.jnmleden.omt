@@ -1,0 +1,29 @@
+# Script for running automated tests on OSB, see https://github.com/OpenSourceBrain/osb-model-validation
+
+
+target: LEMS_TwoCell.xml
+engine: jNeuroML_EDEN
+mep: .test.two.mep
+experiments:
+  pyr0:
+    observables:
+      spike times:
+        file:
+          path: pyramidals_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.017343922603342065
+  bask0:
+    observables:
+      spike times:
+        file:
+          path: baskets_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.0017869092394359062

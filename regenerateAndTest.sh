@@ -13,6 +13,15 @@ pynml LEMS_GJ.xml -netpyne
 
 cp LEMS_GJ_netpyne.py pulseGen2.mod pulseGen1.mod gj1.mod iaf.mod GJ.nml ../NetPyNE/GapJunctions
 
+cd TwoCells
+
+rm *mod
+jnml LEMS_TwoCell.xml -netpyne
+
+cp LEMS_TwoCell_netpyne.py *.mod *.nml ../../NetPyNE/TwoCells
+
+cd ..
+
 
 ################  Copy over nml to netpyne dirs (for testing)
 

@@ -193,3 +193,5 @@ arm64
 /NeuroML2/TwoCells/*_nrn.py
 /NeuroML2/TwoCells/*.hoc
 /NeuroML2/TwoCells/*.dat
+/NetPyNE/TwoCells/*dat
+/NeuroML2/TwoCells/*_netpyne.py
