@@ -189,3 +189,7 @@ simulator.props
 /NetPyNE/UI/LEMS_Sim_network_ACnet2_netpyne_data.json
 arm64
 /NetPyNE/Dir with spaces/report.txt
+/NeuroML2/TwoCells/*.mod
+/NeuroML2/TwoCells/*_nrn.py
+/NeuroML2/TwoCells/*.hoc
+/NeuroML2/TwoCells/*.dat
