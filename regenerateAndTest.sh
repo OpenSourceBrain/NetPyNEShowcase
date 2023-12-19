@@ -16,9 +16,9 @@ cp LEMS_GJ_netpyne.py pulseGen2.mod pulseGen1.mod gj1.mod iaf.mod GJ.nml ../NetP
 cd TwoCells
 
 rm -f *mod
-pynml LEMS_TwoCell.xml -netpyne
+pynml LEMS_TwoCell.xml -netpyne -json
 
-cp LEMS_TwoCell_netpyne.py *.mod *.nml ../../NetPyNE/TwoCells
+cp LEMS_TwoCell_netpyne.py *.mod *.nml *json ../../NetPyNE/TwoCells
 
 cd ..
 
