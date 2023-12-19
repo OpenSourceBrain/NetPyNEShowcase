@@ -195,3 +195,4 @@ arm64
 /NeuroML2/TwoCells/*.dat
 /NetPyNE/TwoCells/*dat
 /NeuroML2/TwoCells/*_netpyne.py
+/NeuroML2/TwoCells/LEMS_TwoCell_netpyne_data.json

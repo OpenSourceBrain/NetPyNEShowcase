@@ -1,0 +1,881 @@
+{
+    "net": {
+        "cells": [
+            {
+                "conns": [],
+                "gid": 0,
+                "secLists": null,
+                "secs": {},
+                "stims": [
+                    {
+                        "label": "Input_1_0_pyramidals_0_soma_0_5",
+                        "loc": 0.5,
+                        "originalFormat": "NeuroML2",
+                        "sec": "soma",
+                        "source": "Input_1_0_pyramidals_0_soma_0_5",
+                        "type": "Input_1"
+                    }
+                ],
+                "tags": {
+                    "cellLabel": 0,
+                    "cellType": "pyr_4_sym",
+                    "label": [
+                        "pyr_4_sym"
+                    ],
+                    "pop": "pyramidals",
+                    "x": 400.0,
+                    "xnorm": 4.0,
+                    "y": -200.0,
+                    "ynorm": -2.0,
+                    "z": 0,
+                    "znorm": 0.0
+                }
+            },
+            {
+                "conns": [],
+                "gid": 1,
+                "secLists": null,
+                "secs": {},
+                "stims": [
+                    {
+                        "label": "Input_0_0_baskets_0_soma_0_5",
+                        "loc": 0.5,
+                        "originalFormat": "NeuroML2",
+                        "sec": "soma",
+                        "source": "Input_0_0_baskets_0_soma_0_5",
+                        "type": "Input_0"
+                    }
+                ],
+                "tags": {
+                    "cellLabel": 0,
+                    "cellType": "bask",
+                    "label": [
+                        "bask"
+                    ],
+                    "pop": "baskets",
+                    "x": 0,
+                    "xnorm": 0.0,
+                    "y": 0,
+                    "ynorm": 0.0,
+                    "z": 0,
+                    "znorm": 0.0
+                }
+            }
+        ],
+        "params": {
+            "cellParams": {
+                "bask": {
+                    "secLists": {
+                        "all": [
+                            "soma",
+                            "dend"
+                        ],
+                        "dendrite_group": [
+                            "dend"
+                        ],
+                        "soma_group": [
+                            "soma"
+                        ]
+                    },
+                    "secs": {
+                        "dend": {
+                            "geom": {
+                                "Ra": 70.0,
+                                "cm": 1.5,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        40.0,
+                                        0.0,
+                                        2.0
+                                    ],
+                                    [
+                                        0.0,
+                                        200.0,
+                                        0.0,
+                                        2.0
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_bask": {
+                                    "e": -65.0,
+                                    "gmax": 0.00014285709999999998
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "soma",
+                                "parentX": 1.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "soma": {
+                            "geom": {
+                                "Ra": 70.0,
+                                "cm": 1.5,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        40.0
+                                    ],
+                                    [
+                                        0.0,
+                                        40.0,
+                                        0.0,
+                                        40.0
+                                    ]
+                                ]
+                            },
+                            "ions": {
+                                "k": {
+                                    "e": -90.0
+                                },
+                                "na": {
+                                    "e": 50.0
+                                }
+                            },
+                            "mechs": {
+                                "Kdr_bask": {
+                                    "gmax": 0.05
+                                },
+                                "LeakConductance_bask": {
+                                    "e": -65.0,
+                                    "gmax": 0.00014285709999999998
+                                },
+                                "Na_bask": {
+                                    "gmax": 0.1
+                                }
+                            },
+                            "threshold": 0.0,
+                            "vinit": -65.0
+                        }
+                    }
+                },
+                "pyr_4_sym": {
+                    "secLists": {
+                        "all": [
+                            "soma",
+                            "apical0",
+                            "apical2",
+                            "apical3",
+                            "apical4",
+                            "apical1",
+                            "basal0",
+                            "basal1",
+                            "basal2"
+                        ],
+                        "apical_dends": [
+                            "apical0",
+                            "apical2",
+                            "apical3",
+                            "apical4",
+                            "apical1"
+                        ],
+                        "background_input": [
+                            "basal1"
+                        ],
+                        "basal_dends": [
+                            "basal0",
+                            "basal1",
+                            "basal2"
+                        ],
+                        "basal_gaba_input": [
+                            "basal0"
+                        ],
+                        "dendrite_group": [
+                            "apical0",
+                            "apical2",
+                            "apical3",
+                            "apical4",
+                            "apical1",
+                            "basal0",
+                            "basal1",
+                            "basal2"
+                        ],
+                        "middle_apical_dendrite": [
+                            "apical3"
+                        ],
+                        "soma_group": [
+                            "soma"
+                        ],
+                        "thalamic_input": [
+                            "apical1"
+                        ]
+                    },
+                    "secs": {
+                        "apical0": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        17.0,
+                                        0.0,
+                                        6.0
+                                    ],
+                                    [
+                                        0.0,
+                                        77.0,
+                                        0.0,
+                                        6.0
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "soma",
+                                "parentX": 1.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "apical1": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        77.0,
+                                        0.0,
+                                        3.0
+                                    ],
+                                    [
+                                        -150.0,
+                                        77.0,
+                                        0.0,
+                                        3.0
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "apical0",
+                                "parentX": 1.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "apical2": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        77.0,
+                                        0.0,
+                                        4.4
+                                    ],
+                                    [
+                                        0.0,
+                                        477.0,
+                                        0.0,
+                                        4.4
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "apical0",
+                                "parentX": 1.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "apical3": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        477.0,
+                                        0.0,
+                                        2.9
+                                    ],
+                                    [
+                                        0.0,
+                                        877.0,
+                                        0.0,
+                                        2.9
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "apical2",
+                                "parentX": 1.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "apical4": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        877.0,
+                                        0.0,
+                                        2.0
+                                    ],
+                                    [
+                                        0.0,
+                                        1127.0,
+                                        0.0,
+                                        2.0
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "apical3",
+                                "parentX": 1.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "basal0": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        4.0
+                                    ],
+                                    [
+                                        0.0,
+                                        -50.0,
+                                        0.0,
+                                        4.0
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "soma",
+                                "parentX": 0.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "basal1": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        -50.0,
+                                        0.0,
+                                        5.0
+                                    ],
+                                    [
+                                        106.07,
+                                        -156.07,
+                                        0.0,
+                                        5.0
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "basal0",
+                                "parentX": 1.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "basal2": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        -50.0,
+                                        0.0,
+                                        5.0
+                                    ],
+                                    [
+                                        -106.07,
+                                        -156.07,
+                                        0.0,
+                                        5.0
+                                    ]
+                                ]
+                            },
+                            "ions": {},
+                            "mechs": {
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                }
+                            },
+                            "threshold": 0.0,
+                            "topol": {
+                                "childX": 0,
+                                "parentSec": "basal0",
+                                "parentX": 1.0
+                            },
+                            "vinit": -65.0
+                        },
+                        "soma": {
+                            "geom": {
+                                "Ra": 200.0,
+                                "cm": 2.84,
+                                "pt3d": [
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        23.0
+                                    ],
+                                    [
+                                        0.0,
+                                        17.0,
+                                        0.0,
+                                        23.0
+                                    ]
+                                ]
+                            },
+                            "ions": {
+                                "ca": {
+                                    "e": 80.0,
+                                    "i": 5e-05,
+                                    "o": 3.0
+                                },
+                                "k": {
+                                    "e": -75.0
+                                },
+                                "na": {
+                                    "e": 55.0
+                                }
+                            },
+                            "mechs": {
+                                "Ca_conc": {},
+                                "Ca_pyr": {
+                                    "gmax": 0.01
+                                },
+                                "Kahp_pyr": {
+                                    "gmax": 0.0025
+                                },
+                                "Kdr_pyr": {
+                                    "gmax": 0.08
+                                },
+                                "LeakConductance_pyr": {
+                                    "e": -66.0,
+                                    "gmax": 0.0001420051
+                                },
+                                "Na_pyr": {
+                                    "gmax": 0.12
+                                }
+                            },
+                            "threshold": 0.0,
+                            "vinit": -65.0
+                        }
+                    }
+                }
+            },
+            "cellsVisualizationSpacingMultiplier": [
+                1,
+                1,
+                1
+            ],
+            "connParams": {},
+            "correctBorder": false,
+            "defaultDelay": 1,
+            "defaultThreshold": 10,
+            "defaultWeight": 1,
+            "defineCellShapes": false,
+            "mapping": {
+                "__dict__": {}
+            },
+            "popParams": {
+                "baskets": {
+                    "cellType": "bask",
+                    "cellsList": [
+                        {
+                            "cellLabel": 0,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    ],
+                    "numCells": 1,
+                    "originalFormat": "NeuroML2",
+                    "pop": "baskets"
+                },
+                "pyramidals": {
+                    "cellType": "pyr_4_sym",
+                    "cellsList": [
+                        {
+                            "cellLabel": 0,
+                            "x": 400.0,
+                            "y": -200.0,
+                            "z": 0
+                        }
+                    ],
+                    "numCells": 1,
+                    "originalFormat": "NeuroML2",
+                    "pop": "pyramidals"
+                }
+            },
+            "popTagsCopiedToCells": [
+                "cellModel",
+                "cellType"
+            ],
+            "propVelocity": 500.0,
+            "rotateCellsRandomly": false,
+            "rxdParams": {},
+            "scale": 1,
+            "scaleConnWeight": 1,
+            "scaleConnWeightModels": false,
+            "scaleConnWeightNetStims": 1,
+            "shape": "cuboid",
+            "sizeX": 100,
+            "sizeY": 100,
+            "sizeZ": 100,
+            "stimSourceParams": {
+                "Input_0_0_baskets_0_soma_0_5": {
+                    "label": "Input_0_0_baskets_0_soma_0_5",
+                    "originalFormat": "NeuroML2",
+                    "type": "Input_0"
+                },
+                "Input_1_0_pyramidals_0_soma_0_5": {
+                    "label": "Input_1_0_pyramidals_0_soma_0_5",
+                    "originalFormat": "NeuroML2",
+                    "type": "Input_1"
+                }
+            },
+            "stimTargetParams": {
+                "Input_0_0_baskets_0_soma_0_5": {
+                    "conds": {
+                        "cellList": [
+                            0
+                        ],
+                        "pop": "baskets"
+                    },
+                    "loc": 0.5,
+                    "sec": "soma",
+                    "source": "Input_0_0_baskets_0_soma_0_5"
+                },
+                "Input_1_0_pyramidals_0_soma_0_5": {
+                    "conds": {
+                        "cellList": [
+                            0
+                        ],
+                        "pop": "pyramidals"
+                    },
+                    "loc": 0.5,
+                    "sec": "soma",
+                    "source": "Input_1_0_pyramidals_0_soma_0_5"
+                }
+            },
+            "subConnParams": {},
+            "synMechParams": {}
+        },
+        "pops": {
+            "baskets": {
+                "cellGids": [
+                    1
+                ],
+                "tags": {
+                    "cellType": "bask",
+                    "cellsList": [
+                        {
+                            "cellLabel": 0,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    ],
+                    "numCells": 1,
+                    "originalFormat": "NeuroML2",
+                    "pop": "baskets"
+                }
+            },
+            "pyramidals": {
+                "cellGids": [
+                    0
+                ],
+                "tags": {
+                    "cellType": "pyr_4_sym",
+                    "cellsList": [
+                        {
+                            "cellLabel": 0,
+                            "x": 400.0,
+                            "y": -200.0,
+                            "z": 0
+                        }
+                    ],
+                    "numCells": 1,
+                    "originalFormat": "NeuroML2",
+                    "pop": "pyramidals"
+                }
+            }
+        }
+    },
+    "netpyne_changeset": "",
+    "netpyne_version": "1.0.5",
+    "simConfig": {
+        "addSynMechs": true,
+        "allowConnsWithWeight0": true,
+        "allowSelfConns": false,
+        "analysis": {
+            "plot2Dnet": false,
+            "plotConn": false,
+            "plotRaster": false,
+            "plotSpikeHist": false,
+            "plotSpikePSD": false
+        },
+        "backupCfgFile": [],
+        "cache_efficient": false,
+        "compactConnFormat": false,
+        "connRandomSecFromList": true,
+        "coreneuron": false,
+        "createNEURONObj": 1,
+        "createPyStruct": 1,
+        "cvode_active": false,
+        "cvode_atol": 0.001,
+        "distributeSynsUniformly": true,
+        "dt": 0.01,
+        "dump_coreneuron_model": false,
+        "duration": 700.0,
+        "filename": "/Users/padraig/neuroConstruct/osb/showcase/NetPyNEShowcase/NeuroML2/TwoCells/LEMS_TwoCell_netpyne",
+        "gatherOnlySimData": true,
+        "gpu": false,
+        "hParams": {
+            "celsius": 6.300000000000011,
+            "clamp_resist": 0.001,
+            "v_init": -65.0
+        },
+        "includeParamsLabel": true,
+        "invertedYCoord": true,
+        "oneSynPerNetcon": true,
+        "plotCells": [
+            "all"
+        ],
+        "printPopAvgRates": false,
+        "printRunTime": false,
+        "printSynsAfterRule": false,
+        "pt3dRelativeToCellLocation": true,
+        "rand123GlobalIndex": null,
+        "random123": false,
+        "recordCells": [
+            "all"
+        ],
+        "recordCellsSpikes": -1,
+        "recordDipole": false,
+        "recordDipolesHNN": false,
+        "recordLFP": [],
+        "recordStep": 0.01,
+        "recordStim": true,
+        "recordTime": true,
+        "recordTraces": {
+            "baskets_v_0_0_OF_baskets_0_soma_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "baskets"
+                },
+                "loc": 0.5,
+                "sec": "soma",
+                "var": "v"
+            },
+            "baskets_v_0_1_OF_baskets_0_dend_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "baskets"
+                },
+                "loc": 0.5,
+                "sec": "dend",
+                "var": "v"
+            },
+            "pyramidals_ca_0_0_OF_pyramidals_0_soma_caConc": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "soma",
+                "var": "cai"
+            },
+            "pyramidals_v_0_0_OF_pyramidals_0_soma_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "soma",
+                "var": "v"
+            },
+            "pyramidals_v_0_1_OF_pyramidals_0_apical0_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "apical0",
+                "var": "v"
+            },
+            "pyramidals_v_0_2_OF_pyramidals_0_apical2_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "apical2",
+                "var": "v"
+            },
+            "pyramidals_v_0_3_OF_pyramidals_0_apical3_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "apical3",
+                "var": "v"
+            },
+            "pyramidals_v_0_4_OF_pyramidals_0_apical4_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "apical4",
+                "var": "v"
+            },
+            "pyramidals_v_0_5_OF_pyramidals_0_apical1_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "apical1",
+                "var": "v"
+            },
+            "pyramidals_v_0_6_OF_pyramidals_0_basal0_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "basal0",
+                "var": "v"
+            },
+            "pyramidals_v_0_7_OF_pyramidals_0_basal1_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "basal1",
+                "var": "v"
+            },
+            "pyramidals_v_0_8_OF_pyramidals_0_basal2_v": {
+                "conds": {
+                    "cellLabel": 0,
+                    "pop": "pyramidals"
+                },
+                "loc": 0.5,
+                "sec": "basal2",
+                "var": "v"
+            }
+        },
+        "saveCSV": false,
+        "saveCellConns": false,
+        "saveCellSecs": false,
+        "saveDat": false,
+        "saveDataInclude": [
+            "netParams",
+            "netCells",
+            "netPops",
+            "simConfig",
+            "simData"
+        ],
+        "saveDipoleCells": false,
+        "saveDipolePops": false,
+        "saveDpk": false,
+        "saveFileStep": 0.01,
+        "saveFolder": "",
+        "saveHDF5": false,
+        "saveJson": true,
+        "saveLFPCells": false,
+        "saveLFPPops": false,
+        "saveMat": false,
+        "savePickle": false,
+        "saveTiming": false,
+        "seeds": {
+            "conn": 0,
+            "loc": 0,
+            "stim": 123456789
+        },
+        "simLabel": "",
+        "timestampFilename": false,
+        "timing": true,
+        "tstop": 700.0,
+        "use_fast_imem": false,
+        "validateNetParams": false,
+        "verbose": false
+    }
+}

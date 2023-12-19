@@ -1,0 +1,28 @@
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
+ 
+target: ReloadJson.py
+engine: NetPyNE
+mep: ../../NeuroML2/TwoCells/.test.two.mep
+experiments: 
+  pyr0:
+    observables:
+      spike times:
+        file:
+          path: pyramidals_v_0_0_OF_pyramidals_0_soma_v_cell_1.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.00
+  bask0:
+    observables:
+      spike times:
+        file:
+          path: baskets_v_0_0_OF_baskets_0_soma_v_cell_0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: 0
+        tolerance: 0.00
