@@ -30,7 +30,7 @@ import datetime
 
 class NetPyNESimulation():
 
-    def __init__(self, tstop=520.0, dt=0.001, seed=123456789, save_json=False):
+    def __init__(self, tstop=520.0, dt=0.001, seed=123456789, save_json=False, abs_tol=None):
 
         self.setup_start = time.time()
         
@@ -50,6 +50,13 @@ class NetPyNESimulation():
         # Simulation parameters
         self.simConfig.duration = self.simConfig.tstop = tstop # Duration of the simulation, in ms
         self.simConfig.dt = dt # Internal integration timestep to use
+
+        # cvode
+        if abs_tol is not None:
+            self.simConfig.cvode_active = True
+            self.simConfig.cvode_atol = abs_tol
+        else:
+            self.simConfig.cvode_active = False
 
         # Seeds for randomizers (connectivity, input stimulation and cell locations)
         # Note: locations and connections should be fully specified by the structure of the NeuroML,
@@ -175,7 +182,7 @@ if __name__ == '__main__':
     save_json = '-json' in sys.argv
     no_run = '-norun' in sys.argv
 
-    ns = NetPyNESimulation(tstop=520.0, dt=0.001, seed=123456789, save_json=save_json)
+    ns = NetPyNESimulation(tstop=520.0, dt=0.001, seed=123456789, save_json=save_json, abs_tol=None)
 
     if not no_run:
       ns.run()
