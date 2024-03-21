@@ -1,13 +1,3 @@
-"""
-params.py
-
-netParams is a dict containing a set of network parameters using a standardized structure
-
-simConfig is a dict containing a set of simulation configurations using a standardized structure
-
-Contributors: salvadordura@gmail.com
-"""
-
 from netpyne import specs
 
 netParams = specs.NetParams()   # object of class NetParams to store the network parameters
@@ -26,23 +16,28 @@ simConfig = specs.SimConfig()   # object of class SimConfig to store the simulat
 pop_size = 3
 
 # Population parameters
-netParams.popParams['PYR_HH'] = {'cellModel': 'HH', 'cellType': 'PYR', 'numCells': pop_size} # add dict with params for this pop
-netParams.popParams['PYR_Izhi'] = {'cellModel': 'Izhi', 'cellType': 'PYR', 'numCells': pop_size} # add dict with params for this pop
+netParams.popParams['PYR_HH'] = {'cellType': 'PYR', 'numCells': pop_size} # add dict with params for this pop
+netParams.popParams['PYR_Izhi'] = {'cellType': 'PYR_Izhi', 'numCells': pop_size} # add dict with params for this pop
 
 
 # Cell parameters list
 ## PYR cell properties (HH)
-cellRule = {'conds': {'cellType': 'PYR', 'cellModel': 'HH'},  'secs': {}}
+cellRule = {'secs': {}}
 cellRule['secs']['soma'] = {'geom': {}, 'topol': {}, 'mechs': {}}  # soma properties
-cellRule['secs']['soma']['geom'] = {'diam': 18.8, 'L': 18.8, 'Ra': 123.0, 'pt3d':[]}
-cellRule['secs']['soma']['geom']['pt3d'].append((0, 0, 0, 18.8))
-cellRule['secs']['soma']['geom']['pt3d'].append((0, 0, 18.8, 18.8))
+cellRule['secs']['soma']['geom'] = {'diam': 6.3, 'L': 5, 'Ra': 123.0, 'pt3d':[]}
+cellRule['secs']['soma']['geom']['pt3d'].append((0, 0, 0, 20))
+cellRule['secs']['soma']['geom']['pt3d'].append((0, 0, 20, 20))
 cellRule['secs']['soma']['mechs']['hh'] = {'gnabar': 0.12, 'gkbar': 0.036, 'gl': 0.003, 'el': -70}
+
+cellRule['secs']['dend'] = {'geom': {}, 'topol': {}, 'mechs': {}}  # dend properties
+cellRule['secs']['dend']['geom'] = {'diam': 5.0, 'L': 150.0, 'Ra': 150.0, 'cm': 1, 'pt3d': []}
+cellRule['secs']['dend']['topol'] = {'parentSec': 'soma', 'parentX': 1.0, 'childX': 0}
+cellRule['secs']['dend']['mechs']['pas'] = {'g': 0.0000357, 'e': -70}
 
 netParams.cellParams['PYR_HH'] = cellRule  # add dict to list of cell properties
 
 ## PYR cell properties (Izhi)
-cellRule = {'conds': {'cellType': 'PYR', 'cellModel': 'Izhi'},  'secs': {}}
+cellRule = {'secs': {}}
 cellRule['secs']['soma'] = {'geom': {}, 'pointps':{}}  # soma properties
 cellRule['secs']['soma']['geom'] = {'diam': 10, 'L': 10, 'cm': 31.831}
 cellRule['secs']['soma']['pointps']['Izhi'] = {'mod':'Izhi2007b',
@@ -51,28 +46,26 @@ netParams.cellParams['PYR_Izhi'] = cellRule  # add dict to list of cell properti
 
 
 # Synaptic mechanism parameters
-netParams.synMechParams['syn1'] = {'mod': 'ExpSyn', 'tau': 30, 'e': 0}
-netParams.synMechParams['syn2'] = {'mod': 'ExpSyn', 'tau': 4, 'e': 0}
+netParams.synMechParams['AMPA'] = {'mod': 'ExpSyn', 'tau': 0.1, 'e': 0}
 
 
 # Stimulation parameters
-netParams.stimSourceParams['bkg1'] = {'type': 'NetStim', 'rate': 20, 'noise': 0}
-netParams.stimSourceParams['bkg2'] = {'type': 'NetStim', 'rate': 20, 'noise': 1}
-netParams.stimTargetParams['bg->PYR_Izhi'] = {'source': 'bkg1', 'conds': {'cellType': 'PYR', 'cellModel': 'Izhi'},
-                                            'connFunc': 'fullConn','weight': 0.01, 'delay': 0, 'synMech': 'syn2'}
-netParams.stimTargetParams['bg->PYR_HH'] = {'source': 'bkg2', 'conds': {'cellType': 'PYR', 'cellModel': 'HH'},
-                                            'connFunc': 'fullConn','weight': 0.005, 'synMech': 'syn1', 'sec': 'soma', 'loc': 1.0, 'delay': 0}
+netParams.stimSourceParams['bkg'] = {'type': 'NetStim', 'rate': 10, 'noise': 0.5}
+netParams.stimTargetParams['bg->PYR_Izhi'] = {'source': 'bkg', 'conds': {'cellType': 'PYR_Izhi'},
+                                            'weight': 1, 'delay': 'uniform(1,5)', 'synMech': 'AMPA'}
+netParams.stimTargetParams['bg->PYR_HH'] = {'source': 'bkg', 'conds': {'cellType': 'PYR_HH'},
+                                            'weight': 1, 'synMech': 'AMPA', 'sec': 'dend', 'loc': 1.0, 'delay': 'uniform(1,5)'}
 
 
 # Connectivity parameters
 netParams.connParams['PYR->PYR'] = {
-    'preConds': {'cellType': 'PYR'}, 'postConds': {'cellType': 'PYR'},
-    'weight': 0.0,                    # weight of each connection
+    'preConds': {'cellType': ['PYR_HH', 'PYR_Izhi']}, 
+    'postConds': {'cellType': ['PYR_HH', 'PYR_Izhi']},
+    'weight': 0.2,                    # weight of each connection
     'delay': '0.2+normal(13.0,1.4)',     # delay min=0.2, mean=13.0, var = 1.4
     'threshold': 10,                    # threshold
     'convergence': 'uniform(0,5)',       # convergence (num presyn targeting postsyn) is uniformly distributed between 1 and 10
-    'synMech': 'syn1'}
-
+    'synMech': 'AMPA'}
 
 
 
