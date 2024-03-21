@@ -16,7 +16,7 @@ simConfig = specs.SimConfig()   # object of class SimConfig to store the simulat
 pop_size = 3
 
 # Population parameters
-netParams.popParams['PYR_HH'] = {'cellType': 'PYR', 'numCells': pop_size} # add dict with params for this pop
+netParams.popParams['PYR_HH'] = {'cellType': 'PYR_HH', 'numCells': pop_size} # add dict with params for this pop
 netParams.popParams['PYR_Izhi'] = {'cellType': 'PYR_Izhi', 'numCells': pop_size} # add dict with params for this pop
 
 
@@ -103,6 +103,7 @@ simConfig.saveTxt = False # save spikes and conn to txt file
 simConfig.saveDpk = False # save to a .dpk pickled file
 simConfig.saveDat = True
 
+simConfig.validateNetParams=True
 
 # Analysis and plotting
 simConfig.analysis['plotRaster'] = {'orderInverse': False} #True # Whether or not to plot a raster
