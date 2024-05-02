@@ -8,4 +8,3 @@ See also info about [NetPyNE on OSBv2](https://docs.opensourcebrain.org/OSBv2/Ne
 
 
 
-
