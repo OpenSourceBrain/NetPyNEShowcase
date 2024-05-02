@@ -1,0 +1,6 @@
+{
+    "mod_folder": "../HybridSmall",
+    "simConfig": "HybridSmall.py",
+    "python_run": "init.py",
+    "netParams": "HybridSmall.py"
+}
