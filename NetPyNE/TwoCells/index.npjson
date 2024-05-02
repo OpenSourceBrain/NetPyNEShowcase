@@ -1,0 +1,6 @@
+{
+    "mod_folder": "../TwoCells",
+    "simConfig": "reload2.py",
+    "python_run": "init.py",
+    "netParams": "reload2.py"
+}
