@@ -30,9 +30,25 @@ from netpyne.specs.simConfig import SimConfig
 from netpyne.specs.netParams import NetParams
 
 cfg = SimConfig(simConfig_dict)
+cfg.validateNetParams = True
+
+for cell in netParams_dict['cellParams']:
+    for sec in netParams_dict['cellParams'][cell]['secs']:
+        if len(netParams_dict['cellParams'][cell]['secs'][sec]['ions'])==0:
+            netParams_dict['cellParams'][cell]['secs'][sec]['ions']['none']={'e':0,'i':0,"o":0}
+        for ion_name in netParams_dict['cellParams'][cell]['secs'][sec]['ions']:
+            ion = netParams_dict['cellParams'][cell]['secs'][sec]['ions'][ion_name]
+            if not 'o' in ion: ion['o'] = 0 
+            if not 'i' in ion: ion['i'] = 0 
+            print('>> %s - %s - %s'%(cell, sec, ion))
+
 netParams = NetParams(netParams_dict)
+
 print(' - simConfig (%s) with keys: \n      %s'%(type(cfg),cfg.todict().keys()))
 print(' - netParams (%s) with keys: \n      %s'%(type(netParams),netParams.todict().keys()))
 
+from netpyne.sim.validator import validateNetParams
+
+validateNetParams(netParams)
 
 print('> Done...')
