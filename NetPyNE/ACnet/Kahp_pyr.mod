@@ -208,10 +208,6 @@ PROCEDURE rates() {
      
     
      
-    
-     
-    
-     
     rate_z_q = ( z_inf  -  z_q ) /  z_tau ? Note units of all quantities used here need to be consistent!
     
      

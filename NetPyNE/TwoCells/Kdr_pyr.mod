@@ -191,10 +191,6 @@ PROCEDURE rates() {
      
     
      
-    
-     
-    
-     
     rate_n_q = ( n_inf  -  n_q ) /  n_tau ? Note units of all quantities used here need to be consistent!
     
      

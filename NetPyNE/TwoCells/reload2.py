@@ -31,6 +31,7 @@ from netpyne.specs.netParams import NetParams
 
 cfg = SimConfig(simConfig_dict)
 cfg.validateNetParams = True
+cfg.verbose = True
 
 for cell in netParams_dict['cellParams']:
     for sec in netParams_dict['cellParams'][cell]['secs']:
