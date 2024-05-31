@@ -247,10 +247,6 @@ PROCEDURE rates() {
      
     
      
-    
-     
-    
-     
     rate_m_q = ( m_inf  -  m_q ) /  m_tau ? Note units of all quantities used here need to be consistent!
     
      
