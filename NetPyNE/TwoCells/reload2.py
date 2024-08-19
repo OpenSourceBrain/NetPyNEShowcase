@@ -33,6 +33,7 @@ cfg = SimConfig(simConfig_dict)
 cfg.validateNetParams = True
 cfg.verbose = True
 
+
 for cell in netParams_dict['cellParams']:
     for sec in netParams_dict['cellParams'][cell]['secs']:
         if len(netParams_dict['cellParams'][cell]['secs'][sec]['ions'])==0:
@@ -48,8 +49,16 @@ netParams = NetParams(netParams_dict)
 print(' - simConfig (%s) with keys: \n      %s'%(type(cfg),cfg.todict().keys()))
 print(' - netParams (%s) with keys: \n      %s'%(type(netParams),netParams.todict().keys()))
 
+
+
+
+import netpyne
+#netpyne.sim.validator.validateNetParams = lambda a: (False, False)
+
 from netpyne.sim.validator import validateNetParams
 
+print('==============================')
 validateNetParams(netParams)
+print('==============================')
 
 print('> Done...')
