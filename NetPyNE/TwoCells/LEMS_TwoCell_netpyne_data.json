@@ -702,7 +702,7 @@
         "dt": 0.01,
         "dump_coreneuron_model": false,
         "duration": 700.0,
-        "filename": "/home/padraig/neuroConstruct/osb/showcase/NetPyNEShowcase/NeuroML2/TwoCells/LEMS_TwoCell_netpyne",
+        "filename": "LEMS_TwoCell_netpyne",
         "gatherOnlySimData": true,
         "gpu": false,
         "hParams": {
