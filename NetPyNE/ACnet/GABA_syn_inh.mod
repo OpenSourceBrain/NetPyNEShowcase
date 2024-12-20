@@ -50,7 +50,7 @@ PARAMETER {
     tauRise = 3 (ms)                       : was: 0.003 (time)
     tauDecay = 8 (ms)                      : was: 0.008 (time)
     peakTime = 4.7079806 (ms)              : was: 0.004707980414456286 (time)
-    waveformFactor = 2.8820481             : was: 2.882048082177309 (none)
+    waveformFactor = 2.8820481             : was: 2.8820480821773082 (none)
     gbase = 0 (uS)                         : was: 0.0 (conductance)
     erev = -80 (mV)                        : was: -0.08 (voltage)
 }
