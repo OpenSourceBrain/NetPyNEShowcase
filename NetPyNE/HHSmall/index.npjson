@@ -1,0 +1,6 @@
+{
+    "mod_folder": "../HHSmall",
+    "simConfig": "HHSmall.py",
+    "python_run": "init.py",
+    "netParams": "HHSmall.py"
+}

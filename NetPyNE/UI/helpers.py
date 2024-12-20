@@ -18,6 +18,10 @@ from netpyne import sim
 '''
 def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
 
+    ## Why do these need to be set?? TODO: take out!
+    sim.nhosts = 5
+    sim.rank = 1
+
     fullLemsFileName = os.path.abspath(lemsFileName)
     if verbose:
         print(
@@ -42,7 +46,6 @@ def convertAndImportLEMSSimulation(lemsFileName, verbose=True):
 
         print("All keys: {}".format(netpyne_info.keys()))
         print("net keys: {}".format(netpyne_info['net'].keys()))
-
 
     sim.loadAll(json_filename)
 

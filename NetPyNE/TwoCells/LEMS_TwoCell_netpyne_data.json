@@ -677,7 +677,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "1.0.6",
+    "netpyne_version": "1.0.7",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,
@@ -702,7 +702,7 @@
         "dt": 0.01,
         "dump_coreneuron_model": false,
         "duration": 700.0,
-        "filename": "/Users/padraig/neuroConstruct/osb/showcase/NetPyNEShowcase/NeuroML2/TwoCells/LEMS_TwoCell_netpyne",
+        "filename": "LEMS_TwoCell_netpyne",
         "gatherOnlySimData": true,
         "gpu": false,
         "hParams": {
@@ -719,6 +719,7 @@
         "printPopAvgRates": false,
         "printRunTime": false,
         "printSynsAfterRule": false,
+        "progressBar": 2,
         "pt3dRelativeToCellLocation": true,
         "rand123GlobalIndex": null,
         "random123": false,
