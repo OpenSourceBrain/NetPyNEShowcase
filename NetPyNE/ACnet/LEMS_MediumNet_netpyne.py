@@ -13,7 +13,7 @@ Components:
     null (Type: notes)
     GABA_syn (Type: expTwoSynapse:  tauRise=0.005 (SI time) tauDecay=0.012 (SI time) peakTime=0.007504017748747713 (SI time) waveformFactor=3.203779841251092 (dimensionless) gbase=6.0E-10 (SI conductance) erev=-0.08 (SI voltage))
     null (Type: notes)
-    GABA_syn_inh (Type: expTwoSynapse:  tauRise=0.003 (SI time) tauDecay=0.008 (SI time) peakTime=0.004707980414456286 (SI time) waveformFactor=2.8820480821773082 (dimensionless) gbase=0.0 (SI conductance) erev=-0.08 (SI voltage))
+    GABA_syn_inh (Type: expTwoSynapse:  tauRise=0.003 (SI time) tauDecay=0.008 (SI time) peakTime=0.004707980414456286 (SI time) waveformFactor=2.882048082177309 (dimensionless) gbase=0.0 (SI conductance) erev=-0.08 (SI voltage))
     null (Type: notes)
     Kahp_pyr (Type: ionChannelHH:  conductance=1.0E-11 (SI conductance))
     null (Type: notes)

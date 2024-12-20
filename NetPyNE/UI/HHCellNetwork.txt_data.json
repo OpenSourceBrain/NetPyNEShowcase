@@ -170,7 +170,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "1.0.6",
+    "netpyne_version": "1.0.7",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,
@@ -212,6 +212,7 @@
         "printPopAvgRates": false,
         "printRunTime": false,
         "printSynsAfterRule": false,
+        "progressBar": 2,
         "pt3dRelativeToCellLocation": true,
         "rand123GlobalIndex": null,
         "random123": false,
