@@ -42,6 +42,8 @@ jobs:
         omv install netpyne
         omv install pyNeuroML
 
+        pip list
+
         export NEURON_HOME=$pythonLocation
 
         omv list -V
