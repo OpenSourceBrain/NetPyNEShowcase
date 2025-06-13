@@ -18,6 +18,9 @@ cd TwoCells
 rm -f *mod
 pynml LEMS_TwoCell.xml -netpyne -json
 
+# Remove generated local filename
+sed -i -e "s#/Users/padraig/neuroConstruct/osb/showcase/NetPyNEShowcase/NeuroML2/TwoCells/##g" LEMS_TwoCell_netpyne_data.json
+
 cp LEMS_TwoCell_netpyne.py *.mod *.nml *json ../../NetPyNE/TwoCells
 
 cd ..

@@ -98,3 +98,8 @@ simConfig.saveJson = True # save traces
 simConfig.analysis['plotRaster'] = True  # Plot raster
 simConfig.analysis['plotTraces'] = {'include': [2]}  # Plot raster
 simConfig.analysis['plot2Dnet'] = True  # Plot 2D net cells and connections
+
+simConfig.validateNetParams=True
+
+cfg = simConfig
+netParams = generate_netParams(None)

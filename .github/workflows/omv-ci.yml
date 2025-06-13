@@ -1,6 +1,8 @@
 name: Continuous builds
 
 on:
+  schedule:
+    - cron: "1 1 10 */1 *"  # Run once a month to test...
   push:
     branches: [ master, development, experimental ]
   pull_request:
@@ -9,11 +11,11 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04 # for eden...
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ 3.8, 3.9, "3.10" ]
+        python-version: [ 3.9, "3.10", "3.12" ]
         engine: [ NetPyNE, jNeuroML, jNeuroML_NEURON, jNeuroML_NetPyNE, jNeuroML_EDEN, jNeuroML_validate ]
 
     steps:
@@ -23,12 +25,17 @@ jobs:
       with:
         python-version:  ${{ matrix.python-version }}
 
+        
+    - name: Ensure setuptools is up-to-date
+      run: |
+        pip install --upgrade setuptools
+
     - name: Install OMV
       run: |
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+        
         pip install scipy sympy matplotlib cython pandas tables
 
-        pip install 'numpy<=1.23.0' # see https://github.com/OpenSourceBrain/osb-model-validation/issues/91
 
     - name: Run OMV tests on engine ${{ matrix.engine }}
       run: |

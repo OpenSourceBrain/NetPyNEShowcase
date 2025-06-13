@@ -116,3 +116,5 @@ simConfig.analysis['plotRaster'] = {'orderInverse': False} #True # Whether or no
 simConfig.analysis['plotTraces'] = {'include': [1,51]} # plot recorded traces for this list of cells
 simConfig.analysis['plotRatePSD'] = {'include': ['allCells', 'PYR_HH', 'PYR_Izhi'], 'Fs': 200, 'smooth': 10} # plot recorded traces for this list of cells
 
+
+simConfig.validateNetParams=True
