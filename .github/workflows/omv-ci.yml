@@ -23,6 +23,11 @@ jobs:
       with:
         python-version:  ${{ matrix.python-version }}
 
+        
+    - name: Ensure setuptools is up-to-date
+      run: |
+        pip install --upgrade setuptools
+
     - name: Install OMV
       run: |
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
