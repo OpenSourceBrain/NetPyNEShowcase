@@ -1,6 +1,8 @@
 name: Continuous builds
 
 on:
+  schedule:
+    - cron: "1 1 10 */1 *"  # Run once a month to test...
   push:
     branches: [ master, development, experimental ]
   pull_request:
@@ -31,8 +33,6 @@ jobs:
     - name: Install OMV
       run: |
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
-
-        pip install 'numpy<=1.23.0' # see https://github.com/OpenSourceBrain/osb-model-validation/issues/91
         
         pip install scipy sympy matplotlib cython pandas tables
 
