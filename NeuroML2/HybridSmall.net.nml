@@ -100,7 +100,7 @@
         <projection id="NetConn_PYR_HH_PYR_Izhi_syn1" presynapticPopulation="PYR_HH" postsynapticPopulation="PYR_Izhi" synapse="syn1">
             <connectionWD id="0" preCellId="../PYR_HH/0/CELL_PYR_HH" postCellId="../PYR_Izhi/0/CELL_PYR_Izhi" weight="0.0" delay="12.913412871388646 ms"/>
             <connectionWD id="1" preCellId="../PYR_HH/2/CELL_PYR_HH" postCellId="../PYR_Izhi/0/CELL_PYR_Izhi" weight="0.0" delay="11.564341090342863 ms"/>
-            <connectionWD id="2" preCellId="../PYR_HH/0/CELL_PYR_HH" postCellId="../PYR_Izhi/2/CELL_PYR_Izhi" weight="0.0" delay="13.45455050580457 ms"/>
+            <connectionWD id="2" preCellId="../PYR_HH/0/CELL_PYR_HH" postCellId="../PYR_Izhi/2/CELL_PYR_Izhi" weight="0.0" delay="13.454550505804571 ms"/>
             <connectionWD id="3" preCellId="../PYR_HH/1/CELL_PYR_HH" postCellId="../PYR_Izhi/2/CELL_PYR_Izhi" weight="0.0" delay="12.817358977569082 ms"/>
             <connectionWD id="4" preCellId="../PYR_HH/2/CELL_PYR_HH" postCellId="../PYR_Izhi/2/CELL_PYR_Izhi" weight="0.0" delay="15.581628749853062 ms"/>
         </projection>
