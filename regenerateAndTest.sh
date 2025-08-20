@@ -99,3 +99,5 @@ python convert.py
 ################  Done
 
 cd ../..
+
+echo "Finished all tests"
