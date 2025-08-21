@@ -20,19 +20,25 @@
 
     <Simulation id="SimExampleGJ" length="300.0ms" step="0.025ms" target="Example_GapJunctions" seed="1111">  <!-- Note seed: ensures same random numbers used every run -->
         <Display id="PopPost_v" title="Plots of PopPost_v" timeScale="1ms" xmin="-30.0" xmax="330.0" ymin="-80" ymax="40">
-            <Line id="PopPost_0__v" quantity="PopPost[0]/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
-            <Line id="PopPost_1__v" quantity="PopPost[1]/v" scale="1mV" color="#0534e4" timeScale="1ms"/>
-            <Line id="PopPost_2__v" quantity="PopPost[2]/v" scale="1mV" color="#98e752" timeScale="1ms"/>
+            <Line id="PopPost_0_pascell_v" quantity="PopPost/0/pascell/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
+            <Line id="PopPost_1_pascell_v" quantity="PopPost/1/pascell/v" scale="1mV" color="#0534e4" timeScale="1ms"/>
+            <Line id="PopPost_2_pascell_v" quantity="PopPost/2/pascell/v" scale="1mV" color="#98e752" timeScale="1ms"/>
+            <Line id="PopPost_3_pascell_v" quantity="PopPost/3/pascell/v" scale="1mV" color="#bca074" timeScale="1ms"/>
+            <Line id="PopPost_4_pascell_v" quantity="PopPost/4/pascell/v" scale="1mV" color="#632794" timeScale="1ms"/>
+            <Line id="PopPost_5_pascell_v" quantity="PopPost/5/pascell/v" scale="1mV" color="#8a5d88" timeScale="1ms"/>
         </Display>
 
         <Display id="PopPre_v" title="Plots of PopPre_v" timeScale="1ms" xmin="-30.0" xmax="330.0" ymin="-80" ymax="40">
-            <Line id="PopPre_0_pascell_v" quantity="PopPre/0/pascell/v" scale="1mV" color="#bca074" timeScale="1ms"/>
+            <Line id="PopPre_0_pascell_v" quantity="PopPre/0/pascell/v" scale="1mV" color="#df5954" timeScale="1ms"/>
         </Display>
 
         <OutputFile id="SimExampleGJ_PopPost_v_dat" fileName="SimExampleGJ.PopPost.v.dat">
-            <OutputColumn id="PopPost_0__v" quantity="PopPost[0]/v"/>
-            <OutputColumn id="PopPost_1__v" quantity="PopPost[1]/v"/>
-            <OutputColumn id="PopPost_2__v" quantity="PopPost[2]/v"/>
+            <OutputColumn id="PopPost_0_pascell_v" quantity="PopPost/0/pascell/v"/>
+            <OutputColumn id="PopPost_1_pascell_v" quantity="PopPost/1/pascell/v"/>
+            <OutputColumn id="PopPost_2_pascell_v" quantity="PopPost/2/pascell/v"/>
+            <OutputColumn id="PopPost_3_pascell_v" quantity="PopPost/3/pascell/v"/>
+            <OutputColumn id="PopPost_4_pascell_v" quantity="PopPost/4/pascell/v"/>
+            <OutputColumn id="PopPost_5_pascell_v" quantity="PopPost/5/pascell/v"/>
         </OutputFile>
 
         <OutputFile id="SimExampleGJ_PopPre_v_dat" fileName="SimExampleGJ.PopPre.v.dat">

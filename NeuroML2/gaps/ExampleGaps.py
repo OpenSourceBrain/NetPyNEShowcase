@@ -11,7 +11,7 @@ net.notes = "Example: testing gap junctions..."
 net.seed = 123
 net.temperature = 32
 
-net.parameters = {"N": 3, "weightInput": 1}
+net.parameters = {"N": 6, "weightInput": 1}
 
 cell = Cell(id="pascell", neuroml2_source_file="pas.cell.nml")
 net.cells.append(cell)
@@ -38,6 +38,7 @@ pop_post = Population(
     size="N",
     component=cell.id,
     properties={"color": "0 0 .7"},
+    random_layout = RandomLayout(region=r1.id),
 )
 
 net.populations.append(pop_pre)
@@ -55,7 +56,7 @@ net.projections.append(
         presynaptic=pop_pre.id,
         postsynaptic=pop_post.id,
         synapse="gj",
-        weight=1,
+        weight="10*random()",
         random_connectivity=RandomConnectivity(probability=1),
     )
 )

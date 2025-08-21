@@ -205,3 +205,6 @@ arm64
 /NeuroML2/gaps/*_nrn.py
 /NeuroML2/gaps/*.mod
 /NeuroML2/gaps/*.hoc
+/NeuroML2/aarch64
+/NeuroML2/gaps/aarch64
+aarch64
