@@ -26,7 +26,7 @@
         </Display>
 
         <Display id="PopPre_v" title="Plots of PopPre_v" timeScale="1ms" xmin="-30.0" xmax="330.0" ymin="-80" ymax="40">
-            <Line id="PopPre_0__v" quantity="PopPre[0]/v" scale="1mV" color="#bca074" timeScale="1ms"/>
+            <Line id="PopPre_0_pascell_v" quantity="PopPre/0/pascell/v" scale="1mV" color="#bca074" timeScale="1ms"/>
         </Display>
 
         <OutputFile id="SimExampleGJ_PopPost_v_dat" fileName="SimExampleGJ.PopPost.v.dat">
@@ -36,7 +36,7 @@
         </OutputFile>
 
         <OutputFile id="SimExampleGJ_PopPre_v_dat" fileName="SimExampleGJ.PopPre.v.dat">
-            <OutputColumn id="PopPre_0__v" quantity="PopPre[0]/v"/>
+            <OutputColumn id="PopPre_0_pascell_v" quantity="PopPre/0/pascell/v"/>
         </OutputFile>
 
     </Simulation>

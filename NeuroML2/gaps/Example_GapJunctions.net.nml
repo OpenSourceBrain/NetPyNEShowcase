@@ -12,15 +12,21 @@
         <notes>Example: testing gap junctions...</notes>
         <property tag="recommended_dt_ms" value="0.025"/>
         <property tag="recommended_duration_ms" value="300.0"/>
-        <population id="PopPre" component="pascell" size="1"/>
+        <population id="PopPre" component="pascell" size="1" type="populationList">
+            <property tag="color" value=".7 0 0"/>
+            <property tag="region" value="region1"/>
+            <instance id="0">
+                <location x="52.363598850944328" y="8.718667752263231" z="407.241763670398313"/>
+            </instance>
+        </population>
         <population id="PopPost" component="pascell" size="3"/>
         <electricalProjection id="projGJ" presynapticPopulation="PopPre" postsynapticPopulation="PopPost">
-            <electricalConnection id="0" preCell="0" postCell="0" synapse="gj"/>
-            <electricalConnection id="1" preCell="0" postCell="1" synapse="gj"/>
-            <electricalConnection id="2" preCell="0" postCell="2" synapse="gj"/>
+            <electricalConnectionInstance id="0" preCell="../PopPre/0/pascell" postCell="../PopPost[0]" synapse="gj"/>
+            <electricalConnectionInstance id="1" preCell="../PopPre/0/pascell" postCell="../PopPost[1]" synapse="gj"/>
+            <electricalConnectionInstance id="2" preCell="../PopPre/0/pascell" postCell="../PopPost[2]" synapse="gj"/>
         </electricalProjection>
         <inputList id="stim" population="PopPre" component="iclamp0">
-            <input id="0" target="../PopPre[0]" destination="synapses"/>
+            <input id="0" target="../PopPre/0/pascell" destination="synapses"/>
         </inputList>
     </network>
 </neuroml>

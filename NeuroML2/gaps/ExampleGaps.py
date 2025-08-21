@@ -1,5 +1,5 @@
 from neuromllite import Network, Cell, InputSource, Population, Synapse
-from neuromllite import Projection, RandomConnectivity, Input, Simulation
+from neuromllite import Projection, RandomConnectivity, Input, Simulation, RandomLayout, RectangularRegion
 import sys
 
 ################################################################################
@@ -23,12 +23,15 @@ input_source = InputSource(id='iclamp0',
 
 net.input_sources.append(input_source)
 
+r1 = RectangularRegion(id="region1", x=0, y=0, z=0, width=1000, height=100, depth=1000)
+net.regions.append(r1)
 
 pop_pre = Population(
     id="PopPre",
     size="1",
     component=cell.id,
     properties={"color": ".7 0 0"},
+    random_layout = RandomLayout(region=r1.id),
 )
 pop_post = Population(
     id="PopPost",
