@@ -23,6 +23,10 @@ sed -i -e "s#/Users/padraig/neuroConstruct/osb/showcase/NetPyNEShowcase/NeuroML2
 
 cp LEMS_TwoCell_netpyne.py *.mod *.nml *json ../../NetPyNE/TwoCells
 
+
+cd ../gaps
+python ExampleGaps.py -jnml
+
 cd ..
 
 

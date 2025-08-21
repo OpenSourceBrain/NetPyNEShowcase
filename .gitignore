@@ -196,3 +196,8 @@ arm64
 /NetPyNE/TwoCells/*dat
 /NeuroML2/TwoCells/*_netpyne.py
 /NeuroML2/TwoCells/LEMS_TwoCell_netpyne_data.json
+/NeuroML2/gaps/Example_GapJunctions.json
+/NeuroML2/gaps/*.dat
+/NeuroML2/gaps/report.SimExampleGJ.txt
+/NeuroML2/gaps/SimExampleGJ.json
+/NeuroML2/TwoCells/LEMS_TwoCell_netpyne_data.json-e

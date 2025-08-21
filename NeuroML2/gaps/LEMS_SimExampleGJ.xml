@@ -1,0 +1,44 @@
+<Lems>
+
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v1.3.22 (libNeuroML v0.6.8)
+
+     -->
+
+    <!-- Specify which component to run -->
+    <Target component="SimExampleGJ" reportFile="report.SimExampleGJ.txt"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+    <Include file="PyNN.xml"/>
+    <Include file="Example_GapJunctions.net.nml"/>
+    <Include file="pas.cell.nml"/>
+
+    <Simulation id="SimExampleGJ" length="300.0ms" step="0.025ms" target="Example_GapJunctions" seed="1111">  <!-- Note seed: ensures same random numbers used every run -->
+        <Display id="PopPost_v" title="Plots of PopPost_v" timeScale="1ms" xmin="-30.0" xmax="330.0" ymin="-80" ymax="40">
+            <Line id="PopPost_0__v" quantity="PopPost[0]/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
+            <Line id="PopPost_1__v" quantity="PopPost[1]/v" scale="1mV" color="#0534e4" timeScale="1ms"/>
+            <Line id="PopPost_2__v" quantity="PopPost[2]/v" scale="1mV" color="#98e752" timeScale="1ms"/>
+        </Display>
+
+        <Display id="PopPre_v" title="Plots of PopPre_v" timeScale="1ms" xmin="-30.0" xmax="330.0" ymin="-80" ymax="40">
+            <Line id="PopPre_0__v" quantity="PopPre[0]/v" scale="1mV" color="#bca074" timeScale="1ms"/>
+        </Display>
+
+        <OutputFile id="SimExampleGJ_PopPost_v_dat" fileName="SimExampleGJ.PopPost.v.dat">
+            <OutputColumn id="PopPost_0__v" quantity="PopPost[0]/v"/>
+            <OutputColumn id="PopPost_1__v" quantity="PopPost[1]/v"/>
+            <OutputColumn id="PopPost_2__v" quantity="PopPost[2]/v"/>
+        </OutputFile>
+
+        <OutputFile id="SimExampleGJ_PopPre_v_dat" fileName="SimExampleGJ.PopPre.v.dat">
+            <OutputColumn id="PopPre_0__v" quantity="PopPre[0]/v"/>
+        </OutputFile>
+
+    </Simulation>
+
+</Lems>
