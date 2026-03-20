@@ -677,7 +677,7 @@
         }
     },
     "netpyne_changeset": "",
-    "netpyne_version": "1.0.7",
+    "netpyne_version": "1.1.0",
     "simConfig": {
         "addSynMechs": true,
         "allowConnsWithWeight0": true,
@@ -860,6 +860,7 @@
         "saveFileStep": 0.01,
         "saveFolder": "",
         "saveHDF5": false,
+        "saveIMembrane": false,
         "saveJson": true,
         "saveLFPCells": false,
         "saveLFPPops": false,

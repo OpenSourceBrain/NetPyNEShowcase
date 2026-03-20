@@ -1,0 +1,12 @@
+system: Test 
+
+experiments:
+    pre0:
+        expected:
+            spike times: [100.275]
+    post1:
+        expected:
+            spike times: [105.5]
+    post2:
+        expected:
+            spike times: [104.675]

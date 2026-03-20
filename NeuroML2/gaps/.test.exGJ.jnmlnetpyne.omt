@@ -1,0 +1,39 @@
+# Script for running automated tests on OSB, see https://github.com/OpenSourceBrain/osb-model-validation
+
+target: LEMS_SimExampleGJ.xml
+engine: jNeuroML_NetPyNE
+mep: .test.exGJ.mep
+experiments:
+  pre0:
+    observables:
+      spike times:
+        file:
+          path: SimExampleGJ.PopPre.v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: -52
+        tolerance: 0.00
+  post1:
+    observables:
+      spike times:
+        file:
+          path: SimExampleGJ.PopPost.v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: -52
+        tolerance: 0.00
+  post2:
+    observables:
+      spike times:
+        file:
+          path: SimExampleGJ.PopPost.v.dat
+          columns: [0,2]
+          scaling: [1000, 1000]
+        spike detection:
+          method: threshold
+          threshold: -52
+        tolerance: 0.00

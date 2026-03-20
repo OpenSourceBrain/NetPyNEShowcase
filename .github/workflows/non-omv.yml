@@ -40,6 +40,7 @@ jobs:
         omv install neuron
         omv install netpyne
         omv install pyNeuroML
+        omv install pynn
 
         pip list
 
